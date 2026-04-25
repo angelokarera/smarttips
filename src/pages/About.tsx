@@ -4,13 +4,13 @@ import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
 
 export default function About() {
   const meta = {
-    title: 'About — SmartyTips',
-    description: 'SmartyTips builds free, browser-based tools for images, PDFs, text, and more. No accounts, no uploads, no data collection.',
+    title: 'About — SmartDigitalTips',
+    description: 'SmartDigitalTips builds free, browser-based tools for images, PDFs, text, and more. No accounts, no uploads, no data collection.',
     canonical: '/about',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartytips.com/' },
-        { name: 'About', url: 'https://smartytips.com/about' },
+        { name: 'Home', url: 'https://smartdigitaltips.com/' },
+        { name: 'About', url: 'https://smartdigitaltips.com/about' },
       ]),
     ],
   }
@@ -59,7 +59,7 @@ export default function About() {
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-4">The backstory</h2>
             <p className="text-muted-foreground leading-[1.8]">
-              SmartyTips started in 2024 because every "free" online tool had a catch. 
+              SmartDigitalTips started in 2024 because every "free" online tool had a catch. 
               Sign up with your email. Wait for the server to process. See a watermark 
               on the output. Pay $9.99/month to remove it. We thought that was ridiculous.
             </p>

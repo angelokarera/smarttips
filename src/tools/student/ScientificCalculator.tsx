@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { RotateCcw, Delete } from 'lucide-react'
+import { Delete } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export default function ScientificCalculator() {
   const [display, setDisplay] = useState('0')
   const [expression, setExpression] = useState('')
-  const [memory, setMemory] = useState(0)
+
 
   const append = (val: string) => {
     if (display === '0' && val !== '.') {

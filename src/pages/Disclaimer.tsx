@@ -3,13 +3,13 @@ import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
 
 export default function Disclaimer() {
   const meta = {
-    title: 'Disclaimer - SmartyTips',
-    description: 'Read the disclaimer for SmartyTips. Important information about tool accuracy, data handling, and usage limitations.',
+    title: 'Disclaimer - SmartDigitalTips',
+    description: 'Read the disclaimer for SmartDigitalTips. Important information about tool accuracy, data handling, and usage limitations.',
     canonical: '/disclaimer',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartytips.com/' },
-        { name: 'Disclaimer', url: 'https://smartytips.com/disclaimer' },
+        { name: 'Home', url: 'https://smartdigitaltips.com/' },
+        { name: 'Disclaimer', url: 'https://smartdigitaltips.com/disclaimer' },
       ]),
     ],
   }
@@ -28,7 +28,7 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-xl font-bold mb-3">1. General Disclaimer</h2>
             <p className="text-muted-foreground leading-relaxed">
-              The information and tools provided on SmartyTips are for general informational and 
+              The information and tools provided on SmartDigitalTips are for general informational and 
               educational purposes only. While we strive to ensure accuracy and reliability, we make 
               no representations or warranties of any kind about the completeness, accuracy, reliability, 
               or suitability of the information and tools provided.
@@ -43,7 +43,7 @@ export default function Disclaimer() {
             </p>
             <ul className="list-disc list-inside mt-2 space-y-1 text-muted-foreground">
               <li>Unit conversions and calculations may have minor rounding differences</li>
-              <li>Currency exchange rates are approximate and for reference only</li>
+
               <li>PDF conversions may not perfectly preserve complex formatting</li>
               <li>Image compression quality varies based on the source image</li>
               <li>GPA and grade calculations depend on your institution's specific policies</li>
@@ -53,7 +53,7 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-xl font-bold mb-3">3. No Professional Advice</h2>
             <p className="text-muted-foreground leading-relaxed">
-              The tools and content on SmartyTips do not constitute professional, legal, financial, 
+              The tools and content on SmartDigitalTips do not constitute professional, legal, financial, 
               medical, or academic advice. Always consult with qualified professionals for advice 
               specific to your situation.
             </p>
@@ -80,7 +80,7 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-xl font-bold mb-3">5. External Links</h2>
             <p className="text-muted-foreground leading-relaxed">
-              SmartyTips may contain links to external websites. We do not control or endorse the 
+              SmartDigitalTips may contain links to external websites. We do not control or endorse the 
               content, products, or services offered by these third-party sites. Visiting external 
               links is at your own risk.
             </p>
@@ -89,7 +89,7 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-xl font-bold mb-3">6. Affiliate Disclosure</h2>
             <p className="text-muted-foreground leading-relaxed">
-              SmartyTips is supported by advertising revenue. We may display ads through Google 
+              SmartDigitalTips is supported by advertising revenue. We may display ads through Google 
               AdSense and other advertising networks. Some links may be affiliate links, meaning 
               we may earn a commission if you click through and make a purchase, at no additional 
               cost to you.
@@ -99,7 +99,7 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-xl font-bold mb-3">7. Limitation of Liability</h2>
             <p className="text-muted-foreground leading-relaxed">
-              By using SmartyTips, you agree that we shall not be held liable for any direct, 
+              By using SmartDigitalTips, you agree that we shall not be held liable for any direct, 
               indirect, incidental, consequential, or punitive damages arising from your use of 
               our tools or reliance on any information provided on the Website.
             </p>
@@ -117,8 +117,8 @@ export default function Disclaimer() {
             <h2 className="text-xl font-bold mb-3">9. Contact</h2>
             <p className="text-muted-foreground leading-relaxed">
               If you have any questions about this Disclaimer, please contact us at{' '}
-              <a href="mailto:support@smartytips.com" className="text-foreground underline">
-                support@smartytips.com
+              <a href="mailto:support@smartdigitaltips.com" className="text-foreground underline">
+                support@smartdigitaltips.com
               </a>.
             </p>
           </section>

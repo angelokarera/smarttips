@@ -5,7 +5,7 @@ interface SEOHelmetProps {
   meta: SEOMeta
 }
 
-const SITE_URL = 'https://smartytips.com'
+const SITE_URL = 'https://smartdigitaltips.com'
 const DEFAULT_OG_IMAGE = '/og-image.jpg'
 
 export function SEOHelmet({ meta }: SEOHelmetProps) {
@@ -22,7 +22,7 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
     keywords,
   } = meta
 
-  const fullTitle = title.includes('SmartyTips') ? title : `${title} | SmartyTips`
+  const fullTitle = title.includes('SmartDigitalTips') ? title : `${title} | SmartDigitalTips`
   const fullCanonical = canonical ? `${SITE_URL}${canonical}` : undefined
   const fullOgImage = ogImage ? (ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`) : `${SITE_URL}${DEFAULT_OG_IMAGE}`
 
@@ -40,7 +40,7 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
       <meta property="og:image" content={fullOgImage} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullCanonical || SITE_URL} />
-      <meta property="og:site_name" content="SmartyTips" />
+      <meta property="og:site_name" content="SmartDigitalTips" />
       
       {/* Twitter */}
       <meta name="twitter:card" content={twitterCard} />

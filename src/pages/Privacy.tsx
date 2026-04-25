@@ -3,13 +3,13 @@ import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
 
 export default function Privacy() {
   const meta = {
-    title: 'Privacy Policy - SmartyTips',
-    description: 'Learn how SmartyTips handles your data. We prioritize privacy and process most data locally in your browser.',
+    title: 'Privacy Policy - SmartDigitalTips',
+    description: 'Learn how SmartDigitalTips handles your data. We prioritize privacy and process most data locally in your browser.',
     canonical: '/privacy',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartytips.com/' },
-        { name: 'Privacy Policy', url: 'https://smartytips.com/privacy' },
+        { name: 'Home', url: 'https://smartdigitaltips.com/' },
+        { name: 'Privacy Policy', url: 'https://smartdigitaltips.com/privacy' },
       ]),
     ],
   }
@@ -28,8 +28,8 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-bold mb-3">1. Introduction</h2>
             <p className="text-muted-foreground leading-relaxed">
-              At SmartyTips, we take your privacy seriously. This Privacy Policy explains how we collect, 
-              use, and protect your information when you use our website and tools. By using SmartyTips, 
+              At SmartDigitalTips, we take your privacy seriously. This Privacy Policy explains how we collect, 
+              use, and protect your information when you use our website and tools. By using SmartDigitalTips, 
               you agree to the terms outlined in this policy.
             </p>
           </section>
@@ -131,8 +131,8 @@ export default function Privacy() {
             <h2 className="text-xl font-bold mb-3">10. Contact Us</h2>
             <p className="text-muted-foreground leading-relaxed">
               If you have any questions about this Privacy Policy, please contact us at{' '}
-              <a href="mailto:support@smartytips.com" className="text-foreground underline">
-                support@smartytips.com
+              <a href="mailto:support@smartdigitaltips.com" className="text-foreground underline">
+                support@smartdigitaltips.com
               </a>.
             </p>
           </section>

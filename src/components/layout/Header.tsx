@@ -85,9 +85,9 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 group">
-            <img src="/logo.png" alt="SmartyTips Logo" width="120" height="32" loading="eager" className="h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-105" />
+            <img src="/logo.png" alt="SmartDigitalTips Logo" width="120" height="32" loading="eager" className="h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-105" />
             <span className="text-lg font-bold tracking-tight">
-              Smarty<span className="text-primary">Tips</span>
+              SmartDigital<span className="text-primary">Tips</span>
             </span>
           </Link>
 

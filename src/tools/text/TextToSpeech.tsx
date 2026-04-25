@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 
 export default function TextToSpeech() {
-  const [text, setText] = useState('Welcome to SmartyTips. This is a text to speech demo. Type your own text here and click play to listen.')
+  const [text, setText] = useState('Welcome to SmartDigitalTips. This is a text to speech demo. Type your own text here and click play to listen.')
   const [speaking, setSpeaking] = useState(false)
   const [rate, setRate] = useState([1])
   const [pitch, setPitch] = useState([1])

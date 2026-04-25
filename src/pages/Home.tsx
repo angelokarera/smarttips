@@ -28,7 +28,7 @@ export default function Home() {
   const newTools = getNewTools().slice(0, 4)
 
   const meta = {
-    title: 'SmartyTips — Free Online Tools for Images, PDFs, Text & More',
+    title: 'SmartDigitalTips — Free Online Tools for Images, PDFs, Text & More',
     description: '50+ free browser-based tools. Compress images, merge PDFs, count words, generate QR codes — all without uploading a single file. No signup.',
     schema: [generateWebsiteSchema(), generateOrganizationSchema()],
   }

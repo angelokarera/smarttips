@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { useParams, Link } from 'react-router'
-import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { CheckCircle2 } from 'lucide-react'
 import { getToolById, getRelatedTools } from '@/data/tools'
 import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema, generateFAQSchema, generateToolSchema } from '@/components/seo/StructuredData'
@@ -26,7 +26,7 @@ const PercentageCalculator = lazy(() => import('@/tools/student/PercentageCalcul
 const GradeCalculator = lazy(() => import('@/tools/student/GradeCalculator'))
 const CompoundInterest = lazy(() => import('@/tools/student/CompoundInterest'))
 const UnitConverter = lazy(() => import('@/tools/converter/UnitConverter'))
-const CurrencyConverter = lazy(() => import('@/tools/converter/CurrencyConverter'))
+
 const LengthConverter = lazy(() => import('@/tools/converter/LengthConverter'))
 const TimeConverter = lazy(() => import('@/tools/converter/TimeConverter'))
 const ImageCompressor = lazy(() => import('@/tools/image/ImageCompressor'))
@@ -72,7 +72,7 @@ const toolComponents: Record<string, React.ComponentType> = {
   'grade-calculator': GradeCalculator,
   'compound-interest': CompoundInterest,
   'unit-converter': UnitConverter,
-  'currency-converter': CurrencyConverter,
+
   'length-converter': LengthConverter,
   'time-converter': TimeConverter,
   'image-compressor': ImageCompressor,
@@ -132,9 +132,9 @@ export default function ToolPage() {
     canonical: tool.path,
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartytips.com/' },
-        { name: tool.categoryLabel, url: `https://smartytips.com/category/${tool.category}` },
-        { name: tool.name, url: `https://smartytips.com${tool.path}` },
+        { name: 'Home', url: 'https://smartdigitaltips.com/' },
+        { name: tool.categoryLabel, url: `https://smartdigitaltips.com/category/${tool.category}` },
+        { name: tool.name, url: `https://smartdigitaltips.com${tool.path}` },
       ]),
       generateToolSchema(tool),
       generateFAQSchema(tool.faq),

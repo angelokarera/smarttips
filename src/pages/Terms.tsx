@@ -3,13 +3,13 @@ import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
 
 export default function Terms() {
   const meta = {
-    title: 'Terms & Conditions - SmartyTips',
-    description: 'Read the Terms and Conditions for using SmartyTools. By using our website, you agree to these terms.',
+    title: 'Terms & Conditions - SmartDigitalTips',
+    description: 'Read the Terms and Conditions for using SmartDigitalTips. By using our website, you agree to these terms.',
     canonical: '/terms',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartytips.com/' },
-        { name: 'Terms & Conditions', url: 'https://smartytips.com/terms' },
+        { name: 'Home', url: 'https://smartdigitaltips.com/' },
+        { name: 'Terms & Conditions', url: 'https://smartdigitaltips.com/terms' },
       ]),
     ],
   }
@@ -28,7 +28,7 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-bold mb-3">1. Acceptance of Terms</h2>
             <p className="text-muted-foreground leading-relaxed">
-              By accessing and using SmartyTips ("the Website"), you accept and agree to be bound by these 
+              By accessing and using SmartDigitalTips ("the Website"), you accept and agree to be bound by these 
               Terms and Conditions. If you do not agree with any part of these terms, you must not use 
               the Website.
             </p>
@@ -37,7 +37,7 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-bold mb-3">2. Description of Service</h2>
             <p className="text-muted-foreground leading-relaxed">
-              SmartyTips provides free online tools for image processing, PDF manipulation, text analysis, 
+              SmartDigitalTips provides free online tools for image processing, PDF manipulation, text analysis, 
               calculations, and conversions. All tools are provided "as is" without any warranties.
             </p>
           </section>
@@ -59,8 +59,8 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-bold mb-3">4. Intellectual Property</h2>
             <p className="text-muted-foreground leading-relaxed">
-              All content on SmartyTips, including but not limited to text, graphics, logos, and software, 
-              is the property of SmartyTips and protected by copyright laws. You may not reproduce, 
+              All content on SmartDigitalTips, including but not limited to text, graphics, logos, and software, 
+              is the property of SmartDigitalTips and protected by copyright laws. You may not reproduce, 
               distribute, or create derivative works without our permission.
             </p>
             <p className="text-muted-foreground leading-relaxed mt-2">
@@ -72,7 +72,7 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-bold mb-3">5. Disclaimer of Warranties</h2>
             <p className="text-muted-foreground leading-relaxed">
-              SmartyTips provides all tools and services "as is" without any warranty of any kind, 
+              SmartDigitalTips provides all tools and services "as is" without any warranty of any kind, 
               express or implied. We do not guarantee that:
             </p>
             <ul className="list-disc list-inside mt-2 space-y-1 text-muted-foreground">
@@ -86,7 +86,7 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-bold mb-3">6. Limitation of Liability</h2>
             <p className="text-muted-foreground leading-relaxed">
-              In no event shall SmartyTips, its owners, or affiliates be liable for any direct, indirect, 
+              In no event shall SmartDigitalTips, its owners, or affiliates be liable for any direct, indirect, 
               incidental, special, or consequential damages arising out of or in connection with your use 
               of the Website or tools.
             </p>
@@ -113,8 +113,8 @@ export default function Terms() {
             <h2 className="text-xl font-bold mb-3">9. Contact Information</h2>
             <p className="text-muted-foreground leading-relaxed">
               If you have any questions about these Terms and Conditions, please contact us at{' '}
-              <a href="mailto:support@smartytips.com" className="text-foreground underline">
-                support@smartytips.com
+              <a href="mailto:support@smartdigitaltips.com" className="text-foreground underline">
+                support@smartdigitaltips.com
               </a>.
             </p>
           </section>

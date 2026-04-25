@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, Clock, CheckCircle2, Send } from 'lucide-react'
+import { Clock, CheckCircle2, Send } from 'lucide-react'
 import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
 import { Button } from '@/components/ui/button'
@@ -11,13 +11,13 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
 
   const meta = {
-    title: 'Contact — SmartyTips',
-    description: 'Reach the SmartyTips team. Suggest a tool, report a bug, or ask a question. We respond within 24 hours.',
+    title: 'Contact — SmartDigitalTips',
+    description: 'Reach the SmartDigitalTips team. Suggest a tool, report a bug, or ask a question. We respond within 24 hours.',
     canonical: '/contact',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartytips.com/' },
-        { name: 'Contact', url: 'https://smartytips.com/contact' },
+        { name: 'Home', url: 'https://smartdigitaltips.com/' },
+        { name: 'Contact', url: 'https://smartdigitaltips.com/contact' },
       ]),
     ],
   }
@@ -43,16 +43,6 @@ export default function Contact() {
             </p>
 
             <div className="space-y-5">
-              <div className="flex items-start gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0">
-                  <Mail className="h-4 w-4" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold mb-0.5">Email</p>
-                  <p className="text-sm text-muted-foreground">support@smartytips.com</p>
-                </div>
-              </div>
-
               <div className="flex items-start gap-3">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0">
                   <Clock className="h-4 w-4" />

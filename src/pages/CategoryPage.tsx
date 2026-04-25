@@ -30,13 +30,13 @@ export default function CategoryPage() {
   }
 
   const meta = {
-    title: `${category.label} — Free Online Tools | SmartyTips`,
+    title: `${category.label} — Free Online Tools | SmartDigitalTips`,
     description: category.description,
     canonical: `/category/${category.id}`,
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartytips.com/' },
-        { name: category.label, url: `https://smartytips.com/category/${category.id}` },
+        { name: 'Home', url: 'https://smartdigitaltips.com/' },
+        { name: category.label, url: `https://smartdigitaltips.com/category/${category.id}` },
       ]),
     ],
   }

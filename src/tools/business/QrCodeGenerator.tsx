@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 
 export default function QrCodeGenerator() {
   const [type, setType] = useState('url')
-  const [value, setValue] = useState('https://smartytips.com')
+  const [value, setValue] = useState('https://smartdigitaltips.com')
   const [size, setSize] = useState(256)
   const [level, setLevel] = useState('M')
 

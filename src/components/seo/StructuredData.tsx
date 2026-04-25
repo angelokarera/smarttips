@@ -26,14 +26,14 @@ export function StructuredData({ data }: StructuredDataProps) {
 export function generateWebsiteSchema() {
   return {
     '@type': 'WebSite',
-    name: 'SmartyTips',
-    url: 'https://smartytips.com',
+    name: 'SmartDigitalTips',
+    url: 'https://smartdigitaltips.com',
     description: 'Free online tools for images, PDFs, text, students, business, and conversions.',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://smartytips.com/search?q={search_term_string}',
+        urlTemplate: 'https://smartdigitaltips.com/search?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },
@@ -43,9 +43,9 @@ export function generateWebsiteSchema() {
 export function generateOrganizationSchema() {
   return {
     '@type': 'Organization',
-    name: 'SmartyTips',
-    url: 'https://smartytips.com',
-    logo: 'https://smartytips.com/logo.png',
+    name: 'SmartDigitalTips',
+    url: 'https://smartdigitaltips.com',
+    logo: 'https://smartdigitaltips.com/logo.png',
     sameAs: [
       'https://twitter.com/smartytips',
       'https://facebook.com/smartytips',
@@ -54,7 +54,7 @@ export function generateOrganizationSchema() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'support@smartytips.com',
+      email: 'support@smartdigitaltips.com',
       availableLanguage: ['English'],
     },
   }
@@ -99,7 +99,7 @@ export function generateToolSchema(tool: {
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Any',
     browserRequirements: 'Requires JavaScript. Requires HTML5.',
-    url: `https://smartytips.com${tool.path}`,
+    url: `https://smartdigitaltips.com${tool.path}`,
     offers: {
       '@type': 'Offer',
       price: '0',
