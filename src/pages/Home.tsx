@@ -30,6 +30,7 @@ export default function Home() {
   const meta = {
     title: 'SmartDigitalTips — Free Online Tools for Images, PDFs, Text & More',
     description: '50+ free browser-based tools. Compress images, merge PDFs, count words, generate QR codes — all without uploading a single file. No signup.',
+    keywords: ['free online tools', 'browser tools', 'image compressor', 'pdf merger', 'word counter', 'qr code generator', 'no signup tools', 'free web utilities', 'smart digital tips', 'developer tools', 'student utilities'],
     schema: [generateWebsiteSchema(), generateOrganizationSchema()],
   }
 

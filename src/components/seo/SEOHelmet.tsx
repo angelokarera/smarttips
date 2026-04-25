@@ -6,7 +6,7 @@ interface SEOHelmetProps {
 }
 
 const SITE_URL = 'https://smartdigitaltips.com'
-const DEFAULT_OG_IMAGE = '/og-image.jpg'
+const DEFAULT_OG_IMAGE = '/logo.png'
 
 export function SEOHelmet({ meta }: SEOHelmetProps) {
   const {

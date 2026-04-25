@@ -47,9 +47,9 @@ export function generateOrganizationSchema() {
     url: 'https://smartdigitaltips.com',
     logo: 'https://smartdigitaltips.com/logo.png',
     sameAs: [
-      'https://twitter.com/smartytips',
-      'https://facebook.com/smartytips',
-      'https://linkedin.com/company/smartytips',
+      'https://twitter.com/smartdigitaltips',
+      'https://facebook.com/smartdigitaltips',
+      'https://linkedin.com/company/smartdigitaltips',
     ],
     contactPoint: {
       '@type': 'ContactPoint',

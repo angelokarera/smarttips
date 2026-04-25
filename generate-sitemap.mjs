@@ -22,7 +22,7 @@ for (const match of matches) {
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${Array.from(uniqueUrls).map(url => `  <url>
-    <loc>https://smartytips.com${url}</loc>
+    <loc>https://smartdigitaltips.com${url}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <changefreq>${url === '/' ? 'daily' : 'weekly'}</changefreq>
     <priority>${url === '/' ? '1.0' : url.startsWith('/tools/') ? '0.8' : '0.6'}</priority>
