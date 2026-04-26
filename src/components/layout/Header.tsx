@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useMemo } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { 
   Search, 
@@ -18,7 +18,6 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
-  const [searchResults, setSearchResults] = useState<ReturnType<typeof searchTools>>([])
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const { theme, toggleTheme } = useTheme()
@@ -45,13 +44,11 @@ export function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  useEffect(() => {
+  const searchResults = useMemo(() => {
     if (searchQuery.trim()) {
-      const results = searchTools(searchQuery).slice(0, 6)
-      setSearchResults(results)
-    } else {
-      setSearchResults([])
+      return searchTools(searchQuery).slice(0, 6)
     }
+    return []
   }, [searchQuery])
 
   // Keyboard shortcut for search
