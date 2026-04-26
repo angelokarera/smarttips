@@ -1,22 +1,28 @@
 import { MetadataRoute } from 'next';
+import { tools } from '@/data/tools';
 
 const locales = ['en', 'fr', 'de', 'es', 'pt', 'it', 'nl', 'ar'];
 const baseUrl = 'https://smartdigitaltips.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
+  // Base routes
+  const baseRoutes = [
     '',
-    '/keywords/image-compressor',
-    '/keywords/free-pdf-converter',
-    '/keywords/meta-tag-generator',
-    '/keywords/password-generator',
-    '/keywords/qr-code-generator',
-    '/keywords/keyword-checker'
+    '/about',
+    '/contact',
+    '/privacy',
+    '/terms',
+    '/disclaimer'
   ];
+
+  // Dynamically pull all tools from your database
+  const toolRoutes = tools.map((tool) => `/keywords/${tool.id}`);
+
+  const allRoutes = [...baseRoutes, ...toolRoutes];
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
-  routes.forEach((route) => {
+  allRoutes.forEach((route) => {
     locales.forEach((locale) => {
       sitemapEntries.push({
         url: `${baseUrl}/${locale}${route}`,
