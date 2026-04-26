@@ -78,6 +78,13 @@ export const categories: ToolCategory[] = [
     icon: 'Terminal',
     color: 'from-pink-500/10 to-rose-500/10',
   },
+  {
+    id: 'seo',
+    label: 'SEO Tools',
+    description: 'Optimize your website for search engines with keyword and meta tag tools.',
+    icon: 'TrendingUp',
+    color: 'from-green-500/10 to-emerald-500/10',
+  },
 ]
 
 export const tools: Tool[] = [
@@ -1152,6 +1159,70 @@ export const tools: Tool[] = [
     faq: [],
     relatedTools: [],
   },
+  // SEO Tools
+  {
+    id: 'keyword-checker',
+    name: 'Keyword Density Checker',
+    description: 'Analyze keyword density, frequency, and SEO value of any text or URL.',
+    category: 'seo',
+    categoryLabel: 'SEO Tools',
+    icon: 'TrendingUp',
+    path: '/tools/keyword-checker',
+    popular: true,
+    trending: true,
+    seoTitle: 'Free Keyword Density Checker | SEO Analysis Tool Online - SmartDigitalTips',
+    seoDescription: 'Check keyword density and frequency online for free. Analyze your text for over-optimization and improve your SEO ranking instantly.',
+    benefits: [
+      'Identify most frequent keywords in your text',
+      'Prevent keyword stuffing penalties',
+      'Optimize content for target search terms',
+      'Analyze 1-word, 2-word, and 3-word phrases'
+    ],
+    howToUse: [
+      'Paste your content into the text area',
+      'Click Analyze to process the text',
+      'Review the density percentages',
+      'Adjust your text to achieve optimal SEO balance'
+    ],
+    faq: [
+      {
+        question: 'What is the ideal keyword density?',
+        answer: 'Most SEO experts recommend a keyword density between 1% and 3%. Going higher may trigger keyword stuffing penalties.'
+      }
+    ],
+    relatedTools: ['word-counter', 'meta-tag-generator']
+  },
+  {
+    id: 'meta-tag-generator',
+    name: 'Meta Tag Generator',
+    description: 'Generate high-CTR SEO meta tags, title tags, and Open Graph data.',
+    category: 'seo',
+    categoryLabel: 'SEO Tools',
+    icon: 'Search',
+    path: '/tools/meta-tag-generator',
+    popular: true,
+    seoTitle: 'Free Meta Tag Generator | SEO & Open Graph Tags - SmartDigitalTips',
+    seoDescription: 'Generate perfectly optimized SEO meta tags and Open Graph tags for free. Improve your click-through rate (CTR) and search rankings.',
+    benefits: [
+      'Generate Google-friendly Title and Description tags',
+      'Create Open Graph tags for social media sharing',
+      'Ensure tags are within the correct character limits',
+      'Preview how your site looks on Google SERP'
+    ],
+    howToUse: [
+      'Enter your Page Title and Description',
+      'Add target keywords',
+      'Fill in optional author and language fields',
+      'Copy the generated HTML into your <head> tag'
+    ],
+    faq: [
+      {
+        question: 'Do meta tags still matter for SEO?',
+        answer: 'Yes! While Google does not use the keywords meta tag for ranking, the Title and Description tags are critical for your Click-Through Rate (CTR) in search results.'
+      }
+    ],
+    relatedTools: ['keyword-checker', 'word-counter']
+  }
 ]
 
 export function getToolById(id: string): Tool | undefined {
