@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import { useLocation } from 'react-router'
 import type { SEOMeta } from '@/types'
 
 interface SEOHelmetProps {
@@ -23,7 +24,9 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
   } = meta
 
   const fullTitle = title.includes('SmartDigitalTips') ? title : `${title} | SmartDigitalTips`
-  const fullCanonical = canonical ? `${SITE_URL}${canonical}` : undefined
+  const location = useLocation()
+  const path = canonical || location.pathname
+  const fullCanonical = `${SITE_URL}${path}`
   const fullOgImage = ogImage ? (ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`) : `${SITE_URL}${DEFAULT_OG_IMAGE}`
 
   return (

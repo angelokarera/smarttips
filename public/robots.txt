@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://smartytips.com/sitemap.xml
+Sitemap: https://smartdigitaltips.com/sitemap.xml
