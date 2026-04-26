@@ -128,6 +128,12 @@ export function Header() {
             </div>
 
             <Link 
+              to="/blog" 
+              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
+            >
+              Blog
+            </Link>
+            <Link 
               to="/about" 
               className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
             >
@@ -269,6 +275,13 @@ export function Header() {
               ))}
             </div>
             <div className="border-t border-border pt-2 space-y-1">
+              <Link 
+                to="/blog" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="block px-3 py-2.5 text-base font-medium rounded-lg hover:bg-secondary transition-colors"
+              >
+                Blog
+              </Link>
               <Link 
                 to="/about" 
                 onClick={() => setMobileMenuOpen(false)}
