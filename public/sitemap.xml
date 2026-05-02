@@ -3,12 +3,20 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <!-- ============================================ -->
-  <!-- HOMEPAGE - Priority: 1.0 (Highest)          -->
+  <!-- HOMEPAGE - Priority: 1.0                     -->
   <!-- ============================================ -->
-  
   <url>
     <loc>https://smartdigitaltips.com/en</loc>
-    <lastmod>2025-01-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartdigitaltips.com/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartdigitaltips.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smartdigitaltips.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://smartdigitaltips.com/it"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smartdigitaltips.com/nl"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://smartdigitaltips.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartdigitaltips.com/en"/>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,67 +24,51 @@
   <!-- ============================================ -->
   <!-- CATEGORY PAGES - Priority: 0.7              -->
   <!-- ============================================ -->
-  
-  <!-- Image Tools Category -->
   <url>
     <loc>https://smartdigitaltips.com/en/category/image</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- PDF Tools Category -->
   <url>
     <loc>https://smartdigitaltips.com/en/category/pdf</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Text Tools Category -->
   <url>
     <loc>https://smartdigitaltips.com/en/category/text</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Student Tools Category -->
   <url>
     <loc>https://smartdigitaltips.com/en/category/student</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Business Tools Category -->
   <url>
     <loc>https://smartdigitaltips.com/en/category/business</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Converter Tools Category -->
   <url>
     <loc>https://smartdigitaltips.com/en/category/converter</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Developer Tools Category -->
   <url>
     <loc>https://smartdigitaltips.com/en/category/developer</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- SEO Tools Category -->
   <url>
     <loc>https://smartdigitaltips.com/en/category/seo</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -84,99 +76,75 @@
   <!-- ============================================ -->
   <!-- POPULAR TOOLS - Priority: 0.9               -->
   <!-- ============================================ -->
-  
-  <!-- Image Compressor (Popular + Trending) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/image-compressor</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Image to PDF (Popular) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/image-to-pdf</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Merge PDF (Popular + Trending) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/merge-pdf</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- PDF to Word (Popular) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/pdf-to-word</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Word Counter (Popular + Trending) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/word-counter</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- GPA Calculator (Popular) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/gpa-calculator</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Percentage Calculator (Popular) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/percentage-calculator</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- QR Code Generator (Popular + Trending) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/qr-code-generator</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Invoice Generator (Popular) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/invoice-generator</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Unit Converter (Popular + Trending) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/unit-converter</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Keyword Checker (Popular + Trending) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/keyword-checker</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Meta Tag Generator (Popular) -->
   <url>
     <loc>https://smartdigitaltips.com/en/tools/meta-tag-generator</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -184,59 +152,51 @@
   <!-- ============================================ -->
   <!-- IMAGE TOOLS - Priority: 0.8                 -->
   <!-- ============================================ -->
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/image-resizer</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/image-converter</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/crop-image</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/jpg-to-png</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/png-to-jpg</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/webp-converter</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/background-remover</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/watermark-maker</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -244,17 +204,15 @@
   <!-- ============================================ -->
   <!-- PDF TOOLS - Priority: 0.8                   -->
   <!-- ============================================ -->
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/split-pdf</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/pdf-to-image</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -262,66 +220,57 @@
   <!-- ============================================ -->
   <!-- TEXT TOOLS - Priority: 0.8                  -->
   <!-- ============================================ -->
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/case-converter</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/text-to-speech</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/plagiarism-checker</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/character-counter</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/rewrite-text</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/grammar-checker</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/remove-duplicates</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/summarizer</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/citation-generator</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -329,38 +278,33 @@
   <!-- ============================================ -->
   <!-- STUDENT TOOLS - Priority: 0.8               -->
   <!-- ============================================ -->
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/grade-calculator</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/compound-interest</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/study-timer</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/random-name-picker</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/scientific-calculator</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -368,17 +312,15 @@
   <!-- ============================================ -->
   <!-- BUSINESS TOOLS - Priority: 0.8              -->
   <!-- ============================================ -->
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/password-generator</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/age-calculator</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -386,17 +328,15 @@
   <!-- ============================================ -->
   <!-- CONVERTER TOOLS - Priority: 0.8             -->
   <!-- ============================================ -->
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/length-converter</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/time-converter</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -404,87 +344,70 @@
   <!-- ============================================ -->
   <!-- DEVELOPER TOOLS - Priority: 0.8             -->
   <!-- ============================================ -->
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/json-formatter</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/base64-encoder</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/css-minifier</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/html-beautifier</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://smartdigitaltips.com/en/tools/color-picker</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- ============================================ -->
-  <!-- BLOG PAGES - Priority: 0.7 (List), 0.6 (Posts) -->
+  <!-- BLOG - Priority: 0.7 (List), 0.6 (Posts)    -->
   <!-- ============================================ -->
-  
-  <!-- Blog List Page -->
   <url>
     <loc>https://smartdigitaltips.com/en/blog</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Blog Post 1 -->
   <url>
     <loc>https://smartdigitaltips.com/en/blog/ultimate-guide-optimizing-images-web</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  
-  <!-- Blog Post 2 -->
   <url>
     <loc>https://smartdigitaltips.com/en/blog/why-pdf-is-standard-for-documents</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  
-  <!-- Blog Post 3 -->
   <url>
     <loc>https://smartdigitaltips.com/en/blog/importance-of-writing-original-content-avoiding-plagiarism</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  
-  <!-- Blog Post 4 -->
   <url>
     <loc>https://smartdigitaltips.com/en/blog/how-to-create-use-qr-codes-effectively</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  
-  <!-- Blog Post 5 -->
   <url>
     <loc>https://smartdigitaltips.com/en/blog/freelancers-guide-to-invoicing</loc>
     <lastmod>2026-04-05</lastmod>
@@ -495,43 +418,33 @@
   <!-- ============================================ -->
   <!-- STATIC PAGES - Priority: 0.3-0.6            -->
   <!-- ============================================ -->
-  
-  <!-- About Page -->
   <url>
     <loc>https://smartdigitaltips.com/en/about</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  
-  <!-- Contact Page -->
   <url>
     <loc>https://smartdigitaltips.com/en/contact</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  
-  <!-- Privacy Policy -->
   <url>
     <loc>https://smartdigitaltips.com/en/privacy</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  
-  <!-- Terms of Service -->
   <url>
     <loc>https://smartdigitaltips.com/en/terms</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  
-  <!-- Disclaimer -->
   <url>
     <loc>https://smartdigitaltips.com/en/disclaimer</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
