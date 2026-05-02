@@ -1,6 +1,30 @@
+# SmartDigitalTips Robots.txt
+# Updated: 2025
+
+# Allow all crawlers
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
 
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
 Sitemap: https://smartdigitaltips.com/sitemap.xml
+
+# Host
+Host: https://smartdigitaltips.com
+
+# Crawl delay (optional - adjust if needed)
+# Crawl-delay: 1
