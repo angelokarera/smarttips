@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { generateSEOMetadata } from '@/lib/seo';
 import LanguageSwitcher from '@/components/layout/LanguageSwitcher';
 import SchemaMarkup from '@/components/seo/SchemaMarkup';

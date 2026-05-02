@@ -1,4 +1,4 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 import { tools } from '@/data/tools';
 
 const locales = ['en', 'fr', 'de', 'es', 'pt', 'it', 'nl', 'ar'];
