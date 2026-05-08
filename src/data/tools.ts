@@ -1157,7 +1157,50 @@ export const tools: Tool[] = [
     benefits: ['Multiple formats', 'Shade generation', 'Palette creation'],
     howToUse: ['Click color swatch to pick', 'Or enter HEX', 'Copy color values or variations'],
     faq: [],
-    relatedTools: [],
+    relatedTools: ['color-palette-generator'],
+  },
+  {
+    id: 'color-palette-generator',
+    name: 'Color Palette Generator',
+    description: 'Generate SEO-optimized, highly accessible, and visually stunning color palettes based on your preferences.',
+    category: 'developer',
+    categoryLabel: 'Developer Tools',
+    icon: 'Palette',
+    path: '/tools/color-palette-generator',
+    new: true,
+    trending: true,
+    popular: true,
+    seoTitle: 'Free AI Color Palette Generator | Modern UI & Branding Colors',
+    seoDescription: 'Generate visually balanced website color palettes based on user preferences. Highly optimized for SEO, performance, accessibility, and user engagement. Create dark mode, modern, minimal, corporate, and neon palettes instantly.',
+    benefits: [
+      'Generate Primary, Secondary, Accent, Background, and Text colors',
+      'Advanced accessibility and contrast checker included',
+      'Download palettes as PNG or JSON',
+      'Discover trending palettes and font pairing suggestions',
+      'Responsive, SEO-friendly, and perfect for modern UI design'
+    ],
+    howToUse: [
+      'Select your desired Theme Style (e.g., Dark, Modern, Neon, Corporate)',
+      'Enter a preferred base hue or choose one from the color picker',
+      'Click "Generate Palette" to instantly create a balanced combination',
+      'Preview the generated colors live on the mockup card',
+      'Click any color to copy its HEX code instantly'
+    ],
+    faq: [
+      {
+        question: 'Are the generated palettes accessible?',
+        answer: 'Yes! The tool includes an integrated contrast checker that calculates the contrast ratio between the text and background colors according to WCAG guidelines.'
+      },
+      {
+        question: 'Can I use these palettes for commercial projects?',
+        answer: 'Absolutely. All generated palettes are 100% free to use for personal, commercial, and client projects without attribution.'
+      },
+      {
+        question: 'How do I download a palette?',
+        answer: 'Click the "PNG" or "JSON" buttons in the top right to download your palette, or simply use the "Copy" feature to grab the exact HEX codes.'
+      }
+    ],
+    relatedTools: ['color-picker', 'css-minifier'],
   },
   // SEO Tools
   {

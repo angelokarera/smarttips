@@ -57,6 +57,7 @@ const Base64Encoder = lazy(() => import('@/tools/developer/Base64Encoder'))
 const CssMinifier = lazy(() => import('@/tools/developer/CssMinifier'))
 const HtmlBeautifier = lazy(() => import('@/tools/developer/HtmlBeautifier'))
 const ColorPicker = lazy(() => import('@/tools/developer/ColorPicker'))
+const ColorPaletteGenerator = lazy(() => import('@/tools/developer/ColorPaletteGenerator'))
 
 const toolComponents: Record<string, React.ComponentType> = {
   'word-counter': WordCounter,
@@ -103,6 +104,7 @@ const toolComponents: Record<string, React.ComponentType> = {
   'css-minifier': CssMinifier,
   'html-beautifier': HtmlBeautifier,
   'color-picker': ColorPicker,
+  'color-palette-generator': ColorPaletteGenerator,
 }
 
 export default function ToolPage() {
