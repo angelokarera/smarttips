@@ -91,15 +91,7 @@ export default function ColorPaletteGenerator() {
   
   const paletteRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const saved = localStorage.getItem('savedPalettes');
-    const recent = localStorage.getItem('recentPalettes');
-    if (saved) setSavedPalettes(JSON.parse(saved));
-    if (recent) setRecentPalettes(JSON.parse(recent));
-    generatePalette();
-  }, []);
-
-  const saveToLocalStorage = (key: string, data: any) => {
+  const saveToLocalStorage = (key: string, data: unknown) => {
     localStorage.setItem(key, JSON.stringify(data));
   };
 
@@ -181,6 +173,15 @@ export default function ColorPaletteGenerator() {
     setRecentPalettes(newRecent);
     saveToLocalStorage('recentPalettes', newRecent);
   };
+
+  useEffect(() => {
+    const saved = localStorage.getItem('savedPalettes');
+    const recent = localStorage.getItem('recentPalettes');
+    if (saved) setSavedPalettes(JSON.parse(saved));
+    if (recent) setRecentPalettes(JSON.parse(recent));
+    generatePalette();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);

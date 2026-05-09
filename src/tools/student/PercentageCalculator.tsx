@@ -14,10 +14,11 @@ export default function PercentageCalculator() {
         return values.a && values.b ? ((Number(values.a) / Number(values.b)) * 100).toFixed(2) + '%' : ''
       case 'percent-of':
         return values.c && values.d ? ((Number(values.c) / 100) * Number(values.d)).toFixed(2) : ''
-      case 'percent-change':
+      case 'percent-change': {
         if (!values.a || !values.b) return ''
         const change = Number(values.b) - Number(values.a)
         return ((change / Number(values.a)) * 100).toFixed(2) + '%'
+      }
       default:
         return ''
     }

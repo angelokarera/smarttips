@@ -1,13 +1,17 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router'
 
+type AdSenseWindow = Window & {
+  adsbygoogle?: unknown[]
+}
+
 export function AdBanner() {
   const location = useLocation()
 
   useEffect(() => {
     try {
-      // @ts-ignore - adsbygoogle is added by the global script in index.html
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+      const adWindow = window as AdSenseWindow
+      ;(adWindow.adsbygoogle = adWindow.adsbygoogle || []).push({})
     } catch (e) {
       console.error('AdSense error:', e)
     }

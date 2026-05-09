@@ -13,20 +13,6 @@ export default function ImageCompressor() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
-  const handleFileSelect = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    if (!file) return
-
-    setOriginalSize(file.size)
-    const reader = new FileReader()
-    reader.onload = (event) => {
-      const dataUrl = event.target?.result as string
-      setImage(dataUrl)
-      compressImage(dataUrl, quality[0])
-    }
-    reader.readAsDataURL(file)
-  }, [quality])
-
   const compressImage = useCallback((dataUrl: string, q: number) => {
     const img = new Image()
     img.onload = () => {
@@ -49,6 +35,20 @@ export default function ImageCompressor() {
     }
     img.src = dataUrl
   }, [])
+
+  const handleFileSelect = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    setOriginalSize(file.size)
+    const reader = new FileReader()
+    reader.onload = (event) => {
+      const dataUrl = event.target?.result as string
+      setImage(dataUrl)
+      compressImage(dataUrl, quality[0])
+    }
+    reader.readAsDataURL(file)
+  }, [compressImage, quality])
 
   const handleQualityChange = (val: number[]) => {
     setQuality(val)

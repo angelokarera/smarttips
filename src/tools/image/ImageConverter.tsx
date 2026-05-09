@@ -28,8 +28,8 @@ export default function ImageConverter() {
       const ctx = canvas.getContext('2d')!
       ctx.drawImage(img, 0, 0)
       
-      let mimeType = format
-      let extension = format.split('/')[1]
+      const mimeType = format
+      const extension = format.split('/')[1]
       
       const dataUrl = canvas.toDataURL(mimeType, quality / 100)
       const link = document.createElement('a')

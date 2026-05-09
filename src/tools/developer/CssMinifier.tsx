@@ -30,7 +30,7 @@ export default function CssMinifier() {
     css = css.replace(/\s*{\s*/g, ' {\n  ')
     css = css.replace(/\s*}\s*/g, '\n}\n\n')
     css = css.replace(/;\s*/g, ';\n  ')
-    css = css.replace(/\n  \n}/g, '\n}')
+    css = css.replace(/\n {2}\n}/g, '\n}')
     css = css.trim()
     setOutput(css)
   }

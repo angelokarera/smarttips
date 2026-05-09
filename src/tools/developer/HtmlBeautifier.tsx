@@ -8,7 +8,7 @@ export default function HtmlBeautifier() {
   const [output, setOutput] = useState('')
 
   const beautify = () => {
-    let html = input.trim()
+    const html = input.trim()
     // Simple HTML beautifier
     let formatted = ''
     let indent = 0

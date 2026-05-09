@@ -25,7 +25,7 @@ export default function ScientificCalculator() {
   const calculate = () => {
     try {
       // Replace math functions for eval
-      let expr = expression
+      const expr = expression
         .replace(/sin\(/g, 'Math.sin(')
         .replace(/cos\(/g, 'Math.cos(')
         .replace(/tan\(/g, 'Math.tan(')

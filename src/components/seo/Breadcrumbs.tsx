@@ -12,20 +12,17 @@ interface BreadcrumbsProps {
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
   const location = useLocation()
-  
-  if (!items) {
-    const pathSegments = location.pathname.split('/').filter(Boolean)
-    items = pathSegments.map((segment, index) => {
-      const path = '/' + pathSegments.slice(0, index + 1).join('/')
-      const name = segment
-        .split('-')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ')
-      return { name, path }
-    })
-  }
 
-  if (items.length === 0) return null
+  const breadcrumbItems = items ?? location.pathname.split('/').filter(Boolean).map((segment, index, pathSegments) => {
+    const path = '/' + pathSegments.slice(0, index + 1).join('/')
+    const name = segment
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ')
+    return { name, path }
+  })
+
+  if (breadcrumbItems.length === 0) return null
 
   return (
     <nav aria-label="Breadcrumb" className="py-4">
@@ -39,10 +36,10 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
             <span className="sr-only">Home</span>
           </Link>
         </li>
-        {items.map((item, index) => (
+        {breadcrumbItems.map((item, index) => (
           <li key={item.path} className="flex items-center gap-2">
             <ChevronRight className="h-4 w-4 text-muted-foreground/50" />
-            {index === items.length - 1 ? (
+            {index === breadcrumbItems.length - 1 ? (
               <span className="text-foreground font-medium" aria-current="page">
                 {item.name}
               </span>
