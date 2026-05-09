@@ -27,10 +27,10 @@ export function generateWebsiteSchema() {
   return {
     '@type': 'WebSite',
     name: 'SmartDigitalTips',
-    alternateName: ['Smart Digital Tips', 'Free Online AI Tools'],
+    alternateName: ['Smart Digital Tips', 'Free Online Tools'],
     url: 'https://smartdigitaltips.com',
     inLanguage: ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'],
-    description: 'Free online AI, SEO, developer, image, PDF, text, student, business, and conversion tools that run in your browser.',
+    description: 'Free online developer, image, PDF, text, student, business, and conversion tools that run in your browser.',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
@@ -48,11 +48,6 @@ export function generateOrganizationSchema() {
     name: 'SmartDigitalTips',
     url: 'https://smartdigitaltips.com',
     logo: 'https://smartdigitaltips.com/logo.png',
-    sameAs: [
-      'https://twitter.com/smartdigitaltips',
-      'https://facebook.com/smartdigitaltips',
-      'https://linkedin.com/company/smartdigitaltips',
-    ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
@@ -101,12 +96,14 @@ export function generateToolSchema(tool: {
     name: tool.name,
     headline: tool.seoTitle || tool.name,
     description: tool.description,
+    image: 'https://smartdigitaltips.com/logo.png',
     applicationCategory: 'UtilityApplication',
     softwareApplicationCategory: tool.category,
     operatingSystem: 'Any',
     browserRequirements: 'Requires JavaScript. Requires HTML5.',
     url: `https://smartdigitaltips.com${tool.path}`,
     isAccessibleForFree: true,
+    isFamilyFriendly: true,
     featureList: tool.benefits || [],
     creator: {
       '@type': 'Organization',

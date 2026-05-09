@@ -29,17 +29,17 @@ export default function Home() {
   const newTools = getNewTools().slice(0, 4)
 
   const meta = {
-    title: 'Free Online Tools — PDF Converter, Image Compressor & SEO Utility | SmartDigitalTips',
-    description: 'Access 50+ free online tools instantly. Compress images, convert PDF to Word, generate QR codes, and boost SEO. 100% free, fast, and secure. No signup required.',
-    keywords: uniqueKeywords(['free online tools', 'pdf converter', 'image compressor', 'reduce image size', 'convert files online', 'keyword checker', 'meta tag generator', 'password generator', 'qr code generator', 'calculator tools', 'productivity tools', ...platformKeywords]),
-    ogTitle: 'SmartDigitalTips - Free Online AI, SEO, Developer, PDF and Image Tools',
-    ogDescription: 'Use free browser-based tools for AI workflows, SEO, developers, PDFs, images, text, students, startups, and business productivity.',
+    title: 'Free Online Tools — PDF Converter, Image Compressor & Browser Utilities | SmartDigitalTips',
+    description: 'Access free online tools instantly. Compress images, convert PDF to Word, generate QR codes, and finish everyday tasks. 100% free, fast, and secure. No signup required.',
+    keywords: uniqueKeywords(['free online tools', 'pdf converter', 'image compressor', 'reduce image size', 'convert files online', 'password generator', 'qr code generator', 'calculator tools', 'productivity tools', ...platformKeywords]),
+    ogTitle: 'SmartDigitalTips - Free Online Developer, PDF, Image and Text Tools',
+    ogDescription: 'Use free browser-based tools for developers, PDFs, images, text, students, startups, and business productivity.',
     schema: [
       generateWebsiteSchema(),
       generateOrganizationSchema(),
       generateCollectionSchema(
         'SmartDigitalTips Free Online Tools',
-        'A searchable collection of free browser-based AI, SEO, developer, image, PDF, text, student, and startup tools.',
+        'A searchable collection of free browser-based developer, image, PDF, text, student, and startup tools.',
         'https://smartdigitaltips.com',
         popularTools.map((tool) => ({
           name: tool.name,
@@ -80,7 +80,7 @@ export default function Home() {
               </h1>
               
               <p className="text-lg text-muted-foreground leading-relaxed max-w-lg mb-10">
-                50+ tools for images, PDFs, text, and more. Everything runs locally 
+                Free tools for images, PDFs, text, and more. Everything runs locally 
                 in your browser. No accounts. No watermarks. No data collection.
               </p>
               
@@ -201,7 +201,7 @@ export default function Home() {
               Pick a category. Get to work.
             </h2>
             <p className="text-muted-foreground text-sm">
-              Six categories. 50+ tools. Zero friction between you and done.
+              Seven categories. Zero friction between you and done.
             </p>
           </div>
           

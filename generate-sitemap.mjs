@@ -34,6 +34,7 @@ const urls = [
   { path: '/about', changefreq: 'monthly', priority: '0.6', lastmod: today },
   { path: '/contact', changefreq: 'monthly', priority: '0.5', lastmod: today },
   { path: '/privacy', changefreq: 'yearly', priority: '0.3', lastmod: today },
+  { path: '/cookies', changefreq: 'yearly', priority: '0.3', lastmod: today },
   { path: '/terms', changefreq: 'yearly', priority: '0.3', lastmod: today },
   { path: '/disclaimer', changefreq: 'yearly', priority: '0.3', lastmod: today },
   { path: '/blog', changefreq: 'weekly', priority: '0.7', lastmod: today },

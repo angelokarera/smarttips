@@ -70,6 +70,9 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
       <meta property="og:title" content={ogTitle || fullTitle} />
       <meta property="og:description" content={ogDescription || description} />
       <meta property="og:image" content={fullOgImage} />
+      <meta property="og:image:alt" content={ogTitle || fullTitle} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullCanonical || SITE_URL} />
       <meta property="og:site_name" content="SmartDigitalTips" />
@@ -85,6 +88,7 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
       <meta name="twitter:title" content={ogTitle || fullTitle} />
       <meta name="twitter:description" content={ogDescription || description} />
       <meta name="twitter:image" content={fullOgImage} />
+      <meta name="twitter:image:alt" content={ogTitle || fullTitle} />
     </Helmet>
   )
 }

@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { tools, categories } from '@/data/tools';
 import { blogPosts } from '@/data/blog';
 
-const locales = ['en', 'fr', 'de', 'es', 'pt', 'it', 'nl', 'ar'];
+const locales = ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'];
 const baseUrl = 'https://smartdigitaltips.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/about', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/contact', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/privacy', priority: 0.3, changeFrequency: 'yearly' as const },
+    { path: '/cookies', priority: 0.3, changeFrequency: 'yearly' as const },
     { path: '/terms', priority: 0.3, changeFrequency: 'yearly' as const },
     { path: '/disclaimer', priority: 0.3, changeFrequency: 'yearly' as const },
   ];

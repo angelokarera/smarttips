@@ -39,7 +39,7 @@ export function generateSEOMetadata({
       title,
       description,
       url: `${siteUrl}${path}`,
-      siteName: 'Smart Digital Tips',
+      siteName: 'SmartDigitalTips',
       images: [
         {
           url: image,

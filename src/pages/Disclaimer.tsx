@@ -20,7 +20,7 @@ export default function Disclaimer() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold tracking-tight mb-4">Disclaimer</h1>
           <p className="text-muted-foreground">
-            Last updated: April 25, 2026
+            Last updated: May 9, 2026
           </p>
         </div>
 
@@ -28,10 +28,8 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-xl font-bold mb-3">1. General Disclaimer</h2>
             <p className="text-muted-foreground leading-relaxed">
-              The information and tools provided on SmartDigitalTips are for general informational and 
-              educational purposes only. While we strive to ensure accuracy and reliability, we make 
-              no representations or warranties of any kind about the completeness, accuracy, reliability, 
-              or suitability of the information and tools provided.
+              The information and tools provided on SmartDigitalTips are for general informational and
+              educational purposes only. While we aim to provide helpful tools, we do not guarantee that every result will be complete, accurate, reliable, or suitable for every use case.
             </p>
           </section>
 
@@ -89,27 +87,21 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-xl font-bold mb-3">6. Affiliate Disclosure</h2>
             <p className="text-muted-foreground leading-relaxed">
-              SmartDigitalTips is supported by advertising revenue. We may display ads through Google 
-              AdSense and other advertising networks. Some links may be affiliate links, meaning 
-              we may earn a commission if you click through and make a purchase, at no additional 
-              cost to you.
+              SmartDigitalTips may be supported by advertising revenue, including ads served through Google AdSense or other advertising partners. If we use affiliate links in the future, we may earn a commission when users click those links and make a purchase, at no additional cost to them.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold mb-3">7. Limitation of Liability</h2>
             <p className="text-muted-foreground leading-relaxed">
-              By using SmartDigitalTips, you agree that we shall not be held liable for any direct, 
-              indirect, incidental, consequential, or punitive damages arising from your use of 
-              our tools or reliance on any information provided on the Website.
+              To the maximum extent permitted by law, SmartDigitalTips will not be liable for indirect, incidental, consequential, or punitive damages arising from your use of our tools or reliance on information provided on the website.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold mb-3">8. Changes to This Disclaimer</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We may update this Disclaimer at any time without prior notice. Your continued use 
-              of the Website after changes constitutes acceptance of the updated disclaimer.
+              We may update this Disclaimer from time to time. Updated versions will be posted on this page.
             </p>
           </section>
 

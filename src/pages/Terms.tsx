@@ -20,7 +20,7 @@ export default function Terms() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold tracking-tight mb-4">Terms & Conditions</h1>
           <p className="text-muted-foreground">
-            Last updated: April 25, 2026
+            Last updated: May 9, 2026
           </p>
         </div>
 
@@ -28,17 +28,16 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-bold mb-3">1. Acceptance of Terms</h2>
             <p className="text-muted-foreground leading-relaxed">
-              By accessing and using SmartDigitalTips ("the Website"), you accept and agree to be bound by these 
-              Terms and Conditions. If you do not agree with any part of these terms, you must not use 
-              the Website.
+              By accessing and using SmartDigitalTips, you agree to these Terms and Conditions.
+              If you do not agree with any part of these terms, you should stop using the website.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold mb-3">2. Description of Service</h2>
             <p className="text-muted-foreground leading-relaxed">
-              SmartDigitalTips provides free online tools for image processing, PDF manipulation, text analysis, 
-              calculations, and conversions. All tools are provided "as is" without any warranties.
+              SmartDigitalTips provides free online tools for image processing, PDF manipulation, text analysis,
+              calculations, and conversions. The tools are provided for general use and may change over time.
             </p>
           </section>
 
@@ -59,9 +58,8 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-bold mb-3">4. Intellectual Property</h2>
             <p className="text-muted-foreground leading-relaxed">
-              All content on SmartDigitalTips, including but not limited to text, graphics, logos, and software, 
-              is the property of SmartDigitalTips and protected by copyright laws. You may not reproduce, 
-              distribute, or create derivative works without our permission.
+              The SmartDigitalTips brand, website content, graphics, logos, and software are owned by SmartDigitalTips or its licensors and may be protected by copyright, trademark, and other laws.
+              You may not reproduce, redistribute, or resell our website or tools without permission.
             </p>
             <p className="text-muted-foreground leading-relaxed mt-2">
               Your content remains yours. We do not claim ownership of any files or data you process 
@@ -86,26 +84,22 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-bold mb-3">6. Limitation of Liability</h2>
             <p className="text-muted-foreground leading-relaxed">
-              In no event shall SmartDigitalTips, its owners, or affiliates be liable for any direct, indirect, 
-              incidental, special, or consequential damages arising out of or in connection with your use 
-              of the Website or tools.
+              To the maximum extent permitted by law, SmartDigitalTips, its owners, and affiliates will not be liable for indirect, incidental, special, consequential, or punitive damages arising from your use of the website or tools.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold mb-3">7. Changes to Terms</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We reserve the right to modify these Terms and Conditions at any time. Changes will be 
-              effective immediately upon posting to the Website. Your continued use of the Website 
-              after changes constitutes acceptance of the new terms.
+              We may update these Terms and Conditions from time to time. Updated versions will be posted on this page.
+              Your continued use of the website after changes are posted means you accept the updated terms.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold mb-3">8. Governing Law</h2>
             <p className="text-muted-foreground leading-relaxed">
-              These Terms and Conditions shall be governed by and construed in accordance with the laws 
-              of the State of California, United States, without regard to its conflict of law provisions.
+              These Terms are intended to be interpreted under applicable laws. If a dispute arises, the applicable venue and governing law will depend on the location and legal requirements of the parties involved.
             </p>
           </section>
 

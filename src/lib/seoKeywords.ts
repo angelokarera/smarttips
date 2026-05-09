@@ -2,11 +2,9 @@ import type { BlogPost } from '@/data/blog'
 import type { Tool, ToolCategory } from '@/data/tools'
 
 export const platformKeywords = [
-  'AI tools',
   'free online tools',
   'frontend tools',
   'web development tools',
-  'SEO tools',
   'color palette generator',
   'CSS generators',
   'startup tools',
