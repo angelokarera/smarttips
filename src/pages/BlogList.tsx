@@ -2,12 +2,28 @@ import { Link } from 'react-router'
 import { Layout } from '@/components/layout/Layout'
 import { blogPosts } from '@/data/blog'
 import { Calendar, ArrowRight } from 'lucide-react'
+import { generateCollectionSchema } from '@/components/seo/StructuredData'
+import { platformKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 
 export default function BlogList() {
   const meta = {
     title: 'Digital Tips & Guides | SmartDigitalTips Blog',
     description: 'Read comprehensive guides, tutorials, and tips on image optimization, PDF management, SEO, and business productivity.',
     canonical: '/blog',
+    keywords: uniqueKeywords(['digital tips', 'SEO guides', 'online tools blog', 'productivity guides', ...platformKeywords]),
+    ogTitle: 'Digital Tips & Online Tools Guides',
+    ogDescription: 'Actionable tutorials for image optimization, PDF workflows, SEO, business productivity, and free browser-based tools.',
+    schema: [
+      generateCollectionSchema(
+        'Digital Tips & Guides',
+        'Guides and tutorials for using free online tools more effectively.',
+        'https://smartdigitaltips.com/blog',
+        blogPosts.map((post) => ({
+          name: post.title,
+          url: `https://smartdigitaltips.com/blog/${post.slug}`,
+        }))
+      ),
+    ],
   }
 
   return (

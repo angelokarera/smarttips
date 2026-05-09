@@ -2,7 +2,8 @@ import { useParams, Link, Navigate } from 'react-router'
 import { Layout } from '@/components/layout/Layout'
 import { blogPosts } from '@/data/blog'
 import { Calendar, User, ArrowLeft } from 'lucide-react'
-import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { generateArticleSchema, generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { getBlogKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>()
@@ -16,12 +17,17 @@ export default function BlogPost() {
     title: post.seoTitle,
     description: post.seoDescription,
     canonical: `/blog/${post.slug}`,
+    keywords: uniqueKeywords(getBlogKeywords(post)),
+    ogTitle: post.seoTitle,
+    ogDescription: post.seoDescription,
+    ogType: 'article',
     schema: [
       generateBreadcrumbSchema([
         { name: 'Home', url: 'https://smartdigitaltips.com/' },
         { name: 'Blog', url: 'https://smartdigitaltips.com/blog' },
         { name: post.title, url: `https://smartdigitaltips.com/blog/${post.slug}` },
-      ])
+      ]),
+      generateArticleSchema(post),
     ],
   }
 

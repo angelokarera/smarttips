@@ -4,6 +4,7 @@ import { CheckCircle2 } from 'lucide-react'
 import { getToolById, getRelatedTools } from '@/data/tools'
 import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema, generateFAQSchema, generateToolSchema } from '@/components/seo/StructuredData'
+import { getToolKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 import {
   Accordion,
   AccordionContent,
@@ -132,6 +133,9 @@ export default function ToolPage() {
     title: tool.seoTitle,
     description: tool.seoDescription,
     canonical: tool.path,
+    keywords: uniqueKeywords(getToolKeywords(tool)),
+    ogTitle: tool.seoTitle,
+    ogDescription: tool.seoDescription,
     schema: [
       generateBreadcrumbSchema([
         { name: 'Home', url: 'https://smartdigitaltips.com/' },

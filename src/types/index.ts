@@ -9,6 +9,7 @@ export interface SEOMeta {
   ogType?: string
   twitterCard?: string
   robots?: string
+  locale?: string
   schema?: Record<string, unknown>[]
 }
 

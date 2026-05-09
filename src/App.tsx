@@ -23,6 +23,16 @@ export default function App() {
       <Route path="/disclaimer" element={<Disclaimer />} />
       <Route path="/blog" element={<BlogList />} />
       <Route path="/blog/:slug" element={<BlogPost />} />
+      <Route path="/:locale" element={<Home />} />
+      <Route path="/:locale/category/:categoryId" element={<CategoryPage />} />
+      <Route path="/:locale/tools/:toolId" element={<ToolPage />} />
+      <Route path="/:locale/about" element={<About />} />
+      <Route path="/:locale/contact" element={<Contact />} />
+      <Route path="/:locale/privacy" element={<Privacy />} />
+      <Route path="/:locale/terms" element={<Terms />} />
+      <Route path="/:locale/disclaimer" element={<Disclaimer />} />
+      <Route path="/:locale/blog" element={<BlogList />} />
+      <Route path="/:locale/blog/:slug" element={<BlogPost />} />
     </Routes>
   )
 }

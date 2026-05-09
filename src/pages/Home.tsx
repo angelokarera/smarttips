@@ -20,7 +20,8 @@ import {
 import { Button } from '@/components/ui/button'
 import { categories, getPopularTools, getTrendingTools, getNewTools } from '@/data/tools'
 import { Layout } from '@/components/layout/Layout'
-import { generateWebsiteSchema, generateOrganizationSchema } from '@/components/seo/StructuredData'
+import { generateWebsiteSchema, generateOrganizationSchema, generateCollectionSchema } from '@/components/seo/StructuredData'
+import { platformKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 
 export default function Home() {
   const popularTools = getPopularTools().slice(0, 8)
@@ -30,8 +31,22 @@ export default function Home() {
   const meta = {
     title: 'Free Online Tools — PDF Converter, Image Compressor & SEO Utility | SmartDigitalTips',
     description: 'Access 50+ free online tools instantly. Compress images, convert PDF to Word, generate QR codes, and boost SEO. 100% free, fast, and secure. No signup required.',
-    keywords: ['free online tools', 'pdf converter', 'image compressor', 'reduce image size', 'convert files online', 'seo tools', 'keyword checker', 'meta tag generator', 'password generator', 'qr code generator', 'calculator tools', 'productivity tools'],
-    schema: [generateWebsiteSchema(), generateOrganizationSchema()],
+    keywords: uniqueKeywords(['free online tools', 'pdf converter', 'image compressor', 'reduce image size', 'convert files online', 'keyword checker', 'meta tag generator', 'password generator', 'qr code generator', 'calculator tools', 'productivity tools', ...platformKeywords]),
+    ogTitle: 'SmartDigitalTips - Free Online AI, SEO, Developer, PDF and Image Tools',
+    ogDescription: 'Use free browser-based tools for AI workflows, SEO, developers, PDFs, images, text, students, startups, and business productivity.',
+    schema: [
+      generateWebsiteSchema(),
+      generateOrganizationSchema(),
+      generateCollectionSchema(
+        'SmartDigitalTips Free Online Tools',
+        'A searchable collection of free browser-based AI, SEO, developer, image, PDF, text, student, and startup tools.',
+        'https://smartdigitaltips.com',
+        popularTools.map((tool) => ({
+          name: tool.name,
+          url: `https://smartdigitaltips.com${tool.path}`,
+        }))
+      ),
+    ],
   }
 
   const iconMap: Record<string, React.ReactNode> = {

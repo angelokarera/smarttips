@@ -11,15 +11,20 @@ const sitemapPath = path.join(rootDir, 'public', 'sitemap.xml')
 
 const toolsContent = fs.readFileSync(toolsPath, 'utf8')
 const toolMatches = toolsContent.matchAll(/path:\s*['"](\/tools\/[^'"]+)['"]/g)
+const categoryMatches = toolsContent.matchAll(/id:\s*['"]([^'"]+)['"],\s*\n\s*label:/g)
 
 const blogContent = fs.readFileSync(blogPath, 'utf8')
 const blogMatches = blogContent.matchAll(/slug:\s*['"]([^'"]+)['"]/g)
 
-const locales = ['en', 'fr', 'de', 'es', 'pt', 'it', 'nl', 'ar'];
+const locales = ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'];
 
-const urls = ['/', '/categories', '/tools', '/about', '/contact', '/blog']
+const urls = ['/', '/about', '/contact', '/privacy', '/terms', '/disclaimer', '/blog']
 // Collect unique URLs in case of duplicates
 const uniqueUrls = new Set(urls)
+
+for (const match of categoryMatches) {
+  uniqueUrls.add(`/category/${match[1]}`)
+}
 
 for (const match of toolMatches) {
   uniqueUrls.add(match[1])

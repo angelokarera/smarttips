@@ -2,8 +2,9 @@ import { Link, useParams } from 'react-router'
 import { ArrowRight } from 'lucide-react'
 import { categories, getToolsByCategory } from '@/data/tools'
 import { Layout } from '@/components/layout/Layout'
-import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { generateBreadcrumbSchema, generateCollectionSchema } from '@/components/seo/StructuredData'
 import { Button } from '@/components/ui/button'
+import { getCategoryKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 
 export default function CategoryPage() {
   const { categoryId } = useParams<{ categoryId: string }>()
@@ -33,11 +34,23 @@ export default function CategoryPage() {
     title: `${category.label} — Free Online Tools | SmartDigitalTips`,
     description: category.description,
     canonical: `/category/${category.id}`,
+    keywords: uniqueKeywords(getCategoryKeywords(category)),
+    ogTitle: `${category.label} - Free Browser-Based Tools`,
+    ogDescription: category.description,
     schema: [
       generateBreadcrumbSchema([
         { name: 'Home', url: 'https://smartdigitaltips.com/' },
         { name: category.label, url: `https://smartdigitaltips.com/category/${category.id}` },
       ]),
+      generateCollectionSchema(
+        `${category.label} - Free Online Tools`,
+        category.description,
+        `https://smartdigitaltips.com/category/${category.id}`,
+        tools.map((tool) => ({
+          name: tool.name,
+          url: `https://smartdigitaltips.com${tool.path}`,
+        }))
+      ),
     ],
   }
 
