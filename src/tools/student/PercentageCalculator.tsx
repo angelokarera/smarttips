@@ -29,7 +29,7 @@ export default function PercentageCalculator() {
   return (
     <div className="space-y-6">
       <Tabs value={mode} onValueChange={setMode}>
-        <TabsList className="grid grid-cols-3">
+        <TabsList className="grid h-auto w-full grid-cols-1 sm:grid-cols-3">
           <TabsTrigger value="what-percent">What %</TabsTrigger>
           <TabsTrigger value="percent-of">% Of</TabsTrigger>
           <TabsTrigger value="percent-change">% Change</TabsTrigger>
@@ -37,12 +37,12 @@ export default function PercentageCalculator() {
 
         <TabsContent value="what-percent" className="space-y-4">
           <p className="text-sm text-muted-foreground">What percentage is one number of another?</p>
-          <div className="grid grid-cols-3 gap-4 items-center">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-[1fr_auto_1fr] sm:items-center sm:gap-4">
             <div>
               <Label className="mb-2 block">Value</Label>
               <Input type="number" value={values.a} onChange={(e) => setValues({ ...values, a: e.target.value })} />
             </div>
-            <div className="text-center pt-6">
+            <div className="flex justify-center sm:pt-6">
               <ArrowRightLeft className="h-4 w-4 mx-auto text-muted-foreground" />
             </div>
             <div>
@@ -54,12 +54,12 @@ export default function PercentageCalculator() {
 
         <TabsContent value="percent-of" className="space-y-4">
           <p className="text-sm text-muted-foreground">What is a percentage of a number?</p>
-          <div className="grid grid-cols-3 gap-4 items-center">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-[1fr_auto_1fr] sm:items-center sm:gap-4">
             <div>
               <Label className="mb-2 block">Percentage</Label>
               <Input type="number" value={values.c} onChange={(e) => setValues({ ...values, c: e.target.value })} />
             </div>
-            <div className="text-center pt-6">
+            <div className="flex justify-center sm:pt-6">
               <Percent className="h-4 w-4 mx-auto text-muted-foreground" />
             </div>
             <div>
@@ -71,12 +71,12 @@ export default function PercentageCalculator() {
 
         <TabsContent value="percent-change" className="space-y-4">
           <p className="text-sm text-muted-foreground">Calculate percentage increase or decrease.</p>
-          <div className="grid grid-cols-3 gap-4 items-center">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-[1fr_auto_1fr] sm:items-center sm:gap-4">
             <div>
               <Label className="mb-2 block">Original</Label>
               <Input type="number" value={values.a} onChange={(e) => setValues({ ...values, a: e.target.value })} />
             </div>
-            <div className="text-center pt-6">
+            <div className="flex justify-center sm:pt-6">
               <ArrowRightLeft className="h-4 w-4 mx-auto text-muted-foreground" />
             </div>
             <div>
@@ -90,7 +90,7 @@ export default function PercentageCalculator() {
       {result && (
         <div className="p-6 rounded-xl border border-border bg-muted/30 text-center">
           <p className="text-sm text-muted-foreground mb-1">Result</p>
-          <p className="text-4xl font-bold">{result}</p>
+          <p className="text-3xl font-bold sm:text-4xl">{result}</p>
         </div>
       )}
     </div>

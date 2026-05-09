@@ -158,7 +158,7 @@ export default function ToolPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         {/* Tool Header */}
         <div className="mb-8 max-w-2xl">
-          <div className="flex items-center gap-2 mb-3">
+          <div className="mb-3 flex flex-wrap items-center gap-2">
             <Link 
               to={`/category/${tool.category}`}
               className="px-2 py-0.5 rounded bg-primary/10 text-primary text-[11px] font-bold uppercase tracking-wider hover:bg-primary/20 transition-colors"
@@ -184,14 +184,14 @@ export default function ToolPage() {
         <div className="mb-20">
           {ToolComponent ? (
             <Suspense fallback={
-              <div className="h-[300px] flex items-center justify-center rounded-2xl border border-dashed border-border text-muted-foreground animate-pulse">
+              <div className="flex h-[300px] items-center justify-center rounded-2xl border border-dashed border-border px-4 text-center text-muted-foreground animate-pulse">
                 Loading interface...
               </div>
             }>
               <ToolComponent />
             </Suspense>
           ) : (
-            <div className="p-12 rounded-2xl border border-dashed border-border text-center">
+            <div className="rounded-2xl border border-dashed border-border p-6 text-center sm:p-12">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary mx-auto mb-4">
                 <span className="text-xl font-bold">?</span>
               </div>
@@ -212,7 +212,7 @@ export default function ToolPage() {
               <h2 className="text-xl font-bold tracking-tight mb-6">How it works</h2>
               <div className="space-y-4">
                 {tool.howToUse.map((step, index) => (
-                  <div key={index} className="flex items-start gap-4">
+                  <div key={index} className="flex min-w-0 items-start gap-3 sm:gap-4">
                     <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground text-xs font-bold font-mono">
                       {String(index + 1).padStart(2, '0')}
                     </div>
@@ -265,7 +265,7 @@ export default function ToolPage() {
                 <Link
                   key={relatedTool.id}
                   to={relatedTool.path}
-                  className="group flex items-center gap-4 p-4 rounded-xl border border-border hover:border-primary/30 hover:shadow-warm transition-all"
+                  className="group flex min-w-0 items-center gap-3 rounded-xl border border-border p-4 transition-all hover:border-primary/30 hover:shadow-warm sm:gap-4"
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300 shrink-0">
                     <span className="text-xs font-bold font-mono">→</span>

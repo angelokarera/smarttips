@@ -58,23 +58,23 @@ export default function GradeCalculator() {
     <div className="space-y-6">
       <div className="space-y-3">
         {assignments.map((assignment, index) => (
-          <div key={index} className="grid grid-cols-12 gap-2 items-center">
-            <div className="col-span-3">
+          <div key={index} className="grid grid-cols-2 gap-2 rounded-xl border border-border p-3 sm:grid-cols-12 sm:items-center sm:border-0 sm:p-0">
+            <div className="col-span-2 sm:col-span-3">
               <Input placeholder="Name" value={assignment.name} onChange={(e) => updateAssignment(index, 'name', e.target.value)} />
             </div>
-            <div className="col-span-2">
+            <div className="col-span-1 sm:col-span-2">
               <Input type="number" placeholder="Score" value={assignment.score} onChange={(e) => updateAssignment(index, 'score', Number(e.target.value))} />
             </div>
-            <div className="col-span-2">
+            <div className="col-span-1 sm:col-span-2">
               <Input type="number" placeholder="Max" value={assignment.maxScore} onChange={(e) => updateAssignment(index, 'maxScore', Number(e.target.value))} />
             </div>
-            <div className="col-span-2">
+            <div className="col-span-1 sm:col-span-2">
               <Input type="number" placeholder="Weight %" value={assignment.weight} onChange={(e) => updateAssignment(index, 'weight', Number(e.target.value))} />
             </div>
-            <div className="col-span-2 text-right text-sm">
+            <div className="col-span-1 self-center text-right text-sm sm:col-span-2">
               {assignment.maxScore > 0 ? ((assignment.score / assignment.maxScore) * 100).toFixed(1) : 0}%
             </div>
-            <div className="col-span-1 flex justify-end">
+            <div className="col-span-2 flex justify-end sm:col-span-1">
               <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => removeAssignment(index)}>
                 <Trash2 className="h-4 w-4" />
               </Button>
@@ -92,7 +92,7 @@ export default function GradeCalculator() {
         <div className="p-5 rounded-xl border border-border bg-muted/30 text-center">
           <Target className="h-6 w-6 mx-auto mb-2 text-muted-foreground" />
           <p className="text-sm text-muted-foreground mb-1">Current Grade</p>
-          <p className="text-4xl font-bold">{currentGrade}%</p>
+          <p className="text-3xl font-bold sm:text-4xl">{currentGrade}%</p>
         </div>
 
         <div className="p-5 rounded-xl border border-border bg-muted/30 space-y-3">

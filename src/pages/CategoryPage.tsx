@@ -64,7 +64,7 @@ export default function CategoryPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         {/* Category Header — left-aligned, no centered fluff */}
         <div className="mb-10 max-w-2xl">
-          <div className="flex items-center gap-2 mb-4">
+          <div className="mb-4 flex flex-wrap items-center gap-2">
             <span className="px-2 py-0.5 rounded bg-primary/10 text-primary text-[11px] font-bold uppercase tracking-wider">
               {tools.length} tools
             </span>
@@ -82,7 +82,7 @@ export default function CategoryPage() {
               <Link
                 key={tool.id}
                 to={tool.path}
-                className="group flex items-start gap-4 p-5 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-warm transition-all duration-300"
+                className="group flex min-w-0 items-start gap-3 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-primary/30 hover:shadow-warm sm:gap-4 sm:p-5"
                 style={{ animationDelay: `${index * 40}ms` }}
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
@@ -91,7 +91,7 @@ export default function CategoryPage() {
                   </span>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1">
+                  <div className="mb-1 flex flex-wrap items-center gap-2">
                     <h3 className="font-semibold text-sm group-hover:text-primary transition-colors">
                       {tool.name}
                     </h3>

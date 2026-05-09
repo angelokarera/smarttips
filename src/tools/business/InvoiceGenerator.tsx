@@ -69,24 +69,24 @@ export default function InvoiceGenerator() {
       </div>
 
       <div className="space-y-3">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-3 min-[420px]:flex-row min-[420px]:items-center min-[420px]:justify-between">
           <h3 className="font-semibold">Line Items</h3>
-          <Button variant="outline" size="sm" onClick={addItem}>
+          <Button variant="outline" size="sm" onClick={addItem} className="w-full min-[420px]:w-auto">
             <Plus className="h-4 w-4 mr-1" /> Add Item
           </Button>
         </div>
         {items.map((item, index) => (
-          <div key={index} className="grid grid-cols-12 gap-2 items-center">
-            <div className="col-span-5">
+          <div key={index} className="grid grid-cols-2 gap-2 rounded-xl border border-border p-3 sm:grid-cols-12 sm:items-center sm:border-0 sm:p-0">
+            <div className="col-span-2 sm:col-span-5">
               <Input placeholder="Description" value={item.description} onChange={(e) => updateItem(index, 'description', e.target.value)} />
             </div>
-            <div className="col-span-2">
+            <div className="col-span-1 sm:col-span-2">
               <Input type="number" placeholder="Qty" value={item.quantity} onChange={(e) => updateItem(index, 'quantity', Number(e.target.value))} />
             </div>
-            <div className="col-span-3">
+            <div className="col-span-1 sm:col-span-3">
               <Input type="number" placeholder="Price" value={item.price} onChange={(e) => updateItem(index, 'price', Number(e.target.value))} />
             </div>
-            <div className="col-span-2 text-right">
+            <div className="col-span-2 flex items-center justify-between text-right sm:col-span-2 sm:justify-end">
               <span className="text-sm font-medium">${(item.quantity * item.price).toFixed(2)}</span>
               {items.length > 1 && (
                 <Button variant="ghost" size="icon" className="h-6 w-6 ml-2" onClick={() => removeItem(index)}>
@@ -114,7 +114,7 @@ export default function InvoiceGenerator() {
       </div>
 
       <div className="flex gap-3">
-        <Button onClick={handlePrint}>
+        <Button onClick={handlePrint} className="w-full min-[420px]:w-auto">
           <Download className="h-4 w-4 mr-2" />
           Print / Save PDF
         </Button>

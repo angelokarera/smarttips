@@ -79,11 +79,11 @@ export function Header() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-16 min-w-0 items-center justify-between gap-2">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <img src="/logo.png" alt="SmartDigitalTips Logo" width="120" height="32" loading="eager" className="h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-105" />
-            <span className="text-lg font-bold tracking-tight">
+          <Link to="/" className="group flex min-w-0 items-center gap-2 sm:gap-2.5">
+            <img src="/logo.png" alt="SmartDigitalTips Logo" width="120" height="32" loading="eager" className="h-7 w-auto shrink-0 object-contain transition-transform duration-200 group-hover:scale-105 sm:h-8" />
+            <span className="truncate text-base font-bold tracking-tight sm:text-lg">
               SmartDigital<span className="text-primary">Tips</span>
             </span>
           </Link>
@@ -145,7 +145,7 @@ export function Header() {
           </nav>
 
           {/* Right side */}
-          <div className="flex items-center gap-1.5">
+          <div className="flex shrink-0 items-center gap-1 sm:gap-1.5">
             {/* Search */}
             <div className="relative" ref={searchRef}>
               <button
@@ -170,7 +170,7 @@ export function Header() {
 
               {/* Search Dropdown */}
               {searchOpen && (
-                <div className="absolute right-0 top-full mt-2 w-80 sm:w-[400px] rounded-xl border border-border bg-popover p-3 shadow-lg animate-slide-up">
+                <div className="absolute right-0 top-full mt-2 w-[min(calc(100vw-2rem),400px)] rounded-xl border border-border bg-popover p-3 shadow-lg animate-slide-up">
                   <div className="relative">
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
@@ -248,7 +248,7 @@ export function Header() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-border bg-background animate-slide-up">
-          <div className="px-4 py-4 space-y-1">
+          <div className="max-h-[calc(100dvh-4rem)] space-y-1 overflow-y-auto px-4 py-4">
             <Link 
               to="/" 
               onClick={() => setMobileMenuOpen(false)}

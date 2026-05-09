@@ -63,14 +63,14 @@ export default function Home() {
     <Layout meta={meta} showBreadcrumbs={false}>
 
       {/* ─── HERO ─── */}
-      <section className="relative pt-20 pb-24 lg:pt-28 lg:pb-36 overflow-hidden">
+      <section className="relative overflow-hidden pt-14 pb-20 sm:pt-20 sm:pb-24 lg:pt-28 lg:pb-36">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-start">
             {/* Left — copy */}
             <div className="lg:col-span-7 fade-in-up">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold tracking-wide mb-8">
+              <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-semibold tracking-wide text-primary mb-8">
                 <Cpu className="h-3.5 w-3.5" />
-                100% browser-based — your files never leave your device
+                <span className="min-w-0">100% browser-based — your files never leave your device</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight leading-[1.08] mb-6">
@@ -84,15 +84,15 @@ export default function Home() {
                 in your browser. No accounts. No watermarks. No data collection.
               </p>
               
-              <div className="flex flex-wrap items-center gap-3">
-                <Link to="/category/image">
-                  <Button size="lg" className="h-12 px-7 text-sm font-semibold rounded-xl shadow-warm hover:shadow-warm-lg transition-shadow">
+              <div className="flex flex-col items-stretch gap-3 min-[420px]:flex-row min-[420px]:flex-wrap min-[420px]:items-center">
+                <Link to="/category/image" className="w-full min-[420px]:w-auto">
+                  <Button size="lg" className="h-12 w-full rounded-xl px-6 text-sm font-semibold shadow-warm transition-shadow hover:shadow-warm-lg min-[420px]:w-auto sm:px-7">
                     Browse all tools
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-                <Link to="/tools/word-counter">
-                  <Button variant="outline" size="lg" className="h-12 px-7 text-sm font-semibold rounded-xl">
+                <Link to="/tools/word-counter" className="w-full min-[420px]:w-auto">
+                  <Button variant="outline" size="lg" className="h-12 w-full rounded-xl px-6 text-sm font-semibold min-[420px]:w-auto sm:px-7">
                     Try Word Counter
                   </Button>
                 </Link>
@@ -148,8 +148,8 @@ export default function Home() {
       {/* ─── POPULAR TOOLS — horizontal scroll, not grid ─── */}
       <section className="py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between mb-8">
-            <div>
+          <div className="mb-8 flex items-end justify-between gap-4">
+            <div className="min-w-0">
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
                 Most-used tools
               </h2>
@@ -181,7 +181,7 @@ export default function Home() {
                   {tool.description}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-medium text-muted-foreground/60 uppercase tracking-wider">
+                  <span className="text-[11px] font-medium text-muted-foreground/60 uppercase tracking-wider break-words">
                     {tool.categoryLabel}
                   </span>
                   <ArrowRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
@@ -215,11 +215,11 @@ export default function Home() {
                   index === 0 ? 'sm:col-span-2 lg:col-span-1' : ''
                 }`}
               >
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex min-w-0 items-center gap-3 mb-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                     {iconMap[cat.icon]}
                   </div>
-                  <h3 className="font-bold text-base">
+                  <h3 className="min-w-0 font-bold text-base">
                     {cat.label}
                   </h3>
                 </div>
@@ -252,9 +252,9 @@ export default function Home() {
                   <Link
                     key={tool.id}
                     to={tool.path}
-                    className="flex items-center gap-4 p-4 rounded-xl border border-border hover:border-primary/30 hover:shadow-warm transition-all group"
+                    className="group flex min-w-0 items-center gap-3 rounded-xl border border-border p-4 transition-all hover:border-primary/30 hover:shadow-warm sm:gap-4"
                   >
-                    <span className="font-mono text-2xl font-bold text-primary/30 w-8 text-center tabular-nums">
+                    <span className="w-7 shrink-0 text-center font-mono text-xl font-bold tabular-nums text-primary/30 sm:w-8 sm:text-2xl">
                       {String(index + 1).padStart(2, '0')}
                     </span>
                     <div className="flex-1 min-w-0">
@@ -282,7 +282,7 @@ export default function Home() {
                     to={tool.path}
                     className="block p-4 rounded-xl border border-border hover:border-primary/30 hover:shadow-warm transition-all group"
                   >
-                    <div className="flex items-center gap-2 mb-1.5">
+                    <div className="flex flex-wrap items-center gap-2 mb-1.5">
                       <span className="px-1.5 py-0.5 rounded bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider">
                         New
                       </span>
@@ -308,7 +308,7 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full -translate-y-1/2 translate-x-1/3" />
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-primary/10 rounded-full translate-y-1/2 -translate-x-1/3" />
             
-            <div className="relative px-8 py-14 sm:px-16 sm:py-20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
+            <div className="relative flex flex-col items-start justify-between gap-8 px-5 py-12 min-[420px]:px-8 sm:flex-row sm:items-center sm:px-16 sm:py-20">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">
                   Your files stay yours.
@@ -317,10 +317,10 @@ export default function Home() {
                   Pick any tool and start using it. No setup, no account creation, no learning curve.
                 </p>
               </div>
-              <Link to="/category/image" className="shrink-0">
+              <Link to="/category/image" className="w-full shrink-0 sm:w-auto">
                 <Button 
                   size="lg" 
-                  className="h-12 px-8 text-sm font-semibold bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl shadow-warm-lg"
+                  className="h-12 w-full rounded-xl bg-primary px-8 text-sm font-semibold text-primary-foreground shadow-warm-lg hover:bg-primary/90 sm:w-auto"
                 >
                   Get started
                   <ArrowRight className="ml-2 h-4 w-4" />
