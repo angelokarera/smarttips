@@ -123,7 +123,7 @@
   <url>
     <loc>https://smartdigitaltips.com/en/about</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/about" />
@@ -138,7 +138,7 @@
   <url>
     <loc>https://smartdigitaltips.com/fr/about</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/about" />
@@ -153,7 +153,7 @@
   <url>
     <loc>https://smartdigitaltips.com/rw/about</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/about" />
@@ -168,7 +168,7 @@
   <url>
     <loc>https://smartdigitaltips.com/sw/about</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/about" />
@@ -183,7 +183,7 @@
   <url>
     <loc>https://smartdigitaltips.com/ar/about</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/about" />
@@ -198,7 +198,7 @@
   <url>
     <loc>https://smartdigitaltips.com/es/about</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/about" />
@@ -213,7 +213,7 @@
   <url>
     <loc>https://smartdigitaltips.com/pt/about</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/about" />
@@ -228,7 +228,7 @@
   <url>
     <loc>https://smartdigitaltips.com/zh/about</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/about" />
@@ -243,8 +243,8 @@
   <url>
     <loc>https://smartdigitaltips.com/en/contact</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/contact" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/contact" />
@@ -258,8 +258,8 @@
   <url>
     <loc>https://smartdigitaltips.com/fr/contact</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/contact" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/contact" />
@@ -273,8 +273,8 @@
   <url>
     <loc>https://smartdigitaltips.com/rw/contact</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/contact" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/contact" />
@@ -288,8 +288,8 @@
   <url>
     <loc>https://smartdigitaltips.com/sw/contact</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/contact" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/contact" />
@@ -303,8 +303,8 @@
   <url>
     <loc>https://smartdigitaltips.com/ar/contact</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/contact" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/contact" />
@@ -318,8 +318,8 @@
   <url>
     <loc>https://smartdigitaltips.com/es/contact</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/contact" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/contact" />
@@ -333,8 +333,8 @@
   <url>
     <loc>https://smartdigitaltips.com/pt/contact</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/contact" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/contact" />
@@ -348,8 +348,8 @@
   <url>
     <loc>https://smartdigitaltips.com/zh/contact</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/contact" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/contact" />
@@ -363,8 +363,8 @@
   <url>
     <loc>https://smartdigitaltips.com/en/privacy</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/privacy" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/privacy" />
@@ -378,8 +378,8 @@
   <url>
     <loc>https://smartdigitaltips.com/fr/privacy</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/privacy" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/privacy" />
@@ -393,8 +393,8 @@
   <url>
     <loc>https://smartdigitaltips.com/rw/privacy</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/privacy" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/privacy" />
@@ -408,8 +408,8 @@
   <url>
     <loc>https://smartdigitaltips.com/sw/privacy</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/privacy" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/privacy" />
@@ -423,8 +423,8 @@
   <url>
     <loc>https://smartdigitaltips.com/ar/privacy</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/privacy" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/privacy" />
@@ -438,8 +438,8 @@
   <url>
     <loc>https://smartdigitaltips.com/es/privacy</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/privacy" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/privacy" />
@@ -453,8 +453,8 @@
   <url>
     <loc>https://smartdigitaltips.com/pt/privacy</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/privacy" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/privacy" />
@@ -468,8 +468,8 @@
   <url>
     <loc>https://smartdigitaltips.com/zh/privacy</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/privacy" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/privacy" />
@@ -483,8 +483,8 @@
   <url>
     <loc>https://smartdigitaltips.com/en/terms</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/terms" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/terms" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/terms" />
@@ -498,8 +498,8 @@
   <url>
     <loc>https://smartdigitaltips.com/fr/terms</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/terms" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/terms" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/terms" />
@@ -513,8 +513,8 @@
   <url>
     <loc>https://smartdigitaltips.com/rw/terms</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/terms" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/terms" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/terms" />
@@ -528,8 +528,8 @@
   <url>
     <loc>https://smartdigitaltips.com/sw/terms</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/terms" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/terms" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/terms" />
@@ -543,8 +543,8 @@
   <url>
     <loc>https://smartdigitaltips.com/ar/terms</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/terms" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/terms" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/terms" />
@@ -558,8 +558,8 @@
   <url>
     <loc>https://smartdigitaltips.com/es/terms</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/terms" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/terms" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/terms" />
@@ -573,8 +573,8 @@
   <url>
     <loc>https://smartdigitaltips.com/pt/terms</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/terms" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/terms" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/terms" />
@@ -588,8 +588,8 @@
   <url>
     <loc>https://smartdigitaltips.com/zh/terms</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/terms" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/terms" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/terms" />
@@ -603,8 +603,8 @@
   <url>
     <loc>https://smartdigitaltips.com/en/disclaimer</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/disclaimer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/disclaimer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/disclaimer" />
@@ -618,8 +618,8 @@
   <url>
     <loc>https://smartdigitaltips.com/fr/disclaimer</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/disclaimer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/disclaimer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/disclaimer" />
@@ -633,8 +633,8 @@
   <url>
     <loc>https://smartdigitaltips.com/rw/disclaimer</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/disclaimer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/disclaimer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/disclaimer" />
@@ -648,8 +648,8 @@
   <url>
     <loc>https://smartdigitaltips.com/sw/disclaimer</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/disclaimer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/disclaimer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/disclaimer" />
@@ -663,8 +663,8 @@
   <url>
     <loc>https://smartdigitaltips.com/ar/disclaimer</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/disclaimer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/disclaimer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/disclaimer" />
@@ -678,8 +678,8 @@
   <url>
     <loc>https://smartdigitaltips.com/es/disclaimer</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/disclaimer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/disclaimer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/disclaimer" />
@@ -693,8 +693,8 @@
   <url>
     <loc>https://smartdigitaltips.com/pt/disclaimer</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/disclaimer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/disclaimer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/disclaimer" />
@@ -708,8 +708,8 @@
   <url>
     <loc>https://smartdigitaltips.com/zh/disclaimer</loc>
     <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/disclaimer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/disclaimer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/disclaimer" />
@@ -724,7 +724,7 @@
     <loc>https://smartdigitaltips.com/en/blog</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/blog" />
@@ -739,7 +739,7 @@
     <loc>https://smartdigitaltips.com/fr/blog</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/blog" />
@@ -754,7 +754,7 @@
     <loc>https://smartdigitaltips.com/rw/blog</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/blog" />
@@ -769,7 +769,7 @@
     <loc>https://smartdigitaltips.com/sw/blog</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/blog" />
@@ -784,7 +784,7 @@
     <loc>https://smartdigitaltips.com/ar/blog</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/blog" />
@@ -799,7 +799,7 @@
     <loc>https://smartdigitaltips.com/es/blog</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/blog" />
@@ -814,7 +814,7 @@
     <loc>https://smartdigitaltips.com/pt/blog</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/blog" />
@@ -829,7 +829,7 @@
     <loc>https://smartdigitaltips.com/zh/blog</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/blog" />
@@ -844,7 +844,7 @@
     <loc>https://smartdigitaltips.com/en/category/image</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/image" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/image" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/image" />
@@ -859,7 +859,7 @@
     <loc>https://smartdigitaltips.com/fr/category/image</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/image" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/image" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/image" />
@@ -874,7 +874,7 @@
     <loc>https://smartdigitaltips.com/rw/category/image</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/image" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/image" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/image" />
@@ -889,7 +889,7 @@
     <loc>https://smartdigitaltips.com/sw/category/image</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/image" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/image" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/image" />
@@ -904,7 +904,7 @@
     <loc>https://smartdigitaltips.com/ar/category/image</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/image" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/image" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/image" />
@@ -919,7 +919,7 @@
     <loc>https://smartdigitaltips.com/es/category/image</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/image" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/image" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/image" />
@@ -934,7 +934,7 @@
     <loc>https://smartdigitaltips.com/pt/category/image</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/image" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/image" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/image" />
@@ -949,7 +949,7 @@
     <loc>https://smartdigitaltips.com/zh/category/image</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/image" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/image" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/image" />
@@ -964,7 +964,7 @@
     <loc>https://smartdigitaltips.com/en/category/pdf</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/pdf" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/pdf" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/pdf" />
@@ -979,7 +979,7 @@
     <loc>https://smartdigitaltips.com/fr/category/pdf</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/pdf" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/pdf" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/pdf" />
@@ -994,7 +994,7 @@
     <loc>https://smartdigitaltips.com/rw/category/pdf</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/pdf" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/pdf" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/pdf" />
@@ -1009,7 +1009,7 @@
     <loc>https://smartdigitaltips.com/sw/category/pdf</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/pdf" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/pdf" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/pdf" />
@@ -1024,7 +1024,7 @@
     <loc>https://smartdigitaltips.com/ar/category/pdf</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/pdf" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/pdf" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/pdf" />
@@ -1039,7 +1039,7 @@
     <loc>https://smartdigitaltips.com/es/category/pdf</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/pdf" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/pdf" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/pdf" />
@@ -1054,7 +1054,7 @@
     <loc>https://smartdigitaltips.com/pt/category/pdf</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/pdf" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/pdf" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/pdf" />
@@ -1069,7 +1069,7 @@
     <loc>https://smartdigitaltips.com/zh/category/pdf</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/pdf" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/pdf" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/pdf" />
@@ -1084,7 +1084,7 @@
     <loc>https://smartdigitaltips.com/en/category/text</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/text" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/text" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/text" />
@@ -1099,7 +1099,7 @@
     <loc>https://smartdigitaltips.com/fr/category/text</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/text" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/text" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/text" />
@@ -1114,7 +1114,7 @@
     <loc>https://smartdigitaltips.com/rw/category/text</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/text" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/text" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/text" />
@@ -1129,7 +1129,7 @@
     <loc>https://smartdigitaltips.com/sw/category/text</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/text" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/text" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/text" />
@@ -1144,7 +1144,7 @@
     <loc>https://smartdigitaltips.com/ar/category/text</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/text" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/text" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/text" />
@@ -1159,7 +1159,7 @@
     <loc>https://smartdigitaltips.com/es/category/text</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/text" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/text" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/text" />
@@ -1174,7 +1174,7 @@
     <loc>https://smartdigitaltips.com/pt/category/text</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/text" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/text" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/text" />
@@ -1189,7 +1189,7 @@
     <loc>https://smartdigitaltips.com/zh/category/text</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/text" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/text" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/text" />
@@ -1204,7 +1204,7 @@
     <loc>https://smartdigitaltips.com/en/category/student</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/student" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/student" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/student" />
@@ -1219,7 +1219,7 @@
     <loc>https://smartdigitaltips.com/fr/category/student</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/student" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/student" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/student" />
@@ -1234,7 +1234,7 @@
     <loc>https://smartdigitaltips.com/rw/category/student</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/student" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/student" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/student" />
@@ -1249,7 +1249,7 @@
     <loc>https://smartdigitaltips.com/sw/category/student</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/student" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/student" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/student" />
@@ -1264,7 +1264,7 @@
     <loc>https://smartdigitaltips.com/ar/category/student</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/student" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/student" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/student" />
@@ -1279,7 +1279,7 @@
     <loc>https://smartdigitaltips.com/es/category/student</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/student" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/student" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/student" />
@@ -1294,7 +1294,7 @@
     <loc>https://smartdigitaltips.com/pt/category/student</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/student" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/student" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/student" />
@@ -1309,7 +1309,7 @@
     <loc>https://smartdigitaltips.com/zh/category/student</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/student" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/student" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/student" />
@@ -1324,7 +1324,7 @@
     <loc>https://smartdigitaltips.com/en/category/business</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/business" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/business" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/business" />
@@ -1339,7 +1339,7 @@
     <loc>https://smartdigitaltips.com/fr/category/business</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/business" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/business" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/business" />
@@ -1354,7 +1354,7 @@
     <loc>https://smartdigitaltips.com/rw/category/business</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/business" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/business" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/business" />
@@ -1369,7 +1369,7 @@
     <loc>https://smartdigitaltips.com/sw/category/business</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/business" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/business" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/business" />
@@ -1384,7 +1384,7 @@
     <loc>https://smartdigitaltips.com/ar/category/business</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/business" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/business" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/business" />
@@ -1399,7 +1399,7 @@
     <loc>https://smartdigitaltips.com/es/category/business</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/business" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/business" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/business" />
@@ -1414,7 +1414,7 @@
     <loc>https://smartdigitaltips.com/pt/category/business</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/business" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/business" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/business" />
@@ -1429,7 +1429,7 @@
     <loc>https://smartdigitaltips.com/zh/category/business</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/business" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/business" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/business" />
@@ -1444,7 +1444,7 @@
     <loc>https://smartdigitaltips.com/en/category/converter</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/converter" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/converter" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/converter" />
@@ -1459,7 +1459,7 @@
     <loc>https://smartdigitaltips.com/fr/category/converter</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/converter" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/converter" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/converter" />
@@ -1474,7 +1474,7 @@
     <loc>https://smartdigitaltips.com/rw/category/converter</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/converter" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/converter" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/converter" />
@@ -1489,7 +1489,7 @@
     <loc>https://smartdigitaltips.com/sw/category/converter</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/converter" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/converter" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/converter" />
@@ -1504,7 +1504,7 @@
     <loc>https://smartdigitaltips.com/ar/category/converter</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/converter" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/converter" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/converter" />
@@ -1519,7 +1519,7 @@
     <loc>https://smartdigitaltips.com/es/category/converter</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/converter" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/converter" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/converter" />
@@ -1534,7 +1534,7 @@
     <loc>https://smartdigitaltips.com/pt/category/converter</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/converter" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/converter" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/converter" />
@@ -1549,7 +1549,7 @@
     <loc>https://smartdigitaltips.com/zh/category/converter</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/converter" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/converter" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/converter" />
@@ -1564,7 +1564,7 @@
     <loc>https://smartdigitaltips.com/en/category/developer</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/developer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/developer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/developer" />
@@ -1579,7 +1579,7 @@
     <loc>https://smartdigitaltips.com/fr/category/developer</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/developer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/developer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/developer" />
@@ -1594,7 +1594,7 @@
     <loc>https://smartdigitaltips.com/rw/category/developer</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/developer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/developer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/developer" />
@@ -1609,7 +1609,7 @@
     <loc>https://smartdigitaltips.com/sw/category/developer</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/developer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/developer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/developer" />
@@ -1624,7 +1624,7 @@
     <loc>https://smartdigitaltips.com/ar/category/developer</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/developer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/developer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/developer" />
@@ -1639,7 +1639,7 @@
     <loc>https://smartdigitaltips.com/es/category/developer</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/developer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/developer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/developer" />
@@ -1654,7 +1654,7 @@
     <loc>https://smartdigitaltips.com/pt/category/developer</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/developer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/developer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/developer" />
@@ -1669,7 +1669,7 @@
     <loc>https://smartdigitaltips.com/zh/category/developer</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/developer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/developer" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/developer" />
@@ -1684,7 +1684,7 @@
     <loc>https://smartdigitaltips.com/en/category/seo</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/seo" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/seo" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/seo" />
@@ -1699,7 +1699,7 @@
     <loc>https://smartdigitaltips.com/fr/category/seo</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/seo" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/seo" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/seo" />
@@ -1714,7 +1714,7 @@
     <loc>https://smartdigitaltips.com/rw/category/seo</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/seo" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/seo" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/seo" />
@@ -1729,7 +1729,7 @@
     <loc>https://smartdigitaltips.com/sw/category/seo</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/seo" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/seo" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/seo" />
@@ -1744,7 +1744,7 @@
     <loc>https://smartdigitaltips.com/ar/category/seo</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/seo" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/seo" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/seo" />
@@ -1759,7 +1759,7 @@
     <loc>https://smartdigitaltips.com/es/category/seo</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/seo" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/seo" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/seo" />
@@ -1774,7 +1774,7 @@
     <loc>https://smartdigitaltips.com/pt/category/seo</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/seo" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/seo" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/seo" />
@@ -1789,7 +1789,7 @@
     <loc>https://smartdigitaltips.com/zh/category/seo</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/category/seo" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/category/seo" />
     <xhtml:link rel="alternate" hreflang="rw" href="https://smartdigitaltips.com/rw/category/seo" />
@@ -7322,8 +7322,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/en/blog/ultimate-guide-optimizing-images-web</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/ultimate-guide-optimizing-images-web" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/ultimate-guide-optimizing-images-web" />
@@ -7337,8 +7337,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/fr/blog/ultimate-guide-optimizing-images-web</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/ultimate-guide-optimizing-images-web" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/ultimate-guide-optimizing-images-web" />
@@ -7352,8 +7352,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/rw/blog/ultimate-guide-optimizing-images-web</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/ultimate-guide-optimizing-images-web" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/ultimate-guide-optimizing-images-web" />
@@ -7367,8 +7367,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/sw/blog/ultimate-guide-optimizing-images-web</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/ultimate-guide-optimizing-images-web" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/ultimate-guide-optimizing-images-web" />
@@ -7382,8 +7382,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/ar/blog/ultimate-guide-optimizing-images-web</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/ultimate-guide-optimizing-images-web" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/ultimate-guide-optimizing-images-web" />
@@ -7397,8 +7397,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/es/blog/ultimate-guide-optimizing-images-web</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/ultimate-guide-optimizing-images-web" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/ultimate-guide-optimizing-images-web" />
@@ -7412,8 +7412,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/pt/blog/ultimate-guide-optimizing-images-web</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/ultimate-guide-optimizing-images-web" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/ultimate-guide-optimizing-images-web" />
@@ -7427,8 +7427,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/zh/blog/ultimate-guide-optimizing-images-web</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/ultimate-guide-optimizing-images-web" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/ultimate-guide-optimizing-images-web" />
@@ -7442,8 +7442,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/en/blog/why-pdf-is-standard-for-documents</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/why-pdf-is-standard-for-documents" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/why-pdf-is-standard-for-documents" />
@@ -7457,8 +7457,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/fr/blog/why-pdf-is-standard-for-documents</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/why-pdf-is-standard-for-documents" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/why-pdf-is-standard-for-documents" />
@@ -7472,8 +7472,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/rw/blog/why-pdf-is-standard-for-documents</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/why-pdf-is-standard-for-documents" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/why-pdf-is-standard-for-documents" />
@@ -7487,8 +7487,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/sw/blog/why-pdf-is-standard-for-documents</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/why-pdf-is-standard-for-documents" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/why-pdf-is-standard-for-documents" />
@@ -7502,8 +7502,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/ar/blog/why-pdf-is-standard-for-documents</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/why-pdf-is-standard-for-documents" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/why-pdf-is-standard-for-documents" />
@@ -7517,8 +7517,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/es/blog/why-pdf-is-standard-for-documents</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/why-pdf-is-standard-for-documents" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/why-pdf-is-standard-for-documents" />
@@ -7532,8 +7532,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/pt/blog/why-pdf-is-standard-for-documents</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/why-pdf-is-standard-for-documents" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/why-pdf-is-standard-for-documents" />
@@ -7547,8 +7547,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/zh/blog/why-pdf-is-standard-for-documents</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/why-pdf-is-standard-for-documents" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/why-pdf-is-standard-for-documents" />
@@ -7562,8 +7562,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/en/blog/importance-of-writing-original-content-avoiding-plagiarism</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/importance-of-writing-original-content-avoiding-plagiarism" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/importance-of-writing-original-content-avoiding-plagiarism" />
@@ -7577,8 +7577,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/fr/blog/importance-of-writing-original-content-avoiding-plagiarism</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/importance-of-writing-original-content-avoiding-plagiarism" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/importance-of-writing-original-content-avoiding-plagiarism" />
@@ -7592,8 +7592,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/rw/blog/importance-of-writing-original-content-avoiding-plagiarism</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/importance-of-writing-original-content-avoiding-plagiarism" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/importance-of-writing-original-content-avoiding-plagiarism" />
@@ -7607,8 +7607,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/sw/blog/importance-of-writing-original-content-avoiding-plagiarism</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/importance-of-writing-original-content-avoiding-plagiarism" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/importance-of-writing-original-content-avoiding-plagiarism" />
@@ -7622,8 +7622,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/ar/blog/importance-of-writing-original-content-avoiding-plagiarism</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/importance-of-writing-original-content-avoiding-plagiarism" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/importance-of-writing-original-content-avoiding-plagiarism" />
@@ -7637,8 +7637,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/es/blog/importance-of-writing-original-content-avoiding-plagiarism</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/importance-of-writing-original-content-avoiding-plagiarism" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/importance-of-writing-original-content-avoiding-plagiarism" />
@@ -7652,8 +7652,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/pt/blog/importance-of-writing-original-content-avoiding-plagiarism</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/importance-of-writing-original-content-avoiding-plagiarism" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/importance-of-writing-original-content-avoiding-plagiarism" />
@@ -7667,8 +7667,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/zh/blog/importance-of-writing-original-content-avoiding-plagiarism</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/importance-of-writing-original-content-avoiding-plagiarism" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/importance-of-writing-original-content-avoiding-plagiarism" />
@@ -7682,8 +7682,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/en/blog/how-to-create-use-qr-codes-effectively</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/how-to-create-use-qr-codes-effectively" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/how-to-create-use-qr-codes-effectively" />
@@ -7697,8 +7697,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/fr/blog/how-to-create-use-qr-codes-effectively</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/how-to-create-use-qr-codes-effectively" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/how-to-create-use-qr-codes-effectively" />
@@ -7712,8 +7712,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/rw/blog/how-to-create-use-qr-codes-effectively</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/how-to-create-use-qr-codes-effectively" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/how-to-create-use-qr-codes-effectively" />
@@ -7727,8 +7727,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/sw/blog/how-to-create-use-qr-codes-effectively</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/how-to-create-use-qr-codes-effectively" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/how-to-create-use-qr-codes-effectively" />
@@ -7742,8 +7742,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/ar/blog/how-to-create-use-qr-codes-effectively</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/how-to-create-use-qr-codes-effectively" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/how-to-create-use-qr-codes-effectively" />
@@ -7757,8 +7757,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/es/blog/how-to-create-use-qr-codes-effectively</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/how-to-create-use-qr-codes-effectively" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/how-to-create-use-qr-codes-effectively" />
@@ -7772,8 +7772,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/pt/blog/how-to-create-use-qr-codes-effectively</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/how-to-create-use-qr-codes-effectively" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/how-to-create-use-qr-codes-effectively" />
@@ -7787,8 +7787,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/zh/blog/how-to-create-use-qr-codes-effectively</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/how-to-create-use-qr-codes-effectively" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/how-to-create-use-qr-codes-effectively" />
@@ -7802,8 +7802,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/en/blog/freelancers-guide-to-invoicing</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/freelancers-guide-to-invoicing" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/freelancers-guide-to-invoicing" />
@@ -7817,8 +7817,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/fr/blog/freelancers-guide-to-invoicing</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/freelancers-guide-to-invoicing" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/freelancers-guide-to-invoicing" />
@@ -7832,8 +7832,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/rw/blog/freelancers-guide-to-invoicing</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/freelancers-guide-to-invoicing" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/freelancers-guide-to-invoicing" />
@@ -7847,8 +7847,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/sw/blog/freelancers-guide-to-invoicing</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/freelancers-guide-to-invoicing" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/freelancers-guide-to-invoicing" />
@@ -7862,8 +7862,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/ar/blog/freelancers-guide-to-invoicing</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/freelancers-guide-to-invoicing" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/freelancers-guide-to-invoicing" />
@@ -7877,8 +7877,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/es/blog/freelancers-guide-to-invoicing</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/freelancers-guide-to-invoicing" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/freelancers-guide-to-invoicing" />
@@ -7892,8 +7892,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/pt/blog/freelancers-guide-to-invoicing</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/freelancers-guide-to-invoicing" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/freelancers-guide-to-invoicing" />
@@ -7907,8 +7907,8 @@
   </url>
   <url>
     <loc>https://smartdigitaltips.com/zh/blog/freelancers-guide-to-invoicing</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://smartdigitaltips.com/en/blog/freelancers-guide-to-invoicing" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://smartdigitaltips.com/fr/blog/freelancers-guide-to-invoicing" />
