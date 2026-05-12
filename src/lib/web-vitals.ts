@@ -100,7 +100,6 @@ export class WebVitalsOptimizer {
   // Reduce CLS by reserving space for images
   static reserveImageSpace(img: HTMLImageElement): void {
     if (img.width && img.height) {
-      const aspectRatio = (img.height / img.width) * 100;
       img.style.aspectRatio = `${img.width} / ${img.height}`;
       img.style.width = '100%';
       img.style.height = 'auto';

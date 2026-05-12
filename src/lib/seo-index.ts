@@ -1,4 +1,11 @@
 // SEO System - Main Export File
+import { AISearchOptimizer } from './ai-search-optimizer';
+import { linkingEngine } from './internal-linking';
+import { schemaGenerator } from './schema-generator';
+import { seoAnalytics } from './seo-analytics';
+import { seoEngine } from './seo-engine';
+import type { Tool } from '@/data/tools';
+
 export { SEOEngine, seoEngine } from './seo-engine';
 export { SUPPORTED_LOCALES, COUNTRY_TARGETING, SEO_TRANSLATIONS, generateHreflangTags, getLocalizedTitle, detectUserLocale, getGeoTargetingMeta, type Locale } from './multilingual-seo';
 export { SchemaGenerator, schemaGenerator } from './schema-generator';
@@ -10,7 +17,7 @@ export { SEOAnalytics, seoAnalytics, type AnalyticsEvent } from './seo-analytics
 export { generateSEOMetadata } from './seo';
 
 // Quick access functions
-export const generateToolSEO = (tool: any, locale = 'en') => {
+export const generateToolSEO = (tool: Tool, locale = 'en') => {
   return seoEngine.generateToolMetadata(tool, locale, tool.path);
 };
 
@@ -31,11 +38,11 @@ export const trackToolUsage = (toolName: string, action: string) => {
   seoAnalytics.trackToolUsage(toolName, action);
 };
 
-export const getRelatedTools = (tool: any, limit = 6) => {
-  return linkingEngine.getRelatedTools(tool, limit);
+export const getRelatedTools = (tool: Tool, allTools: Tool[], limit = 6) => {
+  return linkingEngine.getRelatedTools(tool, allTools, limit);
 };
 
-export const optimizeForAI = (tool: any) => {
+export const optimizeForAI = (tool: Tool) => {
   return {
     structuredAnswer: AISearchOptimizer.generateStructuredAnswer(tool),
     featuredSnippet: AISearchOptimizer.generateFeaturedSnippet(tool),

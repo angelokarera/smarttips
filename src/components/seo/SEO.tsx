@@ -1,8 +1,8 @@
 // React SEO Component - Complete Implementation
 import { Helmet } from 'react-helmet-async';
-import { seoEngine } from '../lib/seo-engine';
-import { SUPPORTED_LOCALES, type Locale } from '../lib/multilingual-seo';
-import { schemaGenerator } from '../lib/schema-generator';
+import { seoEngine } from '../../lib/seo-engine';
+import { SUPPORTED_LOCALES, type Locale } from '../../lib/multilingual-seo';
+import { schemaGenerator } from '../../lib/schema-generator';
 import type { Tool } from '@/data/tools';
 
 interface SEOProps {

@@ -17,8 +17,6 @@ export interface SEOMetadata {
   breadcrumbs: Array<{ name: string; url: string }>;
 }
 
-const POWER_WORDS = ['Free', 'Best', 'Top', 'Ultimate', 'Professional', 'Easy', 'Fast', 'Instant', 'Smart', 'Advanced', 'Simple', 'Powerful', 'Secure'];
-const EMOTIONAL_TRIGGERS = ['Save Time', 'No Signup', 'No Watermark', 'Privacy First', 'Unlimited', 'Forever Free'];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export class SEOEngine {
@@ -31,7 +29,7 @@ export class SEOEngine {
   }
 
   // Generate high-CTR SEO title
-  generateTitle(tool: Tool, locale = 'en'): string {
+  generateTitle(tool: Tool, _locale = 'en'): string {
     const templates = [
       `Free ${tool.name} Online | No Signup Required ${CURRENT_YEAR}`,
       `${tool.name} - Best Free Tool ${CURRENT_YEAR} | ${this.siteName}`,
@@ -44,7 +42,7 @@ export class SEOEngine {
   }
 
   // Generate compelling meta description
-  generateDescription(tool: Tool, locale = 'en'): string {
+  generateDescription(tool: Tool, _locale = 'en'): string {
     const cta = ['Try now for free', 'Get started instantly', 'No registration required', 'Start using today'];
     const benefit = tool.benefits[0] || tool.description;
     
@@ -52,7 +50,7 @@ export class SEOEngine {
   }
 
   // Generate keyword clusters
-  generateKeywords(tool: Tool, locale = 'en'): string[] {
+  generateKeywords(tool: Tool, _locale = 'en'): string[] {
     const baseKeywords = [
       tool.name.toLowerCase(),
       `${tool.name.toLowerCase()} online`,
@@ -193,7 +191,7 @@ export class SEOEngine {
   }
 
   // Generate complete SEO metadata for a tool
-  generateToolMetadata(tool: Tool, locale = 'en', path: string): SEOMetadata {
+  generateToolMetadata(tool: Tool, locale = 'en', _path: string): SEOMetadata {
     const locales = ['en', 'fr', 'es', 'ar', 'pt', 'de', 'hi', 'sw', 'zh'];
     const hreflang: Record<string, string> = {};
     

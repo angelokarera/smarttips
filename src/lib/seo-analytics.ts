@@ -207,8 +207,9 @@ export class SEOAnalytics {
       html += this.initHotjar(config.hotjarId) + '\n\n';
     }
 
-    if (config.gscVerification) {
-      html += this.generateGSCVerification(config.gscVerification) + '\n';
+    const gscVerification = config.gscVerification || this.gscId;
+    if (gscVerification) {
+      html += this.generateGSCVerification(gscVerification) + '\n';
     }
 
     if (config.bingVerification) {

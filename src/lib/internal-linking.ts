@@ -15,6 +15,10 @@ export class InternalLinkingEngine {
     this.baseUrl = baseUrl;
   }
 
+  getBaseUrl(): string {
+    return this.baseUrl;
+  }
+
   // Get related tools based on category and keywords
   getRelatedTools(currentTool: Tool, allTools: Tool[], limit = 6): Tool[] {
     const related = allTools.filter(tool => {
