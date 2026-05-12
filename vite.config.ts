@@ -9,9 +9,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export default defineConfig(async ({ command }) => {
   const plugins: PluginOption[] = [react()]
 
+  // Only load kimi-plugin in development, not in production builds
   if (command === "serve") {
-    const { inspectAttr } = await import("kimi-plugin-inspect-react")
-    plugins.unshift(inspectAttr())
+    try {
+      const { inspectAttr } = await import("kimi-plugin-inspect-react")
+      plugins.unshift(inspectAttr())
+    } catch (error) {
+      console.warn('kimi-plugin-inspect-react not available, skipping...')
+    }
   }
 
   return {
@@ -23,6 +28,18 @@ export default defineConfig(async ({ command }) => {
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
+      },
+    },
+    build: {
+      outDir: 'dist',
+      sourcemap: false,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'react-vendor': ['react', 'react-dom', 'react-router'],
+            'ui-vendor': ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-popover'],
+          },
+        },
       },
     },
   }

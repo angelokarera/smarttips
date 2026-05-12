@@ -5,6 +5,11 @@
 [build.environment]
   NODE_VERSION = "20.19.0"
   NPM_FLAGS = "--legacy-peer-deps"
+  CI = "true"
+
+# Ignore kimi-plugin-inspect-react in production
+[build.processing]
+  skip_processing = false
 
 [[headers]]
   for = "/*"

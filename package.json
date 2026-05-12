@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-seo-assets.mjs && tsc -b && vite build",
+    "build": "npm run build:seo && tsc -b && vite build",
     "build:seo": "node scripts/generate-seo-assets.mjs",
     "generate:sitemaps": "node scripts/generate-sitemaps.mjs",
     "seo:audit": "echo Run window.runSEOAudit() in browser console to audit SEO",
