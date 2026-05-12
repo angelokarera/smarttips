@@ -17,8 +17,6 @@ export interface SEOMetadata {
   breadcrumbs: Array<{ name: string; url: string }>;
 }
 
-const CURRENT_YEAR = new Date().getFullYear();
-
 export class SEOEngine {
   private baseUrl: string;
   private siteName: string;
