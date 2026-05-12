@@ -1,0 +1,9 @@
+/* TEAM */
+Developer: SmartDigitalTips Team
+Site: https://smartdigitaltips.com
+Location: Worldwide
+
+/* SITE */
+Last update: 2026-05-12
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: React, TypeScript, Vite

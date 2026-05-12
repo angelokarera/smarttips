@@ -26,3 +26,23 @@
   [headers.values]
     Content-Type = "text/plain"
     Cache-Control = "public, max-age=0, must-revalidate"
+
+[[redirects]]
+  from = "/"
+  to = "/en"
+  status = 301
+
+[[redirects]]
+  from = "/tools/*"
+  to = "/en/tools/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/category/*"
+  to = "/en/category/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

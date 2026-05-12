@@ -1,0 +1,45 @@
+// SEO System - Main Export File
+export { SEOEngine, seoEngine } from './seo-engine';
+export { SUPPORTED_LOCALES, COUNTRY_TARGETING, SEO_TRANSLATIONS, generateHreflangTags, getLocalizedTitle, detectUserLocale, getGeoTargetingMeta, type Locale } from './multilingual-seo';
+export { SchemaGenerator, schemaGenerator } from './schema-generator';
+export { InternalLinkingEngine, linkingEngine, type InternalLink } from './internal-linking';
+export { WebVitalsOptimizer, registerServiceWorker, generateServiceWorkerContent, type WebVitalsMetrics } from './web-vitals';
+export { AISearchOptimizer, aiSearchOptimizer, type AISearchMetadata } from './ai-search-optimizer';
+export { SitemapGenerator } from './sitemap-generator';
+export { SEOAnalytics, seoAnalytics, type AnalyticsEvent } from './seo-analytics';
+export { generateSEOMetadata } from './seo';
+
+// Quick access functions
+export const generateToolSEO = (tool: any, locale = 'en') => {
+  return seoEngine.generateToolMetadata(tool, locale, tool.path);
+};
+
+export const generatePageSchema = (type: 'website' | 'article' | 'tool', data: any) => {
+  switch (type) {
+    case 'website':
+      return schemaGenerator.generateWebsiteSchema();
+    case 'article':
+      return seoEngine.generateArticleSchema(data);
+    case 'tool':
+      return seoEngine.generateSoftwareSchema(data);
+    default:
+      return null;
+  }
+};
+
+export const trackToolUsage = (toolName: string, action: string) => {
+  seoAnalytics.trackToolUsage(toolName, action);
+};
+
+export const getRelatedTools = (tool: any, limit = 6) => {
+  return linkingEngine.getRelatedTools(tool, limit);
+};
+
+export const optimizeForAI = (tool: any) => {
+  return {
+    structuredAnswer: AISearchOptimizer.generateStructuredAnswer(tool),
+    featuredSnippet: AISearchOptimizer.generateFeaturedSnippet(tool),
+    peopleAlsoAsk: AISearchOptimizer.generatePeopleAlsoAsk(tool),
+    aiOverview: AISearchOptimizer.generateAIOverview(tool)
+  };
+};
