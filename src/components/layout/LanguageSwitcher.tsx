@@ -1,6 +1,4 @@
-'use client';
-
-import { useRouter, usePathname } from 'next/navigation';
+import { useNavigate, useLocation } from 'react-router';
 
 const languages = [
   { code: 'en', label: 'EN' },
@@ -14,19 +12,19 @@ const languages = [
 ];
 
 export default function LanguageSwitcher({ currentLocale }: { currentLocale: string }) {
-  const router = useRouter();
-  const pathname = usePathname();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value;
-    const currentPathWithoutLocale = pathname.replace(`/${currentLocale}`, '');
+    const currentPathWithoutLocale = location.pathname.replace(`/${currentLocale}`, '');
     const newPathname = `/${newLocale}${currentPathWithoutLocale}`;
-    router.push(newPathname);
+    navigate(newPathname);
   };
 
   return (
-    <select 
-      value={currentLocale} 
+    <select
+      value={currentLocale}
       onChange={handleLanguageChange}
       className="bg-gray-100 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-primary focus:border-primary block p-2"
     >

@@ -1,11 +1,45 @@
-import type { Metadata } from 'next';
-
 interface SEOProps {
   title: string;
   description: string;
   locale: string;
   path: string;
   image?: string;
+}
+
+export interface SEOMetadata {
+  title: string;
+  description: string;
+  metadataBase: URL;
+  alternates: {
+    canonical: string;
+    languages: Record<string, string>;
+  };
+  openGraph: {
+    title: string;
+    description: string;
+    url: string;
+    siteName: string;
+    images: { url: string; width: number; height: number; alt: string }[];
+    locale: string;
+    type: string;
+  };
+  twitter: {
+    card: string;
+    title: string;
+    description: string;
+    images: string[];
+  };
+  robots: {
+    index: boolean;
+    follow: boolean;
+    googleBot: {
+      index: boolean;
+      follow: boolean;
+      'max-video-preview': number;
+      'max-image-preview': string;
+      'max-snippet': number;
+    };
+  };
 }
 
 const siteUrl = 'https://smartdigitaltips.com';
@@ -16,7 +50,7 @@ export function generateSEOMetadata({
   locale,
   path,
   image = '/logo.png',
-}: SEOProps): Metadata {
+}: SEOProps): SEOMetadata {
   return {
     title,
     description,

@@ -1,5 +1,3 @@
-import Script from 'next/script';
-
 export default function SchemaMarkup() {
   const schema = {
     '@context': 'https://schema.org',
@@ -16,8 +14,10 @@ export default function SchemaMarkup() {
   };
 
   return (
-    <Script id="website-schema" type="application/ld+json" strategy="afterInteractive">
-      {JSON.stringify(schema)}
-    </Script>
+    <script
+      id="website-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }

@@ -245,10 +245,14 @@ Host: ${BASE_URL}
   }
 
   // Save all sitemaps
+  // Note: This method is only called from Node.js build scripts, not from browser code.
   static async saveAllSitemaps(tools: Tool[], categories: any[], outputDir = './public'): Promise<void> {
     try {
-      const fs = await import('fs');
-      const path = await import('path');
+      // Use Function constructor to bypass browser TS module resolution for Node built-ins
+      // eslint-disable-next-line @typescript-eslint/no-implied-eval
+      const dynamicImport = new Function('m', 'return import(m)') as (m: string) => Promise<any>;
+      const fs = await dynamicImport('fs');
+      const path = await dynamicImport('path');
       
       fs.writeFileSync(path.join(outputDir, 'sitemap.xml'), this.generateSitemapIndex());
       fs.writeFileSync(path.join(outputDir, 'sitemap-main.xml'), this.generateMainSitemap());
