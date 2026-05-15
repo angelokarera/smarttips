@@ -12,7 +12,7 @@ const today = new Date().toISOString().split('T')[0]
 const toolsPath = path.join(rootDir, 'src', 'data', 'tools.ts')
 const blogPath = path.join(rootDir, 'src', 'data', 'blog.ts')
 
-const locales = ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh']
+const locales = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh']
 
 const toolsContent = fs.readFileSync(toolsPath, 'utf8')
 const blogContent = fs.readFileSync(blogPath, 'utf8')

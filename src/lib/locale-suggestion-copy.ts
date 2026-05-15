@@ -22,12 +22,6 @@ export const LOCALE_SUGGESTION_COPY: Record<
     switch: (name) => `Passer en ${name}`,
     stay: (name) => `Rester en ${name}`,
   },
-  rw: {
-    title: 'Ururimi',
-    message: (name) => `SmartDigitalTips iraboneka mu ${name}. Urashaka kureba urubuga mu rurimi rwawe?`,
-    switch: (name) => `Hindura kuri ${name}`,
-    stay: (name) => `Guma mu ${name}`,
-  },
   sw: {
     title: 'Lugha',
     message: (name) => `SmartDigitalTips inapatikana kwa ${name}. Ungependa kuona tovuti kwa lugha yako?`,

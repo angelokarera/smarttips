@@ -29,7 +29,7 @@ export function generateWebsiteSchema() {
     name: 'SmartDigitalTips',
     alternateName: ['Smart Digital Tips', 'Free Online Tools'],
     url: 'https://smartdigitaltips.com',
-    inLanguage: ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'],
+    inLanguage: ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh'],
     description: 'Free online developer, image, PDF, text, student, business, and conversion tools that run in your browser.',
     potentialAction: {
       '@type': 'SearchAction',
@@ -52,7 +52,7 @@ export function generateOrganizationSchema() {
       '@type': 'ContactPoint',
       contactType: 'customer support',
       email: 'support@smartdigitaltips.com',
-      availableLanguage: ['English', 'French', 'Kinyarwanda', 'Swahili', 'Arabic', 'Spanish', 'Portuguese', 'Chinese'],
+      availableLanguage: ['English', 'French', 'Swahili', 'Arabic', 'Spanish', 'Portuguese', 'Chinese'],
     },
   }
 }

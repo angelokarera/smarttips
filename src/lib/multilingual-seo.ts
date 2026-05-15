@@ -26,8 +26,7 @@ export const COUNTRY_TARGETING: Record<AppLocale, string[]> = {
   es: ['ES', 'MX', 'AR', 'CO', 'CL', 'PE', 'VE'],
   ar: ['SA', 'AE', 'EG', 'MA', 'DZ', 'IQ'],
   pt: ['BR', 'PT', 'AO', 'MZ'],
-  rw: ['RW'],
-  sw: ['KE', 'TZ', 'UG'],
+  sw: ['KE', 'TZ', 'UG', 'RW'],
   zh: ['CN', 'TW', 'HK', 'SG'],
 }
 
@@ -38,7 +37,6 @@ export const SEO_TRANSLATIONS = {
     es: 'Gratis',
     ar: 'مجاني',
     pt: 'Grátis',
-    rw: 'Ubuntu',
     sw: 'Bure',
     zh: '免费',
   },
@@ -48,7 +46,6 @@ export const SEO_TRANSLATIONS = {
     es: 'En línea',
     ar: 'عبر الإنترنت',
     pt: 'Online',
-    rw: 'Kuri interineti',
     sw: 'Mtandaoni',
     zh: '在线',
   },
@@ -58,7 +55,6 @@ export const SEO_TRANSLATIONS = {
     es: 'Herramienta',
     ar: 'أداة',
     pt: 'Ferramenta',
-    rw: 'Igikoresho',
     sw: 'Zana',
     zh: '工具',
   },
@@ -94,7 +90,7 @@ function matchBrowserTag(tag: string): Locale | null {
   if (normalized.startsWith('pt')) return 'pt'
   if (normalized.startsWith('ar')) return 'ar'
   if (normalized.startsWith('sw') || normalized === 'kiswahili') return 'sw'
-  if (normalized === 'kin' || normalized.startsWith('rw')) return 'rw'
+  if (normalized === 'kin' || normalized.startsWith('rw')) return 'fr'
 
   return null
 }

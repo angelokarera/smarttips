@@ -9,7 +9,6 @@ export const GLOBAL_SEO_CONFIG = {
   supportedLocales: [
     { code: 'en', name: 'English', region: 'US' },
     { code: 'fr', name: 'French', region: 'FR' },
-    { code: 'rw', name: 'Kinyarwanda', region: 'RW' },
     { code: 'sw', name: 'Swahili', region: 'KE' },
     { code: 'ar', name: 'Arabic', region: 'AR' },
     { code: 'es', name: 'Spanish', region: 'ES' },
@@ -105,7 +104,7 @@ export const GLOBAL_SEO_CONFIG = {
         '@type': 'ContactPoint',
         contactType: 'Customer Service',
         email: 'support@smartdigitaltips.com',
-        availableLanguage: ['English', 'French', 'Spanish', 'Arabic', 'Portuguese', 'Chinese', 'Swahili', 'Kinyarwanda'],
+        availableLanguage: ['English', 'French', 'Spanish', 'Arabic', 'Portuguese', 'Chinese', 'Swahili'],
       },
     },
   },

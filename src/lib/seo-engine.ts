@@ -137,7 +137,7 @@ export class SEOEngine {
         availability: 'https://schema.org/InStock'
       },
       datePublished: `${currentYear}-01-01`,
-      inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'zh', 'sw', 'rw'],
+      inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'zh', 'sw'],
       featureList: tool.benefits.join(', ')
     };
   }
@@ -197,7 +197,7 @@ export class SEOEngine {
 
   // Generate complete SEO metadata for a tool
   generateToolMetadata(tool: Tool, locale = 'en', _path: string): SEOMetadata {
-    const locales = ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'];
+    const locales = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh'];
     const hreflang: Record<string, string> = {};
     
     locales.forEach(loc => {

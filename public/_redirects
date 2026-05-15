@@ -1,4 +1,6 @@
 # Canonical locale redirects (301)
+/rw                   /fr                   301
+/rw/*                 /fr/:splat            301
 /                     /en                   301
 /about                /en/about             301
 /contact              /en/contact           301

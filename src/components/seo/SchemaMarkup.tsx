@@ -5,7 +5,7 @@ export default function SchemaMarkup() {
     'name': 'SmartDigitalTips',
     'url': 'https://smartdigitaltips.com/',
     'description': 'Free browser-based tools for images, PDFs, text, developers, students, and business.',
-    'inLanguage': ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'],
+    'inLanguage': ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh'],
     'potentialAction': {
       '@type': 'SearchAction',
       'target': 'https://smartdigitaltips.com/en?q={search_term_string}',

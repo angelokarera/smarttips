@@ -4,7 +4,7 @@ import LanguageSwitcher from '@/components/layout/LanguageSwitcher';
 import SchemaMarkup from '@/components/seo/SchemaMarkup';
 import '@/index.css';
 
-const locales = ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'];
+const locales = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh'];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

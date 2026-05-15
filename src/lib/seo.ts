@@ -60,7 +60,6 @@ export function generateSEOMetadata({
       languages: {
         en: `${siteUrl}/en${path.replace(/^\/[a-z]{2}/, '')}`,
         fr: `${siteUrl}/fr${path.replace(/^\/[a-z]{2}/, '')}`,
-        rw: `${siteUrl}/rw${path.replace(/^\/[a-z]{2}/, '')}`,
         sw: `${siteUrl}/sw${path.replace(/^\/[a-z]{2}/, '')}`,
         ar: `${siteUrl}/ar${path.replace(/^\/[a-z]{2}/, '')}`,
         es: `${siteUrl}/es${path.replace(/^\/[a-z]{2}/, '')}`,

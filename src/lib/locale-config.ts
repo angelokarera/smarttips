@@ -6,7 +6,7 @@ export const ADSENSE_CLIENT_ID = 'ca-pub-3519891152775398'
 /** ads.txt publisher ID (no ca- prefix) */
 export const ADSENSE_PUBLISHER_ID = 'pub-3519891152775398'
 
-export const LOCALES = ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'] as const
+export const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh'] as const
 export type AppLocale = (typeof LOCALES)[number]
 export const DEFAULT_LOCALE: AppLocale = 'en'
 
@@ -16,7 +16,6 @@ export const LOCALE_META: Record<
 > = {
   en: { name: 'English', hreflang: 'en', ogLocale: 'en_US', dir: 'ltr' },
   fr: { name: 'French', hreflang: 'fr', ogLocale: 'fr_FR', dir: 'ltr' },
-  rw: { name: 'Kinyarwanda', hreflang: 'rw', ogLocale: 'rw_RW', dir: 'ltr' },
   sw: { name: 'Swahili', hreflang: 'sw', ogLocale: 'sw_KE', dir: 'ltr' },
   ar: { name: 'Arabic', hreflang: 'ar', ogLocale: 'ar_AR', dir: 'rtl' },
   es: { name: 'Spanish', hreflang: 'es', ogLocale: 'es_ES', dir: 'ltr' },

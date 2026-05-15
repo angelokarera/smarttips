@@ -1,7 +1,7 @@
 /** Shared copy templates for SEO message generation */
 export const BRAND = 'SmartDigitalTips'
 
-export const LOCALES = ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh']
+export const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh']
 
 export const COPY = {
   en: {
@@ -16,13 +16,6 @@ export const COPY = {
     online: 'En ligne',
     noSignup: 'Sans inscription',
     private: 'Dans votre navigateur — vos fichiers restent privés',
-    suffix: `| ${BRAND}`,
-  },
-  rw: {
-    free: 'Ubuntu',
-    online: 'Kuri interineti',
-    noSignup: 'Nta kwiyandikisha',
-    private: 'Bikora mu mushakisha wawe — amadosiye yawe ararinze',
     suffix: `| ${BRAND}`,
   },
   sw: {

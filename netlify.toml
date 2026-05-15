@@ -37,6 +37,16 @@
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[redirects]]
+  from = "/rw"
+  to = "/fr"
+  status = 301
+
+[[redirects]]
+  from = "/rw/*"
+  to = "/fr/:splat"
+  status = 301
+
+[[redirects]]
   from = "/"
   to = "/en"
   status = 301

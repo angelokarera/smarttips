@@ -3,7 +3,6 @@ import { defaultLocale } from '@/lib/i18n'
 
 import en from '../../messages/en.json'
 import fr from '../../messages/fr.json'
-import rw from '../../messages/rw.json'
 import sw from '../../messages/sw.json'
 import ar from '../../messages/ar.json'
 import es from '../../messages/es.json'
@@ -26,7 +25,6 @@ interface LocaleMessages {
 const messagesByLocale: Record<SupportedLocale, LocaleMessages> = {
   en: en as LocaleMessages,
   fr: fr as LocaleMessages,
-  rw: rw as LocaleMessages,
   sw: sw as LocaleMessages,
   ar: ar as LocaleMessages,
   es: es as LocaleMessages,
