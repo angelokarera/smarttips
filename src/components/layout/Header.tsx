@@ -15,6 +15,7 @@ import { Input } from '@/components/ui/input'
 import { useTheme } from '@/hooks/useTheme'
 import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher'
 import { useLocalizedPath } from '@/hooks/useLocale'
+import { useTranslations } from '@/hooks/useTranslations'
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -25,6 +26,7 @@ export function Header() {
   const { theme, toggleTheme } = useTheme()
   const navigate = useNavigate()
   const lp = useLocalizedPath()
+  const { t, categoryLabel, localizeTool } = useTranslations()
   const searchRef = useRef<HTMLDivElement>(null)
   const categoryRef = useRef<HTMLDivElement>(null)
 
@@ -49,10 +51,10 @@ export function Header() {
 
   const searchResults = useMemo(() => {
     if (searchQuery.trim()) {
-      return searchTools(searchQuery).slice(0, 6)
+      return searchTools(searchQuery).slice(0, 6).map(localizeTool)
     }
     return []
-  }, [searchQuery])
+  }, [searchQuery, localizeTool])
 
   // Keyboard shortcut for search
   useEffect(() => {
@@ -68,7 +70,7 @@ export function Header() {
   }, [])
 
   const handleSearchSelect = (path: string) => {
-    navigate(path)
+    navigate(lp(path))
     setSearchOpen(false)
     setSearchQuery('')
   }
@@ -97,7 +99,7 @@ export function Header() {
               to={lp('/')} 
               className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
             >
-              Home
+              {t('nav.home', 'Home')}
             </Link>
             
             {/* Categories Dropdown */}
@@ -106,7 +108,7 @@ export function Header() {
                 onClick={() => setCategoryDropdownOpen(!categoryDropdownOpen)}
                 className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
               >
-                Tools
+                {t('nav.tools', 'Tools')}
                 <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${categoryDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               
@@ -119,7 +121,7 @@ export function Header() {
                       onClick={() => setCategoryDropdownOpen(false)}
                       className="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm hover:bg-secondary transition-colors group/item"
                     >
-                      <span className="font-medium">{cat.label}</span>
+                      <span className="font-medium">{categoryLabel(cat.id, { label: cat.label, description: cat.description }).label}</span>
                       <ArrowRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 group-hover/item:opacity-100 transition-opacity" />
                     </Link>
                   ))}
@@ -131,19 +133,19 @@ export function Header() {
               to={lp('/blog')} 
               className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
             >
-              Blog
+              {t('nav.blog', 'Blog')}
             </Link>
             <Link 
               to={lp('/about')} 
               className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
             >
-              About
+              {t('nav.about', 'About')}
             </Link>
             <Link 
               to={lp('/contact')} 
               className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
             >
-              Contact
+              {t('nav.contact', 'Contact')}
             </Link>
           </nav>
 
@@ -156,7 +158,7 @@ export function Header() {
                 onClick={() => setSearchOpen(!searchOpen)}
               >
                 <Search className="h-3.5 w-3.5" />
-                <span className="hidden md:inline text-sm">Search...</span>
+                <span className="hidden md:inline text-sm">{t('nav.search', 'Search...')}</span>
                 <kbd className="hidden md:inline-flex h-5 items-center rounded border border-border/60 bg-background px-1.5 text-[10px] font-mono font-medium text-muted-foreground">
                   ⌘K
                 </kbd>
@@ -178,7 +180,7 @@ export function Header() {
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       autoFocus
-                      placeholder="Search 50+ tools..."
+                      placeholder={t('nav.searchPlaceholder', 'Search tools...')}
                       className="pl-9 h-10 bg-secondary/50"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
@@ -193,7 +195,7 @@ export function Header() {
                   {searchResults.length > 0 && (
                     <div className="mt-2 space-y-0.5">
                       <p className="px-2 py-1 text-[11px] font-semibold text-muted-foreground uppercase tracking-widest">
-                        Results
+                        {t('search.results', 'Results')}
                       </p>
                       {searchResults.map((tool) => (
                         <button
@@ -218,7 +220,7 @@ export function Header() {
                   
                   {searchQuery && searchResults.length === 0 && (
                     <div className="py-6 text-center text-sm text-muted-foreground">
-                      Nothing found for "{searchQuery}"
+                      {t('search.nothingFound', 'Nothing found for')} "{searchQuery}"
                     </div>
                   )}
                 </div>
@@ -259,11 +261,11 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="block px-3 py-2.5 text-base font-medium rounded-lg hover:bg-secondary transition-colors"
             >
-              Home
+              {t('nav.home', 'Home')}
             </Link>
             <div className="py-2">
               <p className="px-3 mb-1 text-[11px] font-semibold text-muted-foreground uppercase tracking-widest">
-                Tool Categories
+                {t('search.toolCategories', 'Tool Categories')}
               </p>
               {categories.map((cat) => (
                 <Link
@@ -272,7 +274,7 @@ export function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="block px-3 py-2 text-sm text-muted-foreground rounded-lg hover:bg-secondary hover:text-foreground transition-colors"
                 >
-                  {cat.label}
+                  {categoryLabel(cat.id, { label: cat.label, description: cat.description }).label}
                 </Link>
               ))}
             </div>
@@ -282,21 +284,21 @@ export function Header() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="block px-3 py-2.5 text-base font-medium rounded-lg hover:bg-secondary transition-colors"
               >
-                Blog
+                {t('nav.blog', 'Blog')}
               </Link>
               <Link 
                 to={lp('/about')} 
                 onClick={() => setMobileMenuOpen(false)}
                 className="block px-3 py-2.5 text-base font-medium rounded-lg hover:bg-secondary transition-colors"
               >
-                About
+                {t('nav.about', 'About')}
               </Link>
               <Link 
                 to={lp('/contact')} 
                 onClick={() => setMobileMenuOpen(false)}
                 className="block px-3 py-2.5 text-base font-medium rounded-lg hover:bg-secondary transition-colors"
               >
-                Contact
+                {t('nav.contact', 'Contact')}
               </Link>
             </div>
           </div>

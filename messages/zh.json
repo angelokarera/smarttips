@@ -263,6 +263,311 @@
       "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
     }
   },
+  "ui": {
+    "nav": {
+      "home": "首页",
+      "tools": "工具",
+      "blog": "博客",
+      "about": "关于",
+      "contact": "联系",
+      "search": "搜索...",
+      "searchPlaceholder": "搜索工具...",
+      "noResults": "未找到工具"
+    },
+    "common": {
+      "new": "新",
+      "trending": "热门",
+      "popular": "热门",
+      "free": "免费",
+      "allTools": "全部工具",
+      "viewAll": "查看全部",
+      "browseAll": "浏览全部工具",
+      "loading": "加载中...",
+      "comingSoon": "即将推出",
+      "relatedTools": "相关工具",
+      "otherCategories": "其他分类",
+      "toolsCount": "个工具"
+    },
+    "home": {
+      "badge": "100% 浏览器运行 — 文件不会离开您的设备",
+      "heroTitle": "别再把文件上传给陌生人。",
+      "heroSubtitle": "免费的图片、PDF、文本等工具。一切都在浏览器本地运行。无需注册、无水印。",
+      "tryWordCounter": "试试字数统计",
+      "cardPrivateTitle": "默认私密",
+      "cardPrivateText": "文件在浏览器标签页中处理。我们无法查看、存储或出售您的数据。",
+      "cardInstantTitle": "即时结果",
+      "cardInstantText": "无需等待服务器。打开工具、放入文件、立即得到结果。",
+      "cardFreeTitle": "无任何附加条件",
+      "cardFreeText": "无需账户、无使用限制、无付费版。所有工具均免费。",
+      "mostUsed": "最常用工具",
+      "browseByCategory": "按分类浏览",
+      "trendingNow": "当前热门",
+      "newTools": "新工具",
+      "ctaTitle": "需要特定工具？",
+      "ctaText": "我们每周添加新工具。告诉我们您的需求。",
+      "contactUs": "联系我们",
+      "mostUsedSubtitle": "用户真正会反复使用的工具。",
+      "pickCategoryTitle": "选一个分类，马上开工。",
+      "pickCategorySubtitle": "七个分类，零阻力完成任务。",
+      "explore": "探索",
+      "trendingRightNow": "当前热门",
+      "justShipped": "刚刚上线",
+      "ctaHeroTitle": "您的文件始终属于您。",
+      "ctaHeroText": "选择任意工具即可使用。无需设置、注册或学习成本。",
+      "getStarted": "开始使用"
+    },
+    "search": {
+      "results": "结果",
+      "nothingFound": "未找到",
+      "toolCategories": "工具分类"
+    },
+    "tool": {
+      "howItWorks": "使用方法",
+      "whyThisTool": "为什么用这个工具",
+      "faq": "常见问题",
+      "notFound": "未找到工具",
+      "notFoundDesc": "该工具不存在或已移动。",
+      "backHome": "返回首页",
+      "comingSoonDesc": "该工具正在开发中，请稍后再来。"
+    },
+    "category": {
+      "toolsCount": "个工具",
+      "whatYouCanDo": "您可以在这里做什么",
+      "categoryFaq": "分类常见问题",
+      "notFound": "未找到分类",
+      "notFoundDesc": "该分类不存在。",
+      "empty": "此分类暂无工具。"
+    },
+    "footer": {
+      "tagline": "50+ 款浏览器工具。无需上传、无需注册。",
+      "tools": "工具",
+      "company": "公司",
+      "rights": "版权所有。",
+      "privacy": "隐私",
+      "cookies": "Cookie",
+      "terms": "条款",
+      "disclaimer": "免责声明",
+      "privacyNote": "一切都在浏览器中运行。我们绝不会看到您的文件。"
+    },
+    "cookie": {
+      "title": "Cookie 与广告",
+      "body": "我们使用必要存储，并可能使用 Google Analytics 和 AdSense。您可接受或拒绝可选 Cookie。",
+      "accept": "全部接受",
+      "reject": "拒绝可选",
+      "privacy": "隐私政策",
+      "cookiesLink": "Cookie 政策"
+    }
+  },
+  "labels": {
+    "categories": {
+      "image": {
+        "label": "图片工具",
+        "description": "轻松压缩、转换、编辑和变换图片。"
+      },
+      "pdf": {
+        "label": "PDF工具",
+        "description": "合并、拆分、转换和处理 PDF 文档。"
+      },
+      "text": {
+        "label": "文本工具",
+        "description": "统计字数、转换大小写并分析文本。"
+      },
+      "student": {
+        "label": "学生工具",
+        "description": "计算器和学习辅助工具。"
+      },
+      "business": {
+        "label": "商务工具",
+        "description": "发票、二维码和商务效率工具。"
+      },
+      "converter": {
+        "label": "转换工具",
+        "description": "单位换算和度量工具。"
+      },
+      "developer": {
+        "label": "开发者工具",
+        "description": "格式化、压缩和编码代码与数据。"
+      }
+    },
+    "tools": {
+      "image-compressor": {
+        "name": "图片压缩",
+        "description": "免费 图片压缩 在线."
+      },
+      "image-to-pdf": {
+        "name": "图片转PDF",
+        "description": "免费 图片转PDF 在线."
+      },
+      "image-resizer": {
+        "name": "图片尺寸调整",
+        "description": "免费 图片尺寸调整 在线."
+      },
+      "image-converter": {
+        "name": "图片格式转换",
+        "description": "免费 图片格式转换 在线."
+      },
+      "merge-pdf": {
+        "name": "合并PDF",
+        "description": "免费 合并PDF 在线."
+      },
+      "split-pdf": {
+        "name": "拆分PDF",
+        "description": "免费 拆分PDF 在线."
+      },
+      "pdf-to-word": {
+        "name": "PDF转Word",
+        "description": "免费 PDF转Word 在线."
+      },
+      "pdf-to-image": {
+        "name": "PDF转图片",
+        "description": "免费 PDF转图片 在线."
+      },
+      "word-counter": {
+        "name": "字数统计",
+        "description": "免费 字数统计 在线."
+      },
+      "case-converter": {
+        "name": "大小写转换",
+        "description": "免费 大小写转换 在线."
+      },
+      "text-to-speech": {
+        "name": "文字转语音",
+        "description": "免费 文字转语音 在线."
+      },
+      "plagiarism-checker": {
+        "name": "查重工具",
+        "description": "免费 查重工具 在线."
+      },
+      "gpa-calculator": {
+        "name": "GPA计算器",
+        "description": "免费 GPA计算器 在线."
+      },
+      "percentage-calculator": {
+        "name": "百分比计算器",
+        "description": "免费 百分比计算器 在线."
+      },
+      "grade-calculator": {
+        "name": "成绩计算器",
+        "description": "免费 成绩计算器 在线."
+      },
+      "compound-interest": {
+        "name": "复利计算器",
+        "description": "免费 复利计算器 在线."
+      },
+      "qr-code-generator": {
+        "name": "二维码生成器",
+        "description": "免费 二维码生成器 在线."
+      },
+      "invoice-generator": {
+        "name": "发票生成器",
+        "description": "免费 发票生成器 在线."
+      },
+      "password-generator": {
+        "name": "密码生成器",
+        "description": "免费 密码生成器 在线."
+      },
+      "age-calculator": {
+        "name": "年龄计算器",
+        "description": "免费 年龄计算器 在线."
+      },
+      "unit-converter": {
+        "name": "单位换算",
+        "description": "免费 单位换算 在线."
+      },
+      "length-converter": {
+        "name": "长度换算",
+        "description": "免费 长度换算 在线."
+      },
+      "time-converter": {
+        "name": "时区转换",
+        "description": "免费 时区转换 在线."
+      },
+      "crop-image": {
+        "name": "裁剪图片",
+        "description": "免费 裁剪图片 在线."
+      },
+      "jpg-to-png": {
+        "name": "JPG转PNG",
+        "description": "免费 JPG转PNG 在线."
+      },
+      "png-to-jpg": {
+        "name": "PNG转JPG",
+        "description": "免费 PNG转JPG 在线."
+      },
+      "webp-converter": {
+        "name": "WebP转换",
+        "description": "免费 WebP转换 在线."
+      },
+      "background-remover": {
+        "name": "去除背景",
+        "description": "免费 去除背景 在线."
+      },
+      "watermark-maker": {
+        "name": "水印工具",
+        "description": "免费 水印工具 在线."
+      },
+      "character-counter": {
+        "name": "字符计数",
+        "description": "免费 字符计数 在线."
+      },
+      "rewrite-text": {
+        "name": "改写文本",
+        "description": "免费 改写文本 在线."
+      },
+      "grammar-checker": {
+        "name": "语法检查",
+        "description": "免费 语法检查 在线."
+      },
+      "remove-duplicates": {
+        "name": "去重",
+        "description": "免费 去重 在线."
+      },
+      "summarizer": {
+        "name": "文本摘要",
+        "description": "免费 文本摘要 在线."
+      },
+      "citation-generator": {
+        "name": "引用生成",
+        "description": "免费 引用生成 在线."
+      },
+      "study-timer": {
+        "name": "学习计时器",
+        "description": "免费 学习计时器 在线."
+      },
+      "random-name-picker": {
+        "name": "随机点名",
+        "description": "免费 随机点名 在线."
+      },
+      "scientific-calculator": {
+        "name": "科学计算器",
+        "description": "免费 科学计算器 在线."
+      },
+      "json-formatter": {
+        "name": "JSON格式化",
+        "description": "免费 JSON格式化 在线."
+      },
+      "base64-encoder": {
+        "name": "Base64编码",
+        "description": "免费 Base64编码 在线."
+      },
+      "css-minifier": {
+        "name": "CSS压缩",
+        "description": "免费 CSS压缩 在线."
+      },
+      "html-beautifier": {
+        "name": "HTML格式化",
+        "description": "免费 HTML格式化 在线."
+      },
+      "color-picker": {
+        "name": "颜色选择器",
+        "description": "免费 颜色选择器 在线."
+      },
+      "color-palette-generator": {
+        "name": "配色方案生成",
+        "description": "免费 配色方案生成 在线."
+      }
+    }
+  },
   "Index": {
     "title": "免费在线工具 — PDF转换、图片压缩与浏览器实用工具",
     "description": "即时使用免费在线工具：压缩图片、PDF转Word、生成二维码等。完全免费、快速安全，无需注册。"

@@ -263,6 +263,311 @@
       "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
     }
   },
+  "ui": {
+    "nav": {
+      "home": "Inicio",
+      "tools": "Herramientas",
+      "blog": "Blog",
+      "about": "Sobre nosotros",
+      "contact": "Contacto",
+      "search": "Buscar...",
+      "searchPlaceholder": "Buscar herramientas...",
+      "noResults": "Sin resultados"
+    },
+    "common": {
+      "new": "Nuevo",
+      "trending": "Tendencia",
+      "popular": "Popular",
+      "free": "Gratis",
+      "allTools": "Todas",
+      "viewAll": "Ver todo",
+      "browseAll": "Ver herramientas",
+      "loading": "Cargando...",
+      "comingSoon": "Próximamente",
+      "relatedTools": "Herramientas relacionadas",
+      "otherCategories": "Otras categorías",
+      "toolsCount": "herramientas"
+    },
+    "home": {
+      "badge": "100 % en el navegador — tus archivos no salen de tu dispositivo",
+      "heroTitle": "Deja de subir tus archivos a desconocidos.",
+      "heroSubtitle": "Herramientas gratis para imágenes, PDF, texto y más. Todo en tu navegador. Sin cuentas ni marcas de agua.",
+      "tryWordCounter": "Contador de palabras",
+      "cardPrivateTitle": "Privado por defecto",
+      "cardPrivateText": "Los archivos se procesan en tu navegador. No vemos ni vendemos tus datos.",
+      "cardInstantTitle": "Resultados al instante",
+      "cardInstantText": "Sin esperar al servidor. Abre una herramienta, sube un archivo, obtén resultado.",
+      "cardFreeTitle": "Sin condiciones",
+      "cardFreeText": "Sin cuentas, límites ni premium. Todas las herramientas son gratis.",
+      "mostUsed": "Herramientas más usadas",
+      "browseByCategory": "Explorar por categoría",
+      "trendingNow": "Tendencias",
+      "newTools": "Nuevas herramientas",
+      "ctaTitle": "¿Necesitas una herramienta?",
+      "ctaText": "Añadimos herramientas cada semana. Cuéntanos qué necesitas.",
+      "contactUs": "Contáctanos",
+      "mostUsedSubtitle": "Lo que la gente usa de verdad.",
+      "pickCategoryTitle": "Elige una categoría. A trabajar.",
+      "pickCategorySubtitle": "Siete categorías. Sin fricción.",
+      "explore": "Explorar",
+      "trendingRightNow": "Tendencias ahora",
+      "justShipped": "Recién publicado",
+      "ctaHeroTitle": "Tus archivos siguen siendo tuyos.",
+      "ctaHeroText": "Elige una herramienta y empieza. Sin configuración ni cuenta.",
+      "getStarted": "Empezar"
+    },
+    "search": {
+      "results": "Resultados",
+      "nothingFound": "Sin resultados para",
+      "toolCategories": "Categorías"
+    },
+    "tool": {
+      "howItWorks": "Cómo funciona",
+      "whyThisTool": "Por qué esta herramienta",
+      "faq": "Preguntas",
+      "notFound": "Herramienta no encontrada",
+      "notFoundDesc": "Esta herramienta no existe o fue movida.",
+      "backHome": "Volver al inicio",
+      "comingSoonDesc": "Esta herramienta está en desarrollo. Vuelve pronto."
+    },
+    "category": {
+      "toolsCount": "herramientas",
+      "whatYouCanDo": "Qué puedes hacer",
+      "categoryFaq": "FAQ de categoría",
+      "notFound": "Categoría no encontrada",
+      "notFoundDesc": "Esta categoría no existe.",
+      "empty": "Sin herramientas aún."
+    },
+    "footer": {
+      "tagline": "Más de 50 herramientas en el navegador. Sin subidas ni cuentas.",
+      "tools": "Herramientas",
+      "company": "Empresa",
+      "rights": "Todos los derechos reservados.",
+      "privacy": "Privacidad",
+      "cookies": "Cookies",
+      "terms": "Términos",
+      "disclaimer": "Aviso legal",
+      "privacyNote": "Todo funciona en tu navegador. Nunca vemos tus archivos."
+    },
+    "cookie": {
+      "title": "Cookies y anuncios",
+      "body": "Usamos almacenamiento esencial y podemos usar Google Analytics y AdSense. Puedes aceptar o rechazar cookies opcionales.",
+      "accept": "Aceptar todo",
+      "reject": "Rechazar opcionales",
+      "privacy": "Política de privacidad",
+      "cookiesLink": "Política de cookies"
+    }
+  },
+  "labels": {
+    "categories": {
+      "image": {
+        "label": "Herramientas de imagen",
+        "description": "Comprime, convierte y edita imágenes fácilmente."
+      },
+      "pdf": {
+        "label": "Herramientas PDF",
+        "description": "Combina, divide y convierte PDF."
+      },
+      "text": {
+        "label": "Herramientas de texto",
+        "description": "Cuenta palabras, cambia mayúsculas y analiza texto."
+      },
+      "student": {
+        "label": "Herramientas estudiantiles",
+        "description": "Calculadoras y ayudas para el éxito académico."
+      },
+      "business": {
+        "label": "Herramientas de negocio",
+        "description": "Facturas, códigos QR y productividad."
+      },
+      "converter": {
+        "label": "Convertidores",
+        "description": "Conversiones de unidades y medidas."
+      },
+      "developer": {
+        "label": "Herramientas para desarrolladores",
+        "description": "Formatea, minifica y codifica datos."
+      }
+    },
+    "tools": {
+      "image-compressor": {
+        "name": "Compresor de imágenes",
+        "description": "Gratis Compresor de imágenes En línea."
+      },
+      "image-to-pdf": {
+        "name": "Imagen a PDF",
+        "description": "Gratis Imagen a PDF En línea."
+      },
+      "image-resizer": {
+        "name": "Redimensionar imágenes",
+        "description": "Gratis Redimensionar imágenes En línea."
+      },
+      "image-converter": {
+        "name": "Convertidor de imágenes",
+        "description": "Gratis Convertidor de imágenes En línea."
+      },
+      "merge-pdf": {
+        "name": "Unir PDF",
+        "description": "Gratis Unir PDF En línea."
+      },
+      "split-pdf": {
+        "name": "Dividir PDF",
+        "description": "Gratis Dividir PDF En línea."
+      },
+      "pdf-to-word": {
+        "name": "PDF a Word",
+        "description": "Gratis PDF a Word En línea."
+      },
+      "pdf-to-image": {
+        "name": "PDF a imagen",
+        "description": "Gratis PDF a imagen En línea."
+      },
+      "word-counter": {
+        "name": "Contador de palabras",
+        "description": "Gratis Contador de palabras En línea."
+      },
+      "case-converter": {
+        "name": "Convertidor de mayúsculas",
+        "description": "Gratis Convertidor de mayúsculas En línea."
+      },
+      "text-to-speech": {
+        "name": "Texto a voz",
+        "description": "Gratis Texto a voz En línea."
+      },
+      "plagiarism-checker": {
+        "name": "Detector de plagio",
+        "description": "Gratis Detector de plagio En línea."
+      },
+      "gpa-calculator": {
+        "name": "Calculadora GPA",
+        "description": "Gratis Calculadora GPA En línea."
+      },
+      "percentage-calculator": {
+        "name": "Calculadora de porcentajes",
+        "description": "Gratis Calculadora de porcentajes En línea."
+      },
+      "grade-calculator": {
+        "name": "Calculadora de notas",
+        "description": "Gratis Calculadora de notas En línea."
+      },
+      "compound-interest": {
+        "name": "Interés compuesto",
+        "description": "Gratis Interés compuesto En línea."
+      },
+      "qr-code-generator": {
+        "name": "Generador de código QR",
+        "description": "Gratis Generador de código QR En línea."
+      },
+      "invoice-generator": {
+        "name": "Generador de facturas",
+        "description": "Gratis Generador de facturas En línea."
+      },
+      "password-generator": {
+        "name": "Generador de contraseñas",
+        "description": "Gratis Generador de contraseñas En línea."
+      },
+      "age-calculator": {
+        "name": "Calculadora de edad",
+        "description": "Gratis Calculadora de edad En línea."
+      },
+      "unit-converter": {
+        "name": "Convertidor de unidades",
+        "description": "Gratis Convertidor de unidades En línea."
+      },
+      "length-converter": {
+        "name": "Convertidor de longitud",
+        "description": "Gratis Convertidor de longitud En línea."
+      },
+      "time-converter": {
+        "name": "Zonas horarias",
+        "description": "Gratis Zonas horarias En línea."
+      },
+      "crop-image": {
+        "name": "Recortar imagen",
+        "description": "Gratis Recortar imagen En línea."
+      },
+      "jpg-to-png": {
+        "name": "JPG a PNG",
+        "description": "Gratis JPG a PNG En línea."
+      },
+      "png-to-jpg": {
+        "name": "PNG a JPG",
+        "description": "Gratis PNG a JPG En línea."
+      },
+      "webp-converter": {
+        "name": "Convertidor WebP",
+        "description": "Gratis Convertidor WebP En línea."
+      },
+      "background-remover": {
+        "name": "Quitar fondo",
+        "description": "Gratis Quitar fondo En línea."
+      },
+      "watermark-maker": {
+        "name": "Marca de agua",
+        "description": "Gratis Marca de agua En línea."
+      },
+      "character-counter": {
+        "name": "Contador de caracteres",
+        "description": "Gratis Contador de caracteres En línea."
+      },
+      "rewrite-text": {
+        "name": "Reescribir texto",
+        "description": "Gratis Reescribir texto En línea."
+      },
+      "grammar-checker": {
+        "name": "Corrector gramatical",
+        "description": "Gratis Corrector gramatical En línea."
+      },
+      "remove-duplicates": {
+        "name": "Eliminar duplicados",
+        "description": "Gratis Eliminar duplicados En línea."
+      },
+      "summarizer": {
+        "name": "Resumidor de texto",
+        "description": "Gratis Resumidor de texto En línea."
+      },
+      "citation-generator": {
+        "name": "Generador de citas",
+        "description": "Gratis Generador de citas En línea."
+      },
+      "study-timer": {
+        "name": "Temporizador de estudio",
+        "description": "Gratis Temporizador de estudio En línea."
+      },
+      "random-name-picker": {
+        "name": "Selector de nombres",
+        "description": "Gratis Selector de nombres En línea."
+      },
+      "scientific-calculator": {
+        "name": "Calculadora científica",
+        "description": "Gratis Calculadora científica En línea."
+      },
+      "json-formatter": {
+        "name": "Formateador JSON",
+        "description": "Gratis Formateador JSON En línea."
+      },
+      "base64-encoder": {
+        "name": "Codificador Base64",
+        "description": "Gratis Codificador Base64 En línea."
+      },
+      "css-minifier": {
+        "name": "Minificador CSS",
+        "description": "Gratis Minificador CSS En línea."
+      },
+      "html-beautifier": {
+        "name": "Formateador HTML",
+        "description": "Gratis Formateador HTML En línea."
+      },
+      "color-picker": {
+        "name": "Selector de color",
+        "description": "Gratis Selector de color En línea."
+      },
+      "color-palette-generator": {
+        "name": "Paleta de colores",
+        "description": "Gratis Paleta de colores En línea."
+      }
+    }
+  },
   "Index": {
     "title": "Herramientas online gratis — PDF, imágenes y productividad",
     "description": "Comprime imágenes, convierte PDF a Word, genera códigos QR y más. 100 % gratis, rápido y seguro. Sin registro."

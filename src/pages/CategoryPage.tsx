@@ -6,6 +6,7 @@ import { generateBreadcrumbSchema, generateCollectionSchema } from '@/components
 import { Button } from '@/components/ui/button'
 import { getCategoryKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
+import { useTranslations } from '@/hooks/useTranslations'
 import { getCategorySeo } from '@/lib/seo-messages'
 import { SITE_URL } from '@/lib/locale-config'
 import { getCategoryEditorial } from '@/lib/category-editorial'
@@ -19,9 +20,9 @@ import {
 export default function CategoryPage() {
   const locale = useLocale()
   const lp = useLocalizedPath()
+  const { t, categoryLabel, localizeTool } = useTranslations()
   const { categoryId } = useParams<{ categoryId: string }>()
   const category = categories.find((c) => c.id === categoryId)
-  const tools = getToolsByCategory(categoryId || '')
 
   if (!category) {
     return (
@@ -32,21 +33,23 @@ export default function CategoryPage() {
         }}
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <h1 className="text-3xl font-bold mb-3">Category not found</h1>
-          <p className="text-muted-foreground mb-8">This category doesn't exist. It might have been moved or removed.</p>
-          <Link to="/">
-            <Button className="rounded-xl">Back to home</Button>
+          <h1 className="text-3xl font-bold mb-3">{t('category.notFound')}</h1>
+          <p className="text-muted-foreground mb-8">{t('category.notFoundDesc')}</p>
+          <Link to={lp('/')}>
+            <Button className="rounded-xl">{t('tool.backHome')}</Button>
           </Link>
         </div>
       </Layout>
     )
   }
 
+  const cat = categoryLabel(category.id, { label: category.label, description: category.description })
+  const tools = getToolsByCategory(categoryId || '').map(localizeTool)
   const categoryEditorial = getCategoryEditorial(category.id)
 
   const categorySeo = getCategorySeo(category.id, locale, {
-    title: `${category.label} — Free Online Tools | SmartDigitalTips`,
-    description: category.description,
+    title: `${cat.label} — Free Online Tools | SmartDigitalTips`,
+    description: cat.description,
   })
 
   const meta = {
@@ -60,11 +63,11 @@ export default function CategoryPage() {
     schema: [
       generateBreadcrumbSchema([
         { name: 'Home', url: `${SITE_URL}${lp('/')}` },
-        { name: category.label, url: `${SITE_URL}${lp(`/category/${category.id}`)}` },
+        { name: cat.label, url: `${SITE_URL}${lp(`/category/${category.id}`)}` },
       ]),
       generateCollectionSchema(
-        `${category.label} - Free Online Tools`,
-        category.description,
+        `${cat.label} - Free Online Tools`,
+        cat.description,
         `${SITE_URL}${lp(`/category/${category.id}`)}`,
         tools.map((tool) => ({
           name: tool.name,
@@ -78,7 +81,7 @@ export default function CategoryPage() {
     <Layout 
       meta={meta}
       breadcrumbs={[
-        { name: category.label, path: `/category/${category.id}` },
+        { name: cat.label, path: `/category/${category.id}` },
       ]}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -86,13 +89,13 @@ export default function CategoryPage() {
         <div className="mb-10 max-w-2xl">
           <div className="mb-4 flex flex-wrap items-center gap-2">
             <span className="px-2 py-0.5 rounded bg-primary/10 text-primary text-[11px] font-bold uppercase tracking-wider">
-              {tools.length} tools
+              {tools.length} {t('category.toolsCount')}
             </span>
             <span className="text-[11px] text-muted-foreground/50">•</span>
-            <span className="text-[11px] text-muted-foreground/50 uppercase tracking-wider font-medium">All free</span>
+            <span className="text-[11px] text-muted-foreground/50 uppercase tracking-wider font-medium">{t('common.free')}</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-3">{category.label}</h1>
-          <p className="text-muted-foreground leading-relaxed">{category.description}</p>
+          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-3">{cat.label}</h1>
+          <p className="text-muted-foreground leading-relaxed">{cat.description}</p>
         </div>
 
         {categoryEditorial && (
@@ -106,7 +109,7 @@ export default function CategoryPage() {
             </div>
             <div>
               <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-                What you can do here
+                {t('category.whatYouCanDo')}
               </h2>
               <ul className="grid sm:grid-cols-2 gap-2">
                 {categoryEditorial.highlights.map((item) => (
@@ -121,7 +124,7 @@ export default function CategoryPage() {
             </div>
             {categoryEditorial.faqs.length > 0 && (
               <div>
-                <h2 className="text-lg font-bold tracking-tight mb-4">Category FAQ</h2>
+                <h2 className="text-lg font-bold tracking-tight mb-4">{t('category.categoryFaq')}</h2>
                 <Accordion type="single" collapsible className="w-full max-w-2xl">
                   {categoryEditorial.faqs.map((faq, index) => (
                     <AccordionItem key={faq.question} value={`cat-faq-${index}`} className="border-border">
@@ -161,12 +164,12 @@ export default function CategoryPage() {
                     </h3>
                     {tool.new && (
                       <span className="px-1.5 py-0.5 rounded bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider">
-                        New
+                        {t('common.new')}
                       </span>
                     )}
                     {tool.trending && (
                       <span className="px-1.5 py-0.5 rounded bg-foreground/10 text-foreground text-[10px] font-bold uppercase tracking-wider">
-                        Trending
+                        {t('common.trending')}
                       </span>
                     )}
                   </div>
@@ -180,23 +183,23 @@ export default function CategoryPage() {
           </div>
         ) : (
           <div className="text-center py-20">
-            <p className="text-muted-foreground">No tools in this category yet. Check back soon.</p>
+            <p className="text-muted-foreground">{t('category.empty')}</p>
           </div>
         )}
 
         {/* Other Categories — pill links */}
         <div className="mt-16 pt-12 border-t border-border">
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">Other categories</h2>
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-4">{t('common.otherCategories')}</h2>
           <div className="flex flex-wrap gap-2">
             {categories
               .filter((c) => c.id !== categoryId)
-              .map((cat) => (
+              .map((other) => (
                 <Link
-                  key={cat.id}
-                  to={lp(`/category/${cat.id}`)}
+                  key={other.id}
+                  to={lp(`/category/${other.id}`)}
                   className="px-4 py-2 rounded-full border border-border hover:border-primary/30 hover:bg-primary/5 hover:text-primary transition-all text-sm font-medium"
                 >
-                  {cat.label}
+                  {categoryLabel(other.id, { label: other.label, description: other.description }).label}
                 </Link>
               ))}
           </div>

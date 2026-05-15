@@ -263,6 +263,311 @@
       "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
     }
   },
+  "ui": {
+    "nav": {
+      "home": "Início",
+      "tools": "Ferramentas",
+      "blog": "Blog",
+      "about": "Sobre",
+      "contact": "Contato",
+      "search": "Pesquisar...",
+      "searchPlaceholder": "Pesquisar ferramentas...",
+      "noResults": "Nenhuma ferramenta"
+    },
+    "common": {
+      "new": "Novo",
+      "trending": "Em alta",
+      "popular": "Popular",
+      "free": "Grátis",
+      "allTools": "Todas",
+      "viewAll": "Ver tudo",
+      "browseAll": "Ver ferramentas",
+      "loading": "Carregando...",
+      "comingSoon": "Em breve",
+      "relatedTools": "Ferramentas relacionadas",
+      "otherCategories": "Outras categorias",
+      "toolsCount": "ferramentas"
+    },
+    "home": {
+      "badge": "100% no navegador — seus arquivos não saem do dispositivo",
+      "heroTitle": "Pare de enviar seus arquivos a estranhos.",
+      "heroSubtitle": "Ferramentas grátis para imagens, PDF, texto e mais. Tudo no navegador. Sem contas nem marcas d'água.",
+      "tryWordCounter": "Contador de palavras",
+      "cardPrivateTitle": "Privado por padrão",
+      "cardPrivateText": "Os arquivos são processados no navegador. Não vemos nem vendemos seus dados.",
+      "cardInstantTitle": "Resultados instantâneos",
+      "cardInstantText": "Sem esperar servidor. Abra uma ferramenta, envie um arquivo, veja o resultado.",
+      "cardFreeTitle": "Sem pegadinhas",
+      "cardFreeText": "Sem contas, limites ou premium. Todas as ferramentas são grátis.",
+      "mostUsed": "Ferramentas mais usadas",
+      "browseByCategory": "Explorar por categoria",
+      "trendingNow": "Em alta agora",
+      "newTools": "Novas ferramentas",
+      "ctaTitle": "Precisa de uma ferramenta?",
+      "ctaText": "Adicionamos ferramentas toda semana. Diga o que precisa.",
+      "contactUs": "Fale conosco",
+      "mostUsedSubtitle": "O que as pessoas realmente usam.",
+      "pickCategoryTitle": "Escolha uma categoria. Mãos à obra.",
+      "pickCategorySubtitle": "Sete categorias. Sem atrito.",
+      "explore": "Explorar",
+      "trendingRightNow": "Em alta agora",
+      "justShipped": "Acabou de sair",
+      "ctaHeroTitle": "Seus arquivos continuam seus.",
+      "ctaHeroText": "Escolha uma ferramenta e comece. Sem configuração nem conta.",
+      "getStarted": "Começar"
+    },
+    "search": {
+      "results": "Resultados",
+      "nothingFound": "Nada encontrado para",
+      "toolCategories": "Categorias"
+    },
+    "tool": {
+      "howItWorks": "Como funciona",
+      "whyThisTool": "Por que esta ferramenta",
+      "faq": "Perguntas",
+      "notFound": "Ferramenta não encontrada",
+      "notFoundDesc": "Esta ferramenta não existe ou foi movida.",
+      "backHome": "Voltar ao início",
+      "comingSoonDesc": "Esta ferramenta está em desenvolvimento. Volte em breve."
+    },
+    "category": {
+      "toolsCount": "ferramentas",
+      "whatYouCanDo": "O que você pode fazer",
+      "categoryFaq": "FAQ da categoria",
+      "notFound": "Categoria não encontrada",
+      "notFoundDesc": "Esta categoria não existe.",
+      "empty": "Nenhuma ferramenta ainda."
+    },
+    "footer": {
+      "tagline": "Mais de 50 ferramentas no navegador. Sem uploads nem contas.",
+      "tools": "Ferramentas",
+      "company": "Empresa",
+      "rights": "Todos os direitos reservados.",
+      "privacy": "Privacidade",
+      "cookies": "Cookies",
+      "terms": "Termos",
+      "disclaimer": "Aviso legal",
+      "privacyNote": "Tudo roda no navegador. Nunca vemos seus arquivos."
+    },
+    "cookie": {
+      "title": "Cookies e anúncios",
+      "body": "Usamos armazenamento essencial e podemos usar Google Analytics e AdSense. Você pode aceitar ou rejeitar cookies opcionais.",
+      "accept": "Aceitar tudo",
+      "reject": "Rejeitar opcionais",
+      "privacy": "Política de privacidade",
+      "cookiesLink": "Política de cookies"
+    }
+  },
+  "labels": {
+    "categories": {
+      "image": {
+        "label": "Ferramentas de imagem",
+        "description": "Comprima, converta e edite imagens com facilidade."
+      },
+      "pdf": {
+        "label": "Ferramentas PDF",
+        "description": "Mescle, divida e converta PDFs."
+      },
+      "text": {
+        "label": "Ferramentas de texto",
+        "description": "Conte palavras, altere maiúsculas e analise texto."
+      },
+      "student": {
+        "label": "Ferramentas estudantis",
+        "description": "Calculadoras e ajudas para o sucesso acadêmico."
+      },
+      "business": {
+        "label": "Ferramentas de negócios",
+        "description": "Faturas, QR codes e produtividade."
+      },
+      "converter": {
+        "label": "Conversores",
+        "description": "Conversão de unidades e medidas."
+      },
+      "developer": {
+        "label": "Ferramentas para desenvolvedores",
+        "description": "Formate, minifique e codifique dados."
+      }
+    },
+    "tools": {
+      "image-compressor": {
+        "name": "Compressor de imagens",
+        "description": "Grátis Compressor de imagens Online."
+      },
+      "image-to-pdf": {
+        "name": "Imagem para PDF",
+        "description": "Grátis Imagem para PDF Online."
+      },
+      "image-resizer": {
+        "name": "Redimensionar imagens",
+        "description": "Grátis Redimensionar imagens Online."
+      },
+      "image-converter": {
+        "name": "Conversor de imagens",
+        "description": "Grátis Conversor de imagens Online."
+      },
+      "merge-pdf": {
+        "name": "Mesclar PDF",
+        "description": "Grátis Mesclar PDF Online."
+      },
+      "split-pdf": {
+        "name": "Dividir PDF",
+        "description": "Grátis Dividir PDF Online."
+      },
+      "pdf-to-word": {
+        "name": "PDF para Word",
+        "description": "Grátis PDF para Word Online."
+      },
+      "pdf-to-image": {
+        "name": "PDF para imagem",
+        "description": "Grátis PDF para imagem Online."
+      },
+      "word-counter": {
+        "name": "Contador de palavras",
+        "description": "Grátis Contador de palavras Online."
+      },
+      "case-converter": {
+        "name": "Conversor de maiúsculas",
+        "description": "Grátis Conversor de maiúsculas Online."
+      },
+      "text-to-speech": {
+        "name": "Texto para fala",
+        "description": "Grátis Texto para fala Online."
+      },
+      "plagiarism-checker": {
+        "name": "Verificador de plágio",
+        "description": "Grátis Verificador de plágio Online."
+      },
+      "gpa-calculator": {
+        "name": "Calculadora GPA",
+        "description": "Grátis Calculadora GPA Online."
+      },
+      "percentage-calculator": {
+        "name": "Calculadora de porcentagem",
+        "description": "Grátis Calculadora de porcentagem Online."
+      },
+      "grade-calculator": {
+        "name": "Calculadora de notas",
+        "description": "Grátis Calculadora de notas Online."
+      },
+      "compound-interest": {
+        "name": "Juros compostos",
+        "description": "Grátis Juros compostos Online."
+      },
+      "qr-code-generator": {
+        "name": "Gerador de QR Code",
+        "description": "Grátis Gerador de QR Code Online."
+      },
+      "invoice-generator": {
+        "name": "Gerador de faturas",
+        "description": "Grátis Gerador de faturas Online."
+      },
+      "password-generator": {
+        "name": "Gerador de senhas",
+        "description": "Grátis Gerador de senhas Online."
+      },
+      "age-calculator": {
+        "name": "Calculadora de idade",
+        "description": "Grátis Calculadora de idade Online."
+      },
+      "unit-converter": {
+        "name": "Conversor de unidades",
+        "description": "Grátis Conversor de unidades Online."
+      },
+      "length-converter": {
+        "name": "Conversor de comprimento",
+        "description": "Grátis Conversor de comprimento Online."
+      },
+      "time-converter": {
+        "name": "Fuso horário",
+        "description": "Grátis Fuso horário Online."
+      },
+      "crop-image": {
+        "name": "Recortar imagem",
+        "description": "Grátis Recortar imagem Online."
+      },
+      "jpg-to-png": {
+        "name": "JPG para PNG",
+        "description": "Grátis JPG para PNG Online."
+      },
+      "png-to-jpg": {
+        "name": "PNG para JPG",
+        "description": "Grátis PNG para JPG Online."
+      },
+      "webp-converter": {
+        "name": "Conversor WebP",
+        "description": "Grátis Conversor WebP Online."
+      },
+      "background-remover": {
+        "name": "Remover fundo",
+        "description": "Grátis Remover fundo Online."
+      },
+      "watermark-maker": {
+        "name": "Marca d'água",
+        "description": "Grátis Marca d'água Online."
+      },
+      "character-counter": {
+        "name": "Contador de caracteres",
+        "description": "Grátis Contador de caracteres Online."
+      },
+      "rewrite-text": {
+        "name": "Reescrever texto",
+        "description": "Grátis Reescrever texto Online."
+      },
+      "grammar-checker": {
+        "name": "Corretor gramatical",
+        "description": "Grátis Corretor gramatical Online."
+      },
+      "remove-duplicates": {
+        "name": "Remover duplicatas",
+        "description": "Grátis Remover duplicatas Online."
+      },
+      "summarizer": {
+        "name": "Resumidor de texto",
+        "description": "Grátis Resumidor de texto Online."
+      },
+      "citation-generator": {
+        "name": "Gerador de citações",
+        "description": "Grátis Gerador de citações Online."
+      },
+      "study-timer": {
+        "name": "Timer de estudo",
+        "description": "Grátis Timer de estudo Online."
+      },
+      "random-name-picker": {
+        "name": "Sorteador de nomes",
+        "description": "Grátis Sorteador de nomes Online."
+      },
+      "scientific-calculator": {
+        "name": "Calculadora científica",
+        "description": "Grátis Calculadora científica Online."
+      },
+      "json-formatter": {
+        "name": "Formatador JSON",
+        "description": "Grátis Formatador JSON Online."
+      },
+      "base64-encoder": {
+        "name": "Codificador Base64",
+        "description": "Grátis Codificador Base64 Online."
+      },
+      "css-minifier": {
+        "name": "Minificador CSS",
+        "description": "Grátis Minificador CSS Online."
+      },
+      "html-beautifier": {
+        "name": "Formatador HTML",
+        "description": "Grátis Formatador HTML Online."
+      },
+      "color-picker": {
+        "name": "Seletor de cores",
+        "description": "Grátis Seletor de cores Online."
+      },
+      "color-palette-generator": {
+        "name": "Paleta de cores",
+        "description": "Grátis Paleta de cores Online."
+      }
+    }
+  },
   "Index": {
     "title": "Ferramentas online grátis — PDF, imagens e produtividade",
     "description": "Comprima imagens, converta PDF para Word, gere QR codes e mais. 100% grátis, rápido e seguro. Sem cadastro."

@@ -7,10 +7,16 @@ import { blogPosts } from '../src/data/blog.ts'
 import {
   LOCALES,
   PAGES,
+  TOOL_NAMES,
   buildToolSeo,
   buildCategorySeo,
   BRAND,
 } from './seo-locale-templates.mjs'
+import {
+  buildUiBundle,
+  buildCategoryLabels,
+  buildToolLabels,
+} from './ui-translations.mjs'
 
 const outDir = join(process.cwd(), 'messages')
 if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true })
@@ -21,6 +27,11 @@ for (const locale of LOCALES) {
     tools: {},
     categories: {},
     blog: {},
+    ui: buildUiBundle(locale),
+    labels: {
+      categories: buildCategoryLabels(locale, categories),
+      tools: {},
+    },
   }
 
   for (const [pageId, translations] of Object.entries(PAGES)) {
@@ -31,6 +42,8 @@ for (const locale of LOCALES) {
   for (const tool of tools) {
     messages.tools[tool.id] = buildToolSeo(tool, locale)
   }
+
+  messages.labels.tools = buildToolLabels(locale, tools, TOOL_NAMES, messages.tools)
 
   for (const category of categories) {
     messages.categories[category.id] = buildCategorySeo(category, locale)

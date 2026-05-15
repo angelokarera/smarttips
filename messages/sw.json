@@ -263,6 +263,311 @@
       "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
     }
   },
+  "ui": {
+    "nav": {
+      "home": "Nyumbani",
+      "tools": "Zana",
+      "blog": "Blogu",
+      "about": "Kuhusu",
+      "contact": "Wasiliana",
+      "search": "Tafuta...",
+      "searchPlaceholder": "Tafuta zana...",
+      "noResults": "Hakuna zana"
+    },
+    "common": {
+      "new": "Mpya",
+      "trending": "Maarufu",
+      "popular": "Maarufu",
+      "free": "Bure",
+      "allTools": "Zana zote",
+      "viewAll": "Angalia zote",
+      "browseAll": "Angalia zana zote",
+      "loading": "Inapakia...",
+      "comingSoon": "Inakuja hivi karibuni",
+      "relatedTools": "Zana zinazohusiana",
+      "otherCategories": "Kategoria nyingine",
+      "toolsCount": "zana"
+    },
+    "home": {
+      "badge": "100% kwenye kivinjari — faili zako hubaki kwenye kifaa chako",
+      "heroTitle": "Acha kupakia faili zako kwa wageni.",
+      "heroSubtitle": "Zana za bure za picha, PDF, maandishi na zaidi. Kila kitu kinafanya kazi kwenye kivinjari. Hakuna akaunti. Hakuna alama ya maji.",
+      "tryWordCounter": "Kihesabu maneno",
+      "cardPrivateTitle": "Faragha kwa chaguo-msingi",
+      "cardPrivateText": "Faili zinachakatwa kwenye kivinjari. Hatuoni, kuhifadhi, au kuuza data yako.",
+      "cardInstantTitle": "Matokeo papo hapo",
+      "cardInstantText": "Hakuna kusubiri seva. Fungua zana, weka faili, pata matokeo.",
+      "cardFreeTitle": "Bila masharti",
+      "cardFreeText": "Hakuna akaunti, hakuna kikomo, hakuna premium. Kila zana ni bure.",
+      "mostUsed": "Zana zinazotumika zaidi",
+      "browseByCategory": "Vinjari kwa kategoria",
+      "trendingNow": "Maarufu sasa",
+      "newTools": "Zana mpya",
+      "ctaTitle": "Unahitaji zana maalum?",
+      "ctaText": "Tunaongeza zana kila wiki. Tuambie unachohitaji.",
+      "contactUs": "Wasiliana nasi",
+      "mostUsedSubtitle": "Zana watu wanazotumia tena.",
+      "pickCategoryTitle": "Chagua kategoria. Anza kazi.",
+      "pickCategorySubtitle": "Kategoria saba. Hakuna kikwazo.",
+      "explore": "Chunguza",
+      "trendingRightNow": "Maarufu sasa",
+      "justShipped": "Imeongezwa hivi karibuni",
+      "ctaHeroTitle": "Faili zako ni zako.",
+      "ctaHeroText": "Chagua zana yoyote na uanze. Hakuna usanidi wala akaunti.",
+      "getStarted": "Anza"
+    },
+    "search": {
+      "results": "Matokeo",
+      "nothingFound": "Hakuna matokeo kwa",
+      "toolCategories": "Kategoria za zana"
+    },
+    "tool": {
+      "howItWorks": "Jinsi inavyofanya kazi",
+      "whyThisTool": "Kwa nini zana hii",
+      "faq": "Maswali",
+      "notFound": "Zana haipatikani",
+      "notFoundDesc": "Zana hii haipo au imehamishwa.",
+      "backHome": "Rudi nyumbani",
+      "comingSoonDesc": "Zana hii inatengenezwa. Rudi baada ya siku chache."
+    },
+    "category": {
+      "toolsCount": "zana",
+      "whatYouCanDo": "Unachoweza kufanya",
+      "categoryFaq": "Maswali ya kategoria",
+      "notFound": "Kategoria haipatikani",
+      "notFoundDesc": "Kategoria hii haipo.",
+      "empty": "Hakuna zana bado."
+    },
+    "footer": {
+      "tagline": "Zana 50+ kwenye kivinjari. Hakuna upakiaji, hakuna akaunti.",
+      "tools": "Zana",
+      "company": "Kampuni",
+      "rights": "Haki zote zimehifadhiwa.",
+      "privacy": "Faragha",
+      "cookies": "Vidakuzi",
+      "terms": "Masharti",
+      "disclaimer": "Kanusho",
+      "privacyNote": "Kila kitu kinafanya kazi kwenye kivinjari. Hatuoni faili zako."
+    },
+    "cookie": {
+      "title": "Vidakuzi na matangazo",
+      "body": "Tunatumia uhifadhi muhimu na tunaweza kutumia Google Analytics na AdSense. Unaweza kukubali au kukataa vidakuzi hiari.",
+      "accept": "Kubali zote",
+      "reject": "Kataa hiari",
+      "privacy": "Sera ya faragha",
+      "cookiesLink": "Sera ya vidakuzi"
+    }
+  },
+  "labels": {
+    "categories": {
+      "image": {
+        "label": "Zana za Picha",
+        "description": "Bana, badilisha na hariri picha kwa urahisi."
+      },
+      "pdf": {
+        "label": "Zana za PDF",
+        "description": "Unganisha, gawanya na badilisha PDF."
+      },
+      "text": {
+        "label": "Zana za Maandishi",
+        "description": "Hesabu maneno, badilisha herufi na chambua maandishi."
+      },
+      "student": {
+        "label": "Zana za Wanafunzi",
+        "description": "Vikokotozo na visaidizi vya masomo."
+      },
+      "business": {
+        "label": "Zana za Biashara",
+        "description": "Ankara, QR codes na zana za tija."
+      },
+      "converter": {
+        "label": "Vibadilishaji",
+        "description": "Ubadilishaji wa vipimo na vitengo."
+      },
+      "developer": {
+        "label": "Zana za Wasanidi",
+        "description": "Panga, fupisha na simba msimbo na data."
+      }
+    },
+    "tools": {
+      "image-compressor": {
+        "name": "Kibana Picha",
+        "description": "Bure Kibana Picha Mtandaoni."
+      },
+      "image-to-pdf": {
+        "name": "Picha hadi PDF",
+        "description": "Bure Picha hadi PDF Mtandaoni."
+      },
+      "image-resizer": {
+        "name": "Kubadilisha Ukubwa wa Picha",
+        "description": "Bure Kubadilisha Ukubwa wa Picha Mtandaoni."
+      },
+      "image-converter": {
+        "name": "Kibadilishaji Picha",
+        "description": "Bure Kibadilishaji Picha Mtandaoni."
+      },
+      "merge-pdf": {
+        "name": "Unganisha PDF",
+        "description": "Bure Unganisha PDF Mtandaoni."
+      },
+      "split-pdf": {
+        "name": "Gawanya PDF",
+        "description": "Bure Gawanya PDF Mtandaoni."
+      },
+      "pdf-to-word": {
+        "name": "PDF hadi Word",
+        "description": "Bure PDF hadi Word Mtandaoni."
+      },
+      "pdf-to-image": {
+        "name": "PDF hadi Picha",
+        "description": "Bure PDF hadi Picha Mtandaoni."
+      },
+      "word-counter": {
+        "name": "Kihesabu Maneno",
+        "description": "Bure Kihesabu Maneno Mtandaoni."
+      },
+      "case-converter": {
+        "name": "Kibadilishaji Herufi",
+        "description": "Bure Kibadilishaji Herufi Mtandaoni."
+      },
+      "text-to-speech": {
+        "name": "Maandishi hadi Sauti",
+        "description": "Bure Maandishi hadi Sauti Mtandaoni."
+      },
+      "plagiarism-checker": {
+        "name": "Kiangalia Wizi wa Maandishi",
+        "description": "Bure Kiangalia Wizi wa Maandishi Mtandaoni."
+      },
+      "gpa-calculator": {
+        "name": "Kikokotozo cha GPA",
+        "description": "Bure Kikokotozo cha GPA Mtandaoni."
+      },
+      "percentage-calculator": {
+        "name": "Kikokotozo cha Asilimia",
+        "description": "Bure Kikokotozo cha Asilimia Mtandaoni."
+      },
+      "grade-calculator": {
+        "name": "Kikokotozo cha Alama",
+        "description": "Bure Kikokotozo cha Alama Mtandaoni."
+      },
+      "compound-interest": {
+        "name": "Riba changamfu",
+        "description": "Bure Riba changamfu Mtandaoni."
+      },
+      "qr-code-generator": {
+        "name": "Kitengeneza QR",
+        "description": "Bure Kitengeneza QR Mtandaoni."
+      },
+      "invoice-generator": {
+        "name": "Kitengeneza Ankara",
+        "description": "Bure Kitengeneza Ankara Mtandaoni."
+      },
+      "password-generator": {
+        "name": "Kitengeneza Nenosiri",
+        "description": "Bure Kitengeneza Nenosiri Mtandaoni."
+      },
+      "age-calculator": {
+        "name": "Kikokotozo cha Umri",
+        "description": "Bure Kikokotozo cha Umri Mtandaoni."
+      },
+      "unit-converter": {
+        "name": "Kibadilishaji Vipimo",
+        "description": "Bure Kibadilishaji Vipimo Mtandaoni."
+      },
+      "length-converter": {
+        "name": "Urefu",
+        "description": "Bure Urefu Mtandaoni."
+      },
+      "time-converter": {
+        "name": "Majira ya Saa",
+        "description": "Bure Majira ya Saa Mtandaoni."
+      },
+      "crop-image": {
+        "name": "Punguza Picha",
+        "description": "Bure Punguza Picha Mtandaoni."
+      },
+      "jpg-to-png": {
+        "name": "JPG hadi PNG",
+        "description": "Bure JPG hadi PNG Mtandaoni."
+      },
+      "png-to-jpg": {
+        "name": "PNG hadi JPG",
+        "description": "Bure PNG hadi JPG Mtandaoni."
+      },
+      "webp-converter": {
+        "name": "WebP",
+        "description": "Bure WebP Mtandaoni."
+      },
+      "background-remover": {
+        "name": "Ondoa Mandharinyuma",
+        "description": "Bure Ondoa Mandharinyuma Mtandaoni."
+      },
+      "watermark-maker": {
+        "name": "Alama ya Maji",
+        "description": "Bure Alama ya Maji Mtandaoni."
+      },
+      "character-counter": {
+        "name": "Kihesabu Herufi",
+        "description": "Bure Kihesabu Herufi Mtandaoni."
+      },
+      "rewrite-text": {
+        "name": "Andika upya",
+        "description": "Bure Andika upya Mtandaoni."
+      },
+      "grammar-checker": {
+        "name": "Sarufi",
+        "description": "Bure Sarufi Mtandaoni."
+      },
+      "remove-duplicates": {
+        "name": "Ondoa marudio",
+        "description": "Bure Ondoa marudio Mtandaoni."
+      },
+      "summarizer": {
+        "name": "Muhtasari",
+        "description": "Bure Muhtasari Mtandaoni."
+      },
+      "citation-generator": {
+        "name": "Citation",
+        "description": "Bure Citation Mtandaoni."
+      },
+      "study-timer": {
+        "name": "Kipima muda cha kusoma",
+        "description": "Bure Kipima muda cha kusoma Mtandaoni."
+      },
+      "random-name-picker": {
+        "name": "Chagua jina nasibu",
+        "description": "Bure Chagua jina nasibu Mtandaoni."
+      },
+      "scientific-calculator": {
+        "name": "Kikokotozo cha kisayansi",
+        "description": "Bure Kikokotozo cha kisayansi Mtandaoni."
+      },
+      "json-formatter": {
+        "name": "JSON",
+        "description": "Bure JSON Mtandaoni."
+      },
+      "base64-encoder": {
+        "name": "Base64",
+        "description": "Bure Base64 Mtandaoni."
+      },
+      "css-minifier": {
+        "name": "CSS",
+        "description": "Bure CSS Mtandaoni."
+      },
+      "html-beautifier": {
+        "name": "HTML",
+        "description": "Bure HTML Mtandaoni."
+      },
+      "color-picker": {
+        "name": "Chagua rangi",
+        "description": "Bure Chagua rangi Mtandaoni."
+      },
+      "color-palette-generator": {
+        "name": "Palette ya rangi",
+        "description": "Bure Palette ya rangi Mtandaoni."
+      }
+    }
+  },
   "Index": {
     "title": "Zana za mtandaoni bure — PDF, picha na zana za kivinjari",
     "description": "Bana picha, badilisha PDF kuwa Word, tengeneza QR codes na zaidi. Bure kabisa, haraka na salama. Hakuna usajili."

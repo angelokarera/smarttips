@@ -263,6 +263,311 @@
       "description": "Learn how to create professional invoices, set clear payment terms, and use free invoice generators to ensure you get paid on time."
     }
   },
+  "ui": {
+    "nav": {
+      "home": "Home",
+      "tools": "Tools",
+      "blog": "Blog",
+      "about": "About",
+      "contact": "Contact",
+      "search": "Search...",
+      "searchPlaceholder": "Search tools...",
+      "noResults": "No tools found"
+    },
+    "common": {
+      "new": "New",
+      "trending": "Trending",
+      "popular": "Popular",
+      "free": "All free",
+      "allTools": "All tools",
+      "viewAll": "View all",
+      "browseAll": "Browse all tools",
+      "loading": "Loading interface...",
+      "comingSoon": "Coming soon",
+      "relatedTools": "Related tools",
+      "otherCategories": "Other categories",
+      "toolsCount": "tools"
+    },
+    "home": {
+      "badge": "100% browser-based — your files never leave your device",
+      "heroTitle": "Stop uploading your files to strangers.",
+      "heroSubtitle": "Free tools for images, PDFs, text, and more. Everything runs locally in your browser. No accounts. No watermarks. No data collection.",
+      "tryWordCounter": "Try Word Counter",
+      "cardPrivateTitle": "Private by default",
+      "cardPrivateText": "Files are processed in your browser tab. We physically cannot see, store, or sell your data.",
+      "cardInstantTitle": "Instant results",
+      "cardInstantText": "No loading spinners, no server roundtrips. Open a tool, drop in a file, get a result.",
+      "cardFreeTitle": "No strings attached",
+      "cardFreeText": "No accounts, no usage limits, no premium tier. Every tool is free. Period.",
+      "mostUsed": "Most-used tools",
+      "browseByCategory": "Browse by category",
+      "trendingNow": "Trending now",
+      "newTools": "New tools",
+      "ctaTitle": "Need a specific tool?",
+      "ctaText": "We add new tools every week. Tell us what you need.",
+      "contactUs": "Contact us",
+      "mostUsedSubtitle": "What people actually come back for.",
+      "pickCategoryTitle": "Pick a category. Get to work.",
+      "pickCategorySubtitle": "Seven categories. Zero friction between you and done.",
+      "explore": "Explore",
+      "trendingRightNow": "Trending right now",
+      "justShipped": "Just shipped",
+      "ctaHeroTitle": "Your files stay yours.",
+      "ctaHeroText": "Pick any tool and start using it. No setup, no account creation, no learning curve.",
+      "getStarted": "Get started"
+    },
+    "search": {
+      "results": "Results",
+      "nothingFound": "Nothing found for",
+      "toolCategories": "Tool Categories"
+    },
+    "tool": {
+      "howItWorks": "How it works",
+      "whyThisTool": "Why this tool",
+      "faq": "FAQ",
+      "notFound": "Tool not found",
+      "notFoundDesc": "This tool doesn't exist or may have been moved.",
+      "backHome": "Back to home",
+      "comingSoonDesc": "This tool is being built. Check back in a few days — we ship fast."
+    },
+    "category": {
+      "toolsCount": "tools",
+      "whatYouCanDo": "What you can do here",
+      "categoryFaq": "Category FAQ",
+      "notFound": "Category not found",
+      "notFoundDesc": "This category doesn't exist.",
+      "empty": "No tools in this category yet."
+    },
+    "footer": {
+      "tagline": "50+ browser-based tools. No uploads, no accounts, no nonsense.",
+      "tools": "Tools",
+      "company": "Company",
+      "rights": "All rights reserved.",
+      "privacy": "Privacy",
+      "cookies": "Cookies",
+      "terms": "Terms",
+      "disclaimer": "Disclaimer",
+      "privacyNote": "Everything runs in your browser. We never see your files."
+    },
+    "cookie": {
+      "title": "Cookies, ads, and analytics",
+      "body": "We use essential storage for preferences and may use Google Analytics and Google AdSense cookies for measurement, ad delivery, fraud prevention, and personalized ads where allowed. You can accept or reject optional cookies.",
+      "accept": "Accept all",
+      "reject": "Reject optional",
+      "privacy": "Privacy Policy",
+      "cookiesLink": "Cookie Policy"
+    }
+  },
+  "labels": {
+    "categories": {
+      "image": {
+        "label": "Image Tools",
+        "description": "Compress, convert, edit, and transform images effortlessly."
+      },
+      "pdf": {
+        "label": "PDF Tools",
+        "description": "Merge, split, convert, and manipulate PDF documents."
+      },
+      "text": {
+        "label": "Text Tools",
+        "description": "Count words, convert case, format, and analyze text."
+      },
+      "student": {
+        "label": "Student Tools",
+        "description": "Calculators, converters, and helpers for academic success."
+      },
+      "business": {
+        "label": "Business Tools",
+        "description": "Invoices, QR codes, and productivity utilities."
+      },
+      "converter": {
+        "label": "Converter Tools",
+        "description": "Unit conversions and measurement tools."
+      },
+      "developer": {
+        "label": "Developer Tools",
+        "description": "Format, minify, and encode code and data."
+      }
+    },
+    "tools": {
+      "image-compressor": {
+        "name": "Image Compressor",
+        "description": "Reduce image file size without losing quality. Supports JPG, PNG, and WebP."
+      },
+      "image-to-pdf": {
+        "name": "Image to PDF",
+        "description": "Convert JPG, PNG, and other image formats to PDF documents instantly."
+      },
+      "image-resizer": {
+        "name": "Image Resizer",
+        "description": "Resize images to exact dimensions for social media, websites, and printing."
+      },
+      "image-converter": {
+        "name": "Image Converter",
+        "description": "Convert between JPG, PNG, WebP, and BMP formats with one click."
+      },
+      "merge-pdf": {
+        "name": "Merge PDF",
+        "description": "Combine multiple PDF files into one document with drag-and-drop ordering."
+      },
+      "split-pdf": {
+        "name": "Split PDF",
+        "description": "Extract specific pages or split a PDF into multiple files."
+      },
+      "pdf-to-word": {
+        "name": "PDF to Word",
+        "description": "Convert PDF documents to editable Microsoft Word format."
+      },
+      "pdf-to-image": {
+        "name": "PDF to Image",
+        "description": "Convert PDF pages to JPG or PNG images for sharing and editing."
+      },
+      "word-counter": {
+        "name": "Word Counter",
+        "description": "Count words, characters, sentences, and paragraphs in real-time."
+      },
+      "case-converter": {
+        "name": "Case Converter",
+        "description": "Convert text between uppercase, lowercase, title case, and more."
+      },
+      "text-to-speech": {
+        "name": "Text to Speech",
+        "description": "Convert written text into natural-sounding audio using your browser."
+      },
+      "plagiarism-checker": {
+        "name": "Plagiarism Checker",
+        "description": "Check your text for duplicate content and originality score."
+      },
+      "gpa-calculator": {
+        "name": "GPA Calculator",
+        "description": "Calculate your Grade Point Average with support for multiple grading scales."
+      },
+      "percentage-calculator": {
+        "name": "Percentage Calculator",
+        "description": "Calculate percentages, percentage change, and what percentage one number is of another."
+      },
+      "grade-calculator": {
+        "name": "Grade Calculator",
+        "description": "Calculate your final grade based on assignments, exams, and weights."
+      },
+      "compound-interest": {
+        "name": "Compound Interest Calculator",
+        "description": "Calculate compound interest and see how your money grows over time."
+      },
+      "qr-code-generator": {
+        "name": "QR Code Generator",
+        "description": "Create custom QR codes for URLs, text, contact info, and WiFi."
+      },
+      "invoice-generator": {
+        "name": "Invoice Generator",
+        "description": "Create professional invoices with your branding and download as PDF."
+      },
+      "password-generator": {
+        "name": "Password Generator",
+        "description": "Generate secure, random passwords with customizable length and complexity."
+      },
+      "age-calculator": {
+        "name": "Age Calculator",
+        "description": "Calculate exact age in years, months, days, and even seconds."
+      },
+      "unit-converter": {
+        "name": "Unit Converter",
+        "description": "Convert length, weight, temperature, area, volume, and more."
+      },
+      "length-converter": {
+        "name": "Length Converter",
+        "description": "Convert between meters, feet, inches, miles, kilometers, and more."
+      },
+      "time-converter": {
+        "name": "Time Zone Converter",
+        "description": "Convert between time zones and calculate time differences worldwide."
+      },
+      "crop-image": {
+        "name": "Crop Image",
+        "description": "Crop your JPG, PNG, and WebP images online."
+      },
+      "jpg-to-png": {
+        "name": "JPG to PNG",
+        "description": "Convert JPG/JPEG images to PNG format instantly."
+      },
+      "png-to-jpg": {
+        "name": "PNG to JPG",
+        "description": "Convert PNG images to JPG format instantly."
+      },
+      "webp-converter": {
+        "name": "WebP Converter",
+        "description": "Convert images to and from WebP format."
+      },
+      "background-remover": {
+        "name": "Background Remover",
+        "description": "Remove white/light backgrounds from images using pixel thresholding."
+      },
+      "watermark-maker": {
+        "name": "Watermark Maker",
+        "description": "Add a diagonal text watermark to protect your images."
+      },
+      "character-counter": {
+        "name": "Character Counter",
+        "description": "Count characters, letters, digits, spaces, and lines in your text."
+      },
+      "rewrite-text": {
+        "name": "Rewrite Text",
+        "description": "Rewrite text to be formal, casual, shorter, or longer."
+      },
+      "grammar-checker": {
+        "name": "Grammar Checker",
+        "description": "Check for common grammar mistakes and spelling errors."
+      },
+      "remove-duplicates": {
+        "name": "Remove Duplicates",
+        "description": "Remove duplicate lines from your text or list."
+      },
+      "summarizer": {
+        "name": "Text Summarizer",
+        "description": "Summarize long text documents by extracting the most important sentences."
+      },
+      "citation-generator": {
+        "name": "Citation Generator",
+        "description": "Generate APA, MLA, or Chicago citations easily."
+      },
+      "study-timer": {
+        "name": "Study Timer",
+        "description": "Pomodoro timer to help you focus on studying and take breaks."
+      },
+      "random-name-picker": {
+        "name": "Random Name Picker",
+        "description": "Select a random name from a list using a fun slot machine animation."
+      },
+      "scientific-calculator": {
+        "name": "Scientific Calculator",
+        "description": "Advanced online scientific calculator for math problems."
+      },
+      "json-formatter": {
+        "name": "JSON Formatter",
+        "description": "Format, beautify, and minify your JSON data."
+      },
+      "base64-encoder": {
+        "name": "Base64 Encoder",
+        "description": "Encode to Base64 or decode Base64 strings quickly."
+      },
+      "css-minifier": {
+        "name": "CSS Minifier",
+        "description": "Minify your CSS to save space, or beautify it to read."
+      },
+      "html-beautifier": {
+        "name": "HTML Beautifier",
+        "description": "Format and minify HTML code effortlessly."
+      },
+      "color-picker": {
+        "name": "Color Picker",
+        "description": "Select colors and generate shades and complements."
+      },
+      "color-palette-generator": {
+        "name": "Color Palette Generator",
+        "description": "Generate SEO-optimized, highly accessible, and visually stunning color palettes based on your preferences."
+      }
+    }
+  },
   "Index": {
     "title": "Free Online Tools — PDF Converter, Image Compressor & Browser Utilities",
     "description": "Access free online tools instantly. Compress images, convert PDF to Word, generate QR codes, and more. 100% free, fast, and secure. No signup required."

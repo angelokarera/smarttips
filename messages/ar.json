@@ -263,6 +263,311 @@
       "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
     }
   },
+  "ui": {
+    "nav": {
+      "home": "الرئيسية",
+      "tools": "أدوات",
+      "blog": "المدونة",
+      "about": "من نحن",
+      "contact": "اتصل",
+      "search": "بحث...",
+      "searchPlaceholder": "ابحث عن أداة...",
+      "noResults": "لم يتم العثور على أدوات"
+    },
+    "common": {
+      "new": "جديد",
+      "trending": "رائج",
+      "popular": "شائع",
+      "free": "مجاني",
+      "allTools": "كل الأدوات",
+      "viewAll": "عرض الكل",
+      "browseAll": "تصفح الأدوات",
+      "loading": "جاري التحميل...",
+      "comingSoon": "قريباً",
+      "relatedTools": "أدوات ذات صلة",
+      "otherCategories": "فئات أخرى",
+      "toolsCount": "أدوات"
+    },
+    "home": {
+      "badge": "100٪ في المتصفح — ملفاتك لا تغادر جهازك",
+      "heroTitle": "توقف عن رفع ملفاتك لغرباء.",
+      "heroSubtitle": "أدوات مجانية للصور وPDF والنص والمزيد. كل شيء يعمل محلياً في متصفحك. بدون حسابات أو علامات مائية.",
+      "tryWordCounter": "عداد الكلمات",
+      "cardPrivateTitle": "خصوصية افتراضياً",
+      "cardPrivateText": "تتم معالجة الملفات في متصفحك. لا نرى بياناتك ولا نخزنها.",
+      "cardInstantTitle": "نتائج فورية",
+      "cardInstantText": "بدون انتظار الخادم. افتح أداة، أضف ملفاً، احصل على نتيجة.",
+      "cardFreeTitle": "بدون قيود",
+      "cardFreeText": "بدون حسابات أو حدود أو اشتراك مدفوع. كل الأدوات مجانية.",
+      "mostUsed": "الأدوات الأكثر استخداماً",
+      "browseByCategory": "تصفح حسب الفئة",
+      "trendingNow": "الرائج الآن",
+      "newTools": "أدوات جديدة",
+      "ctaTitle": "تحتاج أداة معينة؟",
+      "ctaText": "نضيف أدوات جديدة كل أسبوع. أخبرنا بما تحتاج.",
+      "contactUs": "اتصل بنا",
+      "mostUsedSubtitle": "ما يعود إليه المستخدمون فعلاً.",
+      "pickCategoryTitle": "اختر فئة وابدأ.",
+      "pickCategorySubtitle": "سبع فئات. بدون عوائق.",
+      "explore": "استكشف",
+      "trendingRightNow": "الرائج الآن",
+      "justShipped": "أُضيف للتو",
+      "ctaHeroTitle": "ملفاتك تبقى ملكك.",
+      "ctaHeroText": "اختر أي أداة وابدأ. بدون إعداد أو حساب.",
+      "getStarted": "ابدأ"
+    },
+    "search": {
+      "results": "النتائج",
+      "nothingFound": "لا نتائج لـ",
+      "toolCategories": "فئات الأدوات"
+    },
+    "tool": {
+      "howItWorks": "كيف يعمل",
+      "whyThisTool": "لماذا هذه الأداة",
+      "faq": "الأسئلة الشائعة",
+      "notFound": "الأداة غير موجودة",
+      "notFoundDesc": "هذه الأداة غير موجودة أو تم نقلها.",
+      "backHome": "العودة للرئيسية",
+      "comingSoonDesc": "هذه الأداة قيد الإنشاء. عد لاحقاً."
+    },
+    "category": {
+      "toolsCount": "أدوات",
+      "whatYouCanDo": "ما يمكنك فعله",
+      "categoryFaq": "أسئلة الفئة",
+      "notFound": "الفئة غير موجودة",
+      "notFoundDesc": "هذه الفئة غير موجودة.",
+      "empty": "لا أدوات في هذه الفئة بعد."
+    },
+    "footer": {
+      "tagline": "أكثر من 50 أداة في المتصفح. بدون رفع أو حسابات.",
+      "tools": "أدوات",
+      "company": "الشركة",
+      "rights": "جميع الحقوق محفوظة.",
+      "privacy": "الخصوصية",
+      "cookies": "ملفات تعريف الارتباط",
+      "terms": "الشروط",
+      "disclaimer": "إخلاء المسؤولية",
+      "privacyNote": "كل شيء يعمل في متصفحك. لا نرى ملفاتك أبداً."
+    },
+    "cookie": {
+      "title": "ملفات تعريف الارتباط والإعلانات",
+      "body": "نستخدم تخزيناً أساسياً وقد نستخدم Google Analytics وAdSense. يمكنك قبول أو رفض ملفات تعريف الارتباط الاختيارية.",
+      "accept": "قبول الكل",
+      "reject": "رفض الاختيارية",
+      "privacy": "سياسة الخصوصية",
+      "cookiesLink": "سياسة ملفات تعريف الارتباط"
+    }
+  },
+  "labels": {
+    "categories": {
+      "image": {
+        "label": "أدوات الصور",
+        "description": "اضغط وحوّل وحرّر الصور بسهولة."
+      },
+      "pdf": {
+        "label": "أدوات PDF",
+        "description": "دمج وتقسيم وتحويل مستندات PDF."
+      },
+      "text": {
+        "label": "أدوات النص",
+        "description": "عدّ الكلمات وحوّل الحالة وحلّل النص."
+      },
+      "student": {
+        "label": "أدوات الطلاب",
+        "description": "حاسبات وأدوات مساعدة للنجاح الدراسي."
+      },
+      "business": {
+        "label": "أدوات الأعمال",
+        "description": "فواتير ورموز QR وأدوات إنتاجية."
+      },
+      "converter": {
+        "label": "أدوات التحويل",
+        "description": "تحويل الوحدات وأدوات القياس."
+      },
+      "developer": {
+        "label": "أدوات المطورين",
+        "description": "تنسيق وتصغير وترميز الكود والبيانات."
+      }
+    },
+    "tools": {
+      "image-compressor": {
+        "name": "ضاغط الصور",
+        "description": "مجاني ضاغط الصور عبر الإنترنت."
+      },
+      "image-to-pdf": {
+        "name": "صورة إلى PDF",
+        "description": "مجاني صورة إلى PDF عبر الإنترنت."
+      },
+      "image-resizer": {
+        "name": "تغيير حجم الصور",
+        "description": "مجاني تغيير حجم الصور عبر الإنترنت."
+      },
+      "image-converter": {
+        "name": "محول الصور",
+        "description": "مجاني محول الصور عبر الإنترنت."
+      },
+      "merge-pdf": {
+        "name": "دمج PDF",
+        "description": "مجاني دمج PDF عبر الإنترنت."
+      },
+      "split-pdf": {
+        "name": "تقسيم PDF",
+        "description": "مجاني تقسيم PDF عبر الإنترنت."
+      },
+      "pdf-to-word": {
+        "name": "PDF إلى Word",
+        "description": "مجاني PDF إلى Word عبر الإنترنت."
+      },
+      "pdf-to-image": {
+        "name": "PDF إلى صورة",
+        "description": "مجاني PDF إلى صورة عبر الإنترنت."
+      },
+      "word-counter": {
+        "name": "عداد الكلمات",
+        "description": "مجاني عداد الكلمات عبر الإنترنت."
+      },
+      "case-converter": {
+        "name": "محول حالة النص",
+        "description": "مجاني محول حالة النص عبر الإنترنت."
+      },
+      "text-to-speech": {
+        "name": "نص إلى كلام",
+        "description": "مجاني نص إلى كلام عبر الإنترنت."
+      },
+      "plagiarism-checker": {
+        "name": "فحص الانتحال",
+        "description": "مجاني فحص الانتحال عبر الإنترنت."
+      },
+      "gpa-calculator": {
+        "name": "حاسبة المعدل",
+        "description": "مجاني حاسبة المعدل عبر الإنترنت."
+      },
+      "percentage-calculator": {
+        "name": "حاسبة النسبة المئوية",
+        "description": "مجاني حاسبة النسبة المئوية عبر الإنترنت."
+      },
+      "grade-calculator": {
+        "name": "حاسبة الدرجات",
+        "description": "مجاني حاسبة الدرجات عبر الإنترنت."
+      },
+      "compound-interest": {
+        "name": "حاسبة الفائدة المركبة",
+        "description": "مجاني حاسبة الفائدة المركبة عبر الإنترنت."
+      },
+      "qr-code-generator": {
+        "name": "مولد رمز QR",
+        "description": "مجاني مولد رمز QR عبر الإنترنت."
+      },
+      "invoice-generator": {
+        "name": "مولد الفواتير",
+        "description": "مجاني مولد الفواتير عبر الإنترنت."
+      },
+      "password-generator": {
+        "name": "مولد كلمات المرور",
+        "description": "مجاني مولد كلمات المرور عبر الإنترنت."
+      },
+      "age-calculator": {
+        "name": "حاسبة العمر",
+        "description": "مجاني حاسبة العمر عبر الإنترنت."
+      },
+      "unit-converter": {
+        "name": "محول الوحدات",
+        "description": "مجاني محول الوحدات عبر الإنترنت."
+      },
+      "length-converter": {
+        "name": "محول الطول",
+        "description": "مجاني محول الطول عبر الإنترنت."
+      },
+      "time-converter": {
+        "name": "محول المناطق الزمنية",
+        "description": "مجاني محول المناطق الزمنية عبر الإنترنت."
+      },
+      "crop-image": {
+        "name": "قص الصورة",
+        "description": "مجاني قص الصورة عبر الإنترنت."
+      },
+      "jpg-to-png": {
+        "name": "JPG إلى PNG",
+        "description": "مجاني JPG إلى PNG عبر الإنترنت."
+      },
+      "png-to-jpg": {
+        "name": "PNG إلى JPG",
+        "description": "مجاني PNG إلى JPG عبر الإنترنت."
+      },
+      "webp-converter": {
+        "name": "محول WebP",
+        "description": "مجاني محول WebP عبر الإنترنت."
+      },
+      "background-remover": {
+        "name": "إزالة الخلفية",
+        "description": "مجاني إزالة الخلفية عبر الإنترنت."
+      },
+      "watermark-maker": {
+        "name": "علامة مائية",
+        "description": "مجاني علامة مائية عبر الإنترنت."
+      },
+      "character-counter": {
+        "name": "عداد الأحرف",
+        "description": "مجاني عداد الأحرف عبر الإنترنت."
+      },
+      "rewrite-text": {
+        "name": "إعادة صياغة النص",
+        "description": "مجاني إعادة صياغة النص عبر الإنترنت."
+      },
+      "grammar-checker": {
+        "name": "مدقق نحوي",
+        "description": "مجاني مدقق نحوي عبر الإنترنت."
+      },
+      "remove-duplicates": {
+        "name": "إزالة التكرار",
+        "description": "مجاني إزالة التكرار عبر الإنترنت."
+      },
+      "summarizer": {
+        "name": "ملخص النص",
+        "description": "مجاني ملخص النص عبر الإنترنت."
+      },
+      "citation-generator": {
+        "name": "مولد الاستشهادات",
+        "description": "مجاني مولد الاستشهادات عبر الإنترنت."
+      },
+      "study-timer": {
+        "name": "مؤقت الدراسة",
+        "description": "مجاني مؤقت الدراسة عبر الإنترنت."
+      },
+      "random-name-picker": {
+        "name": "اختيار اسم عشوائي",
+        "description": "مجاني اختيار اسم عشوائي عبر الإنترنت."
+      },
+      "scientific-calculator": {
+        "name": "آلة حاسبة علمية",
+        "description": "مجاني آلة حاسبة علمية عبر الإنترنت."
+      },
+      "json-formatter": {
+        "name": "منسق JSON",
+        "description": "مجاني منسق JSON عبر الإنترنت."
+      },
+      "base64-encoder": {
+        "name": "مشفر Base64",
+        "description": "مجاني مشفر Base64 عبر الإنترنت."
+      },
+      "css-minifier": {
+        "name": "ضاغط CSS",
+        "description": "مجاني ضاغط CSS عبر الإنترنت."
+      },
+      "html-beautifier": {
+        "name": "منسق HTML",
+        "description": "مجاني منسق HTML عبر الإنترنت."
+      },
+      "color-picker": {
+        "name": "منتقي الألوان",
+        "description": "مجاني منتقي الألوان عبر الإنترنت."
+      },
+      "color-palette-generator": {
+        "name": "مولد لوحة الألوان",
+        "description": "مجاني مولد لوحة الألوان عبر الإنترنت."
+      }
+    }
+  },
   "Index": {
     "title": "أدوات مجانية عبر الإنترنت — PDF والصور والنص",
     "description": "اضغط الصور، حوّل PDF إلى Word، أنشئ رموز QR والمزيد. مجاني بالكامل وسريع وآمن. بدون تسجيل."

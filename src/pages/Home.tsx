@@ -23,15 +23,17 @@ import { Layout } from '@/components/layout/Layout'
 import { generateWebsiteSchema, generateOrganizationSchema, generateCollectionSchema } from '@/components/seo/StructuredData'
 import { platformKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
+import { useTranslations } from '@/hooks/useTranslations'
 import { getPageSeo } from '@/lib/seo-messages'
 import { SITE_URL } from '@/lib/locale-config'
 
 export default function Home() {
   const locale = useLocale()
   const lp = useLocalizedPath()
-  const popularTools = getPopularTools().slice(0, 8)
-  const trendingTools = getTrendingTools().slice(0, 5)
-  const newTools = getNewTools().slice(0, 4)
+  const { t, categoryLabel, localizeTool } = useTranslations()
+  const popularTools = getPopularTools().slice(0, 8).map(localizeTool)
+  const trendingTools = getTrendingTools().slice(0, 5).map(localizeTool)
+  const newTools = getNewTools().slice(0, 4).map(localizeTool)
 
   const homeSeo = getPageSeo('home', locale, {
     title: 'Free Online Tools — PDF Converter, Image Compressor & Browser Utilities | SmartDigitalTips',
@@ -83,30 +85,27 @@ export default function Home() {
             <div className="lg:col-span-7 fade-in-up">
               <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-semibold tracking-wide text-primary mb-8">
                 <Cpu className="h-3.5 w-3.5" />
-                <span className="min-w-0">100% browser-based — your files never leave your device</span>
+                <span className="min-w-0">{t('home.badge')}</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight leading-[1.08] mb-6">
-                Stop uploading your{' '}
-                <br className="hidden sm:block" />
-                files to strangers.
+                {t('home.heroTitle')}
               </h1>
               
               <p className="text-lg text-muted-foreground leading-relaxed max-w-lg mb-10">
-                Free tools for images, PDFs, text, and more. Everything runs locally 
-                in your browser. No accounts. No watermarks. No data collection.
+                {t('home.heroSubtitle')}
               </p>
               
               <div className="flex flex-col items-stretch gap-3 min-[420px]:flex-row min-[420px]:flex-wrap min-[420px]:items-center">
-                <Link to="/category/image" className="w-full min-[420px]:w-auto">
+                <Link to={lp('/category/image')} className="w-full min-[420px]:w-auto">
                   <Button size="lg" className="h-12 w-full rounded-xl px-6 text-sm font-semibold shadow-warm transition-shadow hover:shadow-warm-lg min-[420px]:w-auto sm:px-7">
-                    Browse all tools
+                    {t('common.browseAll')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-                <Link to="/tools/word-counter" className="w-full min-[420px]:w-auto">
+                <Link to={lp('/tools/word-counter')} className="w-full min-[420px]:w-auto">
                   <Button variant="outline" size="lg" className="h-12 w-full rounded-xl px-6 text-sm font-semibold min-[420px]:w-auto sm:px-7">
-                    Try Word Counter
+                    {t('home.tryWordCounter')}
                   </Button>
                 </Link>
               </div>
@@ -121,10 +120,10 @@ export default function Home() {
                     <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10">
                       <Lock className="h-4 w-4 text-primary" />
                     </div>
-                    <span className="text-sm font-semibold">Private by default</span>
+                    <span className="text-sm font-semibold">{t('home.cardPrivateTitle')}</span>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed pl-12">
-                    Files are processed in your browser tab. We physically cannot see, store, or sell your data.
+                    {t('home.cardPrivateText')}
                   </p>
                 </div>
                 {/* Card 2 — offset left for asymmetry */}
@@ -133,10 +132,10 @@ export default function Home() {
                     <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10">
                       <Zap className="h-4 w-4 text-primary" />
                     </div>
-                    <span className="text-sm font-semibold">Instant results</span>
+                    <span className="text-sm font-semibold">{t('home.cardInstantTitle')}</span>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed pl-12">
-                    No loading spinners, no server roundtrips. Open a tool, drop in a file, get a result.
+                    {t('home.cardInstantText')}
                   </p>
                 </div>
                 {/* Card 3 — offset right */}
@@ -145,10 +144,10 @@ export default function Home() {
                     <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10">
                       <Shield className="h-4 w-4 text-primary" />
                     </div>
-                    <span className="text-sm font-semibold">No strings attached</span>
+                    <span className="text-sm font-semibold">{t('home.cardFreeTitle')}</span>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed pl-12">
-                    No accounts, no usage limits, no premium tier. Every tool is free. Period.
+                    {t('home.cardFreeText')}
                   </p>
                 </div>
               </div>
@@ -164,17 +163,17 @@ export default function Home() {
           <div className="mb-8 flex items-end justify-between gap-4">
             <div className="min-w-0">
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
-                Most-used tools
+                {t('home.mostUsed')}
               </h2>
               <p className="text-muted-foreground mt-1 text-sm">
-                What people actually come back for.
+                {t('home.mostUsedSubtitle')}
               </p>
             </div>
             <Link 
-              to="/category/image" 
+              to={lp('/category/image')} 
               className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
             >
-              All tools <ChevronRight className="h-4 w-4" />
+              {t('common.allTools')} <ChevronRight className="h-4 w-4" />
             </Link>
           </div>
           
@@ -183,7 +182,7 @@ export default function Home() {
             {popularTools.map((tool, index) => (
               <Link
                 key={tool.id}
-                to={tool.path}
+                to={lp(tool.path)}
                 className="group relative p-5 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-warm transition-all duration-300"
                 style={{ animationDelay: `${index * 60}ms` }}
               >
@@ -211,10 +210,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-lg mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">
-              Pick a category. Get to work.
+              {t('home.pickCategoryTitle')}
             </h2>
             <p className="text-muted-foreground text-sm">
-              Seven categories. Zero friction between you and done.
+              {t('home.pickCategorySubtitle')}
             </p>
           </div>
           
@@ -223,7 +222,7 @@ export default function Home() {
             {categories.map((cat, index) => (
               <Link
                 key={cat.id}
-                to={`/category/${cat.id}`}
+                to={lp(`/category/${cat.id}`)}
                 className={`group relative p-6 rounded-2xl border border-border bg-card hover:border-primary/30 hover:shadow-warm transition-all duration-300 ${
                   index === 0 ? 'sm:col-span-2 lg:col-span-1' : ''
                 }`}
@@ -233,14 +232,14 @@ export default function Home() {
                     {iconMap[cat.icon]}
                   </div>
                   <h3 className="min-w-0 font-bold text-base">
-                    {cat.label}
+                    {categoryLabel(cat.id, { label: cat.label, description: cat.description }).label}
                   </h3>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  {cat.description}
+                  {categoryLabel(cat.id, { label: cat.label, description: cat.description }).description}
                 </p>
                 <div className="flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-200">
-                  Explore
+                  {t('home.explore')}
                   <ArrowRight className="h-3.5 w-3.5" />
                 </div>
               </Link>
@@ -258,13 +257,13 @@ export default function Home() {
             <div className="lg:col-span-3">
               <div className="flex items-center gap-2.5 mb-6">
                 <TrendingUp className="h-5 w-5 text-primary" />
-                <h2 className="text-xl font-bold tracking-tight">Trending right now</h2>
+                <h2 className="text-xl font-bold tracking-tight">{t('home.trendingRightNow')}</h2>
               </div>
               <div className="space-y-2">
                 {trendingTools.map((tool, index) => (
                   <Link
                     key={tool.id}
-                    to={tool.path}
+                    to={lp(tool.path)}
                     className="group flex min-w-0 items-center gap-3 rounded-xl border border-border p-4 transition-all hover:border-primary/30 hover:shadow-warm sm:gap-4"
                   >
                     <span className="w-7 shrink-0 text-center font-mono text-xl font-bold tabular-nums text-primary/30 sm:w-8 sm:text-2xl">
@@ -286,18 +285,18 @@ export default function Home() {
             <div className="lg:col-span-2">
               <div className="flex items-center gap-2.5 mb-6">
                 <Sparkles className="h-5 w-5 text-primary" />
-                <h2 className="text-xl font-bold tracking-tight">Just shipped</h2>
+                <h2 className="text-xl font-bold tracking-tight">{t('home.justShipped')}</h2>
               </div>
               <div className="space-y-2">
                 {newTools.map((tool) => (
                   <Link
                     key={tool.id}
-                    to={tool.path}
+                    to={lp(tool.path)}
                     className="block p-4 rounded-xl border border-border hover:border-primary/30 hover:shadow-warm transition-all group"
                   >
                     <div className="flex flex-wrap items-center gap-2 mb-1.5">
                       <span className="px-1.5 py-0.5 rounded bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider">
-                        New
+                        {t('common.new')}
                       </span>
                       <h3 className="font-semibold text-sm group-hover:text-primary transition-colors">
                         {tool.name}
@@ -324,18 +323,18 @@ export default function Home() {
             <div className="relative flex flex-col items-start justify-between gap-8 px-5 py-12 min-[420px]:px-8 sm:flex-row sm:items-center sm:px-16 sm:py-20">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">
-                  Your files stay yours.
+                  {t('home.ctaHeroTitle')}
                 </h2>
                 <p className="text-background/60 text-base max-w-md">
-                  Pick any tool and start using it. No setup, no account creation, no learning curve.
+                  {t('home.ctaHeroText')}
                 </p>
               </div>
-              <Link to="/category/image" className="w-full shrink-0 sm:w-auto">
+              <Link to={lp('/category/image')} className="w-full shrink-0 sm:w-auto">
                 <Button 
                   size="lg" 
                   className="h-12 w-full rounded-xl bg-primary px-8 text-sm font-semibold text-primary-foreground shadow-warm-lg hover:bg-primary/90 sm:w-auto"
                 >
-                  Get started
+                  {t('home.getStarted')}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>

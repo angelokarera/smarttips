@@ -9,6 +9,7 @@ import { ToolEditorialContent } from '@/components/seo/ToolEditorialContent'
 import { getToolEditorial } from '@/lib/tool-editorial'
 import { getToolKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
+import { useTranslations } from '@/hooks/useTranslations'
 import { SITE_URL } from '@/lib/locale-config'
 import { getToolSeo } from '@/lib/seo-messages'
 import {
@@ -118,23 +119,25 @@ export default function ToolPage() {
   const { toolId } = useParams<{ toolId: string }>()
   const locale = useLocale()
   const lp = useLocalizedPath()
-  const tool = getToolById(toolId || '')
+  const { t, localizeTool } = useTranslations()
+  const rawTool = getToolById(toolId || '')
 
-  if (!tool) {
+  if (!rawTool) {
     return (
       <Layout meta={{ title: 'Tool Not Found', description: 'The requested tool could not be found.' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <h1 className="text-3xl font-bold mb-3">Tool not found</h1>
-          <p className="text-muted-foreground mb-8">This tool doesn't exist or may have been moved.</p>
-          <Link to="/">
-            <Button className="rounded-xl">Back to home</Button>
+          <h1 className="text-3xl font-bold mb-3">{t('tool.notFound')}</h1>
+          <p className="text-muted-foreground mb-8">{t('tool.notFoundDesc')}</p>
+          <Link to={lp('/')}>
+            <Button className="rounded-xl">{t('tool.backHome')}</Button>
           </Link>
         </div>
       </Layout>
     )
   }
 
-  const relatedTools = getRelatedTools(tool.id)
+  const tool = localizeTool(rawTool)
+  const relatedTools = getRelatedTools(tool.id).map(localizeTool)
   const ToolComponent = toolComponents[tool.id]
   const canonicalPath = lp(tool.path)
   const editorial = getToolEditorial(tool)
@@ -183,12 +186,12 @@ export default function ToolPage() {
             </Link>
             {tool.new && (
               <span className="px-1.5 py-0.5 rounded bg-foreground text-background text-[10px] font-bold uppercase tracking-wider">
-                New
+                {t('common.new')}
               </span>
             )}
             {tool.trending && (
               <span className="px-1.5 py-0.5 rounded bg-foreground/10 text-foreground text-[10px] font-bold uppercase tracking-wider">
-                Trending
+                {t('common.trending')}
               </span>
             )}
           </div>
@@ -201,7 +204,7 @@ export default function ToolPage() {
           {ToolComponent ? (
             <Suspense fallback={
               <div className="flex h-[300px] items-center justify-center rounded-2xl border border-dashed border-border px-4 text-center text-muted-foreground animate-pulse">
-                Loading interface...
+                {t('common.loading')}
               </div>
             }>
               <ToolComponent />
@@ -211,9 +214,9 @@ export default function ToolPage() {
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary mx-auto mb-4">
                 <span className="text-xl font-bold">?</span>
               </div>
-              <h2 className="text-xl font-bold mb-2">Coming soon</h2>
+              <h2 className="text-xl font-bold mb-2">{t('common.comingSoon')}</h2>
               <p className="text-muted-foreground text-sm max-w-sm mx-auto">
-                This tool is being built. Check back in a few days — we ship fast.
+                {t('tool.comingSoonDesc')}
               </p>
             </div>
           )}
@@ -226,7 +229,7 @@ export default function ToolPage() {
             <ToolEditorialContent tool={tool} />
 
             <div>
-              <h2 className="text-xl font-bold tracking-tight mb-6">How it works</h2>
+              <h2 className="text-xl font-bold tracking-tight mb-6">{t('tool.howItWorks')}</h2>
               <div className="space-y-4">
                 {tool.howToUse.map((step, index) => (
                   <div key={index} className="flex min-w-0 items-start gap-3 sm:gap-4">
@@ -241,7 +244,7 @@ export default function ToolPage() {
 
             {/* Benefits */}
             <div>
-              <h2 className="text-xl font-bold tracking-tight mb-6">Why this tool</h2>
+              <h2 className="text-xl font-bold tracking-tight mb-6">{t('tool.whyThisTool')}</h2>
               <div className="space-y-3">
                 {tool.benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
@@ -256,7 +259,7 @@ export default function ToolPage() {
           {/* Right column — FAQ (sticky) */}
           <div className="lg:col-span-2">
             <div className="lg:sticky lg:top-24">
-              <h2 className="text-xl font-bold tracking-tight mb-6">FAQ</h2>
+              <h2 className="text-xl font-bold tracking-tight mb-6">{t('tool.faq')}</h2>
               <Accordion type="single" collapsible className="w-full">
                 {editorial.faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="border-border">
@@ -276,7 +279,7 @@ export default function ToolPage() {
         {/* Related Tools */}
         {relatedTools.length > 0 && (
           <div className="mt-20 pt-12 border-t border-border">
-            <h2 className="text-xl font-bold tracking-tight mb-6">Related tools</h2>
+            <h2 className="text-xl font-bold tracking-tight mb-6">{t('common.relatedTools')}</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {relatedTools.map((relatedTool) => (
                 <Link

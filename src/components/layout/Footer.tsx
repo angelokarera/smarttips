@@ -1,9 +1,12 @@
 import { Link } from 'react-router'
 import { categories } from '@/data/tools'
 import { useLocalizedPath } from '@/hooks/useLocale'
+import { useTranslations } from '@/hooks/useTranslations'
 
 export function Footer() {
   const lp = useLocalizedPath()
+  const { t, categoryLabel } = useTranslations()
+
   return (
     <footer className="border-t border-border">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -18,13 +21,13 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-              50+ browser-based tools. No uploads, no accounts, no nonsense.
+              {t('footer.tagline')}
             </p>
           </div>
 
           {/* Tools */}
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-4">Tools</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-4">{t('footer.tools', 'Tools')}</h3>
             <ul className="space-y-2.5">
               {categories.map((cat) => (
                 <li key={cat.id}>
@@ -32,7 +35,7 @@ export function Footer() {
                     to={lp(`/category/${cat.id}`)}
                     className="text-sm text-foreground/70 hover:text-primary transition-colors"
                   >
-                    {cat.label}
+                    {categoryLabel(cat.id, { label: cat.label, description: cat.description }).label}
                   </Link>
                 </li>
               ))}
@@ -41,41 +44,41 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-4">Company</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-4">{t('footer.company', 'Company')}</h3>
             <ul className="space-y-2.5">
               <li>
                 <Link to={lp('/blog')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Blog
+                  {t('nav.blog', 'Blog')}
                 </Link>
               </li>
               <li>
                 <Link to={lp('/about')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  About
+                  {t('nav.about', 'About')}
                 </Link>
               </li>
               <li>
                 <Link to={lp('/contact')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Contact
+                  {t('nav.contact', 'Contact')}
                 </Link>
               </li>
               <li>
                 <Link to={lp('/privacy')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Privacy
+                  {t('footer.privacy', 'Privacy')}
                 </Link>
               </li>
               <li>
                 <Link to={lp('/cookies')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Cookies
+                  {t('footer.cookies', 'Cookies')}
                 </Link>
               </li>
               <li>
                 <Link to={lp('/terms')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Terms
+                  {t('footer.terms', 'Terms')}
                 </Link>
               </li>
               <li>
                 <Link to={lp('/disclaimer')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Disclaimer
+                  {t('footer.disclaimer', 'Disclaimer')}
                 </Link>
               </li>
             </ul>
@@ -86,10 +89,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-border py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} SmartDigitalTips. All rights reserved.
+            &copy; {new Date().getFullYear()} SmartDigitalTips. {t('footer.rights')}
           </p>
           <p className="text-xs text-muted-foreground/50">
-            Everything runs in your browser. We never see your files.
+            {t('footer.privacyNote')}
           </p>
         </div>
       </div>
