@@ -1,15 +1,26 @@
 import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { usePageSeo } from '@/hooks/usePageSeo'
+import { useLocalizedPath } from '@/hooks/useLocale'
+import { SITE_URL } from '@/lib/locale-config'
 
 export default function Disclaimer() {
-  const meta = {
+  const lp = useLocalizedPath()
+  const seo = usePageSeo('disclaimer', {
     title: 'Disclaimer - SmartDigitalTips',
-    description: 'Read the disclaimer for SmartDigitalTips. Important information about tool accuracy, data handling, and usage limitations.',
+    description:
+      'Read the disclaimer for SmartDigitalTips. Important information about tool accuracy, data handling, and usage limitations.',
+  })
+
+  const meta = {
+    title: seo.title,
+    description: seo.description,
+    locale: seo.locale,
     canonical: '/disclaimer',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartdigitaltips.com/' },
-        { name: 'Disclaimer', url: 'https://smartdigitaltips.com/disclaimer' },
+        { name: 'Home', url: `${SITE_URL}${lp('/')}` },
+        { name: 'Disclaimer', url: `${SITE_URL}${lp('/disclaimer')}` },
       ]),
     ],
   }

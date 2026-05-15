@@ -9,16 +9,12 @@ export const GLOBAL_SEO_CONFIG = {
   supportedLocales: [
     { code: 'en', name: 'English', region: 'US' },
     { code: 'fr', name: 'French', region: 'FR' },
-    { code: 'es', name: 'Spanish', region: 'ES' },
-    { code: 'ar', name: 'Arabic', region: 'AR' },
-    { code: 'pt', name: 'Portuguese', region: 'PT' },
-    { code: 'zh', name: 'Chinese', region: 'CN' },
-    { code: 'sw', name: 'Swahili', region: 'KE' },
     { code: 'rw', name: 'Kinyarwanda', region: 'RW' },
-    { code: 'de', name: 'German', region: 'DE' },
-    { code: 'hi', name: 'Hindi', region: 'IN' },
-    { code: 'ja', name: 'Japanese', region: 'JP' },
-    { code: 'ko', name: 'Korean', region: 'KR' },
+    { code: 'sw', name: 'Swahili', region: 'KE' },
+    { code: 'ar', name: 'Arabic', region: 'AR' },
+    { code: 'es', name: 'Spanish', region: 'ES' },
+    { code: 'pt', name: 'Portuguese', region: 'BR' },
+    { code: 'zh', name: 'Chinese', region: 'CN' },
   ],
 
   // Global Keywords for Maximum Reach

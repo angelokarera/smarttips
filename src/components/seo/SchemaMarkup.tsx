@@ -8,7 +8,7 @@ export default function SchemaMarkup() {
     'inLanguage': ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'],
     'potentialAction': {
       '@type': 'SearchAction',
-      'target': 'https://smartdigitaltips.com/?q={search_term_string}',
+      'target': 'https://smartdigitaltips.com/en?q={search_term_string}',
       'query-input': 'required name=search_term_string'
     }
   };

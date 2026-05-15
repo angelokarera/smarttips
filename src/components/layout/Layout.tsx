@@ -8,6 +8,7 @@ import { AdBanner } from '@/components/ads/AdBanner'
 import type { SEOMeta } from '@/types'
 import { useLocation } from 'react-router'
 import { CookieConsent } from '@/components/privacy/CookieConsent'
+import { LanguageSuggestion } from '@/components/layout/LanguageSuggestion'
 
 interface LayoutProps {
   children: ReactNode
@@ -26,6 +27,7 @@ export function Layout({ children, meta, breadcrumbs, showBreadcrumbs = true }: 
       <SEOHelmet meta={meta} />
       {meta.schema && <StructuredData data={meta.schema} />}
       <Header />
+      <LanguageSuggestion />
       <main className="flex-1">
         {showBreadcrumbs && (
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

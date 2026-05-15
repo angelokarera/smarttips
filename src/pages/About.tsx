@@ -1,16 +1,27 @@
 import { Link } from 'react-router'
 import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { usePageSeo } from '@/hooks/usePageSeo'
+import { useLocalizedPath } from '@/hooks/useLocale'
+import { SITE_URL } from '@/lib/locale-config'
 
 export default function About() {
-  const meta = {
+  const lp = useLocalizedPath()
+  const seo = usePageSeo('about', {
     title: 'About — SmartDigitalTips',
-    description: 'SmartDigitalTips builds free, browser-based tools for images, PDFs, text, and more. No accounts, no uploads, no data collection.',
+    description:
+      'SmartDigitalTips builds free, browser-based tools for images, PDFs, text, and more. No accounts, no uploads, no data collection.',
+  })
+
+  const meta = {
+    title: seo.title,
+    description: seo.description,
+    locale: seo.locale,
     canonical: '/about',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartdigitaltips.com/' },
-        { name: 'About', url: 'https://smartdigitaltips.com/about' },
+        { name: 'Home', url: `${SITE_URL}${lp('/')}` },
+        { name: 'About', url: `${SITE_URL}${lp('/about')}` },
       ]),
     ],
   }

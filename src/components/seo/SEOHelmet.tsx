@@ -2,23 +2,13 @@ import { Helmet } from 'react-helmet-async'
 import { useLocation } from 'react-router'
 import type { SEOMeta } from '@/types'
 import { defaultLocale, getLocaleFromPath, localizePath, stripLocaleFromPath, supportedLocales, type SupportedLocale } from '@/lib/i18n'
+import { ADSENSE_CLIENT_ID, LOCALE_META, SITE_URL } from '@/lib/locale-config'
 
 interface SEOHelmetProps {
   meta: SEOMeta
 }
 
-const SITE_URL = 'https://smartdigitaltips.com'
 const DEFAULT_OG_IMAGE = '/logo.png'
-const LOCALE_OG_MAP: Record<string, string> = {
-  en: 'en_US',
-  fr: 'fr_FR',
-  rw: 'rw_RW',
-  sw: 'sw_KE',
-  ar: 'ar_AR',
-  es: 'es_ES',
-  pt: 'pt_PT',
-  zh: 'zh_CN',
-}
 
 export function SEOHelmet({ meta }: SEOHelmetProps) {
   const {
@@ -45,8 +35,12 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
   const fullCanonical = `${SITE_URL}${path}`
   const fullOgImage = ogImage ? (ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`) : `${SITE_URL}${DEFAULT_OG_IMAGE}`
 
+  const htmlLang = LOCALE_META[locale].hreflang
+  const htmlDir = LOCALE_META[locale].dir
+
   return (
     <Helmet>
+      <html lang={htmlLang} dir={htmlDir} />
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <meta name="language" content={locale} />
@@ -55,12 +49,13 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
       <meta name="theme-color" content="#0f172a" />
       {keywords && keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
       <meta name="robots" content={robots} />
+      <meta name="google-adsense-account" content={ADSENSE_CLIENT_ID} />
       {fullCanonical && <link rel="canonical" href={fullCanonical} />}
       {supportedLocales.map((alternateLocale) => (
         <link
           key={alternateLocale}
           rel="alternate"
-          hrefLang={alternateLocale}
+          hrefLang={LOCALE_META[alternateLocale].hreflang}
           href={`${SITE_URL}${localizePath(cleanPath, alternateLocale)}`}
         />
       ))}
@@ -76,11 +71,11 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullCanonical || SITE_URL} />
       <meta property="og:site_name" content="SmartDigitalTips" />
-      <meta property="og:locale" content={LOCALE_OG_MAP[locale]} />
+      <meta property="og:locale" content={LOCALE_META[locale].ogLocale} />
       {supportedLocales
         .filter((alternateLocale) => alternateLocale !== locale)
         .map((alternateLocale) => (
-          <meta key={alternateLocale} property="og:locale:alternate" content={LOCALE_OG_MAP[alternateLocale]} />
+          <meta key={alternateLocale} property="og:locale:alternate" content={LOCALE_META[alternateLocale].ogLocale} />
         ))}
       
       {/* Twitter */}

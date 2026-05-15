@@ -1,220 +1,191 @@
-// Advanced Sitemap Generator System
-import type { Tool } from '@/data/tools';
+// Sitemap generator — aligned with app routes and hreflang
+import type { Tool, ToolCategory } from '@/data/tools'
+import type { BlogPost } from '@/data/blog'
+import { DEFAULT_LOCALE, LOCALES, LOCALE_META, SITE_URL } from './locale-config.ts'
 
-// Note: Import tools and categories dynamically when needed
-const LOCALES = ['en', 'fr', 'es', 'ar', 'pt', 'de', 'hi', 'sw', 'zh'];
-const BASE_URL = 'https://smartdigitaltips.com';
+const MAX_URLS_PER_SITEMAP = 50000
+
+function escapeXml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;')
+}
+
+function formatLastmod(date: Date): string {
+  return date.toISOString().split('T')[0]
+}
+
+function hreflangLinks(path: string): string {
+  return LOCALES.map((locale) => {
+    const href = `${SITE_URL}/${locale}${path === '/' ? '' : path}`
+    const code = LOCALE_META[locale].hreflang
+    return `    <xhtml:link rel="alternate" hreflang="${code}" href="${escapeXml(href)}" />`
+  }).join('\n')
+}
+
+function xDefaultLink(path: string): string {
+  const href = `${SITE_URL}/${DEFAULT_LOCALE}${path === '/' ? '' : path}`
+  return `    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(href)}" />`
+}
+
+interface SitemapUrl {
+  path: string
+  lastmod: Date
+  changefreq: 'daily' | 'weekly' | 'monthly' | 'yearly'
+  priority: number
+}
 
 export class SitemapGenerator {
-  // Generate main sitemap index
-  static generateSitemapIndex(): string {
-    const sitemaps = [
-      'sitemap-main.xml',
-      'sitemap-tools.xml',
-      'sitemap-categories.xml',
-      'sitemap-blog.xml',
-      'sitemap-images.xml',
-      'sitemap-videos.xml'
-    ];
+  static collectUrls(tools: Tool[], categories: ToolCategory[], blogPosts: BlogPost[]): SitemapUrl[] {
+    const now = new Date()
+    const urls: SitemapUrl[] = []
 
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+    const staticPages: Array<{ path: string; priority: number; changefreq: SitemapUrl['changefreq'] }> = [
+      { path: '', priority: 1.0, changefreq: 'daily' },
+      { path: '/about', priority: 0.6, changefreq: 'monthly' },
+      { path: '/contact', priority: 0.6, changefreq: 'monthly' },
+      { path: '/blog', priority: 0.7, changefreq: 'weekly' },
+      { path: '/privacy', priority: 0.3, changefreq: 'yearly' },
+      { path: '/cookies', priority: 0.3, changefreq: 'yearly' },
+      { path: '/terms', priority: 0.3, changefreq: 'yearly' },
+      { path: '/disclaimer', priority: 0.3, changefreq: 'yearly' },
+    ]
 
-    sitemaps.forEach(sitemap => {
-      xml += '  <sitemap>\n';
-      xml += `    <loc>${BASE_URL}/${sitemap}</loc>\n`;
-      xml += `    <lastmod>${new Date().toISOString()}</lastmod>\n`;
-      xml += '  </sitemap>\n';
-    });
+    for (const page of staticPages) {
+      urls.push({
+        path: page.path || '/',
+        lastmod: now,
+        changefreq: page.changefreq,
+        priority: page.priority,
+      })
+    }
 
-    xml += '</sitemapindex>';
-    return xml;
+    for (const category of categories) {
+      urls.push({
+        path: `/category/${category.id}`,
+        lastmod: now,
+        changefreq: 'weekly',
+        priority: 0.7,
+      })
+    }
+
+    for (const tool of tools) {
+      urls.push({
+        path: tool.path,
+        lastmod: now,
+        changefreq: 'weekly',
+        priority: tool.popular ? 0.9 : tool.trending ? 0.85 : 0.8,
+      })
+    }
+
+    for (const post of blogPosts) {
+      urls.push({
+        path: `/blog/${post.slug}`,
+        lastmod: new Date(post.date),
+        changefreq: 'monthly',
+        priority: 0.6,
+      })
+    }
+
+    return urls
   }
 
-  // Generate main pages sitemap
-  static generateMainSitemap(): string {
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
+  /**
+   * Single sitemap.xml with every localized URL (all locales × all pages).
+   * Each entry includes hreflang alternates for the full language cluster.
+   */
+  static generateSitemapXml(tools: Tool[], categories: ToolCategory[], blogPosts: BlogPost[]): string {
+    const entries = this.collectUrls(tools, categories, blogPosts)
+    const totalUrls = entries.length * LOCALES.length
 
-    const pages = ['', '/about', '/contact', '/privacy', '/terms', '/cookies', '/disclaimer'];
+    if (totalUrls > MAX_URLS_PER_SITEMAP) {
+      console.warn(`Sitemap has ${totalUrls} URLs; consider splitting into multiple sitemaps.`)
+    }
 
-    pages.forEach(page => {
-      LOCALES.forEach(locale => {
-        xml += '  <url>\n';
-        xml += `    <loc>${BASE_URL}/${locale}${page}</loc>\n`;
-        xml += `    <lastmod>${new Date().toISOString()}</lastmod>\n`;
-        xml += `    <changefreq>${page === '' ? 'daily' : 'monthly'}</changefreq>\n`;
-        xml += `    <priority>${page === '' ? '1.0' : '0.6'}</priority>\n`;
-        
-        // Add hreflang
-        LOCALES.forEach(altLocale => {
-          xml += `    <xhtml:link rel="alternate" hreflang="${altLocale}" href="${BASE_URL}/${altLocale}${page}" />\n`;
-        });
-        
-        xml += '  </url>\n';
-      });
-    });
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml +=
+      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
 
-    xml += '</urlset>';
-    return xml;
+    for (const locale of LOCALES) {
+      for (const entry of entries) {
+        const pathSuffix = entry.path === '/' ? '' : entry.path
+        const loc = `${SITE_URL}/${locale}${pathSuffix}`
+
+        xml += '  <url>\n'
+        xml += `    <loc>${escapeXml(loc)}</loc>\n`
+        xml += `    <lastmod>${formatLastmod(entry.lastmod)}</lastmod>\n`
+        xml += `    <changefreq>${entry.changefreq}</changefreq>\n`
+        xml += `    <priority>${entry.priority.toFixed(1)}</priority>\n`
+        xml += `${hreflangLinks(pathSuffix)}\n`
+        xml += `${xDefaultLink(pathSuffix)}\n`
+        xml += '  </url>\n'
+      }
+    }
+
+    xml += '</urlset>'
+    return xml
   }
 
-  // Generate tools sitemap
-  static generateToolsSitemap(tools: Tool[]): string {
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
-
-    tools.forEach(tool => {
-      LOCALES.forEach(locale => {
-        xml += '  <url>\n';
-        xml += `    <loc>${BASE_URL}/${locale}${tool.path}</loc>\n`;
-        xml += `    <lastmod>${new Date().toISOString()}</lastmod>\n`;
-        xml += '    <changefreq>weekly</changefreq>\n';
-        xml += `    <priority>${tool.popular ? '0.9' : tool.trending ? '0.85' : '0.8'}</priority>\n`;
-        
-        // Add hreflang
-        LOCALES.forEach(altLocale => {
-          xml += `    <xhtml:link rel="alternate" hreflang="${altLocale}" href="${BASE_URL}/${altLocale}${tool.path}" />\n`;
-        });
-
-        // Add image
-        xml += '    <image:image>\n';
-        xml += `      <image:loc>${BASE_URL}/og-images/${tool.id}.png</image:loc>\n`;
-        xml += `      <image:title>${tool.name}</image:title>\n`;
-        xml += `      <image:caption>${tool.description}</image:caption>\n`;
-        xml += '    </image:image>\n';
-        
-        xml += '  </url>\n';
-      });
-    });
-
-    xml += '</urlset>';
-    return xml;
-  }
-
-  // Generate categories sitemap
-  static generateCategoriesSitemap(categories: any[]): string {
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
-
-    categories.forEach(category => {
-      LOCALES.forEach(locale => {
-        xml += '  <url>\n';
-        xml += `    <loc>${BASE_URL}/${locale}/category/${category.id}</loc>\n`;
-        xml += `    <lastmod>${new Date().toISOString()}</lastmod>\n`;
-        xml += '    <changefreq>weekly</changefreq>\n';
-        xml += '    <priority>0.7</priority>\n';
-        
-        LOCALES.forEach(altLocale => {
-          xml += `    <xhtml:link rel="alternate" hreflang="${altLocale}" href="${BASE_URL}/${altLocale}/category/${category.id}" />\n`;
-        });
-        
-        xml += '  </url>\n';
-      });
-    });
-
-    xml += '</urlset>';
-    return xml;
-  }
-
-  // Generate image sitemap
-  static generateImageSitemap(tools: Tool[]): string {
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
-
-    tools.forEach(tool => {
-      xml += '  <url>\n';
-      xml += `    <loc>${BASE_URL}/en${tool.path}</loc>\n`;
-      xml += '    <image:image>\n';
-      xml += `      <image:loc>${BASE_URL}/og-images/${tool.id}.png</image:loc>\n`;
-      xml += `      <image:title>${tool.name} - Free Online Tool</image:title>\n`;
-      xml += `      <image:caption>${tool.description}</image:caption>\n`;
-      xml += '    </image:image>\n';
-      xml += '  </url>\n';
-    });
-
-    xml += '</urlset>';
-    return xml;
-  }
-
-  // Generate video sitemap
-  static generateVideoSitemap(tools: Tool[]): string {
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n';
-
-    tools.slice(0, 10).forEach(tool => {
-      xml += '  <url>\n';
-      xml += `    <loc>${BASE_URL}/en${tool.path}</loc>\n`;
-      xml += '    <video:video>\n';
-      xml += `      <video:thumbnail_loc>${BASE_URL}/video-thumbnails/${tool.id}.jpg</video:thumbnail_loc>\n`;
-      xml += `      <video:title>How to Use ${tool.name}</video:title>\n`;
-      xml += `      <video:description>Learn how to use ${tool.name} in this quick tutorial. ${tool.description}</video:description>\n`;
-      xml += `      <video:content_loc>${BASE_URL}/videos/${tool.id}.mp4</video:content_loc>\n`;
-      xml += `      <video:duration>120</video:duration>\n`;
-      xml += `      <video:publication_date>${new Date().toISOString()}</video:publication_date>\n`;
-      xml += '      <video:family_friendly>yes</video:family_friendly>\n';
-      xml += '    </video:video>\n';
-      xml += '  </url>\n';
-    });
-
-    xml += '</urlset>';
-    return xml;
-  }
-
-  // Generate news sitemap (for blog posts)
-  static generateNewsSitemap(blogPosts: any[]): string {
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n';
-
-    blogPosts.slice(0, 100).forEach(post => {
-      xml += '  <url>\n';
-      xml += `    <loc>${BASE_URL}/en/blog/${post.slug}</loc>\n`;
-      xml += '    <news:news>\n';
-      xml += '      <news:publication>\n';
-      xml += '        <news:name>SmartDigitalTips</news:name>\n';
-      xml += '        <news:language>en</news:language>\n';
-      xml += '      </news:publication>\n';
-      xml += `      <news:publication_date>${post.date}</news:publication_date>\n`;
-      xml += `      <news:title>${post.title}</news:title>\n`;
-      xml += '    </news:news>\n';
-      xml += '  </url>\n';
-    });
-
-    xml += '</urlset>';
-    return xml;
-  }
-
-  // Generate robots.txt
   static generateRobotsTxt(): string {
-    return `# SmartDigitalTips Robots.txt
+    return `# SmartDigitalTips — production robots.txt
+# Updated: ${formatLastmod(new Date())}
+
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Disallow: /_next/
 Disallow: /private/
 
-# Google
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Crawl-delay: 0
 
-# Bing
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Crawl-delay: 0
 
-# Yandex
+User-agent: BingPreview
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
 User-agent: Yandex
 Allow: /
 Disallow: /api/
-Crawl-delay: 1
 
-# AI Crawlers
+User-agent: Baiduspider
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 
@@ -233,40 +204,19 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
-# Sitemaps
-Sitemap: ${BASE_URL}/sitemap.xml
-Sitemap: ${BASE_URL}/sitemap-tools.xml
-Sitemap: ${BASE_URL}/sitemap-images.xml
-Sitemap: ${BASE_URL}/sitemap-videos.xml
+User-agent: PerplexityBot
+Allow: /
 
-# Host
-Host: ${BASE_URL}
-`;
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+Sitemap: ${SITE_URL}/sitemap.xml
+`
   }
 
-  // Save all sitemaps
-  // Note: This method is only called from Node.js build scripts, not from browser code.
-  static async saveAllSitemaps(tools: Tool[], categories: any[], outputDir = './public'): Promise<void> {
-    try {
-      // Use Function constructor to bypass browser TS module resolution for Node built-ins
-      // eslint-disable-next-line @typescript-eslint/no-implied-eval
-      const dynamicImport = new Function('m', 'return import(m)') as (m: string) => Promise<any>;
-      const fs = await dynamicImport('fs');
-      const path = await dynamicImport('path');
-      
-      fs.writeFileSync(path.join(outputDir, 'sitemap.xml'), this.generateSitemapIndex());
-      fs.writeFileSync(path.join(outputDir, 'sitemap-main.xml'), this.generateMainSitemap());
-      fs.writeFileSync(path.join(outputDir, 'sitemap-tools.xml'), this.generateToolsSitemap(tools));
-      fs.writeFileSync(path.join(outputDir, 'sitemap-categories.xml'), this.generateCategoriesSitemap(categories));
-      fs.writeFileSync(path.join(outputDir, 'sitemap-images.xml'), this.generateImageSitemap(tools));
-      fs.writeFileSync(path.join(outputDir, 'sitemap-videos.xml'), this.generateVideoSitemap(tools));
-      fs.writeFileSync(path.join(outputDir, 'robots.txt'), this.generateRobotsTxt());
-      
-      console.log('✅ All sitemaps generated successfully!');
-    } catch (error) {
-      console.error('❌ Error generating sitemaps:', error);
-    }
-  }
 }
 
-export default SitemapGenerator;
+export default SitemapGenerator

@@ -4,7 +4,7 @@ import type { Tool, ToolCategory } from '@/data/tools'
 export const platformKeywords = [
   // Core platform keywords
   'free online tools',
-  'online tools 2025',
+  'online tools 2026',
   'web tools',
   'browser tools',
   'free web utilities',

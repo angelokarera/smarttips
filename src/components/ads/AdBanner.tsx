@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router'
+import { ADSENSE_CLIENT_ID } from '@/lib/locale-config'
 
 type AdSenseWindow = Window & {
   adsbygoogle?: unknown[]
@@ -30,7 +31,7 @@ export function AdBanner() {
           <ins
             className="adsbygoogle"
             style={{ display: 'block', width: '100%' }}
-            data-ad-client="ca-pub-3519891152775398"
+            data-ad-client={ADSENSE_CLIENT_ID}
             data-ad-slot="6092595232"
             data-ad-format="auto"
             data-full-width-responsive="true"

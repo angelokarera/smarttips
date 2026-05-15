@@ -3,8 +3,7 @@
 // SEO Build Script - Generate all SEO assets before build
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
-
-const BASE_URL = 'https://smartdigitaltips.com';
+import { SITE_URL as BASE_URL, ADSENSE_PUBLISHER_ID, ADSENSE_CERTIFICATION_ID } from './seo-constants.mjs';
 
 console.log('🚀 Starting SEO asset generation...\n');
 
@@ -14,13 +13,13 @@ if (!existsSync(publicDir)) {
 }
 
 console.log('📝 Generating ads.txt...');
-const adsTxt = `google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0`;
+const adsTxt = `google.com, ${ADSENSE_PUBLISHER_ID}, DIRECT, ${ADSENSE_CERTIFICATION_ID}`;
 writeFileSync(join(publicDir, 'ads.txt'), adsTxt);
 console.log('✅ ads.txt generated\n');
 
 console.log('📝 Generating security.txt...');
 const securityTxt = `Contact: mailto:security@smartdigitaltips.com
-Expires: 2025-12-31T23:59:59.000Z
+Expires: 2027-12-31T23:59:59.000Z
 Preferred-Languages: en, fr, es
 Canonical: ${BASE_URL}/.well-known/security.txt`;
 

@@ -1,6 +1,270 @@
 {
+  "pages": {
+    "home": {
+      "title": "Outils en ligne gratuits — PDF, images, texte et productivité",
+      "description": "Compressez des images, convertissez PDF en Word, générez des QR codes et plus encore. 100 % gratuit, rapide et sécurisé. Sans inscription."
+    },
+    "about": {
+      "title": "À propos",
+      "description": "Découvrez SmartDigitalTips — des outils gratuits dans le navigateur, privés et accessibles partout."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contactez l'équipe SmartDigitalTips pour le support, les retours ou les partenariats."
+    },
+    "blog": {
+      "title": "Conseils et guides",
+      "description": "Guides sur l'optimisation d'images, les PDF, le SEO et la productivité — tutoriels gratuits."
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "description": "Comment SmartDigitalTips protège votre vie privée. Traitement dans le navigateur — pas de stockage de fichiers."
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "description": "Conditions d'utilisation des outils gratuits SmartDigitalTips."
+    },
+    "cookies": {
+      "title": "Politique des cookies",
+      "description": "Utilisation des cookies sur SmartDigitalTips et gestion de vos préférences."
+    },
+    "disclaimer": {
+      "title": "Avertissement",
+      "description": "Avertissement légal pour les outils et contenus SmartDigitalTips."
+    }
+  },
+  "tools": {
+    "image-compressor": {
+      "title": "Gratuit Compresseur d'images En ligne | SmartDigitalTips",
+      "description": "Gratuit Compresseur d'images En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "image-to-pdf": {
+      "title": "Gratuit Image en PDF En ligne | SmartDigitalTips",
+      "description": "Gratuit Image en PDF En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "image-resizer": {
+      "title": "Gratuit Redimensionneur d'images En ligne | SmartDigitalTips",
+      "description": "Gratuit Redimensionneur d'images En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "image-converter": {
+      "title": "Gratuit Convertisseur d'images En ligne | SmartDigitalTips",
+      "description": "Gratuit Convertisseur d'images En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "merge-pdf": {
+      "title": "Gratuit Fusionner PDF En ligne | SmartDigitalTips",
+      "description": "Gratuit Fusionner PDF En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "split-pdf": {
+      "title": "Gratuit Diviser PDF En ligne | SmartDigitalTips",
+      "description": "Gratuit Diviser PDF En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "pdf-to-word": {
+      "title": "Gratuit PDF en Word En ligne | SmartDigitalTips",
+      "description": "Gratuit PDF en Word En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "pdf-to-image": {
+      "title": "Gratuit PDF en image En ligne | SmartDigitalTips",
+      "description": "Gratuit PDF en image En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "word-counter": {
+      "title": "Gratuit Compteur de mots En ligne | SmartDigitalTips",
+      "description": "Gratuit Compteur de mots En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "case-converter": {
+      "title": "Gratuit Convertisseur de casse En ligne | SmartDigitalTips",
+      "description": "Gratuit Convertisseur de casse En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "text-to-speech": {
+      "title": "Gratuit Texte en parole En ligne | SmartDigitalTips",
+      "description": "Gratuit Texte en parole En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "plagiarism-checker": {
+      "title": "Gratuit Détecteur de plagiat En ligne | SmartDigitalTips",
+      "description": "Gratuit Détecteur de plagiat En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "gpa-calculator": {
+      "title": "Gratuit Calculateur de GPA En ligne | SmartDigitalTips",
+      "description": "Gratuit Calculateur de GPA En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "percentage-calculator": {
+      "title": "Gratuit Calculateur de pourcentage En ligne | SmartDigitalTips",
+      "description": "Gratuit Calculateur de pourcentage En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "grade-calculator": {
+      "title": "Gratuit Calculateur de notes En ligne | SmartDigitalTips",
+      "description": "Gratuit Calculateur de notes En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "compound-interest": {
+      "title": "Gratuit Calculateur d'intérêts composés En ligne | SmartDigitalTips",
+      "description": "Gratuit Calculateur d'intérêts composés En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "qr-code-generator": {
+      "title": "Gratuit Générateur QR Code En ligne | SmartDigitalTips",
+      "description": "Gratuit Générateur QR Code En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "invoice-generator": {
+      "title": "Gratuit Générateur de factures En ligne | SmartDigitalTips",
+      "description": "Gratuit Générateur de factures En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "password-generator": {
+      "title": "Gratuit Générateur de mots de passe En ligne | SmartDigitalTips",
+      "description": "Gratuit Générateur de mots de passe En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "age-calculator": {
+      "title": "Gratuit Calculateur d'âge En ligne | SmartDigitalTips",
+      "description": "Gratuit Calculateur d'âge En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "unit-converter": {
+      "title": "Gratuit Convertisseur d'unités En ligne | SmartDigitalTips",
+      "description": "Gratuit Convertisseur d'unités En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "length-converter": {
+      "title": "Gratuit Convertisseur de longueur En ligne | SmartDigitalTips",
+      "description": "Gratuit Convertisseur de longueur En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "time-converter": {
+      "title": "Gratuit Convertisseur de fuseaux horaires En ligne | SmartDigitalTips",
+      "description": "Gratuit Convertisseur de fuseaux horaires En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "crop-image": {
+      "title": "Gratuit Recadrer l'image En ligne | SmartDigitalTips",
+      "description": "Gratuit Recadrer l'image En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "jpg-to-png": {
+      "title": "Gratuit JPG en PNG En ligne | SmartDigitalTips",
+      "description": "Gratuit JPG en PNG En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "png-to-jpg": {
+      "title": "Gratuit PNG en JPG En ligne | SmartDigitalTips",
+      "description": "Gratuit PNG en JPG En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "webp-converter": {
+      "title": "Gratuit Convertisseur WebP En ligne | SmartDigitalTips",
+      "description": "Gratuit Convertisseur WebP En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "background-remover": {
+      "title": "Gratuit Suppression d'arrière-plan En ligne | SmartDigitalTips",
+      "description": "Gratuit Suppression d'arrière-plan En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "watermark-maker": {
+      "title": "Gratuit Filigrane En ligne | SmartDigitalTips",
+      "description": "Gratuit Filigrane En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "character-counter": {
+      "title": "Gratuit Compteur de caractères En ligne | SmartDigitalTips",
+      "description": "Gratuit Compteur de caractères En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "rewrite-text": {
+      "title": "Gratuit Réécrire le texte En ligne | SmartDigitalTips",
+      "description": "Gratuit Réécrire le texte En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "grammar-checker": {
+      "title": "Gratuit Correcteur grammatical En ligne | SmartDigitalTips",
+      "description": "Gratuit Correcteur grammatical En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "remove-duplicates": {
+      "title": "Gratuit Supprimer les doublons En ligne | SmartDigitalTips",
+      "description": "Gratuit Supprimer les doublons En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "summarizer": {
+      "title": "Gratuit Résumé de texte En ligne | SmartDigitalTips",
+      "description": "Gratuit Résumé de texte En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "citation-generator": {
+      "title": "Gratuit Générateur de citations En ligne | SmartDigitalTips",
+      "description": "Gratuit Générateur de citations En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "study-timer": {
+      "title": "Gratuit Minuteur Pomodoro En ligne | SmartDigitalTips",
+      "description": "Gratuit Minuteur Pomodoro En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "random-name-picker": {
+      "title": "Gratuit Tirage au sort de noms En ligne | SmartDigitalTips",
+      "description": "Gratuit Tirage au sort de noms En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "scientific-calculator": {
+      "title": "Gratuit Calculatrice scientifique En ligne | SmartDigitalTips",
+      "description": "Gratuit Calculatrice scientifique En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "json-formatter": {
+      "title": "Gratuit Formateur JSON En ligne | SmartDigitalTips",
+      "description": "Gratuit Formateur JSON En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "base64-encoder": {
+      "title": "Gratuit Encodeur Base64 En ligne | SmartDigitalTips",
+      "description": "Gratuit Encodeur Base64 En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "css-minifier": {
+      "title": "Gratuit Minificateur CSS En ligne | SmartDigitalTips",
+      "description": "Gratuit Minificateur CSS En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "html-beautifier": {
+      "title": "Gratuit Formateur HTML En ligne | SmartDigitalTips",
+      "description": "Gratuit Formateur HTML En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "color-picker": {
+      "title": "Gratuit Sélecteur de couleurs En ligne | SmartDigitalTips",
+      "description": "Gratuit Sélecteur de couleurs En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "color-palette-generator": {
+      "title": "Gratuit Générateur de palettes En ligne | SmartDigitalTips",
+      "description": "Gratuit Générateur de palettes En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    }
+  },
+  "categories": {
+    "image": {
+      "title": "Outils d'image — Gratuit En ligne | SmartDigitalTips",
+      "description": "Compress, convert, edit, and transform images effortlessly. Sans inscription."
+    },
+    "pdf": {
+      "title": "Outils PDF — Gratuit En ligne | SmartDigitalTips",
+      "description": "Merge, split, convert, and manipulate PDF documents. Sans inscription."
+    },
+    "text": {
+      "title": "Outils texte — Gratuit En ligne | SmartDigitalTips",
+      "description": "Count words, convert case, format, and analyze text. Sans inscription."
+    },
+    "student": {
+      "title": "Outils étudiants — Gratuit En ligne | SmartDigitalTips",
+      "description": "Calculators, converters, and helpers for academic success. Sans inscription."
+    },
+    "business": {
+      "title": "Outils business — Gratuit En ligne | SmartDigitalTips",
+      "description": "Invoices, QR codes, and productivity utilities. Sans inscription."
+    },
+    "converter": {
+      "title": "Convertisseurs — Gratuit En ligne | SmartDigitalTips",
+      "description": "Unit conversions and measurement tools. Sans inscription."
+    },
+    "developer": {
+      "title": "Outils développeur — Gratuit En ligne | SmartDigitalTips",
+      "description": "Format, minify, and encode code and data. Sans inscription."
+    }
+  },
+  "blog": {
+    "ultimate-guide-optimizing-images-web": {
+      "title": "The Ultimate Guide to Optimizing Images for the Web | SmartDigitalTips",
+      "description": "Learn how to significantly speed up your website by properly compressing and resizing images without sacrificing visual quality."
+    },
+    "why-pdf-is-standard-for-documents": {
+      "title": "Why PDF is the Standard for Document Sharing | SmartDigitalTips",
+      "description": "Explore the history, benefits, and practical tools for managing Portable Document Format (PDF) files in professional environments."
+    },
+    "importance-of-writing-original-content-avoiding-plagiarism": {
+      "title": "The Importance of Original Content & Avoiding Plagiarism | SmartDigitalTips",
+      "description": "Understand why original content is crucial for SEO and academic success, and learn strategies to ensure your writing is 100% unique."
+    },
+    "how-to-create-use-qr-codes-effectively": {
+      "title": "How to Create and Use QR Codes Effectively | SmartDigitalTips",
+      "description": "A comprehensive guide to leveraging Quick Response (QR) codes for marketing, business operations, and seamless information sharing."
+    },
+    "freelancers-guide-to-invoicing": {
+      "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
+      "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    }
+  },
   "Index": {
-    "title": "Compresseur d'images gratuit en ligne – Réduisez la taille des JPG PNG rapidement",
-    "description": "Transformez votre flux de travail avec la suite ultime d'outils en ligne gratuits. Compressez des images, convertissez des PDF en Word et boostez votre SEO instantanément. Aucune inscription requise."
+    "title": "Outils en ligne gratuits — PDF, images, texte et productivité",
+    "description": "Compressez des images, convertissez PDF en Word, générez des QR codes et plus encore. 100 % gratuit, rapide et sécurisé. Sans inscription."
   }
 }

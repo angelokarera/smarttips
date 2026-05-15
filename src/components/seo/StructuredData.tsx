@@ -101,7 +101,7 @@ export function generateToolSchema(tool: {
     softwareApplicationCategory: tool.category,
     operatingSystem: 'Any',
     browserRequirements: 'Requires JavaScript. Requires HTML5.',
-    url: `https://smartdigitaltips.com${tool.path}`,
+    url: tool.path.startsWith('http') ? tool.path : `https://smartdigitaltips.com${tool.path}`,
     isAccessibleForFree: true,
     isFamilyFriendly: true,
     featureList: tool.benefits || [],
@@ -114,11 +114,6 @@ export function generateToolSchema(tool: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      ratingCount: '1250',
     },
   }
 }

@@ -1,15 +1,26 @@
 import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { usePageSeo } from '@/hooks/usePageSeo'
+import { useLocalizedPath } from '@/hooks/useLocale'
+import { SITE_URL } from '@/lib/locale-config'
 
 export default function Terms() {
-  const meta = {
+  const lp = useLocalizedPath()
+  const seo = usePageSeo('terms', {
     title: 'Terms & Conditions - SmartDigitalTips',
-    description: 'Read the Terms and Conditions for using SmartDigitalTips. By using our website, you agree to these terms.',
+    description:
+      'Read the Terms and Conditions for using SmartDigitalTips. By using our website, you agree to these terms.',
+  })
+
+  const meta = {
+    title: seo.title,
+    description: seo.description,
+    locale: seo.locale,
     canonical: '/terms',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartdigitaltips.com/' },
-        { name: 'Terms & Conditions', url: 'https://smartdigitaltips.com/terms' },
+        { name: 'Home', url: `${SITE_URL}${lp('/')}` },
+        { name: 'Terms & Conditions', url: `${SITE_URL}${lp('/terms')}` },
       ]),
     ],
   }

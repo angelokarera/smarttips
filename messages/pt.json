@@ -1,0 +1,270 @@
+{
+  "pages": {
+    "home": {
+      "title": "Ferramentas online grátis — PDF, imagens e produtividade",
+      "description": "Comprima imagens, converta PDF para Word, gere QR codes e mais. 100% grátis, rápido e seguro. Sem cadastro."
+    },
+    "about": {
+      "title": "Sobre nós",
+      "description": "Conheça o SmartDigitalTips — ferramentas grátis no navegador, privadas e produtivas."
+    },
+    "contact": {
+      "title": "Contato",
+      "description": "Fale com a equipe SmartDigitalTips para suporte, feedback ou parcerias."
+    },
+    "blog": {
+      "title": "Dicas e guias",
+      "description": "Guias de imagens, PDF, SEO e produtividade — tutoriais grátis."
+    },
+    "privacy": {
+      "title": "Política de privacidade",
+      "description": "Como o SmartDigitalTips protege sua privacidade. Processamento no navegador — não armazenamos arquivos."
+    },
+    "terms": {
+      "title": "Termos de serviço",
+      "description": "Termos de uso das ferramentas gratuitas SmartDigitalTips."
+    },
+    "cookies": {
+      "title": "Política de cookies",
+      "description": "Como o SmartDigitalTips usa cookies e como gerenciar preferências."
+    },
+    "disclaimer": {
+      "title": "Aviso legal",
+      "description": "Aviso legal para ferramentas e conteúdo do SmartDigitalTips."
+    }
+  },
+  "tools": {
+    "image-compressor": {
+      "title": "Grátis Compressor de imagens Online | SmartDigitalTips",
+      "description": "Grátis Compressor de imagens Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "image-to-pdf": {
+      "title": "Grátis Imagem para PDF Online | SmartDigitalTips",
+      "description": "Grátis Imagem para PDF Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "image-resizer": {
+      "title": "Grátis Redimensionar imagens Online | SmartDigitalTips",
+      "description": "Grátis Redimensionar imagens Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "image-converter": {
+      "title": "Grátis Conversor de imagens Online | SmartDigitalTips",
+      "description": "Grátis Conversor de imagens Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "merge-pdf": {
+      "title": "Grátis Mesclar PDF Online | SmartDigitalTips",
+      "description": "Grátis Mesclar PDF Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "split-pdf": {
+      "title": "Grátis Dividir PDF Online | SmartDigitalTips",
+      "description": "Grátis Dividir PDF Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "pdf-to-word": {
+      "title": "Grátis PDF para Word Online | SmartDigitalTips",
+      "description": "Grátis PDF para Word Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "pdf-to-image": {
+      "title": "Grátis PDF para imagem Online | SmartDigitalTips",
+      "description": "Grátis PDF para imagem Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "word-counter": {
+      "title": "Grátis Contador de palavras Online | SmartDigitalTips",
+      "description": "Grátis Contador de palavras Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "case-converter": {
+      "title": "Grátis Conversor de maiúsculas Online | SmartDigitalTips",
+      "description": "Grátis Conversor de maiúsculas Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "text-to-speech": {
+      "title": "Grátis Texto para fala Online | SmartDigitalTips",
+      "description": "Grátis Texto para fala Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "plagiarism-checker": {
+      "title": "Grátis Verificador de plágio Online | SmartDigitalTips",
+      "description": "Grátis Verificador de plágio Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "gpa-calculator": {
+      "title": "Grátis Calculadora GPA Online | SmartDigitalTips",
+      "description": "Grátis Calculadora GPA Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "percentage-calculator": {
+      "title": "Grátis Calculadora de porcentagem Online | SmartDigitalTips",
+      "description": "Grátis Calculadora de porcentagem Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "grade-calculator": {
+      "title": "Grátis Calculadora de notas Online | SmartDigitalTips",
+      "description": "Grátis Calculadora de notas Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "compound-interest": {
+      "title": "Grátis Juros compostos Online | SmartDigitalTips",
+      "description": "Grátis Juros compostos Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "qr-code-generator": {
+      "title": "Grátis Gerador de QR Code Online | SmartDigitalTips",
+      "description": "Grátis Gerador de QR Code Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "invoice-generator": {
+      "title": "Grátis Gerador de faturas Online | SmartDigitalTips",
+      "description": "Grátis Gerador de faturas Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "password-generator": {
+      "title": "Grátis Gerador de senhas Online | SmartDigitalTips",
+      "description": "Grátis Gerador de senhas Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "age-calculator": {
+      "title": "Grátis Calculadora de idade Online | SmartDigitalTips",
+      "description": "Grátis Calculadora de idade Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "unit-converter": {
+      "title": "Grátis Conversor de unidades Online | SmartDigitalTips",
+      "description": "Grátis Conversor de unidades Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "length-converter": {
+      "title": "Grátis Conversor de comprimento Online | SmartDigitalTips",
+      "description": "Grátis Conversor de comprimento Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "time-converter": {
+      "title": "Grátis Fuso horário Online | SmartDigitalTips",
+      "description": "Grátis Fuso horário Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "crop-image": {
+      "title": "Grátis Recortar imagem Online | SmartDigitalTips",
+      "description": "Grátis Recortar imagem Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "jpg-to-png": {
+      "title": "Grátis JPG para PNG Online | SmartDigitalTips",
+      "description": "Grátis JPG para PNG Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "png-to-jpg": {
+      "title": "Grátis PNG para JPG Online | SmartDigitalTips",
+      "description": "Grátis PNG para JPG Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "webp-converter": {
+      "title": "Grátis Conversor WebP Online | SmartDigitalTips",
+      "description": "Grátis Conversor WebP Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "background-remover": {
+      "title": "Grátis Remover fundo Online | SmartDigitalTips",
+      "description": "Grátis Remover fundo Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "watermark-maker": {
+      "title": "Grátis Marca d'água Online | SmartDigitalTips",
+      "description": "Grátis Marca d'água Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "character-counter": {
+      "title": "Grátis Contador de caracteres Online | SmartDigitalTips",
+      "description": "Grátis Contador de caracteres Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "rewrite-text": {
+      "title": "Grátis Reescrever texto Online | SmartDigitalTips",
+      "description": "Grátis Reescrever texto Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "grammar-checker": {
+      "title": "Grátis Corretor gramatical Online | SmartDigitalTips",
+      "description": "Grátis Corretor gramatical Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "remove-duplicates": {
+      "title": "Grátis Remover duplicatas Online | SmartDigitalTips",
+      "description": "Grátis Remover duplicatas Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "summarizer": {
+      "title": "Grátis Resumidor de texto Online | SmartDigitalTips",
+      "description": "Grátis Resumidor de texto Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "citation-generator": {
+      "title": "Grátis Gerador de citações Online | SmartDigitalTips",
+      "description": "Grátis Gerador de citações Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "study-timer": {
+      "title": "Grátis Timer de estudo Online | SmartDigitalTips",
+      "description": "Grátis Timer de estudo Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "random-name-picker": {
+      "title": "Grátis Sorteador de nomes Online | SmartDigitalTips",
+      "description": "Grátis Sorteador de nomes Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "scientific-calculator": {
+      "title": "Grátis Calculadora científica Online | SmartDigitalTips",
+      "description": "Grátis Calculadora científica Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "json-formatter": {
+      "title": "Grátis Formatador JSON Online | SmartDigitalTips",
+      "description": "Grátis Formatador JSON Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "base64-encoder": {
+      "title": "Grátis Codificador Base64 Online | SmartDigitalTips",
+      "description": "Grátis Codificador Base64 Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "css-minifier": {
+      "title": "Grátis Minificador CSS Online | SmartDigitalTips",
+      "description": "Grátis Minificador CSS Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "html-beautifier": {
+      "title": "Grátis Formatador HTML Online | SmartDigitalTips",
+      "description": "Grátis Formatador HTML Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "color-picker": {
+      "title": "Grátis Seletor de cores Online | SmartDigitalTips",
+      "description": "Grátis Seletor de cores Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "color-palette-generator": {
+      "title": "Grátis Paleta de cores Online | SmartDigitalTips",
+      "description": "Grátis Paleta de cores Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    }
+  },
+  "categories": {
+    "image": {
+      "title": "Ferramentas de imagem — Grátis Online | SmartDigitalTips",
+      "description": "Compress, convert, edit, and transform images effortlessly. Sem cadastro."
+    },
+    "pdf": {
+      "title": "Ferramentas PDF — Grátis Online | SmartDigitalTips",
+      "description": "Merge, split, convert, and manipulate PDF documents. Sem cadastro."
+    },
+    "text": {
+      "title": "Ferramentas de texto — Grátis Online | SmartDigitalTips",
+      "description": "Count words, convert case, format, and analyze text. Sem cadastro."
+    },
+    "student": {
+      "title": "Ferramentas estudantis — Grátis Online | SmartDigitalTips",
+      "description": "Calculators, converters, and helpers for academic success. Sem cadastro."
+    },
+    "business": {
+      "title": "Ferramentas de negócios — Grátis Online | SmartDigitalTips",
+      "description": "Invoices, QR codes, and productivity utilities. Sem cadastro."
+    },
+    "converter": {
+      "title": "Conversores — Grátis Online | SmartDigitalTips",
+      "description": "Unit conversions and measurement tools. Sem cadastro."
+    },
+    "developer": {
+      "title": "Ferramentas para desenvolvedores — Grátis Online | SmartDigitalTips",
+      "description": "Format, minify, and encode code and data. Sem cadastro."
+    }
+  },
+  "blog": {
+    "ultimate-guide-optimizing-images-web": {
+      "title": "The Ultimate Guide to Optimizing Images for the Web | SmartDigitalTips",
+      "description": "Learn how to significantly speed up your website by properly compressing and resizing images without sacrificing visual quality."
+    },
+    "why-pdf-is-standard-for-documents": {
+      "title": "Why PDF is the Standard for Document Sharing | SmartDigitalTips",
+      "description": "Explore the history, benefits, and practical tools for managing Portable Document Format (PDF) files in professional environments."
+    },
+    "importance-of-writing-original-content-avoiding-plagiarism": {
+      "title": "The Importance of Original Content & Avoiding Plagiarism | SmartDigitalTips",
+      "description": "Understand why original content is crucial for SEO and academic success, and learn strategies to ensure your writing is 100% unique."
+    },
+    "how-to-create-use-qr-codes-effectively": {
+      "title": "How to Create and Use QR Codes Effectively | SmartDigitalTips",
+      "description": "A comprehensive guide to leveraging Quick Response (QR) codes for marketing, business operations, and seamless information sharing."
+    },
+    "freelancers-guide-to-invoicing": {
+      "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
+      "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    }
+  },
+  "Index": {
+    "title": "Ferramentas online grátis — PDF, imagens e produtividade",
+    "description": "Comprima imagens, converta PDF para Word, gere QR codes e mais. 100% grátis, rápido e seguro. Sem cadastro."
+  }
+}

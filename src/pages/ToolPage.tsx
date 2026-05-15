@@ -4,7 +4,13 @@ import { CheckCircle2 } from 'lucide-react'
 import { getToolById, getRelatedTools } from '@/data/tools'
 import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema, generateFAQSchema, generateToolSchema } from '@/components/seo/StructuredData'
+import { ToolEngagement } from '@/components/seo/ToolEngagement'
+import { ToolEditorialContent } from '@/components/seo/ToolEditorialContent'
+import { getToolEditorial } from '@/lib/tool-editorial'
 import { getToolKeywords, uniqueKeywords } from '@/lib/seoKeywords'
+import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
+import { SITE_URL } from '@/lib/locale-config'
+import { getToolSeo } from '@/lib/seo-messages'
 import {
   Accordion,
   AccordionContent,
@@ -110,6 +116,8 @@ const toolComponents: Record<string, React.ComponentType> = {
 
 export default function ToolPage() {
   const { toolId } = useParams<{ toolId: string }>()
+  const locale = useLocale()
+  const lp = useLocalizedPath()
   const tool = getToolById(toolId || '')
 
   if (!tool) {
@@ -128,22 +136,30 @@ export default function ToolPage() {
 
   const relatedTools = getRelatedTools(tool.id)
   const ToolComponent = toolComponents[tool.id]
+  const canonicalPath = lp(tool.path)
+  const editorial = getToolEditorial(tool)
 
-  const meta = {
+  const seo = getToolSeo(tool.id, locale, {
     title: tool.seoTitle,
     description: tool.seoDescription,
+  })
+
+  const meta = {
+    title: seo.title,
+    description: seo.description,
     canonical: tool.path,
+    locale,
     keywords: uniqueKeywords(getToolKeywords(tool)),
-    ogTitle: tool.seoTitle,
-    ogDescription: tool.seoDescription,
+    ogTitle: seo.title,
+    ogDescription: seo.description,
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartdigitaltips.com/' },
-        { name: tool.categoryLabel, url: `https://smartdigitaltips.com/category/${tool.category}` },
-        { name: tool.name, url: `https://smartdigitaltips.com${tool.path}` },
+        { name: 'Home', url: `${SITE_URL}${lp('/')}` },
+        { name: tool.categoryLabel, url: `${SITE_URL}${lp(`/category/${tool.category}`)}` },
+        { name: tool.name, url: `${SITE_URL}${canonicalPath}` },
       ]),
-      generateToolSchema(tool),
-      generateFAQSchema(tool.faq),
+      generateToolSchema({ ...tool, path: canonicalPath }),
+      ...(editorial.faqs.length > 0 ? [generateFAQSchema(editorial.faqs)] : []),
     ],
   }
 
@@ -160,7 +176,7 @@ export default function ToolPage() {
         <div className="mb-8 max-w-2xl">
           <div className="mb-3 flex flex-wrap items-center gap-2">
             <Link 
-              to={`/category/${tool.category}`}
+              to={lp(`/category/${tool.category}`)}
               className="px-2 py-0.5 rounded bg-primary/10 text-primary text-[11px] font-bold uppercase tracking-wider hover:bg-primary/20 transition-colors"
             >
               {tool.categoryLabel}
@@ -207,7 +223,8 @@ export default function ToolPage() {
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
           {/* Left column — How to Use + Benefits */}
           <div className="lg:col-span-3 space-y-16">
-            {/* How to Use */}
+            <ToolEditorialContent tool={tool} />
+
             <div>
               <h2 className="text-xl font-bold tracking-tight mb-6">How it works</h2>
               <div className="space-y-4">
@@ -241,7 +258,7 @@ export default function ToolPage() {
             <div className="lg:sticky lg:top-24">
               <h2 className="text-xl font-bold tracking-tight mb-6">FAQ</h2>
               <Accordion type="single" collapsible className="w-full">
-                {tool.faq.map((faq, index) => (
+                {editorial.faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="border-border">
                     <AccordionTrigger className="text-left text-sm font-semibold hover:text-primary transition-colors py-4">
                       {faq.question}
@@ -264,7 +281,7 @@ export default function ToolPage() {
               {relatedTools.map((relatedTool) => (
                 <Link
                   key={relatedTool.id}
-                  to={relatedTool.path}
+                  to={lp(relatedTool.path)}
                   className="group flex min-w-0 items-center gap-3 rounded-xl border border-border p-4 transition-all hover:border-primary/30 hover:shadow-warm sm:gap-4"
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300 shrink-0">
@@ -281,6 +298,8 @@ export default function ToolPage() {
             </div>
           </div>
         )}
+
+        <ToolEngagement tool={tool} />
       </div>
     </Layout>
   )

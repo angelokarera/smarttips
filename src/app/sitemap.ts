@@ -2,8 +2,10 @@ import type { MetadataRoute } from 'next';
 import { tools, categories } from '@/data/tools';
 import { blogPosts } from '@/data/blog';
 
-const locales = ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'];
-const baseUrl = 'https://smartdigitaltips.com';
+import { LOCALES, SITE_URL } from '@/lib/locale-config';
+
+const locales = [...LOCALES];
+const baseUrl = SITE_URL;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];

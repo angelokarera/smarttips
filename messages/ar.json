@@ -1,0 +1,270 @@
+{
+  "pages": {
+    "home": {
+      "title": "أدوات مجانية عبر الإنترنت — PDF والصور والنص",
+      "description": "اضغط الصور، حوّل PDF إلى Word، أنشئ رموز QR والمزيد. مجاني بالكامل وسريع وآمن. بدون تسجيل."
+    },
+    "about": {
+      "title": "من نحن",
+      "description": "تعرّف على SmartDigitalTips — أدوات مجانية في المتصفح للخصوصية والإنتاجية حول العالم."
+    },
+    "contact": {
+      "title": "اتصل بنا",
+      "description": "تواصل مع فريق SmartDigitalTips للدعم أو الملاحظات أو الشراكات."
+    },
+    "blog": {
+      "title": "نصائح وأدلة",
+      "description": "أدلة لتحسين الصور وأدوات PDF وSEO والإنتاجية — دروس مجانية."
+    },
+    "privacy": {
+      "title": "سياسة الخصوصية",
+      "description": "كيف يحمي SmartDigitalTips خصوصيتك. المعالجة في المتصفح — لا نخزن ملفاتك."
+    },
+    "terms": {
+      "title": "شروط الخدمة",
+      "description": "شروط استخدام أدوات SmartDigitalTips المجانية."
+    },
+    "cookies": {
+      "title": "سياسة ملفات تعريف الارتباط",
+      "description": "كيف يستخدم SmartDigitalTips ملفات تعريف الارتباط وإدارة تفضيلاتك."
+    },
+    "disclaimer": {
+      "title": "إخلاء المسؤولية",
+      "description": "إخلاء مسؤولية قانوني لأدوات ومحتوى SmartDigitalTips."
+    }
+  },
+  "tools": {
+    "image-compressor": {
+      "title": "مجاني ضاغط الصور عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني ضاغط الصور عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "image-to-pdf": {
+      "title": "مجاني صورة إلى PDF عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني صورة إلى PDF عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "image-resizer": {
+      "title": "مجاني تغيير حجم الصور عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني تغيير حجم الصور عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "image-converter": {
+      "title": "مجاني محول الصور عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني محول الصور عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "merge-pdf": {
+      "title": "مجاني دمج PDF عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني دمج PDF عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "split-pdf": {
+      "title": "مجاني تقسيم PDF عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني تقسيم PDF عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "pdf-to-word": {
+      "title": "مجاني PDF إلى Word عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني PDF إلى Word عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "pdf-to-image": {
+      "title": "مجاني PDF إلى صورة عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني PDF إلى صورة عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "word-counter": {
+      "title": "مجاني عداد الكلمات عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني عداد الكلمات عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "case-converter": {
+      "title": "مجاني محول حالة النص عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني محول حالة النص عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "text-to-speech": {
+      "title": "مجاني نص إلى كلام عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني نص إلى كلام عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "plagiarism-checker": {
+      "title": "مجاني فحص الانتحال عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني فحص الانتحال عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "gpa-calculator": {
+      "title": "مجاني حاسبة المعدل عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني حاسبة المعدل عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "percentage-calculator": {
+      "title": "مجاني حاسبة النسبة المئوية عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني حاسبة النسبة المئوية عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "grade-calculator": {
+      "title": "مجاني حاسبة الدرجات عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني حاسبة الدرجات عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "compound-interest": {
+      "title": "مجاني حاسبة الفائدة المركبة عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني حاسبة الفائدة المركبة عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "qr-code-generator": {
+      "title": "مجاني مولد رمز QR عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني مولد رمز QR عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "invoice-generator": {
+      "title": "مجاني مولد الفواتير عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني مولد الفواتير عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "password-generator": {
+      "title": "مجاني مولد كلمات المرور عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني مولد كلمات المرور عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "age-calculator": {
+      "title": "مجاني حاسبة العمر عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني حاسبة العمر عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "unit-converter": {
+      "title": "مجاني محول الوحدات عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني محول الوحدات عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "length-converter": {
+      "title": "مجاني محول الطول عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني محول الطول عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "time-converter": {
+      "title": "مجاني محول المناطق الزمنية عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني محول المناطق الزمنية عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "crop-image": {
+      "title": "مجاني قص الصورة عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني قص الصورة عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "jpg-to-png": {
+      "title": "مجاني JPG إلى PNG عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني JPG إلى PNG عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "png-to-jpg": {
+      "title": "مجاني PNG إلى JPG عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني PNG إلى JPG عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "webp-converter": {
+      "title": "مجاني محول WebP عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني محول WebP عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "background-remover": {
+      "title": "مجاني إزالة الخلفية عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني إزالة الخلفية عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "watermark-maker": {
+      "title": "مجاني علامة مائية عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني علامة مائية عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "character-counter": {
+      "title": "مجاني عداد الأحرف عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني عداد الأحرف عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "rewrite-text": {
+      "title": "مجاني إعادة صياغة النص عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني إعادة صياغة النص عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "grammar-checker": {
+      "title": "مجاني مدقق نحوي عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني مدقق نحوي عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "remove-duplicates": {
+      "title": "مجاني إزالة التكرار عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني إزالة التكرار عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "summarizer": {
+      "title": "مجاني ملخص النص عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني ملخص النص عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "citation-generator": {
+      "title": "مجاني مولد الاستشهادات عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني مولد الاستشهادات عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "study-timer": {
+      "title": "مجاني مؤقت الدراسة عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني مؤقت الدراسة عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "random-name-picker": {
+      "title": "مجاني اختيار اسم عشوائي عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني اختيار اسم عشوائي عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "scientific-calculator": {
+      "title": "مجاني آلة حاسبة علمية عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني آلة حاسبة علمية عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "json-formatter": {
+      "title": "مجاني منسق JSON عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني منسق JSON عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "base64-encoder": {
+      "title": "مجاني مشفر Base64 عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني مشفر Base64 عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "css-minifier": {
+      "title": "مجاني ضاغط CSS عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني ضاغط CSS عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "html-beautifier": {
+      "title": "مجاني منسق HTML عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني منسق HTML عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "color-picker": {
+      "title": "مجاني منتقي الألوان عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني منتقي الألوان عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "color-palette-generator": {
+      "title": "مجاني مولد لوحة الألوان عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني مولد لوحة الألوان عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    }
+  },
+  "categories": {
+    "image": {
+      "title": "أدوات الصور — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Compress, convert, edit, and transform images effortlessly. بدون تسجيل."
+    },
+    "pdf": {
+      "title": "أدوات PDF — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Merge, split, convert, and manipulate PDF documents. بدون تسجيل."
+    },
+    "text": {
+      "title": "أدوات النص — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Count words, convert case, format, and analyze text. بدون تسجيل."
+    },
+    "student": {
+      "title": "أدوات الطلاب — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Calculators, converters, and helpers for academic success. بدون تسجيل."
+    },
+    "business": {
+      "title": "أدوات الأعمال — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Invoices, QR codes, and productivity utilities. بدون تسجيل."
+    },
+    "converter": {
+      "title": "أدوات التحويل — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Unit conversions and measurement tools. بدون تسجيل."
+    },
+    "developer": {
+      "title": "أدوات المطورين — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Format, minify, and encode code and data. بدون تسجيل."
+    }
+  },
+  "blog": {
+    "ultimate-guide-optimizing-images-web": {
+      "title": "The Ultimate Guide to Optimizing Images for the Web | SmartDigitalTips",
+      "description": "Learn how to significantly speed up your website by properly compressing and resizing images without sacrificing visual quality."
+    },
+    "why-pdf-is-standard-for-documents": {
+      "title": "Why PDF is the Standard for Document Sharing | SmartDigitalTips",
+      "description": "Explore the history, benefits, and practical tools for managing Portable Document Format (PDF) files in professional environments."
+    },
+    "importance-of-writing-original-content-avoiding-plagiarism": {
+      "title": "The Importance of Original Content & Avoiding Plagiarism | SmartDigitalTips",
+      "description": "Understand why original content is crucial for SEO and academic success, and learn strategies to ensure your writing is 100% unique."
+    },
+    "how-to-create-use-qr-codes-effectively": {
+      "title": "How to Create and Use QR Codes Effectively | SmartDigitalTips",
+      "description": "A comprehensive guide to leveraging Quick Response (QR) codes for marketing, business operations, and seamless information sharing."
+    },
+    "freelancers-guide-to-invoicing": {
+      "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
+      "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    }
+  },
+  "Index": {
+    "title": "أدوات مجانية عبر الإنترنت — PDF والصور والنص",
+    "description": "اضغط الصور، حوّل PDF إلى Word، أنشئ رموز QR والمزيد. مجاني بالكامل وسريع وآمن. بدون تسجيل."
+  }
+}

@@ -22,28 +22,41 @@ import { categories, getPopularTools, getTrendingTools, getNewTools } from '@/da
 import { Layout } from '@/components/layout/Layout'
 import { generateWebsiteSchema, generateOrganizationSchema, generateCollectionSchema } from '@/components/seo/StructuredData'
 import { platformKeywords, uniqueKeywords } from '@/lib/seoKeywords'
+import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
+import { getPageSeo } from '@/lib/seo-messages'
+import { SITE_URL } from '@/lib/locale-config'
 
 export default function Home() {
+  const locale = useLocale()
+  const lp = useLocalizedPath()
   const popularTools = getPopularTools().slice(0, 8)
   const trendingTools = getTrendingTools().slice(0, 5)
   const newTools = getNewTools().slice(0, 4)
 
-  const meta = {
+  const homeSeo = getPageSeo('home', locale, {
     title: 'Free Online Tools — PDF Converter, Image Compressor & Browser Utilities | SmartDigitalTips',
-    description: 'Access free online tools instantly. Compress images, convert PDF to Word, generate QR codes, and finish everyday tasks. 100% free, fast, and secure. No signup required.',
+    description:
+      'Access free online tools instantly. Compress images, convert PDF to Word, generate QR codes, and finish everyday tasks. 100% free, fast, and secure. No signup required.',
+  })
+
+  const meta = {
+    title: homeSeo.title,
+    description: homeSeo.description,
+    locale,
+    canonical: '/',
     keywords: uniqueKeywords(['free online tools', 'pdf converter', 'image compressor', 'reduce image size', 'convert files online', 'password generator', 'qr code generator', 'calculator tools', 'productivity tools', ...platformKeywords]),
-    ogTitle: 'SmartDigitalTips - Free Online Developer, PDF, Image and Text Tools',
-    ogDescription: 'Use free browser-based tools for developers, PDFs, images, text, students, startups, and business productivity.',
+    ogTitle: homeSeo.title,
+    ogDescription: homeSeo.description,
     schema: [
       generateWebsiteSchema(),
       generateOrganizationSchema(),
       generateCollectionSchema(
         'SmartDigitalTips Free Online Tools',
         'A searchable collection of free browser-based developer, image, PDF, text, student, and startup tools.',
-        'https://smartdigitaltips.com',
+        `${SITE_URL}${lp('/')}`,
         popularTools.map((tool) => ({
           name: tool.name,
-          url: `https://smartdigitaltips.com${tool.path}`,
+          url: `${SITE_URL}${lp(tool.path)}`,
         }))
       ),
     ],

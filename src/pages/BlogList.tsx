@@ -4,20 +4,31 @@ import { blogPosts } from '@/data/blog'
 import { Calendar, ArrowRight } from 'lucide-react'
 import { generateCollectionSchema } from '@/components/seo/StructuredData'
 import { platformKeywords, uniqueKeywords } from '@/lib/seoKeywords'
+import { usePageSeo } from '@/hooks/usePageSeo'
+import { useLocalizedPath } from '@/hooks/useLocale'
+import { SITE_URL } from '@/lib/locale-config'
 
 export default function BlogList() {
-  const meta = {
+  const lp = useLocalizedPath()
+  const seo = usePageSeo('blog', {
     title: 'Digital Tips & Guides | SmartDigitalTips Blog',
-    description: 'Read comprehensive guides, tutorials, and tips on image optimization, PDF management, SEO, and business productivity.',
+    description:
+      'Read comprehensive guides, tutorials, and tips on image optimization, PDF management, SEO, and business productivity.',
+  })
+
+  const meta = {
+    title: seo.title,
+    description: seo.description,
+    locale: seo.locale,
     canonical: '/blog',
     keywords: uniqueKeywords(['digital tips', 'SEO guides', 'online tools blog', 'productivity guides', ...platformKeywords]),
-    ogTitle: 'Digital Tips & Online Tools Guides',
-    ogDescription: 'Actionable tutorials for image optimization, PDF workflows, SEO, business productivity, and free browser-based tools.',
+    ogTitle: seo.title,
+    ogDescription: seo.description,
     schema: [
       generateCollectionSchema(
         'Digital Tips & Guides',
         'Guides and tutorials for using free online tools more effectively.',
-        'https://smartdigitaltips.com/blog',
+        `${SITE_URL}${lp('/blog')}`,
         blogPosts.map((post) => ({
           name: post.title,
           url: `https://smartdigitaltips.com/blog/${post.slug}`,

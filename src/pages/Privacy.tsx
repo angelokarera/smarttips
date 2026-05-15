@@ -1,15 +1,26 @@
 import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { usePageSeo } from '@/hooks/usePageSeo'
+import { useLocalizedPath } from '@/hooks/useLocale'
+import { SITE_URL } from '@/lib/locale-config'
 
 export default function Privacy() {
-  const meta = {
+  const lp = useLocalizedPath()
+  const seo = usePageSeo('privacy', {
     title: 'Privacy Policy - SmartDigitalTips',
-    description: 'Learn how SmartDigitalTips handles your data. We prioritize privacy and process most data locally in your browser.',
+    description:
+      'Learn how SmartDigitalTips handles your data. We prioritize privacy and process most data locally in your browser.',
+  })
+
+  const meta = {
+    title: seo.title,
+    description: seo.description,
+    locale: seo.locale,
     canonical: '/privacy',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartdigitaltips.com/' },
-        { name: 'Privacy Policy', url: 'https://smartdigitaltips.com/privacy' },
+        { name: 'Home', url: `${SITE_URL}${lp('/')}` },
+        { name: 'Privacy Policy', url: `${SITE_URL}${lp('/privacy')}` },
       ]),
     ],
   }

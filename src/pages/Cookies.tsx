@@ -1,15 +1,26 @@
 import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { usePageSeo } from '@/hooks/usePageSeo'
+import { useLocalizedPath } from '@/hooks/useLocale'
+import { SITE_URL } from '@/lib/locale-config'
 
 export default function Cookies() {
-  const meta = {
+  const lp = useLocalizedPath()
+  const seo = usePageSeo('cookies', {
     title: 'Cookie Policy - SmartDigitalTips',
-    description: 'Learn how SmartDigitalTips uses essential cookies, Google Analytics, Google AdSense, advertising cookies, and consent choices.',
+    description:
+      'Learn how SmartDigitalTips uses essential cookies, Google Analytics, Google AdSense, advertising cookies, and consent choices.',
+  })
+
+  const meta = {
+    title: seo.title,
+    description: seo.description,
+    locale: seo.locale,
     canonical: '/cookies',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartdigitaltips.com/' },
-        { name: 'Cookie Policy', url: 'https://smartdigitaltips.com/cookies' },
+        { name: 'Home', url: `${SITE_URL}${lp('/')}` },
+        { name: 'Cookie Policy', url: `${SITE_URL}${lp('/cookies')}` },
       ]),
     ],
   }

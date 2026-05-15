@@ -5,8 +5,20 @@ import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema, generateCollectionSchema } from '@/components/seo/StructuredData'
 import { Button } from '@/components/ui/button'
 import { getCategoryKeywords, uniqueKeywords } from '@/lib/seoKeywords'
+import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
+import { getCategorySeo } from '@/lib/seo-messages'
+import { SITE_URL } from '@/lib/locale-config'
+import { getCategoryEditorial } from '@/lib/category-editorial'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
 
 export default function CategoryPage() {
+  const locale = useLocale()
+  const lp = useLocalizedPath()
   const { categoryId } = useParams<{ categoryId: string }>()
   const category = categories.find((c) => c.id === categoryId)
   const tools = getToolsByCategory(categoryId || '')
@@ -30,25 +42,33 @@ export default function CategoryPage() {
     )
   }
 
-  const meta = {
+  const categoryEditorial = getCategoryEditorial(category.id)
+
+  const categorySeo = getCategorySeo(category.id, locale, {
     title: `${category.label} — Free Online Tools | SmartDigitalTips`,
     description: category.description,
+  })
+
+  const meta = {
+    title: categorySeo.title,
+    description: categorySeo.description,
     canonical: `/category/${category.id}`,
+    locale,
     keywords: uniqueKeywords(getCategoryKeywords(category)),
-    ogTitle: `${category.label} - Free Browser-Based Tools`,
-    ogDescription: category.description,
+    ogTitle: categorySeo.title,
+    ogDescription: categorySeo.description,
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartdigitaltips.com/' },
-        { name: category.label, url: `https://smartdigitaltips.com/category/${category.id}` },
+        { name: 'Home', url: `${SITE_URL}${lp('/')}` },
+        { name: category.label, url: `${SITE_URL}${lp(`/category/${category.id}`)}` },
       ]),
       generateCollectionSchema(
         `${category.label} - Free Online Tools`,
         category.description,
-        `https://smartdigitaltips.com/category/${category.id}`,
+        `${SITE_URL}${lp(`/category/${category.id}`)}`,
         tools.map((tool) => ({
           name: tool.name,
-          url: `https://smartdigitaltips.com${tool.path}`,
+          url: `${SITE_URL}${lp(tool.path)}`,
         }))
       ),
     ],
@@ -75,13 +95,57 @@ export default function CategoryPage() {
           <p className="text-muted-foreground leading-relaxed">{category.description}</p>
         </div>
 
+        {categoryEditorial && (
+          <div className="mb-12 max-w-3xl space-y-8">
+            <div className="space-y-4">
+              {categoryEditorial.overview.map((paragraph) => (
+                <p key={paragraph.slice(0, 40)} className="text-sm text-muted-foreground leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            <div>
+              <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
+                What you can do here
+              </h2>
+              <ul className="grid sm:grid-cols-2 gap-2">
+                {categoryEditorial.highlights.map((item) => (
+                  <li
+                    key={item}
+                    className="text-sm text-muted-foreground leading-relaxed rounded-lg border border-border bg-card/50 px-3 py-2"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {categoryEditorial.faqs.length > 0 && (
+              <div>
+                <h2 className="text-lg font-bold tracking-tight mb-4">Category FAQ</h2>
+                <Accordion type="single" collapsible className="w-full max-w-2xl">
+                  {categoryEditorial.faqs.map((faq, index) => (
+                    <AccordionItem key={faq.question} value={`cat-faq-${index}`} className="border-border">
+                      <AccordionTrigger className="text-left text-sm font-semibold hover:text-primary py-4">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            )}
+          </div>
+        )}
+
         {/* Tools Grid — 2-col on desktop for readability, not 3 */}
         {tools.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {tools.map((tool, index) => (
               <Link
                 key={tool.id}
-                to={tool.path}
+                to={lp(tool.path)}
                 className="group flex min-w-0 items-start gap-3 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-primary/30 hover:shadow-warm sm:gap-4 sm:p-5"
                 style={{ animationDelay: `${index * 40}ms` }}
               >
@@ -129,7 +193,7 @@ export default function CategoryPage() {
               .map((cat) => (
                 <Link
                   key={cat.id}
-                  to={`/category/${cat.id}`}
+                  to={lp(`/category/${cat.id}`)}
                   className="px-4 py-2 rounded-full border border-border hover:border-primary/30 hover:bg-primary/5 hover:text-primary transition-all text-sm font-medium"
                 >
                   {cat.label}

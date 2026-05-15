@@ -1,0 +1,270 @@
+{
+  "pages": {
+    "home": {
+      "title": "Zana za mtandaoni bure — PDF, picha na zana za kivinjari",
+      "description": "Bana picha, badilisha PDF kuwa Word, tengeneza QR codes na zaidi. Bure kabisa, haraka na salama. Hakuna usajili."
+    },
+    "about": {
+      "title": "Kuhusu sisi",
+      "description": "Jifunze kuhusu SmartDigitalTips — zana za bure zinazofanya kazi kwenye kivinjari, salama na za faragha."
+    },
+    "contact": {
+      "title": "Wasiliana",
+      "description": "Wasiliana na timu ya SmartDigitalTips kwa msaada, maoni au ushirikiano."
+    },
+    "blog": {
+      "title": "Vidokezo na miongozo",
+      "description": "Miongozo ya picha, PDF, SEO na tija — mafunzo ya bure kutoka SmartDigitalTips."
+    },
+    "privacy": {
+      "title": "Sera ya faragha",
+      "description": "Jinsi SmartDigitalTips inavyolinda faragha yako. Inafanya kazi kwenye kivinjari — hatuhifadhi faili."
+    },
+    "terms": {
+      "title": "Masharti",
+      "description": "Masharti ya kutumia zana za bure za SmartDigitalTips."
+    },
+    "cookies": {
+      "title": "Sera ya vidakuzi",
+      "description": "Jinsi SmartDigitalTips inavyotumia vidakuzi na kudhibiti mapendeleo."
+    },
+    "disclaimer": {
+      "title": "Kanusho",
+      "description": "Kanusho ya kisheria kwa zana na maudhui ya SmartDigitalTips."
+    }
+  },
+  "tools": {
+    "image-compressor": {
+      "title": "Bure Kibana Picha Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kibana Picha Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "image-to-pdf": {
+      "title": "Bure Picha hadi PDF Mtandaoni | SmartDigitalTips",
+      "description": "Bure Picha hadi PDF Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "image-resizer": {
+      "title": "Bure Kubadilisha Ukubwa wa Picha Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kubadilisha Ukubwa wa Picha Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "image-converter": {
+      "title": "Bure Kibadilishaji Picha Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kibadilishaji Picha Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "merge-pdf": {
+      "title": "Bure Unganisha PDF Mtandaoni | SmartDigitalTips",
+      "description": "Bure Unganisha PDF Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "split-pdf": {
+      "title": "Bure Gawanya PDF Mtandaoni | SmartDigitalTips",
+      "description": "Bure Gawanya PDF Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "pdf-to-word": {
+      "title": "Bure PDF hadi Word Mtandaoni | SmartDigitalTips",
+      "description": "Bure PDF hadi Word Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "pdf-to-image": {
+      "title": "Bure PDF hadi Picha Mtandaoni | SmartDigitalTips",
+      "description": "Bure PDF hadi Picha Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "word-counter": {
+      "title": "Bure Kihesabu Maneno Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kihesabu Maneno Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "case-converter": {
+      "title": "Bure Kibadilishaji Herufi Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kibadilishaji Herufi Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "text-to-speech": {
+      "title": "Bure Maandishi hadi Sauti Mtandaoni | SmartDigitalTips",
+      "description": "Bure Maandishi hadi Sauti Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "plagiarism-checker": {
+      "title": "Bure Kiangalia Wizi wa Maandishi Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kiangalia Wizi wa Maandishi Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "gpa-calculator": {
+      "title": "Bure Kikokotozo cha GPA Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kikokotozo cha GPA Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "percentage-calculator": {
+      "title": "Bure Kikokotozo cha Asilimia Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kikokotozo cha Asilimia Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "grade-calculator": {
+      "title": "Bure Kikokotozo cha Alama Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kikokotozo cha Alama Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "compound-interest": {
+      "title": "Bure Riba changamfu Mtandaoni | SmartDigitalTips",
+      "description": "Bure Riba changamfu Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "qr-code-generator": {
+      "title": "Bure Kitengeneza QR Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kitengeneza QR Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "invoice-generator": {
+      "title": "Bure Kitengeneza Ankara Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kitengeneza Ankara Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "password-generator": {
+      "title": "Bure Kitengeneza Nenosiri Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kitengeneza Nenosiri Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "age-calculator": {
+      "title": "Bure Kikokotozo cha Umri Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kikokotozo cha Umri Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "unit-converter": {
+      "title": "Bure Kibadilishaji Vipimo Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kibadilishaji Vipimo Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "length-converter": {
+      "title": "Bure Urefu Mtandaoni | SmartDigitalTips",
+      "description": "Bure Urefu Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "time-converter": {
+      "title": "Bure Majira ya Saa Mtandaoni | SmartDigitalTips",
+      "description": "Bure Majira ya Saa Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "crop-image": {
+      "title": "Bure Punguza Picha Mtandaoni | SmartDigitalTips",
+      "description": "Bure Punguza Picha Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "jpg-to-png": {
+      "title": "Bure JPG hadi PNG Mtandaoni | SmartDigitalTips",
+      "description": "Bure JPG hadi PNG Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "png-to-jpg": {
+      "title": "Bure PNG hadi JPG Mtandaoni | SmartDigitalTips",
+      "description": "Bure PNG hadi JPG Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "webp-converter": {
+      "title": "Bure WebP Mtandaoni | SmartDigitalTips",
+      "description": "Bure WebP Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "background-remover": {
+      "title": "Bure Ondoa Mandharinyuma Mtandaoni | SmartDigitalTips",
+      "description": "Bure Ondoa Mandharinyuma Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "watermark-maker": {
+      "title": "Bure Alama ya Maji Mtandaoni | SmartDigitalTips",
+      "description": "Bure Alama ya Maji Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "character-counter": {
+      "title": "Bure Kihesabu Herufi Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kihesabu Herufi Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "rewrite-text": {
+      "title": "Bure Andika upya Mtandaoni | SmartDigitalTips",
+      "description": "Bure Andika upya Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "grammar-checker": {
+      "title": "Bure Sarufi Mtandaoni | SmartDigitalTips",
+      "description": "Bure Sarufi Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "remove-duplicates": {
+      "title": "Bure Ondoa marudio Mtandaoni | SmartDigitalTips",
+      "description": "Bure Ondoa marudio Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "summarizer": {
+      "title": "Bure Muhtasari Mtandaoni | SmartDigitalTips",
+      "description": "Bure Muhtasari Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "citation-generator": {
+      "title": "Bure Citation Mtandaoni | SmartDigitalTips",
+      "description": "Bure Citation Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "study-timer": {
+      "title": "Bure Kipima muda cha kusoma Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kipima muda cha kusoma Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "random-name-picker": {
+      "title": "Bure Chagua jina nasibu Mtandaoni | SmartDigitalTips",
+      "description": "Bure Chagua jina nasibu Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "scientific-calculator": {
+      "title": "Bure Kikokotozo cha kisayansi Mtandaoni | SmartDigitalTips",
+      "description": "Bure Kikokotozo cha kisayansi Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "json-formatter": {
+      "title": "Bure JSON Mtandaoni | SmartDigitalTips",
+      "description": "Bure JSON Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "base64-encoder": {
+      "title": "Bure Base64 Mtandaoni | SmartDigitalTips",
+      "description": "Bure Base64 Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "css-minifier": {
+      "title": "Bure CSS Mtandaoni | SmartDigitalTips",
+      "description": "Bure CSS Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "html-beautifier": {
+      "title": "Bure HTML Mtandaoni | SmartDigitalTips",
+      "description": "Bure HTML Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "color-picker": {
+      "title": "Bure Chagua rangi Mtandaoni | SmartDigitalTips",
+      "description": "Bure Chagua rangi Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "color-palette-generator": {
+      "title": "Bure Palette ya rangi Mtandaoni | SmartDigitalTips",
+      "description": "Bure Palette ya rangi Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    }
+  },
+  "categories": {
+    "image": {
+      "title": "Zana za Picha — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Compress, convert, edit, and transform images effortlessly. Hakuna usajili."
+    },
+    "pdf": {
+      "title": "Zana za PDF — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Merge, split, convert, and manipulate PDF documents. Hakuna usajili."
+    },
+    "text": {
+      "title": "Zana za Maandishi — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Count words, convert case, format, and analyze text. Hakuna usajili."
+    },
+    "student": {
+      "title": "Wanafunzi — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Calculators, converters, and helpers for academic success. Hakuna usajili."
+    },
+    "business": {
+      "title": "Biashara — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Invoices, QR codes, and productivity utilities. Hakuna usajili."
+    },
+    "converter": {
+      "title": "Vibadilishaji — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Unit conversions and measurement tools. Hakuna usajili."
+    },
+    "developer": {
+      "title": "Wasanidi programu — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Format, minify, and encode code and data. Hakuna usajili."
+    }
+  },
+  "blog": {
+    "ultimate-guide-optimizing-images-web": {
+      "title": "The Ultimate Guide to Optimizing Images for the Web | SmartDigitalTips",
+      "description": "Learn how to significantly speed up your website by properly compressing and resizing images without sacrificing visual quality."
+    },
+    "why-pdf-is-standard-for-documents": {
+      "title": "Why PDF is the Standard for Document Sharing | SmartDigitalTips",
+      "description": "Explore the history, benefits, and practical tools for managing Portable Document Format (PDF) files in professional environments."
+    },
+    "importance-of-writing-original-content-avoiding-plagiarism": {
+      "title": "The Importance of Original Content & Avoiding Plagiarism | SmartDigitalTips",
+      "description": "Understand why original content is crucial for SEO and academic success, and learn strategies to ensure your writing is 100% unique."
+    },
+    "how-to-create-use-qr-codes-effectively": {
+      "title": "How to Create and Use QR Codes Effectively | SmartDigitalTips",
+      "description": "A comprehensive guide to leveraging Quick Response (QR) codes for marketing, business operations, and seamless information sharing."
+    },
+    "freelancers-guide-to-invoicing": {
+      "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
+      "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    }
+  },
+  "Index": {
+    "title": "Zana za mtandaoni bure — PDF, picha na zana za kivinjari",
+    "description": "Bana picha, badilisha PDF kuwa Word, tengeneza QR codes na zaidi. Bure kabisa, haraka na salama. Hakuna usajili."
+  }
+}

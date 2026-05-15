@@ -31,7 +31,8 @@
     "noUncheckedSideEffectImports": true,
 
   },
-  "include": ["src"],
+  "include": ["src", "messages"],
+  "resolveJsonModule": true,
   "exclude": ["node_modules", "src/app", "src/lib/sitemap-generator.ts"],
 
 }

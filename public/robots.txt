@@ -1,63 +1,59 @@
-# SmartDigitalTips Robots.txt - Enterprise SEO Configuration
-# Updated: 2024
+# SmartDigitalTips — production robots.txt
+# Updated: 2026-05-15
 
-# Allow all crawlers by default
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 Disallow: /private/
 
-# Google Bot - Full Access
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Crawl-delay: 0
 
-# Google Image Bot
 User-agent: Googlebot-Image
 Allow: /
-Disallow: /api/
 
-# Google Mobile Bot
 User-agent: Googlebot-Mobile
 Allow: /
-Crawl-delay: 0
 
-# Bing Bot
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Crawl-delay: 0
 
-# Bing Preview
 User-agent: BingPreview
 Allow: /
 
-# Yahoo Bot
-User-agent: Slurp
-Allow: /
-Crawl-delay: 1
-
-# DuckDuckGo Bot
 User-agent: DuckDuckBot
 Allow: /
-Crawl-delay: 0
 
-# Yandex Bot
+User-agent: Slurp
+Allow: /
+
 User-agent: Yandex
 Allow: /
 Disallow: /api/
-Crawl-delay: 1
 
-# Baidu Bot (China)
 User-agent: Baiduspider
 Allow: /
-Crawl-delay: 1
 
-# AI Search Engine Crawlers - ALLOW ALL
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 
@@ -85,24 +81,4 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-# Social Media Crawlers
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-User-agent: TelegramBot
-Allow: /
-
-# Sitemap
 Sitemap: https://smartdigitaltips.com/sitemap.xml
-
-# Host
-Host: https://smartdigitaltips.com

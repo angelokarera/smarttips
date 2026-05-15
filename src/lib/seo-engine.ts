@@ -28,33 +28,16 @@ export class SEOEngine {
 
   // Generate high-CTR SEO title
   generateTitle(tool: Tool, _locale = 'en'): string {
+    if (tool.seoTitle) return tool.seoTitle
     const currentYear = new Date().getFullYear()
-    const templates = [
-      `Free ${tool.name} Online | No Signup Required ${currentYear}`,
-      `${tool.name} - Best Free Tool ${currentYear} | ${this.siteName}`,
-      `Professional ${tool.name} | Fast & Secure Online Tool`,
-      `${tool.name} Online - Free, Fast & Easy to Use`,
-      `Best ${tool.name} Tool ${currentYear} | No Registration Needed`,
-      `${tool.name} - Free Online Tool | Instant Access ${currentYear}`,
-      `Top ${tool.name} ${currentYear} | 100% Free & Secure`
-    ];
-    
-    return tool.seoTitle || templates[Math.floor(Math.random() * templates.length)];
+    return `Free ${tool.name} Online | No Signup ${currentYear} | ${this.siteName}`
   }
 
   // Generate compelling meta description
   generateDescription(tool: Tool, _locale = 'en'): string {
-    const cta = [
-      'Try now for free',
-      'Get started instantly',
-      'No registration required',
-      'Start using today',
-      'Access now - 100% free',
-      'Use online instantly'
-    ];
-    const benefit = tool.benefits[0] || tool.description;
-    
-    return `${benefit}. ${cta[Math.floor(Math.random() * cta.length)]}. Fast, secure, and private. Works on all devices. Global access 24/7.`;
+    if (tool.seoDescription) return tool.seoDescription
+    const benefit = tool.benefits[0] || tool.description
+    return `${benefit}. Free, fast, and private — runs in your browser. No signup required.`
   }
 
   // Generate keyword clusters
@@ -153,13 +136,6 @@ export class SEOEngine {
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock'
       },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.8',
-        ratingCount: '1250',
-        bestRating: '5',
-        worstRating: '1'
-      },
       datePublished: `${currentYear}-01-01`,
       inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'zh', 'sw', 'rw'],
       featureList: tool.benefits.join(', ')
@@ -191,7 +167,7 @@ export class SEOEngine {
         '@type': 'SearchAction',
         target: {
           '@type': 'EntryPoint',
-          urlTemplate: `${this.baseUrl}/search?q={search_term_string}`
+          urlTemplate: `${this.baseUrl}/en?q={search_term_string}`
         },
         'query-input': 'required name=search_term_string'
       }
@@ -221,7 +197,7 @@ export class SEOEngine {
 
   // Generate complete SEO metadata for a tool
   generateToolMetadata(tool: Tool, locale = 'en', _path: string): SEOMetadata {
-    const locales = ['en', 'fr', 'es', 'ar', 'pt', 'de', 'hi', 'sw', 'zh'];
+    const locales = ['en', 'fr', 'rw', 'sw', 'ar', 'es', 'pt', 'zh'];
     const hreflang: Record<string, string> = {};
     
     locales.forEach(loc => {

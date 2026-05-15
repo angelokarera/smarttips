@@ -1,0 +1,270 @@
+{
+  "pages": {
+    "home": {
+      "title": "Ibikoresho kuri interineti ubuntu — PDF, amashusho n'ibindi",
+      "description": "Fata amashusho, hindura PDF, kora QR codes n'ibindi. Byubuntu, byihuse, birinzwe. Nta kwiyandikisha."
+    },
+    "about": {
+      "title": "Twebwe",
+      "description": "Menya SmartDigitalTips — ibikoresho byubuntu bikora mu mushakisha, byizewe kandi byihuse."
+    },
+    "contact": {
+      "title": "Twandikire",
+      "description": "Vugana n'itsinda rya SmartDigitalTips ku bufasha, ibitekerezo cyangwa ubufatanye."
+    },
+    "blog": {
+      "title": "Inama n'amabwiriza",
+      "description": "Inama ku mashusho, PDF, SEO n'imikorere — byubuntu kuri SmartDigitalTips."
+    },
+    "privacy": {
+      "title": "Politiki y'ibanga",
+      "description": "Uko SmartDigitalTips irinda ibyangombwa byawe. Bikora mu mushakisha — ntitubika amadosiye."
+    },
+    "terms": {
+      "title": "Amategeko",
+      "description": "Amategeko yo gukoresha ibikoresho bya SmartDigitalTips."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "description": "Uko SmartDigitalTips ikoresha cookies n'uburyo bwo kuyagenzura."
+    },
+    "disclaimer": {
+      "title": "Iburira",
+      "description": "Iburira ry'amategeko ku bikoresho na ibiri kuri SmartDigitalTips."
+    }
+  },
+  "tools": {
+    "image-compressor": {
+      "title": "Ubuntu Gufata amashusho Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Gufata amashusho Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "image-to-pdf": {
+      "title": "Ubuntu Ifoto kuri PDF Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Ifoto kuri PDF Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "image-resizer": {
+      "title": "Ubuntu Guhindura ingano y'amashusho Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Guhindura ingano y'amashusho Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "image-converter": {
+      "title": "Ubuntu Guhindura amashusho Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Guhindura amashusho Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "merge-pdf": {
+      "title": "Ubuntu Guhuza PDF Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Guhuza PDF Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "split-pdf": {
+      "title": "Ubuntu Gutandukanya PDF Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Gutandukanya PDF Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "pdf-to-word": {
+      "title": "Ubuntu PDF kuri Word Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu PDF kuri Word Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "pdf-to-image": {
+      "title": "Ubuntu PDF kuri ifoto Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu PDF kuri ifoto Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "word-counter": {
+      "title": "Ubuntu Kubara amagambo Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Kubara amagambo Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "case-converter": {
+      "title": "Ubuntu Guhindura inyandiko Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Guhindura inyandiko Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "text-to-speech": {
+      "title": "Ubuntu Inyandiko kuri ijwi Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Inyandiko kuri ijwi Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "plagiarism-checker": {
+      "title": "Ubuntu Gusuzuma kwiba Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Gusuzuma kwiba Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "gpa-calculator": {
+      "title": "Ubuntu Kubara GPA Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Kubara GPA Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "percentage-calculator": {
+      "title": "Ubuntu Kubara igice ku ijana Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Kubara igice ku ijana Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "grade-calculator": {
+      "title": "Ubuntu Kubara amanota Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Kubara amanota Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "compound-interest": {
+      "title": "Ubuntu Kubara inyungu zikubiye Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Kubara inyungu zikubiye Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "qr-code-generator": {
+      "title": "Ubuntu Gukora QR Code Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Gukora QR Code Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "invoice-generator": {
+      "title": "Ubuntu Gukora fagitire Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Gukora fagitire Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "password-generator": {
+      "title": "Ubuntu Gukora ijambo ryibanga Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Gukora ijambo ryibanga Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "age-calculator": {
+      "title": "Ubuntu Kubara imyaka Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Kubara imyaka Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "unit-converter": {
+      "title": "Ubuntu Guhindura ibipimo Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Guhindura ibipimo Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "length-converter": {
+      "title": "Ubuntu Guhindura uburebure Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Guhindura uburebure Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "time-converter": {
+      "title": "Ubuntu Ibihe Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Ibihe Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "crop-image": {
+      "title": "Ubuntu Gukata ifoto Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Gukata ifoto Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "jpg-to-png": {
+      "title": "Ubuntu JPG kuri PNG Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu JPG kuri PNG Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "png-to-jpg": {
+      "title": "Ubuntu PNG kuri JPG Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu PNG kuri JPG Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "webp-converter": {
+      "title": "Ubuntu WebP Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu WebP Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "background-remover": {
+      "title": "Ubuntu Gukuraho inyuma Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Gukuraho inyuma Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "watermark-maker": {
+      "title": "Ubuntu Ikimenyetso Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Ikimenyetso Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "character-counter": {
+      "title": "Ubuntu Kubara inyuguti Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Kubara inyuguti Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "rewrite-text": {
+      "title": "Ubuntu Andika bundi Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Andika bundi Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "grammar-checker": {
+      "title": "Ubuntu Suzuma imvugo Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Suzuma imvugo Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "remove-duplicates": {
+      "title": "Ubuntu Kuraho duplicate Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Kuraho duplicate Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "summarizer": {
+      "title": "Ubuntu Incamake Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Incamake Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "citation-generator": {
+      "title": "Ubuntu Inkuru Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Inkuru Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "study-timer": {
+      "title": "Ubuntu Isaha yo kwiga Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Isaha yo kwiga Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "random-name-picker": {
+      "title": "Ubuntu Guhitamo izina Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Guhitamo izina Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "scientific-calculator": {
+      "title": "Ubuntu Kalkilateri ya siyansi Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Kalkilateri ya siyansi Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "json-formatter": {
+      "title": "Ubuntu JSON Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu JSON Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "base64-encoder": {
+      "title": "Ubuntu Base64 Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Base64 Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "css-minifier": {
+      "title": "Ubuntu CSS Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu CSS Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "html-beautifier": {
+      "title": "Ubuntu HTML Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu HTML Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "color-picker": {
+      "title": "Ubuntu Amabara Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Amabara Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    },
+    "color-palette-generator": {
+      "title": "Ubuntu Palette yamabara Kuri interineti | SmartDigitalTips",
+      "description": "Ubuntu Palette yamabara Kuri interineti. Nta kwiyandikisha. Bikora mu mushakisha wawe — amadosiye yawe ararinze."
+    }
+  },
+  "categories": {
+    "image": {
+      "title": "Amashusho — Ubuntu Kuri interineti | SmartDigitalTips",
+      "description": "Compress, convert, edit, and transform images effortlessly. Nta kwiyandikisha."
+    },
+    "pdf": {
+      "title": "PDF — Ubuntu Kuri interineti | SmartDigitalTips",
+      "description": "Merge, split, convert, and manipulate PDF documents. Nta kwiyandikisha."
+    },
+    "text": {
+      "title": "Inyandiko — Ubuntu Kuri interineti | SmartDigitalTips",
+      "description": "Count words, convert case, format, and analyze text. Nta kwiyandikisha."
+    },
+    "student": {
+      "title": "Abanyeshuri — Ubuntu Kuri interineti | SmartDigitalTips",
+      "description": "Calculators, converters, and helpers for academic success. Nta kwiyandikisha."
+    },
+    "business": {
+      "title": "Ubucuruzi — Ubuntu Kuri interineti | SmartDigitalTips",
+      "description": "Invoices, QR codes, and productivity utilities. Nta kwiyandikisha."
+    },
+    "converter": {
+      "title": "Guhindura — Ubuntu Kuri interineti | SmartDigitalTips",
+      "description": "Unit conversions and measurement tools. Nta kwiyandikisha."
+    },
+    "developer": {
+      "title": "Abakora porogaramu — Ubuntu Kuri interineti | SmartDigitalTips",
+      "description": "Format, minify, and encode code and data. Nta kwiyandikisha."
+    }
+  },
+  "blog": {
+    "ultimate-guide-optimizing-images-web": {
+      "title": "The Ultimate Guide to Optimizing Images for the Web | SmartDigitalTips",
+      "description": "Learn how to significantly speed up your website by properly compressing and resizing images without sacrificing visual quality."
+    },
+    "why-pdf-is-standard-for-documents": {
+      "title": "Why PDF is the Standard for Document Sharing | SmartDigitalTips",
+      "description": "Explore the history, benefits, and practical tools for managing Portable Document Format (PDF) files in professional environments."
+    },
+    "importance-of-writing-original-content-avoiding-plagiarism": {
+      "title": "The Importance of Original Content & Avoiding Plagiarism | SmartDigitalTips",
+      "description": "Understand why original content is crucial for SEO and academic success, and learn strategies to ensure your writing is 100% unique."
+    },
+    "how-to-create-use-qr-codes-effectively": {
+      "title": "How to Create and Use QR Codes Effectively | SmartDigitalTips",
+      "description": "A comprehensive guide to leveraging Quick Response (QR) codes for marketing, business operations, and seamless information sharing."
+    },
+    "freelancers-guide-to-invoicing": {
+      "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
+      "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    }
+  },
+  "Index": {
+    "title": "Ibikoresho kuri interineti ubuntu — PDF, amashusho n'ibindi",
+    "description": "Fata amashusho, hindura PDF, kora QR codes n'ibindi. Byubuntu, byihuse, birinzwe. Nta kwiyandikisha."
+  }
+}

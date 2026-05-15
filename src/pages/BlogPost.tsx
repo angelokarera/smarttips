@@ -4,28 +4,39 @@ import { blogPosts } from '@/data/blog'
 import { Calendar, User, ArrowLeft } from 'lucide-react'
 import { generateArticleSchema, generateBreadcrumbSchema } from '@/components/seo/StructuredData'
 import { getBlogKeywords, uniqueKeywords } from '@/lib/seoKeywords'
+import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
+import { getBlogSeo } from '@/lib/seo-messages'
+import { SITE_URL } from '@/lib/locale-config'
 
 export default function BlogPost() {
+  const locale = useLocale()
+  const lp = useLocalizedPath()
   const { slug } = useParams<{ slug: string }>()
   const post = blogPosts.find(p => p.slug === slug)
 
   if (!post) {
-    return <Navigate to="/blog" replace />
+    return <Navigate to={lp('/blog')} replace />
   }
 
-  const meta = {
+  const blogSeo = getBlogSeo(post.slug, locale, {
     title: post.seoTitle,
     description: post.seoDescription,
+  })
+
+  const meta = {
+    title: blogSeo.title,
+    description: blogSeo.description,
     canonical: `/blog/${post.slug}`,
+    locale,
     keywords: uniqueKeywords(getBlogKeywords(post)),
-    ogTitle: post.seoTitle,
-    ogDescription: post.seoDescription,
+    ogTitle: blogSeo.title,
+    ogDescription: blogSeo.description,
     ogType: 'article',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartdigitaltips.com/' },
-        { name: 'Blog', url: 'https://smartdigitaltips.com/blog' },
-        { name: post.title, url: `https://smartdigitaltips.com/blog/${post.slug}` },
+        { name: 'Home', url: `${SITE_URL}${lp('/')}` },
+        { name: 'Blog', url: `${SITE_URL}${lp('/blog')}` },
+        { name: post.title, url: `${SITE_URL}${lp(`/blog/${post.slug}`)}` },
       ]),
       generateArticleSchema(post),
     ],

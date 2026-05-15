@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router'
 import { Clock, CheckCircle2, Send } from 'lucide-react'
 import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
@@ -6,18 +7,28 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
+import { usePageSeo } from '@/hooks/usePageSeo'
+import { useLocalizedPath } from '@/hooks/useLocale'
+import { SITE_URL } from '@/lib/locale-config'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const lp = useLocalizedPath()
+  const seo = usePageSeo('contact', {
+    title: 'Contact — SmartDigitalTips',
+    description:
+      'Reach the SmartDigitalTips team. Suggest a tool, report a bug, or ask a question. We respond within 24 hours.',
+  })
 
   const meta = {
-    title: 'Contact — SmartDigitalTips',
-    description: 'Reach the SmartDigitalTips team. Suggest a tool, report a bug, or ask a question. We respond within 24 hours.',
+    title: seo.title,
+    description: seo.description,
+    locale: seo.locale,
     canonical: '/contact',
     schema: [
       generateBreadcrumbSchema([
-        { name: 'Home', url: 'https://smartdigitaltips.com/' },
-        { name: 'Contact', url: 'https://smartdigitaltips.com/contact' },
+        { name: 'Home', url: `${SITE_URL}${lp('/')}` },
+        { name: 'Contact', url: `${SITE_URL}${lp('/contact')}` },
       ]),
     ],
   }
@@ -37,9 +48,13 @@ export default function Contact() {
             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
               Talk to us.
             </h1>
-            <p className="text-muted-foreground leading-relaxed mb-10">
-              Whether it's a bug, a feature request, or just an opinion — we want to hear it. 
-              Real people read these, not a support bot.
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Whether it is a bug, a feature request, a partnership idea, or feedback about our content — we want to hear it.
+              Real people read these messages, not an automated support bot.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-10 text-sm">
+              SmartDigitalTips publishes free browser-based utilities for images, PDFs, text, students, and developers.
+              For AdSense or Search Console questions, include your site URL so we can help verify pages from your region.
             </p>
 
             <div className="space-y-5">
@@ -51,6 +66,12 @@ export default function Contact() {
                   <p className="text-sm font-semibold mb-0.5">Response time</p>
                   <p className="text-sm text-muted-foreground">Usually within 24 hours on business days.</p>
                 </div>
+              </div>
+              <div className="rounded-xl border border-border bg-secondary/30 p-4 text-sm text-muted-foreground leading-relaxed">
+                <p className="font-semibold text-foreground mb-1">Email</p>
+                <a href="mailto:support@smartdigitaltips.com" className="text-primary hover:underline">
+                  support@smartdigitaltips.com
+                </a>
               </div>
             </div>
           </div>
@@ -104,7 +125,7 @@ export default function Contact() {
 
                   <p className="text-[11px] text-muted-foreground/60 text-center">
                     By sending, you agree to our{' '}
-                    <a href="/privacy" className="underline hover:text-foreground transition-colors">privacy policy</a>.
+                    <Link to={lp('/privacy')} className="underline hover:text-foreground transition-colors">privacy policy</Link>.
                   </p>
                 </form>
               )}

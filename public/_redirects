@@ -1,10 +1,15 @@
-# Redirect root to English
+# Canonical locale redirects (301)
 /                     /en                   301
+/about                /en/about             301
+/contact              /en/contact           301
+/privacy              /en/privacy           301
+/terms                /en/terms               301
+/cookies              /en/cookies             301
+/disclaimer           /en/disclaimer          301
+/tools/*              /en/tools/:splat        301
+/category/*           /en/category/:splat     301
+/blog                 /en/blog                301
+/blog/*               /en/blog/:splat         301
 
-# Redirect old tool paths to new localized paths
-/tools/*              /en/tools/:splat      301
-/category/*           /en/category/:splat   301
-/blog/*               /en/blog/:splat       301
-
-# SPA fallback - must be last
+# SPA fallback — must be last
 /*                    /index.html           200

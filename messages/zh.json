@@ -1,0 +1,270 @@
+{
+  "pages": {
+    "home": {
+      "title": "免费在线工具 — PDF转换、图片压缩与浏览器实用工具",
+      "description": "即时使用免费在线工具：压缩图片、PDF转Word、生成二维码等。完全免费、快速安全，无需注册。"
+    },
+    "about": {
+      "title": "关于我们",
+      "description": "了解 SmartDigitalTips — 免费浏览器工具，注重隐私与全球可用性。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "description": "联系 SmartDigitalTips 团队：支持、反馈或合作咨询。"
+    },
+    "blog": {
+      "title": "技巧与指南",
+      "description": "图片优化、PDF工具、SEO与效率指南 — SmartDigitalTips 免费教程。"
+    },
+    "privacy": {
+      "title": "隐私政策",
+      "description": "SmartDigitalTips 如何保护您的隐私。浏览器本地处理 — 不存储您的文件。"
+    },
+    "terms": {
+      "title": "服务条款",
+      "description": "SmartDigitalTips 免费在线工具的使用条款。"
+    },
+    "cookies": {
+      "title": "Cookie 政策",
+      "description": "SmartDigitalTips 如何使用 Cookie 及管理您的偏好。"
+    },
+    "disclaimer": {
+      "title": "免责声明",
+      "description": "SmartDigitalTips 工具与教育内容的法律免责声明。"
+    }
+  },
+  "tools": {
+    "image-compressor": {
+      "title": "免费 图片压缩 在线 | SmartDigitalTips",
+      "description": "免费 图片压缩 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "image-to-pdf": {
+      "title": "免费 图片转PDF 在线 | SmartDigitalTips",
+      "description": "免费 图片转PDF 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "image-resizer": {
+      "title": "免费 图片尺寸调整 在线 | SmartDigitalTips",
+      "description": "免费 图片尺寸调整 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "image-converter": {
+      "title": "免费 图片格式转换 在线 | SmartDigitalTips",
+      "description": "免费 图片格式转换 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "merge-pdf": {
+      "title": "免费 合并PDF 在线 | SmartDigitalTips",
+      "description": "免费 合并PDF 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "split-pdf": {
+      "title": "免费 拆分PDF 在线 | SmartDigitalTips",
+      "description": "免费 拆分PDF 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "pdf-to-word": {
+      "title": "免费 PDF转Word 在线 | SmartDigitalTips",
+      "description": "免费 PDF转Word 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "pdf-to-image": {
+      "title": "免费 PDF转图片 在线 | SmartDigitalTips",
+      "description": "免费 PDF转图片 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "word-counter": {
+      "title": "免费 字数统计 在线 | SmartDigitalTips",
+      "description": "免费 字数统计 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "case-converter": {
+      "title": "免费 大小写转换 在线 | SmartDigitalTips",
+      "description": "免费 大小写转换 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "text-to-speech": {
+      "title": "免费 文字转语音 在线 | SmartDigitalTips",
+      "description": "免费 文字转语音 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "plagiarism-checker": {
+      "title": "免费 查重工具 在线 | SmartDigitalTips",
+      "description": "免费 查重工具 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "gpa-calculator": {
+      "title": "免费 GPA计算器 在线 | SmartDigitalTips",
+      "description": "免费 GPA计算器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "percentage-calculator": {
+      "title": "免费 百分比计算器 在线 | SmartDigitalTips",
+      "description": "免费 百分比计算器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "grade-calculator": {
+      "title": "免费 成绩计算器 在线 | SmartDigitalTips",
+      "description": "免费 成绩计算器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "compound-interest": {
+      "title": "免费 复利计算器 在线 | SmartDigitalTips",
+      "description": "免费 复利计算器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "qr-code-generator": {
+      "title": "免费 二维码生成器 在线 | SmartDigitalTips",
+      "description": "免费 二维码生成器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "invoice-generator": {
+      "title": "免费 发票生成器 在线 | SmartDigitalTips",
+      "description": "免费 发票生成器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "password-generator": {
+      "title": "免费 密码生成器 在线 | SmartDigitalTips",
+      "description": "免费 密码生成器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "age-calculator": {
+      "title": "免费 年龄计算器 在线 | SmartDigitalTips",
+      "description": "免费 年龄计算器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "unit-converter": {
+      "title": "免费 单位换算 在线 | SmartDigitalTips",
+      "description": "免费 单位换算 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "length-converter": {
+      "title": "免费 长度换算 在线 | SmartDigitalTips",
+      "description": "免费 长度换算 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "time-converter": {
+      "title": "免费 时区转换 在线 | SmartDigitalTips",
+      "description": "免费 时区转换 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "crop-image": {
+      "title": "免费 裁剪图片 在线 | SmartDigitalTips",
+      "description": "免费 裁剪图片 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "jpg-to-png": {
+      "title": "免费 JPG转PNG 在线 | SmartDigitalTips",
+      "description": "免费 JPG转PNG 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "png-to-jpg": {
+      "title": "免费 PNG转JPG 在线 | SmartDigitalTips",
+      "description": "免费 PNG转JPG 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "webp-converter": {
+      "title": "免费 WebP转换 在线 | SmartDigitalTips",
+      "description": "免费 WebP转换 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "background-remover": {
+      "title": "免费 去除背景 在线 | SmartDigitalTips",
+      "description": "免费 去除背景 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "watermark-maker": {
+      "title": "免费 水印工具 在线 | SmartDigitalTips",
+      "description": "免费 水印工具 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "character-counter": {
+      "title": "免费 字符计数 在线 | SmartDigitalTips",
+      "description": "免费 字符计数 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "rewrite-text": {
+      "title": "免费 改写文本 在线 | SmartDigitalTips",
+      "description": "免费 改写文本 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "grammar-checker": {
+      "title": "免费 语法检查 在线 | SmartDigitalTips",
+      "description": "免费 语法检查 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "remove-duplicates": {
+      "title": "免费 去重 在线 | SmartDigitalTips",
+      "description": "免费 去重 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "summarizer": {
+      "title": "免费 文本摘要 在线 | SmartDigitalTips",
+      "description": "免费 文本摘要 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "citation-generator": {
+      "title": "免费 引用生成 在线 | SmartDigitalTips",
+      "description": "免费 引用生成 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "study-timer": {
+      "title": "免费 学习计时器 在线 | SmartDigitalTips",
+      "description": "免费 学习计时器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "random-name-picker": {
+      "title": "免费 随机点名 在线 | SmartDigitalTips",
+      "description": "免费 随机点名 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "scientific-calculator": {
+      "title": "免费 科学计算器 在线 | SmartDigitalTips",
+      "description": "免费 科学计算器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "json-formatter": {
+      "title": "免费 JSON格式化 在线 | SmartDigitalTips",
+      "description": "免费 JSON格式化 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "base64-encoder": {
+      "title": "免费 Base64编码 在线 | SmartDigitalTips",
+      "description": "免费 Base64编码 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "css-minifier": {
+      "title": "免费 CSS压缩 在线 | SmartDigitalTips",
+      "description": "免费 CSS压缩 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "html-beautifier": {
+      "title": "免费 HTML格式化 在线 | SmartDigitalTips",
+      "description": "免费 HTML格式化 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "color-picker": {
+      "title": "免费 颜色选择器 在线 | SmartDigitalTips",
+      "description": "免费 颜色选择器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "color-palette-generator": {
+      "title": "免费 配色方案生成 在线 | SmartDigitalTips",
+      "description": "免费 配色方案生成 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    }
+  },
+  "categories": {
+    "image": {
+      "title": "图片工具 — 免费 在线 | SmartDigitalTips",
+      "description": "Compress, convert, edit, and transform images effortlessly. 无需注册."
+    },
+    "pdf": {
+      "title": "PDF工具 — 免费 在线 | SmartDigitalTips",
+      "description": "Merge, split, convert, and manipulate PDF documents. 无需注册."
+    },
+    "text": {
+      "title": "文本工具 — 免费 在线 | SmartDigitalTips",
+      "description": "Count words, convert case, format, and analyze text. 无需注册."
+    },
+    "student": {
+      "title": "学生工具 — 免费 在线 | SmartDigitalTips",
+      "description": "Calculators, converters, and helpers for academic success. 无需注册."
+    },
+    "business": {
+      "title": "商务工具 — 免费 在线 | SmartDigitalTips",
+      "description": "Invoices, QR codes, and productivity utilities. 无需注册."
+    },
+    "converter": {
+      "title": "转换工具 — 免费 在线 | SmartDigitalTips",
+      "description": "Unit conversions and measurement tools. 无需注册."
+    },
+    "developer": {
+      "title": "开发者工具 — 免费 在线 | SmartDigitalTips",
+      "description": "Format, minify, and encode code and data. 无需注册."
+    }
+  },
+  "blog": {
+    "ultimate-guide-optimizing-images-web": {
+      "title": "The Ultimate Guide to Optimizing Images for the Web | SmartDigitalTips",
+      "description": "Learn how to significantly speed up your website by properly compressing and resizing images without sacrificing visual quality."
+    },
+    "why-pdf-is-standard-for-documents": {
+      "title": "Why PDF is the Standard for Document Sharing | SmartDigitalTips",
+      "description": "Explore the history, benefits, and practical tools for managing Portable Document Format (PDF) files in professional environments."
+    },
+    "importance-of-writing-original-content-avoiding-plagiarism": {
+      "title": "The Importance of Original Content & Avoiding Plagiarism | SmartDigitalTips",
+      "description": "Understand why original content is crucial for SEO and academic success, and learn strategies to ensure your writing is 100% unique."
+    },
+    "how-to-create-use-qr-codes-effectively": {
+      "title": "How to Create and Use QR Codes Effectively | SmartDigitalTips",
+      "description": "A comprehensive guide to leveraging Quick Response (QR) codes for marketing, business operations, and seamless information sharing."
+    },
+    "freelancers-guide-to-invoicing": {
+      "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
+      "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    }
+  },
+  "Index": {
+    "title": "免费在线工具 — PDF转换、图片压缩与浏览器实用工具",
+    "description": "即时使用免费在线工具：压缩图片、PDF转Word、生成二维码等。完全免费、快速安全，无需注册。"
+  }
+}

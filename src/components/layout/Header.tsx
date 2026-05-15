@@ -13,6 +13,8 @@ import { categories, searchTools } from '@/data/tools'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useTheme } from '@/hooks/useTheme'
+import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher'
+import { useLocalizedPath } from '@/hooks/useLocale'
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -22,6 +24,7 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const navigate = useNavigate()
+  const lp = useLocalizedPath()
   const searchRef = useRef<HTMLDivElement>(null)
   const categoryRef = useRef<HTMLDivElement>(null)
 
@@ -81,7 +84,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 min-w-0 items-center justify-between gap-2">
           {/* Logo */}
-          <Link to="/" className="group flex min-w-0 items-center gap-2 sm:gap-2.5">
+          <Link to={lp('/')} className="group flex min-w-0 items-center gap-2 sm:gap-2.5">
             <img src="/logo.png" alt="SmartDigitalTips Logo" width="120" height="32" loading="eager" className="h-7 w-auto shrink-0 object-contain transition-transform duration-200 group-hover:scale-105 sm:h-8" />
             <span className="truncate text-base font-bold tracking-tight sm:text-lg">
               SmartDigital<span className="text-primary">Tips</span>
@@ -91,7 +94,7 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-0.5">
             <Link 
-              to="/" 
+              to={lp('/')} 
               className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
             >
               Home
@@ -112,7 +115,7 @@ export function Header() {
                   {categories.map((cat) => (
                     <Link
                       key={cat.id}
-                      to={`/category/${cat.id}`}
+                      to={lp(`/category/${cat.id}`)}
                       onClick={() => setCategoryDropdownOpen(false)}
                       className="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm hover:bg-secondary transition-colors group/item"
                     >
@@ -125,19 +128,19 @@ export function Header() {
             </div>
 
             <Link 
-              to="/blog" 
+              to={lp('/blog')} 
               className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
             >
               Blog
             </Link>
             <Link 
-              to="/about" 
+              to={lp('/about')} 
               className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
             >
               About
             </Link>
             <Link 
-              to="/contact" 
+              to={lp('/contact')} 
               className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
             >
               Contact
@@ -222,6 +225,8 @@ export function Header() {
               )}
             </div>
 
+            <LanguageSwitcher />
+
             {/* Theme Toggle */}
             <Button
               variant="ghost"
@@ -250,7 +255,7 @@ export function Header() {
         <div className="lg:hidden border-t border-border bg-background animate-slide-up">
           <div className="max-h-[calc(100dvh-4rem)] space-y-1 overflow-y-auto px-4 py-4">
             <Link 
-              to="/" 
+              to={lp('/')} 
               onClick={() => setMobileMenuOpen(false)}
               className="block px-3 py-2.5 text-base font-medium rounded-lg hover:bg-secondary transition-colors"
             >
@@ -263,7 +268,7 @@ export function Header() {
               {categories.map((cat) => (
                 <Link
                   key={cat.id}
-                  to={`/category/${cat.id}`}
+                  to={lp(`/category/${cat.id}`)}
                   onClick={() => setMobileMenuOpen(false)}
                   className="block px-3 py-2 text-sm text-muted-foreground rounded-lg hover:bg-secondary hover:text-foreground transition-colors"
                 >
@@ -273,21 +278,21 @@ export function Header() {
             </div>
             <div className="border-t border-border pt-2 space-y-1">
               <Link 
-                to="/blog" 
+                to={lp('/blog')} 
                 onClick={() => setMobileMenuOpen(false)}
                 className="block px-3 py-2.5 text-base font-medium rounded-lg hover:bg-secondary transition-colors"
               >
                 Blog
               </Link>
               <Link 
-                to="/about" 
+                to={lp('/about')} 
                 onClick={() => setMobileMenuOpen(false)}
                 className="block px-3 py-2.5 text-base font-medium rounded-lg hover:bg-secondary transition-colors"
               >
                 About
               </Link>
               <Link 
-                to="/contact" 
+                to={lp('/contact')} 
                 onClick={() => setMobileMenuOpen(false)}
                 className="block px-3 py-2.5 text-base font-medium rounded-lg hover:bg-secondary transition-colors"
               >

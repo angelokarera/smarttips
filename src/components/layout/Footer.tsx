@@ -1,7 +1,9 @@
 import { Link } from 'react-router'
 import { categories } from '@/data/tools'
+import { useLocalizedPath } from '@/hooks/useLocale'
 
 export function Footer() {
+  const lp = useLocalizedPath()
   return (
     <footer className="border-t border-border">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -9,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 py-12 lg:py-16">
           {/* Brand column — spans 2 on mobile */}
           <div className="col-span-2 md:col-span-1 space-y-4">
-            <Link to="/" className="inline-flex items-center gap-2.5 group">
+            <Link to={lp('/')} className="inline-flex items-center gap-2.5 group">
               <img src="/logo.png" alt="SmartDigitalTips Logo" width="105" height="28" loading="lazy" className="h-7 w-auto object-contain transition-transform duration-200 group-hover:scale-105" />
               <span className="text-base font-bold tracking-tight">
                 SmartDigital<span className="text-primary">Tips</span>
@@ -27,7 +29,7 @@ export function Footer() {
               {categories.map((cat) => (
                 <li key={cat.id}>
                   <Link 
-                    to={`/category/${cat.id}`}
+                    to={lp(`/category/${cat.id}`)}
                     className="text-sm text-foreground/70 hover:text-primary transition-colors"
                   >
                     {cat.label}
@@ -42,37 +44,37 @@ export function Footer() {
             <h3 className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-4">Company</h3>
             <ul className="space-y-2.5">
               <li>
-                <Link to="/blog" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                <Link to={lp('/blog')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                <Link to={lp('/about')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                <Link to={lp('/contact')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                <Link to={lp('/privacy')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   Privacy
                 </Link>
               </li>
               <li>
-                <Link to="/cookies" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                <Link to={lp('/cookies')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   Cookies
                 </Link>
               </li>
               <li>
-                <Link to="/terms" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                <Link to={lp('/terms')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   Terms
                 </Link>
               </li>
               <li>
-                <Link to="/disclaimer" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                <Link to={lp('/disclaimer')} className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   Disclaimer
                 </Link>
               </li>

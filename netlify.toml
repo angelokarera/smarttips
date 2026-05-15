@@ -21,7 +21,7 @@
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
-    Content-Type = "application/xml"
+    Content-Type = "application/xml; charset=utf-8"
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
@@ -39,6 +39,47 @@
 [[redirects]]
   from = "/"
   to = "/en"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/en/about"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/en/contact"
+  status = 301
+
+[[redirects]]
+  from = "/privacy"
+  to = "/en/privacy"
+  status = 301
+
+[[redirects]]
+  from = "/terms"
+  to = "/en/terms"
+  status = 301
+
+[[redirects]]
+  from = "/cookies"
+  to = "/en/cookies"
+  status = 301
+
+[[redirects]]
+  from = "/disclaimer"
+  to = "/en/disclaimer"
+  status = 301
+
+[[redirects]]
+  from = "/blog"
+  to = "/en/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/en/blog/:splat"
   status = 301
 
 [[redirects]]
