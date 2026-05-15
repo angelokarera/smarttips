@@ -9,10 +9,11 @@ import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { usePageSeo } from '@/hooks/usePageSeo'
 import { useLocalizedPath } from '@/hooks/useLocale'
-import { SITE_URL } from '@/lib/locale-config'
+import { CONTACT_EMAIL, SITE_URL } from '@/lib/locale-config'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [honeypot, setHoneypot] = useState('')
   const lp = useLocalizedPath()
   const seo = usePageSeo('contact', {
     title: 'Contact — SmartDigitalTips',
@@ -35,6 +36,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    if (honeypot.trim()) return
     setSubmitted(true)
   }
 
@@ -69,8 +71,8 @@ export default function Contact() {
               </div>
               <div className="rounded-xl border border-border bg-secondary/30 p-4 text-sm text-muted-foreground leading-relaxed">
                 <p className="font-semibold text-foreground mb-1">Email</p>
-                <a href="mailto:support@smartdigitaltips.com" className="text-primary hover:underline">
-                  support@smartdigitaltips.com
+                <a href={`mailto:${CONTACT_EMAIL}`} className="text-primary hover:underline">
+                  {CONTACT_EMAIL}
                 </a>
               </div>
             </div>
@@ -90,7 +92,19 @@ export default function Contact() {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} className="space-y-5 relative">
+                  <div className="absolute -left-[9999px] top-auto h-0 w-0 overflow-hidden" aria-hidden>
+                    <label htmlFor="contact-website">Website</label>
+                    <input
+                      id="contact-website"
+                      name="website"
+                      type="text"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={honeypot}
+                      onChange={(e) => setHoneypot(e.target.value)}
+                    />
+                  </div>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="contact-name" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Name</Label>

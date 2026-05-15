@@ -1,6 +1,9 @@
 /** Single source of truth for supported locales (routes, hreflang, sitemap). */
 export const SITE_URL = 'https://smartdigitaltips.com'
 
+/** Primary contact email (support, privacy, legal pages). */
+export const CONTACT_EMAIL = 'nkusikarera@hotmail.com'
+
 /** Google AdSense — used in ads.txt, index.html, and ad units */
 export const ADSENSE_CLIENT_ID = 'ca-pub-3519891152775398'
 /** ads.txt publisher ID (no ca- prefix) */

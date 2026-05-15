@@ -1,5 +1,6 @@
 // Enterprise SEO Engine - Programmatic SEO System
 import type { Tool } from '@/data/tools';
+import { CONTACT_EMAIL } from '@/lib/locale-config';
 
 export interface SEOMetadata {
   title: string;
@@ -190,7 +191,7 @@ export class SEOEngine {
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'Customer Service',
-        email: 'support@smartdigitaltips.com'
+        email: CONTACT_EMAIL
       }
     };
   }

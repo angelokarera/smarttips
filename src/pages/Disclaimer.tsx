@@ -2,7 +2,7 @@ import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
 import { usePageSeo } from '@/hooks/usePageSeo'
 import { useLocalizedPath } from '@/hooks/useLocale'
-import { SITE_URL } from '@/lib/locale-config'
+import { CONTACT_EMAIL, SITE_URL } from '@/lib/locale-config'
 
 export default function Disclaimer() {
   const lp = useLocalizedPath()
@@ -120,8 +120,8 @@ export default function Disclaimer() {
             <h2 className="text-xl font-bold mb-3">9. Contact</h2>
             <p className="text-muted-foreground leading-relaxed">
               If you have any questions about this Disclaimer, please contact us at{' '}
-              <a href="mailto:support@smartdigitaltips.com" className="text-foreground underline">
-                support@smartdigitaltips.com
+              <a href={`mailto:${CONTACT_EMAIL}`} className="text-foreground underline">
+                {CONTACT_EMAIL}
               </a>.
             </p>
           </section>

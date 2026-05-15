@@ -2,7 +2,7 @@ import { Layout } from '@/components/layout/Layout'
 import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
 import { usePageSeo } from '@/hooks/usePageSeo'
 import { useLocalizedPath } from '@/hooks/useLocale'
-import { SITE_URL } from '@/lib/locale-config'
+import { CONTACT_EMAIL, SITE_URL } from '@/lib/locale-config'
 
 export default function Cookies() {
   const lp = useLocalizedPath()
@@ -85,8 +85,8 @@ export default function Cookies() {
             <h2 className="mb-3 text-xl font-bold">7. Contact</h2>
             <p className="leading-relaxed text-muted-foreground">
               If you have questions about cookies or advertising technologies on SmartDigitalTips, contact us at{' '}
-              <a href="mailto:support@smartdigitaltips.com" className="text-foreground underline">
-                support@smartdigitaltips.com
+              <a href={`mailto:${CONTACT_EMAIL}`} className="text-foreground underline">
+                {CONTACT_EMAIL}
               </a>.
             </p>
           </section>

@@ -7,6 +7,7 @@ import { getBlogKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
 import { getBlogSeo } from '@/lib/seo-messages'
 import { SITE_URL } from '@/lib/locale-config'
+import { sanitizeBlogHtml } from '@/lib/sanitize'
 
 export default function BlogPost() {
   const locale = useLocale()
@@ -53,7 +54,7 @@ export default function BlogPost() {
       <article className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         
         <Link 
-          to="/blog" 
+          to={lp('/blog')} 
           className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors mb-8"
         >
           <ArrowLeft className="h-4 w-4" /> Back to blog
@@ -92,7 +93,7 @@ export default function BlogPost() {
           prose-ul:list-disc prose-ul:pl-6 prose-ul:text-muted-foreground prose-ul:mb-6
           prose-li:mb-2 prose-strong:text-foreground
           prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:bg-secondary prose-code:text-sm prose-code:font-mono prose-code:before:content-none prose-code:after:content-none"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{ __html: sanitizeBlogHtml(post.content) }}
         />
 
         <div className="mt-16 pt-8 border-t border-border">
@@ -101,7 +102,7 @@ export default function BlogPost() {
             <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
               SmartDigitalTips offers 50+ completely free tools for images, PDFs, text, and developers that run 100% locally in your browser.
             </p>
-            <Link to="/">
+            <Link to={lp('/')}>
               <button className="px-6 py-3 rounded-xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors shadow-warm">
                 Explore all tools
               </button>

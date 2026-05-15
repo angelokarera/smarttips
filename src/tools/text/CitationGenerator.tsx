@@ -7,6 +7,21 @@ import { Label } from '@/components/ui/label'
 const styles = ['apa', 'mla', 'chicago'] as const
 type Style = typeof styles[number]
 
+function CitationDisplay({ text }: { text: string }) {
+  const parts = text.split(/(\*[^*]+\*)/g)
+  return (
+    <>
+      {parts.map((part, index) =>
+        part.startsWith('*') && part.endsWith('*') ? (
+          <em key={index}>{part.slice(1, -1)}</em>
+        ) : (
+          <span key={index}>{part}</span>
+        ),
+      )}
+    </>
+  )
+}
+
 export default function CitationGenerator() {
   const [style, setStyle] = useState<Style>('apa')
   const [author, setAuthor] = useState('')
@@ -94,7 +109,9 @@ export default function CitationGenerator() {
       {citation && (
         <div className="p-5 rounded-xl border border-border bg-card">
           <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2 font-semibold">{style.toUpperCase()} Format</p>
-          <p className="text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: citation.replace(/\*(.*?)\*/g, '<em>$1</em>') }} />
+          <p className="text-sm leading-relaxed">
+            <CitationDisplay text={citation} />
+          </p>
         </div>
       )}
     </div>

@@ -1,3 +1,5 @@
+import { CONTACT_EMAIL } from '@/lib/locale-config'
+
 interface StructuredDataProps {
   data: Record<string, unknown> | Record<string, unknown>[]
 }
@@ -51,7 +53,7 @@ export function generateOrganizationSchema() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'support@smartdigitaltips.com',
+      email: CONTACT_EMAIL,
       availableLanguage: ['English', 'French', 'Swahili', 'Arabic', 'Spanish', 'Portuguese', 'Chinese'],
     },
   }

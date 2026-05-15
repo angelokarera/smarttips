@@ -1,3 +1,5 @@
+import { CONTACT_EMAIL } from '@/lib/locale-config'
+
 // Advanced Schema Markup Generator
 export class SchemaGenerator {
   private baseUrl: string;
@@ -57,7 +59,7 @@ export class SchemaGenerator {
         {
           '@type': 'ContactPoint',
           contactType: 'Customer Support',
-          email: 'support@smartdigitaltips.com',
+          email: CONTACT_EMAIL,
           availableLanguage: ['English', 'French', 'Spanish', 'Arabic', 'Portuguese', 'German', 'Hindi', 'Swahili', 'Chinese']
         }
       ],

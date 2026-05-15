@@ -1,3 +1,5 @@
+import { CONTACT_EMAIL } from '@/lib/locale-config'
+
 // Global SEO Configuration for Maximum Visibility
 export const GLOBAL_SEO_CONFIG = {
   // Site Information
@@ -103,7 +105,7 @@ export const GLOBAL_SEO_CONFIG = {
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'Customer Service',
-        email: 'support@smartdigitaltips.com',
+        email: CONTACT_EMAIL,
         availableLanguage: ['English', 'French', 'Spanish', 'Arabic', 'Portuguese', 'Chinese', 'Swahili'],
       },
     },

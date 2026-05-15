@@ -1,4 +1,6 @@
-Contact: mailto:security@smartdigitaltips.com
+Contact: mailto:nkusikarera@hotmail.com
 Expires: 2027-12-31T23:59:59.000Z
-Preferred-Languages: en, fr, es
+Preferred-Languages: en, fr, es, pt, ar, sw, zh
 Canonical: https://smartdigitaltips.com/.well-known/security.txt
+Policy: https://smartdigitaltips.com/privacy
+Hiring: https://smartdigitaltips.com/contact

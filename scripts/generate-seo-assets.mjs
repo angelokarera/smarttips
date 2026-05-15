@@ -5,6 +5,8 @@ import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { SITE_URL as BASE_URL, ADSENSE_PUBLISHER_ID, ADSENSE_CERTIFICATION_ID } from './seo-constants.mjs';
 
+const CONTACT_EMAIL = 'nkusikarera@hotmail.com';
+
 console.log('🚀 Starting SEO asset generation...\n');
 
 const publicDir = join(process.cwd(), 'public');
@@ -18,10 +20,12 @@ writeFileSync(join(publicDir, 'ads.txt'), adsTxt);
 console.log('✅ ads.txt generated\n');
 
 console.log('📝 Generating security.txt...');
-const securityTxt = `Contact: mailto:security@smartdigitaltips.com
+const securityTxt = `Contact: mailto:${CONTACT_EMAIL}
 Expires: 2027-12-31T23:59:59.000Z
-Preferred-Languages: en, fr, es
-Canonical: ${BASE_URL}/.well-known/security.txt`;
+Preferred-Languages: en, fr, es, pt, ar, sw, zh
+Canonical: ${BASE_URL}/.well-known/security.txt
+Policy: ${BASE_URL}/privacy
+Hiring: ${BASE_URL}/contact`;
 
 const wellKnownDir = join(publicDir, '.well-known');
 if (!existsSync(wellKnownDir)) {
