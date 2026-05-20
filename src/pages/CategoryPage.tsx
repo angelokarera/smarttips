@@ -78,8 +78,9 @@ export default function CategoryPage() {
   }
 
   return (
-    <Layout 
+    <Layout
       meta={meta}
+      showPublisherAds
       breadcrumbs={[
         { name: cat.label, path: `/category/${category.id}` },
       ]}
@@ -96,6 +97,17 @@ export default function CategoryPage() {
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-3">{cat.label}</h1>
           <p className="text-muted-foreground leading-relaxed">{cat.description}</p>
+        </div>
+
+        <div className="mb-10 max-w-3xl rounded-2xl border border-border bg-card/50 p-6">
+          <h2 className="text-lg font-bold tracking-tight mb-3">
+            Free {cat.label} — browser-based and private
+          </h2>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Every tool in {cat.label} runs in your web browser when possible, so files and text stay on your
+            device. Pick a utility below, read the guide on each tool page, and use related links to move
+            between similar features. No account is required to start.
+          </p>
         </div>
 
         {categoryEditorial && (

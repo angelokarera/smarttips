@@ -39,10 +39,10 @@ export function SEO({
   let description = customDescription || 'Free online tools for productivity, image editing, PDF conversion, text analysis, and more. No registration required.';
   let image = customImage || `${baseUrl}/logo.png`;
   let keywords: string[] = ['online tools', 'free tools', 'web tools', 'productivity'];
-  let schemas: any[] = [];
+  let schemas: Record<string, unknown>[] = [];
 
   if (tool) {
-    const metadata = seoEngine.generateToolMetadata(tool, locale, path);
+    const metadata = seoEngine.generateToolMetadata(tool, locale);
     title = metadata.title;
     description = metadata.description;
     keywords = metadata.keywords;

@@ -1,4 +1,6 @@
 import { CONTACT_EMAIL } from '@/lib/locale-config'
+import type { Tool } from '@/data/tools'
+import type { JsonLd } from '@/lib/json-ld-types'
 
 // Advanced Schema Markup Generator
 export class SchemaGenerator {
@@ -9,7 +11,7 @@ export class SchemaGenerator {
   }
 
   // Generate comprehensive WebSite schema with SearchAction
-  generateWebsiteSchema(): any {
+  generateWebsiteSchema(): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
@@ -39,7 +41,7 @@ export class SchemaGenerator {
   }
 
   // Generate Organization schema with social profiles
-  generateOrganizationSchema(): any {
+  generateOrganizationSchema(): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'Organization',
@@ -71,7 +73,7 @@ export class SchemaGenerator {
   }
 
   // Generate ItemList schema for tool collections
-  generateItemListSchema(tools: any[], listName: string): any {
+  generateItemListSchema(tools: Tool[], listName: string): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
@@ -98,7 +100,7 @@ export class SchemaGenerator {
   }
 
   // Generate VideoObject schema for tool tutorials
-  generateVideoSchema(video: any): any {
+  generateVideoSchema(video: Record<string, string>): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'VideoObject',
@@ -121,7 +123,7 @@ export class SchemaGenerator {
   }
 
   // Generate Review schema for tool ratings
-  generateReviewSchema(tool: any, rating: number, reviewCount: number): any {
+  generateReviewSchema(tool: Tool, rating: number, reviewCount: number): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'Product',
@@ -149,7 +151,7 @@ export class SchemaGenerator {
   }
 
   // Generate Course schema for educational content
-  generateCourseSchema(course: any): any {
+  generateCourseSchema(course: Record<string, string>): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'Course',
@@ -169,7 +171,7 @@ export class SchemaGenerator {
   }
 
   // Generate Event schema for webinars/launches
-  generateEventSchema(event: any): any {
+  generateEventSchema(event: Record<string, string>): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'Event',
@@ -192,7 +194,7 @@ export class SchemaGenerator {
   }
 
   // Generate SpecialAnnouncement schema for important updates
-  generateAnnouncementSchema(announcement: any): any {
+  generateAnnouncementSchema(announcement: Record<string, string>): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'SpecialAnnouncement',
@@ -209,12 +211,12 @@ export class SchemaGenerator {
   }
 
   // Render schema as JSON-LD script tag
-  renderSchema(schema: any): string {
+  renderSchema(schema: JsonLd): string {
     return `<script type="application/ld+json">${JSON.stringify(schema, null, 0)}</script>`;
   }
 
   // Render multiple schemas
-  renderSchemas(schemas: any[]): string {
+  renderSchemas(schemas: JsonLd[]): string {
     return schemas.map(schema => this.renderSchema(schema)).join('\n');
   }
 }

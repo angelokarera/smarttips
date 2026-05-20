@@ -74,13 +74,13 @@ export function ToolEngagement({ tool }: ToolEngagementProps) {
 
       <div className="grid gap-10 md:grid-cols-2">
         <EngagementList
-          title="Trending now"
+          title="You may also like"
           icon={<TrendingUp className="h-5 w-5 text-primary" />}
           tools={trending}
           lp={lp}
         />
         <EngagementList
-          title="Popular tools"
+          title="Most used tools"
           icon={<Sparkles className="h-5 w-5 text-primary" />}
           tools={popular}
           lp={lp}

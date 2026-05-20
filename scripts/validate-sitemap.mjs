@@ -43,8 +43,8 @@ for (const loc of locs) {
   if (!LOCALES.includes(locale)) fail(`Unknown locale in URL: ${loc}`)
 }
 
-// Expected: 8 static + 7 categories + 44 tools + 5 blog = 64 pages × 7 locales = 448
-const expectedPages = 64
+// Expected: 8 static + 11 categories + 56 tools + 7 blog = 82 pages × 7 locales = 574
+const expectedPages = 82
 const expectedUrls = expectedPages * LOCALES.length
 if (locs.length !== expectedUrls) {
   fail(`Expected ${expectedUrls} URLs, got ${locs.length}`)

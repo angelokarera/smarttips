@@ -1,5 +1,5 @@
 # SmartDigitalTips — production robots.txt
-# Updated: 2026-05-15
+# Updated: 2026-05-20
 
 User-agent: *
 Allow: /

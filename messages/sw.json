@@ -209,6 +209,54 @@
     "color-palette-generator": {
       "title": "Bure Palette ya rangi Mtandaoni | SmartDigitalTips",
       "description": "Bure Palette ya rangi Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "speech-to-text": {
+      "title": "Bure Speech to Text Mtandaoni | SmartDigitalTips",
+      "description": "Bure Speech to Text Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "random-sentence-generator": {
+      "title": "Bure Random Sentence Generator Mtandaoni | SmartDigitalTips",
+      "description": "Bure Random Sentence Generator Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "html-live-editor": {
+      "title": "Bure HTML Live Editor Mtandaoni | SmartDigitalTips",
+      "description": "Bure HTML Live Editor Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "url-encoder": {
+      "title": "Bure URL Encoder / Decoder Mtandaoni | SmartDigitalTips",
+      "description": "Bure URL Encoder / Decoder Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "regex-tester": {
+      "title": "Bure Regex Tester Mtandaoni | SmartDigitalTips",
+      "description": "Bure Regex Tester Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "password-strength-checker": {
+      "title": "Bure Password Strength Checker Mtandaoni | SmartDigitalTips",
+      "description": "Bure Password Strength Checker Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "gradient-generator": {
+      "title": "Bure Gradient Generator Mtandaoni | SmartDigitalTips",
+      "description": "Bure Gradient Generator Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "box-shadow-generator": {
+      "title": "Bure Box Shadow Generator Mtandaoni | SmartDigitalTips",
+      "description": "Bure Box Shadow Generator Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "speed-test-simulator": {
+      "title": "Bure Internet Speed Test (Simulation) Mtandaoni | SmartDigitalTips",
+      "description": "Bure Internet Speed Test (Simulation) Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "ip-checker": {
+      "title": "Bure IP Checker Mtandaoni | SmartDigitalTips",
+      "description": "Bure IP Checker Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "countdown-timer": {
+      "title": "Bure Countdown Timer Mtandaoni | SmartDigitalTips",
+      "description": "Bure Countdown Timer Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "stopwatch": {
+      "title": "Bure Stopwatch Mtandaoni | SmartDigitalTips",
+      "description": "Bure Stopwatch Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
     }
   },
   "categories": {
@@ -239,6 +287,22 @@
     "developer": {
       "title": "Wasanidi programu — Bure Mtandaoni | SmartDigitalTips",
       "description": "Format, minify, and encode code and data. Hakuna usajili."
+    },
+    "security": {
+      "title": "Security Tools — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Password generators and strength checkers — all in your browser. Hakuna usajili."
+    },
+    "productivity": {
+      "title": "Productivity Tools — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Timers, stopwatches, and focus helpers for daily work. Hakuna usajili."
+    },
+    "design": {
+      "title": "Design Tools — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Colors, gradients, and CSS shadows for UI work. Hakuna usajili."
+    },
+    "system": {
+      "title": "System Tools — Bure Mtandaoni | SmartDigitalTips",
+      "description": "Network utilities and diagnostics (browser-safe). Hakuna usajili."
     }
   },
   "blog": {
@@ -261,6 +325,14 @@
     "freelancers-guide-to-invoicing": {
       "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
       "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    },
+    "create-strong-passwords-without-paid-tools": {
+      "title": "How to Create Strong Passwords Without Paid Security Tools | SmartDigitalTips",
+      "description": "Learn practical password rules, why browser-based generators help, and how to pair free strength checkers with a password manager."
+    },
+    "free-developer-tools-in-the-browser": {
+      "title": "Free Developer Tools That Run Entirely in Your Browser | SmartDigitalTips",
+      "description": "JSON formatting, regex testing, Base64 encoding, and HTML previews without sending sensitive payloads to upload servers."
     }
   },
   "ui": {
@@ -387,6 +459,22 @@
       "developer": {
         "label": "Zana za Wasanidi",
         "description": "Panga, fupisha na simba msimbo na data."
+      },
+      "security": {
+        "label": "Security Tools",
+        "description": "Password generators and strength checkers — all in your browser."
+      },
+      "productivity": {
+        "label": "Productivity Tools",
+        "description": "Timers, stopwatches, and focus helpers for daily work."
+      },
+      "design": {
+        "label": "Design Tools",
+        "description": "Colors, gradients, and CSS shadows for UI work."
+      },
+      "system": {
+        "label": "System Tools",
+        "description": "Network utilities and diagnostics (browser-safe)."
       }
     },
     "tools": {
@@ -565,6 +653,54 @@
       "color-palette-generator": {
         "name": "Palette ya rangi",
         "description": "Bure Palette ya rangi Mtandaoni."
+      },
+      "speech-to-text": {
+        "name": "Speech to Text",
+        "description": "Bure Speech to Text Mtandaoni."
+      },
+      "random-sentence-generator": {
+        "name": "Random Sentence Generator",
+        "description": "Bure Random Sentence Generator Mtandaoni."
+      },
+      "html-live-editor": {
+        "name": "HTML Live Editor",
+        "description": "Bure HTML Live Editor Mtandaoni."
+      },
+      "url-encoder": {
+        "name": "URL Encoder / Decoder",
+        "description": "Bure URL Encoder / Decoder Mtandaoni."
+      },
+      "regex-tester": {
+        "name": "Regex Tester",
+        "description": "Bure Regex Tester Mtandaoni."
+      },
+      "password-strength-checker": {
+        "name": "Password Strength Checker",
+        "description": "Bure Password Strength Checker Mtandaoni."
+      },
+      "gradient-generator": {
+        "name": "Gradient Generator",
+        "description": "Bure Gradient Generator Mtandaoni."
+      },
+      "box-shadow-generator": {
+        "name": "Box Shadow Generator",
+        "description": "Bure Box Shadow Generator Mtandaoni."
+      },
+      "speed-test-simulator": {
+        "name": "Internet Speed Test (Simulation)",
+        "description": "Bure Internet Speed Test (Simulation) Mtandaoni."
+      },
+      "ip-checker": {
+        "name": "IP Checker",
+        "description": "Bure IP Checker Mtandaoni."
+      },
+      "countdown-timer": {
+        "name": "Countdown Timer",
+        "description": "Bure Countdown Timer Mtandaoni."
+      },
+      "stopwatch": {
+        "name": "Stopwatch",
+        "description": "Bure Stopwatch Mtandaoni."
       }
     }
   },

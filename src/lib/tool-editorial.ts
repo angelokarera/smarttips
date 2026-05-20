@@ -1,4 +1,5 @@
 import type { Tool } from '@/data/tools'
+import { getToolExtraFaqs, getToolUniqueParagraphs } from '@/lib/tool-unique-content'
 
 export interface ToolEditorial {
   overview: string[]
@@ -11,7 +12,7 @@ const COMMON_FAQ: ToolEditorial['faqs'] = [
   {
     question: 'Is this tool completely free?',
     answer:
-      'Yes. SmartDigitalTips tools are free to use with no trial limits, no watermarks on exports, and no account required. We support the site through optional advertising.',
+      'Yes. SmartDigitalTips tools are free to use with no trial limits, no watermarks on exports, and no account required. We support the site through optional advertising that respects your consent choices.',
   },
   {
     question: 'Are my files or text uploaded to your servers?',
@@ -22,6 +23,11 @@ const COMMON_FAQ: ToolEditorial['faqs'] = [
     question: 'Can I use this tool on mobile?',
     answer:
       'Yes. Our tools are responsive and work on modern phones and tablets. For large files, a desktop browser may be faster and more reliable.',
+  },
+  {
+    question: 'Who operates SmartDigitalTips?',
+    answer:
+      'SmartDigitalTips is an independent free-tools website. We publish guides on each page so you understand limitations before relying on results for legal, medical, or academic decisions.',
   },
 ]
 
@@ -121,7 +127,7 @@ const CATEGORY_CONTEXT: Record<
   },
   developer: {
     intro:
-      'Developer tools format JSON, minify CSS, encode Base64, and explore color systems for front-end and API work. They are handy during code reviews, debugging sessions, and early UI prototyping when you want fast feedback in the browser.',
+      'Developer tools format JSON, beautify HTML, encode Base64, test regex patterns, and explore color systems for front-end and API work. They are handy during code reviews, debugging sessions, and early UI prototyping when you want fast feedback in the browser.',
     useCaseIdeas: [
       'Pretty-printing API responses copied from network tabs',
       'Minifying CSS before production deploys to reduce page weight',
@@ -134,19 +140,75 @@ const CATEGORY_CONTEXT: Record<
       'Check WCAG contrast ratios when picking text and background pairs from palettes.',
     ],
   },
+  security: {
+    intro:
+      'Security tools focus on password generation and strength analysis without sending secrets to a server. Use them when onboarding accounts, rotating credentials, or teaching basic hygiene—always pair with a password manager for storage.',
+    useCaseIdeas: [
+      'Creating unique passwords for new SaaS trials',
+      'Checking whether a passphrase meets length and complexity goals',
+      'Generating WiFi or portal passwords for guests',
+      'Auditing personal password habits before a breach news cycle',
+    ],
+    tipIdeas: [
+      'Never reuse passwords across banking, email, and social accounts.',
+      'Long passphrases with random words can be stronger than short symbol-heavy strings.',
+      'Strength meters here are educational—not a substitute for breach monitoring services.',
+    ],
+  },
+  productivity: {
+    intro:
+      'Productivity timers help you time-box email, study, workouts, and meetings. Browser-based countdowns and stopwatches avoid installing yet another app with notification permissions.',
+    useCaseIdeas: [
+      'Running 25-minute Pomodoro focus blocks',
+      'Timing presentation rehearsals',
+      'Tracking workout intervals with lap splits',
+      'Reminding yourself to take breaks from desk work',
+    ],
+    tipIdeas: [
+      'Keep the tab visible for best timer accuracy—background tabs may throttle JavaScript.',
+      'Set realistic intervals; very long countdowns are easier to forget.',
+      'Combine timers with a written task list so breaks feel earned.',
+    ],
+  },
+  design: {
+    intro:
+      'Design utilities generate CSS gradients, box shadows, and color values for marketing sites and apps. Copy snippets directly into your stylesheets without leaving the browser.',
+    useCaseIdeas: [
+      'Prototyping hero section backgrounds',
+      'Tuning card elevation shadows for dark mode',
+      'Picking accessible text/background pairs',
+      'Sharing HEX codes with contractors',
+    ],
+    tipIdeas: [
+      'Preview gradients on both mobile and desktop widths.',
+      'Test shadows on real content, not empty boxes, before shipping.',
+      'Document chosen tokens in your design system README.',
+    ],
+  },
+  system: {
+    intro:
+      'System pages explain network concepts honestly. Live IP lookup runs only on button click; speed pages labeled as simulations avoid misleading users about real bandwidth.',
+    useCaseIdeas: [
+      'Confirming VPN or proxy public IP after connecting',
+      'Teaching students how speed-test UIs look without claiming live measurement',
+      'Checking router setup homework assignments',
+      'Demonstrating latency concepts in IT workshops',
+    ],
+    tipIdeas: [
+      'For real throughput, use your ISP or an established speed-test service.',
+      'IP addresses can change—refresh if you reconnect VPN.',
+      'Never share public IP screenshots if they reveal internal network details you wish to keep private.',
+    ],
+  },
 }
 
 function buildOverview(tool: Tool): string[] {
+  const unique = getToolUniqueParagraphs(tool)
   const ctx = CATEGORY_CONTEXT[tool.category]
-  const paragraphs: string[] = [
-    `${tool.name} on SmartDigitalTips lets you ${tool.description.replace(/\.$/, '').toLowerCase()}. It is free, works in modern browsers, and is designed for everyday productivity without sign-up walls.`,
-  ]
-  if (ctx) {
-    paragraphs.push(ctx.intro)
+  const paragraphs = [...unique]
+  if (ctx && !paragraphs.some((p) => p.includes(ctx.intro.slice(0, 40)))) {
+    paragraphs.splice(1, 0, ctx.intro)
   }
-  paragraphs.push(
-    'We publish clear instructions, benefits, and FAQs on every tool page so you know what to expect before you start. If you rely on a tool regularly, bookmark the page or use the language switcher in the header to open the version in your preferred language.',
-  )
   return paragraphs
 }
 
@@ -158,8 +220,9 @@ function buildUseCases(tool: Tool): string[] {
     'Trying a workflow before committing to a paid app',
   ]
   return [
-    `Using ${tool.name} for: ${tool.description.replace(/\.$/, '')}`,
-    ...specific.slice(0, 3),
+    `Primary scenario: ${tool.description}`,
+    ...specific,
+    ...tool.benefits.slice(0, 2).map((b) => `Helpful when you need to ${b.replace(/\.$/, '').toLowerCase()}.`),
   ]
 }
 
@@ -170,8 +233,8 @@ function buildTips(tool: Tool): string[] {
     'Use the latest version of Chrome, Firefox, Safari, or Edge for best compatibility.',
   ]
   return [
-    ...tool.howToUse.slice(0, 1).map((step) => `Follow step 1 carefully: ${step}`),
-    ...fromCategory.slice(0, 3),
+    ...tool.howToUse.map((step, i) => `Step ${i + 1}: ${step}`),
+    ...fromCategory,
   ]
 }
 
@@ -181,7 +244,7 @@ function buildToolSpecificFaqs(tool: Tool): ToolEditorial['faqs'] {
   if (tool.faq.length === 0) {
     extras.push({
       question: `What does ${tool.name} do?`,
-      answer: `${tool.description} This page includes step-by-step instructions and related tools you can try next.`,
+      answer: `${tool.description} This page includes step-by-step instructions, benefits, related tools, and privacy notes so you know what to expect before you start.`,
     })
   }
 
@@ -212,12 +275,17 @@ function buildToolSpecificFaqs(tool: Tool): ToolEditorial['faqs'] {
   return extras
 }
 
-/** Merge tool data with editorial blocks and guarantee at least 3 FAQs for AdSense-quality pages. */
+/** Editorial blocks with 300+ words of unique, human-readable content per tool page. */
 export function getToolEditorial(tool: Tool): ToolEditorial {
   const seen = new Set<string>()
   const mergedFaqs: ToolEditorial['faqs'] = []
 
-  for (const item of [...tool.faq, ...buildToolSpecificFaqs(tool), ...COMMON_FAQ]) {
+  for (const item of [
+    ...tool.faq,
+    ...buildToolSpecificFaqs(tool),
+    ...getToolExtraFaqs(tool),
+    ...COMMON_FAQ,
+  ]) {
     const key = item.question.toLowerCase()
     if (seen.has(key)) continue
     seen.add(key)
@@ -228,6 +296,6 @@ export function getToolEditorial(tool: Tool): ToolEditorial {
     overview: buildOverview(tool),
     useCases: buildUseCases(tool),
     tips: buildTips(tool),
-    faqs: mergedFaqs.slice(0, 6),
+    faqs: mergedFaqs.slice(0, 8),
   }
 }

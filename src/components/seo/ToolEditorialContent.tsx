@@ -68,6 +68,17 @@ export function ToolEditorialContent({ tool }: ToolEditorialContentProps) {
         </p>
       </section>
 
+      <section aria-labelledby="tool-keywords-heading">
+        <h2 id="tool-keywords-heading" className="text-xl font-bold tracking-tight mb-4">
+          When people search for this tool
+        </h2>
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          Visitors often arrive from queries like “free {tool.name.toLowerCase()},” “{tool.name.toLowerCase()} online,”
+          and “{tool.categoryLabel.toLowerCase()} without sign up.” This page is written to answer those intents with
+          clear steps, honest limitations, and links to related utilities—not keyword stuffing.
+        </p>
+      </section>
+
       <section aria-labelledby="tool-tips-heading">
         <h2 id="tool-tips-heading" className="text-xl font-bold tracking-tight mb-4">
           Tips for best results

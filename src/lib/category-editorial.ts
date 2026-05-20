@@ -136,15 +136,84 @@ export const CATEGORY_EDITORIAL: Record<string, CategoryEditorial> = {
     ],
     highlights: [
       'JSON validate, beautify, and minify',
-      'CSS and HTML cleanup for prototypes',
-      'Base64 encode/decode for tests',
-      'Palette generator with contrast awareness',
+      'Sandboxed HTML live editor',
+      'Regex tester with safe limits',
+      'URL and Base64 encode/decode',
     ],
     faqs: [
       {
         question: 'Can I trust formatted JSON in production?',
         answer:
           'Always re-validate before deploy. Formatting fixes whitespace; it does not change business logic but invalid JSON will still fail parsing.',
+      },
+    ],
+  },
+  security: {
+    overview: [
+      'Security tools help you generate strong passwords and check strength using rule-based analysis in the browser. We never store passwords or send them to a server.',
+      'Use these utilities when creating accounts, rotating credentials, or teaching safe password habits—without relying on paid breach databases.',
+    ],
+    highlights: [
+      'Cryptographically random password generation',
+      'Local-only strength scoring',
+      'Customizable length and character sets',
+      'No account or tracking',
+    ],
+    faqs: [
+      {
+        question: 'Are generated passwords stored?',
+        answer: 'No. Passwords exist only in your browser session until you navigate away or clear the field.',
+      },
+    ],
+  },
+  productivity: {
+    overview: [
+      'Productivity tools include countdown timers, stopwatches, and Pomodoro-style focus helpers. They run entirely in the browser with no backend timers or accounts.',
+      'Ideal for study sessions, meetings, workouts, and time-boxed work blocks.',
+    ],
+    highlights: [
+      'Countdown with pause and reset',
+      'Stopwatch with lap times',
+      'Pomodoro study intervals',
+      'Works after page load without sign-in',
+    ],
+    faqs: [
+      {
+        question: 'Do timers work in the background?',
+        answer:
+          'Browsers may throttle background tabs. Keep the tab active for best accuracy during critical timing.',
+      },
+    ],
+  },
+  design: {
+    overview: [
+      'Design tools help you pick colors, build CSS gradients, and tune box shadows with live previews. Copy snippets directly into your stylesheets or design handoff docs.',
+      'All generation is local—no uploads and no AI image APIs.',
+    ],
+    highlights: [
+      'HEX, RGB, and HSL color formats',
+      'Linear and radial gradients',
+      'Box-shadow CSS builder',
+      'One-click copy',
+    ],
+    faqs: [],
+  },
+  system: {
+    overview: [
+      'System utilities include an on-demand public IP lookup and an educational speed-test simulation. We label simulations clearly so they are never mistaken for real network benchmarks.',
+      'The IP checker only requests data when you click the button, using a free public API (ipify.org).',
+    ],
+    highlights: [
+      'Optional IP lookup on demand',
+      'Clearly labeled speed simulation',
+      'No hidden tracking',
+      'Transparent third-party API use',
+    ],
+    faqs: [
+      {
+        question: 'Is the speed test real?',
+        answer:
+          'No. The speed test is a demonstration simulator with random demo values and does not measure your connection.',
       },
     ],
   },

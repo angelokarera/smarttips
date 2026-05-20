@@ -11,6 +11,8 @@ export interface SEOMeta {
   robots?: string
   locale?: string
   schema?: Record<string, unknown>[]
+  /** When true, AdSense may load on this page (content-rich routes only). */
+  showPublisherAds?: boolean
 }
 
 export interface BreadcrumbItem {

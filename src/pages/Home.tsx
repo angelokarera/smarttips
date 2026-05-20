@@ -16,9 +16,15 @@ import {
   Cpu,
   ArrowUpRight,
   Terminal,
+  Timer,
+  Globe,
+  Palette,
+  Star,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { categories, getPopularTools, getTrendingTools, getNewTools } from '@/data/tools'
+import { categories, getTrendingTools, getNewTools } from '@/data/tools'
+import { getMostUsedTools, getFavoriteTools } from '@/lib/favorites'
+import { ToolSearchBar } from '@/components/tools/ToolSearchBar'
 import { Layout } from '@/components/layout/Layout'
 import { generateWebsiteSchema, generateOrganizationSchema, generateCollectionSchema } from '@/components/seo/StructuredData'
 import { platformKeywords, uniqueKeywords } from '@/lib/seoKeywords'
@@ -31,14 +37,15 @@ export default function Home() {
   const locale = useLocale()
   const lp = useLocalizedPath()
   const { t, categoryLabel, localizeTool } = useTranslations()
-  const popularTools = getPopularTools().slice(0, 8).map(localizeTool)
+  const popularTools = getMostUsedTools(8).map(localizeTool)
+  const favoriteTools = getFavoriteTools().slice(0, 6).map(localizeTool)
   const trendingTools = getTrendingTools().slice(0, 5).map(localizeTool)
-  const newTools = getNewTools().slice(0, 4).map(localizeTool)
+  const newTools = getNewTools().slice(0, 6).map(localizeTool)
 
   const homeSeo = getPageSeo('home', locale, {
-    title: 'Free Online Tools — PDF Converter, Image Compressor & Browser Utilities | SmartDigitalTips',
+    title: 'Free Online Tools — Word Counter, PDF, Image & Developer Utilities | SmartDigitalTips',
     description:
-      'Access free online tools instantly. Compress images, convert PDF to Word, generate QR codes, and finish everyday tasks. 100% free, fast, and secure. No signup required.',
+      'Use 50+ free browser tools: compress images, merge PDFs, count words, test regex, check passwords, and more. Private, instant, no sign-up—with guides on every page.',
   })
 
   const meta = {
@@ -72,10 +79,14 @@ export default function Home() {
     Briefcase: <Briefcase className="h-5 w-5" />,
     ArrowLeftRight: <ArrowLeftRight className="h-5 w-5" />,
     Terminal: <Terminal className="h-5 w-5" />,
+    Shield: <Shield className="h-5 w-5" />,
+    Timer: <Timer className="h-5 w-5" />,
+    Palette: <Palette className="h-5 w-5" />,
+    Globe: <Globe className="h-5 w-5" />,
   }
 
   return (
-    <Layout meta={meta} showBreadcrumbs={false}>
+    <Layout meta={meta} showBreadcrumbs={false} showPublisherAds>
 
       {/* ─── HERO ─── */}
       <section className="relative overflow-hidden pt-14 pb-20 sm:pt-20 sm:pb-24 lg:pt-28 lg:pb-36">
@@ -96,8 +107,12 @@ export default function Home() {
                 {t('home.heroSubtitle')}
               </p>
               
+              <div className="mb-8 max-w-xl">
+                <ToolSearchBar />
+              </div>
+
               <div className="flex flex-col items-stretch gap-3 min-[420px]:flex-row min-[420px]:flex-wrap min-[420px]:items-center">
-                <Link to={lp('/category/image')} className="w-full min-[420px]:w-auto">
+                <Link to={lp('/category/text')} className="w-full min-[420px]:w-auto">
                   <Button size="lg" className="h-12 w-full rounded-xl px-6 text-sm font-semibold shadow-warm transition-shadow hover:shadow-warm-lg min-[420px]:w-auto sm:px-7">
                     {t('common.browseAll')}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -157,7 +172,60 @@ export default function Home() {
       </section>
 
 
-      {/* ─── POPULAR TOOLS — horizontal scroll, not grid ─── */}
+      {favoriteTools.length > 0 && (
+        <section className="py-12 lg:py-16 border-t border-border">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-8 flex items-center gap-2.5">
+              <Star className="h-5 w-5 text-primary" />
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Your favorites</h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {favoriteTools.map((tool) => (
+                <Link
+                  key={tool.id}
+                  to={lp(tool.path)}
+                  className="group p-5 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-warm transition-all"
+                >
+                  <h3 className="font-semibold text-sm group-hover:text-primary">{tool.name}</h3>
+                  <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{tool.description}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ─── PLATFORM GUIDE (substantive content for discoverability) ─── */}
+      <section className="py-14 lg:py-16 border-t border-border bg-secondary/30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
+              Free online tools that respect your privacy
+            </h2>
+            <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
+              <p>
+                SmartDigitalTips is a collection of browser-based utilities for images, PDFs, writing,
+                developers, security, and everyday productivity. Each tool page explains what the feature does,
+                who it helps, and how to get accurate results—so you are never staring at a blank box without
+                context.
+              </p>
+              <p>
+                Where possible, processing happens on your device instead of a remote server. That matters when
+                you compress client photos, merge contracts, test regular expressions against API samples, or
+                check password strength before saving credentials in a manager. We do not require accounts, and
+                we aim to label simulations clearly when a tool cannot measure real-world network speed.
+              </p>
+              <p>
+                Browse by category—Text, Developer, Security, Productivity, Image, PDF, and more—or search above
+                to jump straight to a tool. New utilities ship with step-by-step instructions, FAQs, and related
+                links so you can finish one task and move to the next without leaving the site.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── MOST USED TOOLS ─── */}
       <section className="py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex items-end justify-between gap-4">

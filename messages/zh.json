@@ -209,6 +209,54 @@
     "color-palette-generator": {
       "title": "免费 配色方案生成 在线 | SmartDigitalTips",
       "description": "免费 配色方案生成 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "speech-to-text": {
+      "title": "免费 Speech to Text 在线 | SmartDigitalTips",
+      "description": "免费 Speech to Text 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "random-sentence-generator": {
+      "title": "免费 Random Sentence Generator 在线 | SmartDigitalTips",
+      "description": "免费 Random Sentence Generator 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "html-live-editor": {
+      "title": "免费 HTML Live Editor 在线 | SmartDigitalTips",
+      "description": "免费 HTML Live Editor 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "url-encoder": {
+      "title": "免费 URL Encoder / Decoder 在线 | SmartDigitalTips",
+      "description": "免费 URL Encoder / Decoder 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "regex-tester": {
+      "title": "免费 Regex Tester 在线 | SmartDigitalTips",
+      "description": "免费 Regex Tester 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "password-strength-checker": {
+      "title": "免费 Password Strength Checker 在线 | SmartDigitalTips",
+      "description": "免费 Password Strength Checker 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "gradient-generator": {
+      "title": "免费 Gradient Generator 在线 | SmartDigitalTips",
+      "description": "免费 Gradient Generator 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "box-shadow-generator": {
+      "title": "免费 Box Shadow Generator 在线 | SmartDigitalTips",
+      "description": "免费 Box Shadow Generator 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "speed-test-simulator": {
+      "title": "免费 Internet Speed Test (Simulation) 在线 | SmartDigitalTips",
+      "description": "免费 Internet Speed Test (Simulation) 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "ip-checker": {
+      "title": "免费 IP Checker 在线 | SmartDigitalTips",
+      "description": "免费 IP Checker 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "countdown-timer": {
+      "title": "免费 Countdown Timer 在线 | SmartDigitalTips",
+      "description": "免费 Countdown Timer 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "stopwatch": {
+      "title": "免费 Stopwatch 在线 | SmartDigitalTips",
+      "description": "免费 Stopwatch 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
     }
   },
   "categories": {
@@ -239,6 +287,22 @@
     "developer": {
       "title": "开发者工具 — 免费 在线 | SmartDigitalTips",
       "description": "Format, minify, and encode code and data. 无需注册."
+    },
+    "security": {
+      "title": "Security Tools — 免费 在线 | SmartDigitalTips",
+      "description": "Password generators and strength checkers — all in your browser. 无需注册."
+    },
+    "productivity": {
+      "title": "Productivity Tools — 免费 在线 | SmartDigitalTips",
+      "description": "Timers, stopwatches, and focus helpers for daily work. 无需注册."
+    },
+    "design": {
+      "title": "Design Tools — 免费 在线 | SmartDigitalTips",
+      "description": "Colors, gradients, and CSS shadows for UI work. 无需注册."
+    },
+    "system": {
+      "title": "System Tools — 免费 在线 | SmartDigitalTips",
+      "description": "Network utilities and diagnostics (browser-safe). 无需注册."
     }
   },
   "blog": {
@@ -261,6 +325,14 @@
     "freelancers-guide-to-invoicing": {
       "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
       "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    },
+    "create-strong-passwords-without-paid-tools": {
+      "title": "How to Create Strong Passwords Without Paid Security Tools | SmartDigitalTips",
+      "description": "Learn practical password rules, why browser-based generators help, and how to pair free strength checkers with a password manager."
+    },
+    "free-developer-tools-in-the-browser": {
+      "title": "Free Developer Tools That Run Entirely in Your Browser | SmartDigitalTips",
+      "description": "JSON formatting, regex testing, Base64 encoding, and HTML previews without sending sensitive payloads to upload servers."
     }
   },
   "ui": {
@@ -387,6 +459,22 @@
       "developer": {
         "label": "开发者工具",
         "description": "格式化、压缩和编码代码与数据。"
+      },
+      "security": {
+        "label": "Security Tools",
+        "description": "Password generators and strength checkers — all in your browser."
+      },
+      "productivity": {
+        "label": "Productivity Tools",
+        "description": "Timers, stopwatches, and focus helpers for daily work."
+      },
+      "design": {
+        "label": "Design Tools",
+        "description": "Colors, gradients, and CSS shadows for UI work."
+      },
+      "system": {
+        "label": "System Tools",
+        "description": "Network utilities and diagnostics (browser-safe)."
       }
     },
     "tools": {
@@ -565,6 +653,54 @@
       "color-palette-generator": {
         "name": "配色方案生成",
         "description": "免费 配色方案生成 在线."
+      },
+      "speech-to-text": {
+        "name": "Speech to Text",
+        "description": "免费 Speech to Text 在线."
+      },
+      "random-sentence-generator": {
+        "name": "Random Sentence Generator",
+        "description": "免费 Random Sentence Generator 在线."
+      },
+      "html-live-editor": {
+        "name": "HTML Live Editor",
+        "description": "免费 HTML Live Editor 在线."
+      },
+      "url-encoder": {
+        "name": "URL Encoder / Decoder",
+        "description": "免费 URL Encoder / Decoder 在线."
+      },
+      "regex-tester": {
+        "name": "Regex Tester",
+        "description": "免费 Regex Tester 在线."
+      },
+      "password-strength-checker": {
+        "name": "Password Strength Checker",
+        "description": "免费 Password Strength Checker 在线."
+      },
+      "gradient-generator": {
+        "name": "Gradient Generator",
+        "description": "免费 Gradient Generator 在线."
+      },
+      "box-shadow-generator": {
+        "name": "Box Shadow Generator",
+        "description": "免费 Box Shadow Generator 在线."
+      },
+      "speed-test-simulator": {
+        "name": "Internet Speed Test (Simulation)",
+        "description": "免费 Internet Speed Test (Simulation) 在线."
+      },
+      "ip-checker": {
+        "name": "IP Checker",
+        "description": "免费 IP Checker 在线."
+      },
+      "countdown-timer": {
+        "name": "Countdown Timer",
+        "description": "免费 Countdown Timer 在线."
+      },
+      "stopwatch": {
+        "name": "Stopwatch",
+        "description": "免费 Stopwatch 在线."
       }
     }
   },

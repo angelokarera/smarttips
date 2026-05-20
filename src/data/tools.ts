@@ -78,6 +78,34 @@ export const categories: ToolCategory[] = [
     icon: 'Terminal',
     color: 'from-pink-500/10 to-rose-500/10',
   },
+  {
+    id: 'security',
+    label: 'Security Tools',
+    description: 'Password generators and strength checkers — all in your browser.',
+    icon: 'Shield',
+    color: 'from-slate-500/10 to-zinc-500/10',
+  },
+  {
+    id: 'productivity',
+    label: 'Productivity Tools',
+    description: 'Timers, stopwatches, and focus helpers for daily work.',
+    icon: 'Timer',
+    color: 'from-indigo-500/10 to-violet-500/10',
+  },
+  {
+    id: 'design',
+    label: 'Design Tools',
+    description: 'Colors, gradients, and CSS shadows for UI work.',
+    icon: 'Palette',
+    color: 'from-fuchsia-500/10 to-purple-500/10',
+  },
+  {
+    id: 'system',
+    label: 'System Tools',
+    description: 'Network utilities and diagnostics (browser-safe).',
+    icon: 'Globe',
+    color: 'from-teal-500/10 to-cyan-500/10',
+  },
 ]
 
 export const tools: Tool[] = [
@@ -679,8 +707,8 @@ export const tools: Tool[] = [
     id: 'password-generator',
     name: 'Password Generator',
     description: 'Generate secure, random passwords with customizable length and complexity.',
-    category: 'business',
-    categoryLabel: 'Business Tools',
+    category: 'security',
+    categoryLabel: 'Security Tools',
     icon: 'Key',
     path: '/tools/password-generator',
     seoTitle: 'Secure Password Generator | Strong Random Passwords Free - SmartDigitalTips',
@@ -1195,6 +1223,223 @@ export const tools: Tool[] = [
     ],
     relatedTools: ['color-picker', 'css-minifier'],
   },
+  {
+    id: 'speech-to-text',
+    name: 'Speech to Text',
+    description: 'Transcribe speech to text using your microphone and browser speech recognition.',
+    category: 'text',
+    categoryLabel: 'Text Tools',
+    icon: 'Mic',
+    path: '/tools/speech-to-text',
+    new: true,
+    popular: true,
+    seoTitle: 'Free Speech to Text | Voice Transcription in Browser - SmartDigitalTips',
+    seoDescription: 'Convert speech to text online with microphone permission. Web Speech API — private, no uploads, no account.',
+    benefits: ['Browser-native transcription', 'No server storage', 'Copy transcript instantly'],
+    howToUse: ['Allow microphone access', 'Click Start listening', 'Speak clearly', 'Copy or edit the transcript'],
+    faq: [
+      {
+        question: 'Is my voice recorded on your servers?',
+        answer: 'No. Transcription uses your browser’s Web Speech API. We do not receive or store audio.',
+      },
+    ],
+    relatedTools: ['text-to-speech', 'word-counter'],
+  },
+  {
+    id: 'random-sentence-generator',
+    name: 'Random Sentence Generator',
+    description: 'Generate creative placeholder sentences with rule-based random words.',
+    category: 'text',
+    categoryLabel: 'Text Tools',
+    icon: 'Sparkles',
+    path: '/tools/random-sentence-generator',
+    new: true,
+    seoTitle: 'Random Sentence Generator | Writing Prompts Free - SmartDigitalTips',
+    seoDescription: 'Create random sentences for writing prompts, demos, and placeholders. No AI API — runs in your browser.',
+    benefits: ['Instant prompts', 'Batch generation', 'No sign-up'],
+    howToUse: ['Choose how many sentences', 'Click Generate', 'Copy results'],
+    faq: [],
+    relatedTools: ['word-counter', 'case-converter'],
+  },
+  {
+    id: 'html-live-editor',
+    name: 'HTML Live Editor',
+    description: 'Write HTML and preview it in a sandboxed iframe without running scripts.',
+    category: 'developer',
+    categoryLabel: 'Developer Tools',
+    icon: 'Code',
+    path: '/tools/html-live-editor',
+    new: true,
+    trending: true,
+    seoTitle: 'HTML Live Editor | Sandboxed Preview Online - SmartDigitalTips',
+    seoDescription: 'Edit HTML with a live sandboxed preview. Scripts stripped for security. Free browser-based editor.',
+    benefits: ['Sandboxed preview', 'Script stripping', 'Split editor and preview'],
+    howToUse: ['Edit HTML on the left', 'See safe preview on the right', 'Copy your markup'],
+    faq: [],
+    relatedTools: ['html-beautifier', 'css-minifier'],
+  },
+  {
+    id: 'url-encoder',
+    name: 'URL Encoder / Decoder',
+    description: 'Encode or decode URL components safely in the browser.',
+    category: 'developer',
+    categoryLabel: 'Developer Tools',
+    icon: 'Link',
+    path: '/tools/url-encoder',
+    new: true,
+    seoTitle: 'URL Encoder Decoder | Free Online Dev Tool - SmartDigitalTips',
+    seoDescription: 'Encode and decode URI components online. Private, instant, no backend.',
+    benefits: ['Encode and decode modes', 'Local processing'],
+    howToUse: ['Paste text', 'Choose encode or decode', 'Copy result'],
+    faq: [],
+    relatedTools: ['base64-encoder', 'json-formatter'],
+  },
+  {
+    id: 'regex-tester',
+    name: 'Regex Tester',
+    description: 'Test regular expressions with match highlighting and safe limits.',
+    category: 'developer',
+    categoryLabel: 'Developer Tools',
+    icon: 'Search',
+    path: '/tools/regex-tester',
+    new: true,
+    popular: true,
+    seoTitle: 'Regex Tester | Test Regular Expressions Online - SmartDigitalTips',
+    seoDescription: 'Debug regex patterns with live matches and highlighting. Safe client-side testing.',
+    benefits: ['Match list', 'Highlighted preview', 'Flag support'],
+    howToUse: ['Enter pattern and flags', 'Paste test string', 'Review matches'],
+    faq: [],
+    relatedTools: ['json-formatter', 'url-encoder'],
+  },
+  {
+    id: 'password-strength-checker',
+    name: 'Password Strength Checker',
+    description: 'Analyze password strength with rule-based scoring — nothing leaves your browser.',
+    category: 'security',
+    categoryLabel: 'Security Tools',
+    icon: 'ShieldCheck',
+    path: '/tools/password-strength-checker',
+    new: true,
+    trending: true,
+    seoTitle: 'Password Strength Checker | Free Secure Analysis - SmartDigitalTips',
+    seoDescription: 'Check password strength locally. No storage, no breach databases — privacy-first rules.',
+    benefits: ['Instant feedback', 'Length and complexity tips', 'Zero server contact'],
+    howToUse: ['Type a password', 'Read strength meter and tips'],
+    faq: [
+      {
+        question: 'Do you save my password?',
+        answer: 'Never. Analysis runs only in your browser memory and is cleared when you leave the page.',
+      },
+    ],
+    relatedTools: ['password-generator'],
+  },
+  {
+    id: 'gradient-generator',
+    name: 'Gradient Generator',
+    description: 'Build CSS linear and radial gradients with live preview.',
+    category: 'design',
+    categoryLabel: 'Design Tools',
+    icon: 'Palette',
+    path: '/tools/gradient-generator',
+    new: true,
+    seoTitle: 'CSS Gradient Generator | Free Design Tool - SmartDigitalTips',
+    seoDescription: 'Create linear and radial CSS gradients. Copy ready-to-use background rules.',
+    benefits: ['Live preview', 'Angle control', 'Copy CSS'],
+    howToUse: ['Pick colors', 'Adjust angle', 'Copy CSS snippet'],
+    faq: [],
+    relatedTools: ['color-picker', 'box-shadow-generator'],
+  },
+  {
+    id: 'box-shadow-generator',
+    name: 'Box Shadow Generator',
+    description: 'Design CSS box-shadow values with a visual preview.',
+    category: 'design',
+    categoryLabel: 'Design Tools',
+    icon: 'Layers',
+    path: '/tools/box-shadow-generator',
+    new: true,
+    seoTitle: 'Box Shadow Generator | CSS Shadow Builder Free - SmartDigitalTips',
+    seoDescription: 'Generate box-shadow CSS with sliders for offset, blur, spread, and opacity.',
+    benefits: ['Visual preview', 'Copy CSS', 'Fine-tuned controls'],
+    howToUse: ['Adjust sliders', 'Preview card shadow', 'Copy CSS'],
+    faq: [],
+    relatedTools: ['gradient-generator', 'color-picker'],
+  },
+  {
+    id: 'speed-test-simulator',
+    name: 'Internet Speed Test (Simulation)',
+    description: 'Educational demo of a speed test — not real network measurement.',
+    category: 'system',
+    categoryLabel: 'System Tools',
+    icon: 'Gauge',
+    path: '/tools/speed-test-simulator',
+    new: true,
+    seoTitle: 'Speed Test Simulator | Educational Demo - SmartDigitalTips',
+    seoDescription: 'Simulated internet speed test for demonstration only. No network requests. Clearly labeled.',
+    benefits: ['No misleading claims', 'No external calls', 'Clear disclaimer'],
+    howToUse: ['Read the disclaimer', 'Run simulation', 'View demo results'],
+    faq: [
+      {
+        question: 'Is this a real speed test?',
+        answer: 'No. It is a simulation with random demo values and makes no network measurement requests.',
+      },
+    ],
+    relatedTools: ['ip-checker'],
+  },
+  {
+    id: 'ip-checker',
+    name: 'IP Checker',
+    description: 'Look up your public IP address on demand via a free API.',
+    category: 'system',
+    categoryLabel: 'System Tools',
+    icon: 'Globe',
+    path: '/tools/ip-checker',
+    new: true,
+    seoTitle: 'What Is My IP? | Public IP Checker Free - SmartDigitalTips',
+    seoDescription: 'Check your public IP when you click the button. Uses ipify.org. We do not store your IP.',
+    benefits: ['On-demand only', 'No account', 'Transparent third-party API'],
+    howToUse: ['Click Check my public IP', 'View result', 'Refresh if needed'],
+    faq: [
+      {
+        question: 'When is my IP sent?',
+        answer: 'Only when you click the button. The request goes to ipify.org; we do not log or store it.',
+      },
+    ],
+    relatedTools: ['speed-test-simulator'],
+  },
+  {
+    id: 'countdown-timer',
+    name: 'Countdown Timer',
+    description: 'Set a countdown for tasks, breaks, or events.',
+    category: 'productivity',
+    categoryLabel: 'Productivity Tools',
+    icon: 'Timer',
+    path: '/tools/countdown-timer',
+    new: true,
+    popular: true,
+    seoTitle: 'Countdown Timer | Free Online Timer - SmartDigitalTips',
+    seoDescription: 'Free countdown timer in the browser. Set hours, minutes, and seconds. No signup.',
+    benefits: ['Pause and reset', 'Large display', 'Works offline after load'],
+    howToUse: ['Set duration', 'Start', 'Pause or reset as needed'],
+    faq: [],
+    relatedTools: ['stopwatch', 'study-timer'],
+  },
+  {
+    id: 'stopwatch',
+    name: 'Stopwatch',
+    description: 'Precise stopwatch with lap times in your browser.',
+    category: 'productivity',
+    categoryLabel: 'Productivity Tools',
+    icon: 'Clock',
+    path: '/tools/stopwatch',
+    new: true,
+    seoTitle: 'Online Stopwatch | Lap Timer Free - SmartDigitalTips',
+    seoDescription: 'Free stopwatch with lap recording. Runs locally in your browser.',
+    benefits: ['Centisecond precision', 'Lap history', 'No install'],
+    howToUse: ['Start', 'Record laps', 'Reset when done'],
+    faq: [],
+    relatedTools: ['countdown-timer', 'study-timer'],
+  },
 ]
 
 export function getToolById(id: string): Tool | undefined {
@@ -1220,7 +1465,25 @@ export function getNewTools(): Tool[] {
 export function getRelatedTools(toolId: string): Tool[] {
   const tool = getToolById(toolId)
   if (!tool) return []
-  return tools.filter((t) => tool.relatedTools.includes(t.id))
+
+  let ids = tool.relatedTools.filter((id) => getToolById(id))
+
+  if (ids.length === 0) {
+    ids = tools
+      .filter((t) => t.category === tool.category && t.id !== toolId)
+      .slice(0, 4)
+      .map((t) => t.id)
+  }
+
+  if (ids.length < 3) {
+    const extra = tools
+      .filter((t) => t.id !== toolId && !ids.includes(t.id) && (t.popular || t.trending))
+      .slice(0, 4 - ids.length)
+      .map((t) => t.id)
+    ids = [...ids, ...extra]
+  }
+
+  return ids.map((id) => getToolById(id)).filter((t): t is Tool => Boolean(t))
 }
 
 export function searchTools(query: string): Tool[] {

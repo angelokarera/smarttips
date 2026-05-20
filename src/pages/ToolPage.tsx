@@ -1,9 +1,17 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { useParams, Link } from 'react-router'
+import { recordToolUsage } from '@/lib/favorites'
+import { FavoriteButton } from '@/components/tools/FavoriteButton'
 import { CheckCircle2 } from 'lucide-react'
 import { getToolById, getRelatedTools } from '@/data/tools'
 import { Layout } from '@/components/layout/Layout'
-import { generateBreadcrumbSchema, generateFAQSchema, generateToolSchema } from '@/components/seo/StructuredData'
+import {
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  generateSoftwareApplicationSchema,
+  generateToolSchema,
+} from '@/components/seo/StructuredData'
+import { getBenefitFirstDescription, getBenefitFirstTitle } from '@/lib/seo-ctr'
 import { ToolEngagement } from '@/components/seo/ToolEngagement'
 import { ToolEditorialContent } from '@/components/seo/ToolEditorialContent'
 import { getToolEditorial } from '@/lib/tool-editorial'
@@ -66,6 +74,18 @@ const CssMinifier = lazy(() => import('@/tools/developer/CssMinifier'))
 const HtmlBeautifier = lazy(() => import('@/tools/developer/HtmlBeautifier'))
 const ColorPicker = lazy(() => import('@/tools/developer/ColorPicker'))
 const ColorPaletteGenerator = lazy(() => import('@/tools/developer/ColorPaletteGenerator'))
+const SpeechToText = lazy(() => import('@/tools/text/SpeechToText'))
+const RandomSentenceGenerator = lazy(() => import('@/tools/text/RandomSentenceGenerator'))
+const HtmlLiveEditor = lazy(() => import('@/tools/developer/HtmlLiveEditor'))
+const UrlEncoder = lazy(() => import('@/tools/developer/UrlEncoder'))
+const RegexTester = lazy(() => import('@/tools/developer/RegexTester'))
+const PasswordStrengthChecker = lazy(() => import('@/tools/security/PasswordStrengthChecker'))
+const GradientGenerator = lazy(() => import('@/tools/design/GradientGenerator'))
+const BoxShadowGenerator = lazy(() => import('@/tools/design/BoxShadowGenerator'))
+const SpeedTestSimulator = lazy(() => import('@/tools/system/SpeedTestSimulator'))
+const IpChecker = lazy(() => import('@/tools/system/IpChecker'))
+const CountdownTimer = lazy(() => import('@/tools/productivity/CountdownTimer'))
+const Stopwatch = lazy(() => import('@/tools/productivity/Stopwatch'))
 
 const toolComponents: Record<string, React.ComponentType> = {
   'word-counter': WordCounter,
@@ -113,6 +133,18 @@ const toolComponents: Record<string, React.ComponentType> = {
   'html-beautifier': HtmlBeautifier,
   'color-picker': ColorPicker,
   'color-palette-generator': ColorPaletteGenerator,
+  'speech-to-text': SpeechToText,
+  'random-sentence-generator': RandomSentenceGenerator,
+  'html-live-editor': HtmlLiveEditor,
+  'url-encoder': UrlEncoder,
+  'regex-tester': RegexTester,
+  'password-strength-checker': PasswordStrengthChecker,
+  'gradient-generator': GradientGenerator,
+  'box-shadow-generator': BoxShadowGenerator,
+  'speed-test-simulator': SpeedTestSimulator,
+  'ip-checker': IpChecker,
+  'countdown-timer': CountdownTimer,
+  'stopwatch': Stopwatch,
 }
 
 export default function ToolPage() {
@@ -121,6 +153,10 @@ export default function ToolPage() {
   const lp = useLocalizedPath()
   const { t, localizeTool } = useTranslations()
   const rawTool = getToolById(toolId || '')
+
+  useEffect(() => {
+    if (toolId) recordToolUsage(toolId)
+  }, [toolId])
 
   if (!rawTool) {
     return (
@@ -142,9 +178,12 @@ export default function ToolPage() {
   const canonicalPath = lp(tool.path)
   const editorial = getToolEditorial(tool)
 
+  const benefitTitle = getBenefitFirstTitle(tool)
+  const benefitDescription = getBenefitFirstDescription(tool)
+
   const seo = getToolSeo(tool.id, locale, {
-    title: tool.seoTitle,
-    description: tool.seoDescription,
+    title: benefitTitle,
+    description: benefitDescription,
   })
 
   const meta = {
@@ -155,13 +194,15 @@ export default function ToolPage() {
     keywords: uniqueKeywords(getToolKeywords(tool)),
     ogTitle: seo.title,
     ogDescription: seo.description,
+    ogType: 'website',
     schema: [
       generateBreadcrumbSchema([
         { name: 'Home', url: `${SITE_URL}${lp('/')}` },
         { name: tool.categoryLabel, url: `${SITE_URL}${lp(`/category/${tool.category}`)}` },
         { name: tool.name, url: `${SITE_URL}${canonicalPath}` },
       ]),
-      generateToolSchema({ ...tool, path: canonicalPath }),
+      generateToolSchema({ ...tool, path: canonicalPath, seoTitle: benefitTitle }),
+      generateSoftwareApplicationSchema({ ...tool, path: canonicalPath }),
       ...(editorial.faqs.length > 0 ? [generateFAQSchema(editorial.faqs)] : []),
     ],
   }
@@ -169,6 +210,7 @@ export default function ToolPage() {
   return (
     <Layout
       meta={meta}
+      showPublisherAds
       breadcrumbs={[
         { name: tool.categoryLabel, path: `/category/${tool.category}` },
         { name: tool.name, path: tool.path },
@@ -194,6 +236,7 @@ export default function ToolPage() {
                 {t('common.trending')}
               </span>
             )}
+            <FavoriteButton toolId={tool.id} className="ml-auto" />
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-3">{tool.name}</h1>
           <p className="text-muted-foreground leading-relaxed">{tool.description}</p>
@@ -279,7 +322,7 @@ export default function ToolPage() {
         {/* Related Tools */}
         {relatedTools.length > 0 && (
           <div className="mt-20 pt-12 border-t border-border">
-            <h2 className="text-xl font-bold tracking-tight mb-6">{t('common.relatedTools')}</h2>
+            <h2 className="text-xl font-bold tracking-tight mb-6">You may also like</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {relatedTools.map((relatedTool) => (
                 <Link

@@ -1,5 +1,12 @@
 // Internal Linking Engine - Smart Link Generation
-import type { Tool } from '@/data/tools';
+import type { Tool, ToolCategory } from '@/data/tools';
+
+interface SitemapStructure {
+  home: string
+  categories: Record<string, { url: string; tools: string[] }>
+  tools: Record<string, { url: string; category: string; related: string[] }>
+  pages: Record<string, unknown>
+}
 
 export interface InternalLink {
   text: string;
@@ -72,7 +79,7 @@ export class InternalLinkingEngine {
   }
 
   // Get category navigation links
-  getCategoryLinks(categories: any[], locale = 'en'): InternalLink[] {
+  getCategoryLinks(categories: ToolCategory[], locale = 'en'): InternalLink[] {
     return categories.map(cat => ({
       text: cat.label,
       url: `/${locale}/category/${cat.id}`,
@@ -151,8 +158,8 @@ export class InternalLinkingEngine {
   }
 
   // Generate sitemap structure for crawlers
-  generateSitemapStructure(allTools: Tool[], categories: any[]): any {
-    const structure: any = {
+  generateSitemapStructure(allTools: Tool[], categories: ToolCategory[]): SitemapStructure {
+    const structure: SitemapStructure = {
       home: '/',
       categories: {},
       tools: {},
@@ -178,7 +185,7 @@ export class InternalLinkingEngine {
   }
 
   // Prevent orphan pages - ensure every page has incoming links
-  validateLinkStructure(allTools: Tool[], categories: any[]): { orphans: string[]; warnings: string[] } {
+  validateLinkStructure(allTools: Tool[], categories: ToolCategory[]): { orphans: string[]; warnings: string[] } {
     const allPages = new Set<string>();
     const linkedPages = new Set<string>();
     const warnings: string[] = [];

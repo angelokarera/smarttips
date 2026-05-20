@@ -113,39 +113,46 @@ export class WebVitalsOptimizer {
       try {
         const lcpObserver = new PerformanceObserver((list) => {
           const entries = list.getEntries();
-          const lastEntry = entries[entries.length - 1] as any;
-          callback({ lcp: lastEntry.renderTime || lastEntry.loadTime });
+          const lastEntry = entries[entries.length - 1] as PerformanceEntry & {
+            renderTime?: number
+            loadTime?: number
+          }
+          callback({ lcp: lastEntry.renderTime || lastEntry.loadTime })
         });
         lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] });
 
         // FID
         const fidObserver = new PerformanceObserver((list) => {
           const entries = list.getEntries();
-          entries.forEach((entry: any) => {
-            callback({ fid: entry.processingStart - entry.startTime });
-          });
+          entries.forEach((entry) => {
+            const e = entry as PerformanceEntry & { processingStart?: number }
+            if (e.processingStart != null) {
+              callback({ fid: e.processingStart - e.startTime })
+            }
+          })
         });
         fidObserver.observe({ entryTypes: ['first-input'] });
 
         // CLS
         let clsValue = 0;
         const clsObserver = new PerformanceObserver((list) => {
-          list.getEntries().forEach((entry: any) => {
-            if (!entry.hadRecentInput) {
-              clsValue += entry.value;
-              callback({ cls: clsValue });
+          list.getEntries().forEach((entry) => {
+            const e = entry as PerformanceEntry & { value?: number; hadRecentInput?: boolean }
+            if (!e.hadRecentInput && e.value != null) {
+              clsValue += e.value
+              callback({ cls: clsValue })
             }
-          });
+          })
         });
         clsObserver.observe({ entryTypes: ['layout-shift'] });
-      } catch (e) {
+      } catch {
         console.warn('Web Vitals monitoring not supported');
       }
     }
   }
 
   // Generate performance report
-  static async getPerformanceReport(): Promise<any> {
+  static async getPerformanceReport(): Promise<Record<string, number> | null> {
     if (!('performance' in window)) return null;
 
     const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;

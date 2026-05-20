@@ -118,7 +118,7 @@ export class SEOAuditor {
           message: `Valid ${data['@type']} schema`,
           priority: 'medium'
         })
-      } catch (e) {
+      } catch {
         results.push({
           category: 'Structured Data',
           item: `Schema ${index + 1}`,
@@ -299,7 +299,7 @@ export const seoAuditor = new SEOAuditor()
 
 // Console command for easy testing
 if (typeof window !== 'undefined') {
-  (window as any).runSEOAudit = () => {
+  ;(window as Window & { runSEOAudit?: () => ReturnType<SEOAuditor['getSummary']> }).runSEOAudit = () => {
     const auditor = new SEOAuditor()
     auditor.runFullAudit()
     console.log(auditor.generateReport())

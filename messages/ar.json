@@ -209,6 +209,54 @@
     "color-palette-generator": {
       "title": "مجاني مولد لوحة الألوان عبر الإنترنت | SmartDigitalTips",
       "description": "مجاني مولد لوحة الألوان عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "speech-to-text": {
+      "title": "مجاني Speech to Text عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني Speech to Text عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "random-sentence-generator": {
+      "title": "مجاني Random Sentence Generator عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني Random Sentence Generator عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "html-live-editor": {
+      "title": "مجاني HTML Live Editor عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني HTML Live Editor عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "url-encoder": {
+      "title": "مجاني URL Encoder / Decoder عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني URL Encoder / Decoder عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "regex-tester": {
+      "title": "مجاني Regex Tester عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني Regex Tester عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "password-strength-checker": {
+      "title": "مجاني Password Strength Checker عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني Password Strength Checker عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "gradient-generator": {
+      "title": "مجاني Gradient Generator عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني Gradient Generator عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "box-shadow-generator": {
+      "title": "مجاني Box Shadow Generator عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني Box Shadow Generator عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "speed-test-simulator": {
+      "title": "مجاني Internet Speed Test (Simulation) عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني Internet Speed Test (Simulation) عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "ip-checker": {
+      "title": "مجاني IP Checker عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني IP Checker عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "countdown-timer": {
+      "title": "مجاني Countdown Timer عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني Countdown Timer عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
+    "stopwatch": {
+      "title": "مجاني Stopwatch عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني Stopwatch عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
     }
   },
   "categories": {
@@ -239,6 +287,22 @@
     "developer": {
       "title": "أدوات المطورين — مجاني عبر الإنترنت | SmartDigitalTips",
       "description": "Format, minify, and encode code and data. بدون تسجيل."
+    },
+    "security": {
+      "title": "Security Tools — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Password generators and strength checkers — all in your browser. بدون تسجيل."
+    },
+    "productivity": {
+      "title": "Productivity Tools — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Timers, stopwatches, and focus helpers for daily work. بدون تسجيل."
+    },
+    "design": {
+      "title": "Design Tools — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Colors, gradients, and CSS shadows for UI work. بدون تسجيل."
+    },
+    "system": {
+      "title": "System Tools — مجاني عبر الإنترنت | SmartDigitalTips",
+      "description": "Network utilities and diagnostics (browser-safe). بدون تسجيل."
     }
   },
   "blog": {
@@ -261,6 +325,14 @@
     "freelancers-guide-to-invoicing": {
       "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
       "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    },
+    "create-strong-passwords-without-paid-tools": {
+      "title": "How to Create Strong Passwords Without Paid Security Tools | SmartDigitalTips",
+      "description": "Learn practical password rules, why browser-based generators help, and how to pair free strength checkers with a password manager."
+    },
+    "free-developer-tools-in-the-browser": {
+      "title": "Free Developer Tools That Run Entirely in Your Browser | SmartDigitalTips",
+      "description": "JSON formatting, regex testing, Base64 encoding, and HTML previews without sending sensitive payloads to upload servers."
     }
   },
   "ui": {
@@ -387,6 +459,22 @@
       "developer": {
         "label": "أدوات المطورين",
         "description": "تنسيق وتصغير وترميز الكود والبيانات."
+      },
+      "security": {
+        "label": "Security Tools",
+        "description": "Password generators and strength checkers — all in your browser."
+      },
+      "productivity": {
+        "label": "Productivity Tools",
+        "description": "Timers, stopwatches, and focus helpers for daily work."
+      },
+      "design": {
+        "label": "Design Tools",
+        "description": "Colors, gradients, and CSS shadows for UI work."
+      },
+      "system": {
+        "label": "System Tools",
+        "description": "Network utilities and diagnostics (browser-safe)."
       }
     },
     "tools": {
@@ -565,6 +653,54 @@
       "color-palette-generator": {
         "name": "مولد لوحة الألوان",
         "description": "مجاني مولد لوحة الألوان عبر الإنترنت."
+      },
+      "speech-to-text": {
+        "name": "Speech to Text",
+        "description": "مجاني Speech to Text عبر الإنترنت."
+      },
+      "random-sentence-generator": {
+        "name": "Random Sentence Generator",
+        "description": "مجاني Random Sentence Generator عبر الإنترنت."
+      },
+      "html-live-editor": {
+        "name": "HTML Live Editor",
+        "description": "مجاني HTML Live Editor عبر الإنترنت."
+      },
+      "url-encoder": {
+        "name": "URL Encoder / Decoder",
+        "description": "مجاني URL Encoder / Decoder عبر الإنترنت."
+      },
+      "regex-tester": {
+        "name": "Regex Tester",
+        "description": "مجاني Regex Tester عبر الإنترنت."
+      },
+      "password-strength-checker": {
+        "name": "Password Strength Checker",
+        "description": "مجاني Password Strength Checker عبر الإنترنت."
+      },
+      "gradient-generator": {
+        "name": "Gradient Generator",
+        "description": "مجاني Gradient Generator عبر الإنترنت."
+      },
+      "box-shadow-generator": {
+        "name": "Box Shadow Generator",
+        "description": "مجاني Box Shadow Generator عبر الإنترنت."
+      },
+      "speed-test-simulator": {
+        "name": "Internet Speed Test (Simulation)",
+        "description": "مجاني Internet Speed Test (Simulation) عبر الإنترنت."
+      },
+      "ip-checker": {
+        "name": "IP Checker",
+        "description": "مجاني IP Checker عبر الإنترنت."
+      },
+      "countdown-timer": {
+        "name": "Countdown Timer",
+        "description": "مجاني Countdown Timer عبر الإنترنت."
+      },
+      "stopwatch": {
+        "name": "Stopwatch",
+        "description": "مجاني Stopwatch عبر الإنترنت."
       }
     }
   },

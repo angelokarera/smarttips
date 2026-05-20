@@ -14,7 +14,7 @@ export default defineConfig(async ({ command }) => {
     try {
       const { inspectAttr } = await import("kimi-plugin-inspect-react")
       plugins.unshift(inspectAttr())
-    } catch (error) {
+    } catch {
       console.warn('kimi-plugin-inspect-react not available, skipping...')
     }
   }
@@ -38,6 +38,8 @@ export default defineConfig(async ({ command }) => {
           manualChunks: {
             'react-vendor': ['react', 'react-dom', 'react-router'],
             'ui-vendor': ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-popover'],
+            'pdf-vendor': ['jspdf', 'html2canvas'],
+            'qr-vendor': ['qrcode.react'],
           },
         },
       },

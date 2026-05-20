@@ -209,6 +209,54 @@
     "color-palette-generator": {
       "title": "Free AI Color Palette Generator | Modern UI & Branding Colors",
       "description": "Generate visually balanced website color palettes based on user preferences. Highly optimized for SEO, performance, accessibility, and user engagement. Create dark mode, modern, minimal, corporate, and neon palettes instantly."
+    },
+    "speech-to-text": {
+      "title": "Free Speech to Text | Voice Transcription in Browser - SmartDigitalTips",
+      "description": "Convert speech to text online with microphone permission. Web Speech API — private, no uploads, no account."
+    },
+    "random-sentence-generator": {
+      "title": "Random Sentence Generator | Writing Prompts Free - SmartDigitalTips",
+      "description": "Create random sentences for writing prompts, demos, and placeholders. No AI API — runs in your browser."
+    },
+    "html-live-editor": {
+      "title": "HTML Live Editor | Sandboxed Preview Online - SmartDigitalTips",
+      "description": "Edit HTML with a live sandboxed preview. Scripts stripped for security. Free browser-based editor."
+    },
+    "url-encoder": {
+      "title": "URL Encoder Decoder | Free Online Dev Tool - SmartDigitalTips",
+      "description": "Encode and decode URI components online. Private, instant, no backend."
+    },
+    "regex-tester": {
+      "title": "Regex Tester | Test Regular Expressions Online - SmartDigitalTips",
+      "description": "Debug regex patterns with live matches and highlighting. Safe client-side testing."
+    },
+    "password-strength-checker": {
+      "title": "Password Strength Checker | Free Secure Analysis - SmartDigitalTips",
+      "description": "Check password strength locally. No storage, no breach databases — privacy-first rules."
+    },
+    "gradient-generator": {
+      "title": "CSS Gradient Generator | Free Design Tool - SmartDigitalTips",
+      "description": "Create linear and radial CSS gradients. Copy ready-to-use background rules."
+    },
+    "box-shadow-generator": {
+      "title": "Box Shadow Generator | CSS Shadow Builder Free - SmartDigitalTips",
+      "description": "Generate box-shadow CSS with sliders for offset, blur, spread, and opacity."
+    },
+    "speed-test-simulator": {
+      "title": "Speed Test Simulator | Educational Demo - SmartDigitalTips",
+      "description": "Simulated internet speed test for demonstration only. No network requests. Clearly labeled."
+    },
+    "ip-checker": {
+      "title": "What Is My IP? | Public IP Checker Free - SmartDigitalTips",
+      "description": "Check your public IP when you click the button. Uses ipify.org. We do not store your IP."
+    },
+    "countdown-timer": {
+      "title": "Countdown Timer | Free Online Timer - SmartDigitalTips",
+      "description": "Free countdown timer in the browser. Set hours, minutes, and seconds. No signup."
+    },
+    "stopwatch": {
+      "title": "Online Stopwatch | Lap Timer Free - SmartDigitalTips",
+      "description": "Free stopwatch with lap recording. Runs locally in your browser."
     }
   },
   "categories": {
@@ -239,6 +287,22 @@
     "developer": {
       "title": "Developer Tools — Free Online Tools | SmartDigitalTips",
       "description": "Format, minify, and encode code and data."
+    },
+    "security": {
+      "title": "Security Tools — Free Online Tools | SmartDigitalTips",
+      "description": "Password generators and strength checkers — all in your browser."
+    },
+    "productivity": {
+      "title": "Productivity Tools — Free Online Tools | SmartDigitalTips",
+      "description": "Timers, stopwatches, and focus helpers for daily work."
+    },
+    "design": {
+      "title": "Design Tools — Free Online Tools | SmartDigitalTips",
+      "description": "Colors, gradients, and CSS shadows for UI work."
+    },
+    "system": {
+      "title": "System Tools — Free Online Tools | SmartDigitalTips",
+      "description": "Network utilities and diagnostics (browser-safe)."
     }
   },
   "blog": {
@@ -261,6 +325,14 @@
     "freelancers-guide-to-invoicing": {
       "title": "Freelancer Invoicing Guide: Get Paid Faster | SmartDigitalTips",
       "description": "Learn how to create professional invoices, set clear payment terms, and use free invoice generators to ensure you get paid on time."
+    },
+    "create-strong-passwords-without-paid-tools": {
+      "title": "Create Strong Passwords Free | Security Guide - SmartDigitalTips",
+      "description": "Step-by-step guide to building memorable, strong passwords using free browser tools and a password manager—no paid breach databases required."
+    },
+    "free-developer-tools-in-the-browser": {
+      "title": "Free Browser Developer Tools | JSON, Regex, HTML - SmartDigitalTips",
+      "description": "Discover free in-browser developer utilities for JSON, regex, Base64, URL encoding, and sandboxed HTML preview—private and instant."
     }
   },
   "ui": {
@@ -387,6 +459,22 @@
       "developer": {
         "label": "Developer Tools",
         "description": "Format, minify, and encode code and data."
+      },
+      "security": {
+        "label": "Security Tools",
+        "description": "Password generators and strength checkers — all in your browser."
+      },
+      "productivity": {
+        "label": "Productivity Tools",
+        "description": "Timers, stopwatches, and focus helpers for daily work."
+      },
+      "design": {
+        "label": "Design Tools",
+        "description": "Colors, gradients, and CSS shadows for UI work."
+      },
+      "system": {
+        "label": "System Tools",
+        "description": "Network utilities and diagnostics (browser-safe)."
       }
     },
     "tools": {
@@ -565,6 +653,54 @@
       "color-palette-generator": {
         "name": "Color Palette Generator",
         "description": "Generate SEO-optimized, highly accessible, and visually stunning color palettes based on your preferences."
+      },
+      "speech-to-text": {
+        "name": "Speech to Text",
+        "description": "Transcribe speech to text using your microphone and browser speech recognition."
+      },
+      "random-sentence-generator": {
+        "name": "Random Sentence Generator",
+        "description": "Generate creative placeholder sentences with rule-based random words."
+      },
+      "html-live-editor": {
+        "name": "HTML Live Editor",
+        "description": "Write HTML and preview it in a sandboxed iframe without running scripts."
+      },
+      "url-encoder": {
+        "name": "URL Encoder / Decoder",
+        "description": "Encode or decode URL components safely in the browser."
+      },
+      "regex-tester": {
+        "name": "Regex Tester",
+        "description": "Test regular expressions with match highlighting and safe limits."
+      },
+      "password-strength-checker": {
+        "name": "Password Strength Checker",
+        "description": "Analyze password strength with rule-based scoring — nothing leaves your browser."
+      },
+      "gradient-generator": {
+        "name": "Gradient Generator",
+        "description": "Build CSS linear and radial gradients with live preview."
+      },
+      "box-shadow-generator": {
+        "name": "Box Shadow Generator",
+        "description": "Design CSS box-shadow values with a visual preview."
+      },
+      "speed-test-simulator": {
+        "name": "Internet Speed Test (Simulation)",
+        "description": "Educational demo of a speed test — not real network measurement."
+      },
+      "ip-checker": {
+        "name": "IP Checker",
+        "description": "Look up your public IP address on demand via a free API."
+      },
+      "countdown-timer": {
+        "name": "Countdown Timer",
+        "description": "Set a countdown for tasks, breaks, or events."
+      },
+      "stopwatch": {
+        "name": "Stopwatch",
+        "description": "Precise stopwatch with lap times in your browser."
       }
     }
   },

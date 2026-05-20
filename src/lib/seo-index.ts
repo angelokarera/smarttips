@@ -18,17 +18,22 @@ export { generateSEOMetadata } from './seo';
 
 // Quick access functions
 export const generateToolSEO = (tool: Tool, locale = 'en') => {
-  return seoEngine.generateToolMetadata(tool, locale, tool.path);
+  return seoEngine.generateToolMetadata(tool, locale);
 };
 
-export const generatePageSchema = (type: 'website' | 'article' | 'tool', data: any) => {
+type ArticleSchemaInput = Parameters<typeof seoEngine.generateArticleSchema>[0]
+
+export const generatePageSchema = (
+  type: 'website' | 'article' | 'tool',
+  data?: Tool | ArticleSchemaInput
+) => {
   switch (type) {
     case 'website':
       return schemaGenerator.generateWebsiteSchema();
     case 'article':
-      return seoEngine.generateArticleSchema(data);
+      return data && 'excerpt' in data ? seoEngine.generateArticleSchema(data) : null;
     case 'tool':
-      return seoEngine.generateSoftwareSchema(data);
+      return data && 'path' in data ? seoEngine.generateSoftwareSchema(data) : null;
     default:
       return null;
   }

@@ -44,8 +44,9 @@ export default function BlogPost() {
   }
 
   return (
-    <Layout 
-      meta={meta} 
+    <Layout
+      meta={meta}
+      showPublisherAds
       breadcrumbs={[
         { name: 'Blog', path: '/blog' },
         { name: post.title, path: `/blog/${post.slug}` }

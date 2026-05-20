@@ -15,12 +15,25 @@ interface LayoutProps {
   meta: SEOMeta
   breadcrumbs?: { name: string; path: string }[]
   showBreadcrumbs?: boolean
+  /** Tool, category, and blog pages with substantive content */
+  showPublisherAds?: boolean
 }
 
-export function Layout({ children, meta, breadcrumbs, showBreadcrumbs = true }: LayoutProps) {
+export function Layout({
+  children,
+  meta,
+  breadcrumbs,
+  showBreadcrumbs = true,
+  showPublisherAds = false,
+}: LayoutProps) {
   const location = useLocation()
-  const adExcludedPaths = ['/privacy', '/terms', '/disclaimer', '/contact', '/cookies']
-  const showAds = !adExcludedPaths.some((path) => location.pathname.endsWith(path))
+  const adExcludedPaths = ['/privacy', '/terms', '/disclaimer', '/contact', '/cookies', '/about']
+  const isLegal = adExcludedPaths.some((path) => location.pathname.endsWith(path))
+  const isContentRoute =
+    /\/tools\//.test(location.pathname) ||
+    /\/category\//.test(location.pathname) ||
+    /\/blog/.test(location.pathname)
+  const showAds = (showPublisherAds || isContentRoute) && !isLegal
 
   return (
     <div className="flex min-h-screen flex-col">

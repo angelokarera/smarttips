@@ -34,8 +34,9 @@ export class SEOAnalytics {
 
   // Track custom events
   trackEvent(event: AnalyticsEvent): void {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', event.action, {
+    const win = window as Window & { gtag?: (...args: unknown[]) => void }
+    if (typeof window !== 'undefined' && win.gtag) {
+      win.gtag('event', event.action, {
         event_category: event.category,
         event_label: event.label,
         value: event.value
@@ -261,7 +262,7 @@ export class SEOAnalytics {
     });
 
     // Track time on page
-    let startTime = Date.now();
+    const startTime = Date.now();
     window.addEventListener('beforeunload', () => {
       const timeOnPage = Math.round((Date.now() - startTime) / 1000);
       this.trackEvent({

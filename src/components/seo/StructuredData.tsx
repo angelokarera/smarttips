@@ -93,17 +93,16 @@ export function generateToolSchema(tool: {
   seoTitle?: string
   benefits?: string[]
 }) {
-  return {
-    '@type': 'WebApplication',
+  const url = tool.path.startsWith('http') ? tool.path : `https://smartdigitaltips.com${tool.path}`
+  const base = {
     name: tool.name,
     headline: tool.seoTitle || tool.name,
     description: tool.description,
     image: 'https://smartdigitaltips.com/logo.png',
     applicationCategory: 'UtilityApplication',
-    softwareApplicationCategory: tool.category,
     operatingSystem: 'Any',
     browserRequirements: 'Requires JavaScript. Requires HTML5.',
-    url: tool.path.startsWith('http') ? tool.path : `https://smartdigitaltips.com${tool.path}`,
+    url,
     isAccessibleForFree: true,
     isFamilyFriendly: true,
     featureList: tool.benefits || [],
@@ -117,6 +116,34 @@ export function generateToolSchema(tool: {
       price: '0',
       priceCurrency: 'USD',
     },
+  }
+  return {
+    '@type': 'WebApplication',
+    ...base,
+  }
+}
+
+export function generateSoftwareApplicationSchema(tool: {
+  name: string
+  description: string
+  category: string
+  path: string
+  benefits?: string[]
+}) {
+  const url = tool.path.startsWith('http') ? tool.path : `https://smartdigitaltips.com${tool.path}`
+  return {
+    '@type': 'SoftwareApplication',
+    name: tool.name,
+    description: tool.description,
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Web Browser',
+    url,
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    featureList: tool.benefits || [],
   }
 }
 

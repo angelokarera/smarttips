@@ -1,6 +1,9 @@
 // AI Search Engine Optimization
 // Optimize for ChatGPT, Gemini, Claude, Perplexity, Copilot
 
+import type { Tool } from '@/data/tools'
+import type { JsonLd } from '@/lib/json-ld-types'
+
 export interface AISearchMetadata {
   semanticContent: string;
   entities: string[];
@@ -22,7 +25,7 @@ export class AISearchOptimizer {
   }
 
   // Extract key entities for AI search
-  static extractEntities(tool: any): string[] {
+  static extractEntities(tool: Tool): string[] {
     const entities = [
       tool.name,
       tool.category,
@@ -45,7 +48,7 @@ export class AISearchOptimizer {
   }
 
   // Generate structured answer for AI
-  static generateStructuredAnswer(tool: any): string {
+  static generateStructuredAnswer(tool: Tool): string {
     return `
 ${tool.name} is a free online tool that ${tool.description.toLowerCase()}
 
@@ -60,7 +63,7 @@ This tool is completely free, requires no registration, and works directly in yo
   }
 
   // Generate FAQ content optimized for AI
-  static generateAIOptimizedFAQ(faqs: any[]): string {
+  static generateAIOptimizedFAQ(faqs: { question: string; answer: string }[]): string {
     return faqs.map(faq => `
 Q: ${faq.question}
 A: ${faq.answer}
@@ -68,7 +71,7 @@ A: ${faq.answer}
   }
 
   // Generate meta tags for AI crawlers
-  static generateAIMetaTags(tool: any): Record<string, string> {
+  static generateAIMetaTags(tool: Tool): Record<string, string> {
     return {
       'ai:title': tool.name,
       'ai:description': tool.description,
@@ -82,7 +85,7 @@ A: ${faq.answer}
   }
 
   // Generate content for voice search
-  static generateVoiceSearchContent(tool: any): string {
+  static generateVoiceSearchContent(tool: Tool): string {
     return `
 To use the ${tool.name}, simply ${tool.howToUse?.[0]?.toLowerCase() || 'visit our website'}. 
 The ${tool.name} is a free online tool that ${tool.description.toLowerCase()}. 
@@ -91,7 +94,7 @@ It requires no registration and works directly in your browser.
   }
 
   // Generate featured snippet content
-  static generateFeaturedSnippet(tool: any): {
+  static generateFeaturedSnippet(tool: Tool): {
     definition: string;
     list: string[];
     table?: Record<string, string>;
@@ -110,7 +113,7 @@ It requires no registration and works directly in your browser.
   }
 
   // Generate "People Also Ask" content
-  static generatePeopleAlsoAsk(tool: any): Array<{ question: string; answer: string }> {
+  static generatePeopleAlsoAsk(tool: Tool): Array<{ question: string; answer: string }> {
     const baseQuestions = [
       {
         question: `What is ${tool.name}?`,
@@ -134,7 +137,7 @@ It requires no registration and works directly in your browser.
   }
 
   // Generate content for AI Overview (Google)
-  static generateAIOverview(tool: any): string {
+  static generateAIOverview(tool: Tool): string {
     return `
 **${tool.name}** is a free online tool for ${tool.description.toLowerCase()}
 
@@ -151,7 +154,7 @@ ${tool.howToUse?.[0] || 'Visit the tool page and start using it immediately'}
   }
 
   // Generate citation-friendly content
-  static generateCitationContent(tool: any): string {
+  static generateCitationContent(tool: Tool): string {
     return `
 Source: SmartDigitalTips
 Tool: ${tool.name}
@@ -163,7 +166,7 @@ Last Updated: ${new Date().toISOString().split('T')[0]}
   }
 
   // Optimize content for conversational AI
-  static optimizeForConversationalAI(tool: any): string {
+  static optimizeForConversationalAI(tool: Tool): string {
     return `
 If you're looking for ${tool.name.toLowerCase()}, I can help you with that. 
 
@@ -179,7 +182,7 @@ ${tool.benefits?.[0] || ''}
   }
 
   // Generate JSON-LD for AI understanding
-  static generateAIJsonLD(tool: any): any {
+  static generateAIJsonLD(tool: Tool): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',

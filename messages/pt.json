@@ -209,6 +209,54 @@
     "color-palette-generator": {
       "title": "Grátis Paleta de cores Online | SmartDigitalTips",
       "description": "Grátis Paleta de cores Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "speech-to-text": {
+      "title": "Grátis Speech to Text Online | SmartDigitalTips",
+      "description": "Grátis Speech to Text Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "random-sentence-generator": {
+      "title": "Grátis Random Sentence Generator Online | SmartDigitalTips",
+      "description": "Grátis Random Sentence Generator Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "html-live-editor": {
+      "title": "Grátis HTML Live Editor Online | SmartDigitalTips",
+      "description": "Grátis HTML Live Editor Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "url-encoder": {
+      "title": "Grátis URL Encoder / Decoder Online | SmartDigitalTips",
+      "description": "Grátis URL Encoder / Decoder Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "regex-tester": {
+      "title": "Grátis Regex Tester Online | SmartDigitalTips",
+      "description": "Grátis Regex Tester Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "password-strength-checker": {
+      "title": "Grátis Password Strength Checker Online | SmartDigitalTips",
+      "description": "Grátis Password Strength Checker Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "gradient-generator": {
+      "title": "Grátis Gradient Generator Online | SmartDigitalTips",
+      "description": "Grátis Gradient Generator Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "box-shadow-generator": {
+      "title": "Grátis Box Shadow Generator Online | SmartDigitalTips",
+      "description": "Grátis Box Shadow Generator Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "speed-test-simulator": {
+      "title": "Grátis Internet Speed Test (Simulation) Online | SmartDigitalTips",
+      "description": "Grátis Internet Speed Test (Simulation) Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "ip-checker": {
+      "title": "Grátis IP Checker Online | SmartDigitalTips",
+      "description": "Grátis IP Checker Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "countdown-timer": {
+      "title": "Grátis Countdown Timer Online | SmartDigitalTips",
+      "description": "Grátis Countdown Timer Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "stopwatch": {
+      "title": "Grátis Stopwatch Online | SmartDigitalTips",
+      "description": "Grátis Stopwatch Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
     }
   },
   "categories": {
@@ -239,6 +287,22 @@
     "developer": {
       "title": "Ferramentas para desenvolvedores — Grátis Online | SmartDigitalTips",
       "description": "Format, minify, and encode code and data. Sem cadastro."
+    },
+    "security": {
+      "title": "Security Tools — Grátis Online | SmartDigitalTips",
+      "description": "Password generators and strength checkers — all in your browser. Sem cadastro."
+    },
+    "productivity": {
+      "title": "Productivity Tools — Grátis Online | SmartDigitalTips",
+      "description": "Timers, stopwatches, and focus helpers for daily work. Sem cadastro."
+    },
+    "design": {
+      "title": "Design Tools — Grátis Online | SmartDigitalTips",
+      "description": "Colors, gradients, and CSS shadows for UI work. Sem cadastro."
+    },
+    "system": {
+      "title": "System Tools — Grátis Online | SmartDigitalTips",
+      "description": "Network utilities and diagnostics (browser-safe). Sem cadastro."
     }
   },
   "blog": {
@@ -261,6 +325,14 @@
     "freelancers-guide-to-invoicing": {
       "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
       "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    },
+    "create-strong-passwords-without-paid-tools": {
+      "title": "How to Create Strong Passwords Without Paid Security Tools | SmartDigitalTips",
+      "description": "Learn practical password rules, why browser-based generators help, and how to pair free strength checkers with a password manager."
+    },
+    "free-developer-tools-in-the-browser": {
+      "title": "Free Developer Tools That Run Entirely in Your Browser | SmartDigitalTips",
+      "description": "JSON formatting, regex testing, Base64 encoding, and HTML previews without sending sensitive payloads to upload servers."
     }
   },
   "ui": {
@@ -387,6 +459,22 @@
       "developer": {
         "label": "Ferramentas para desenvolvedores",
         "description": "Formate, minifique e codifique dados."
+      },
+      "security": {
+        "label": "Security Tools",
+        "description": "Password generators and strength checkers — all in your browser."
+      },
+      "productivity": {
+        "label": "Productivity Tools",
+        "description": "Timers, stopwatches, and focus helpers for daily work."
+      },
+      "design": {
+        "label": "Design Tools",
+        "description": "Colors, gradients, and CSS shadows for UI work."
+      },
+      "system": {
+        "label": "System Tools",
+        "description": "Network utilities and diagnostics (browser-safe)."
       }
     },
     "tools": {
@@ -565,6 +653,54 @@
       "color-palette-generator": {
         "name": "Paleta de cores",
         "description": "Grátis Paleta de cores Online."
+      },
+      "speech-to-text": {
+        "name": "Speech to Text",
+        "description": "Grátis Speech to Text Online."
+      },
+      "random-sentence-generator": {
+        "name": "Random Sentence Generator",
+        "description": "Grátis Random Sentence Generator Online."
+      },
+      "html-live-editor": {
+        "name": "HTML Live Editor",
+        "description": "Grátis HTML Live Editor Online."
+      },
+      "url-encoder": {
+        "name": "URL Encoder / Decoder",
+        "description": "Grátis URL Encoder / Decoder Online."
+      },
+      "regex-tester": {
+        "name": "Regex Tester",
+        "description": "Grátis Regex Tester Online."
+      },
+      "password-strength-checker": {
+        "name": "Password Strength Checker",
+        "description": "Grátis Password Strength Checker Online."
+      },
+      "gradient-generator": {
+        "name": "Gradient Generator",
+        "description": "Grátis Gradient Generator Online."
+      },
+      "box-shadow-generator": {
+        "name": "Box Shadow Generator",
+        "description": "Grátis Box Shadow Generator Online."
+      },
+      "speed-test-simulator": {
+        "name": "Internet Speed Test (Simulation)",
+        "description": "Grátis Internet Speed Test (Simulation) Online."
+      },
+      "ip-checker": {
+        "name": "IP Checker",
+        "description": "Grátis IP Checker Online."
+      },
+      "countdown-timer": {
+        "name": "Countdown Timer",
+        "description": "Grátis Countdown Timer Online."
+      },
+      "stopwatch": {
+        "name": "Stopwatch",
+        "description": "Grátis Stopwatch Online."
       }
     }
   },

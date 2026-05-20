@@ -229,5 +229,73 @@ export const blogPosts: BlogPost[] = [
       <h2>Conclusion</h2>
       <p>Your invoicing process should be a frictionless extension of your professional services. By including all necessary details, setting clear expectations, and using efficient tools, you can spend less time chasing payments and more time doing the work you love.</p>
     `
-  }
+  },
+  {
+    id: '6',
+    slug: 'create-strong-passwords-without-paid-tools',
+    title: 'How to Create Strong Passwords Without Paid Security Tools',
+    excerpt:
+      'Learn practical password rules, why browser-based generators help, and how to pair free strength checkers with a password manager.',
+    date: '2026-05-10',
+    author: 'SmartDigitalTips Team',
+    category: 'Security',
+    seoTitle: 'Create Strong Passwords Free | Security Guide - SmartDigitalTips',
+    seoDescription:
+      'Step-by-step guide to building memorable, strong passwords using free browser tools and a password manager—no paid breach databases required.',
+    content: `
+      <h2>Why password strength still matters in 2026</h2>
+      <p>Data breaches continue to expose reused credentials. A unique password for every account limits damage when one site leaks. You do not need expensive software to start—free browser tools can generate random strings and explain basic strength rules before you save them in a manager.</p>
+
+      <h2>Rules that actually help</h2>
+      <ul>
+        <li><strong>Length beats complexity theater:</strong> Long passphrases with random words often outperform short passwords with symbols.</li>
+        <li><strong>Never reuse:</strong> Email, banking, and shopping accounts should each have their own password.</li>
+        <li><strong>Use a password manager:</strong> Let it autofill so you are not tempted to recycle easy-to-type strings.</li>
+        <li><strong>Enable two-factor authentication:</strong> Even a strong password is safer with a second factor.</li>
+      </ul>
+
+      <h2>Free tools on SmartDigitalTips</h2>
+      <p>Our <a href="/tools/password-generator">Password Generator</a> uses cryptographic randomness in the browser. The <a href="/tools/password-strength-checker">Password Strength Checker</a> gives educational feedback locally—nothing is uploaded. Read the full guides on each tool page for limitations and privacy notes.</p>
+
+      <h2>What free checkers cannot do</h2>
+      <p>Browser-based strength meters do not know if your password appeared in a breach list unless you use a dedicated monitoring service. Treat our tools as coaching, not certification.</p>
+
+      <h2>Conclusion</h2>
+      <p>Combine generation, strength review, and a reputable manager to build a sustainable habit. Explore more utilities in our <a href="/category/security">Security Tools</a> category.</p>
+    `,
+  },
+  {
+    id: '7',
+    slug: 'free-developer-tools-in-the-browser',
+    title: 'Free Developer Tools That Run Entirely in Your Browser',
+    excerpt:
+      'JSON formatting, regex testing, Base64 encoding, and HTML previews without sending sensitive payloads to upload servers.',
+    date: '2026-05-05',
+    author: 'SmartDigitalTips Team',
+    category: 'Developer',
+    seoTitle: 'Free Browser Developer Tools | JSON, Regex, HTML - SmartDigitalTips',
+    seoDescription:
+      'Discover free in-browser developer utilities for JSON, regex, Base64, URL encoding, and sandboxed HTML preview—private and instant.',
+    content: `
+      <h2>Why local-first tooling matters</h2>
+      <p>API keys, customer records, and staging responses often appear in JSON or logs. Uploading that text to random websites creates compliance risk. Tools that execute in your browser keep samples on your machine while you debug.</p>
+
+      <h2>Everyday workflows</h2>
+      <ul>
+        <li><strong>JSON Formatter:</strong> Beautify responses from network tabs before code review.</li>
+        <li><strong>Regex Tester:</strong> Validate patterns with highlighted matches and safe length limits.</li>
+        <li><strong>Base64 Encoder:</strong> Encode small test fixtures without CLI setup on locked-down laptops.</li>
+        <li><strong>HTML Live Editor:</strong> Preview markup in a sandboxed iframe where scripts are stripped for safety.</li>
+      </ul>
+
+      <h2>Start with one task per tab</h2>
+      <p>Open the tool that matches your immediate problem—listed in our <a href="/category/developer">Developer Tools</a> hub—with step-by-step instructions and related links on each page.</p>
+
+      <h2>Performance tip</h2>
+      <p>Large JSON files may slow older phones. Trim samples when possible, or switch to a desktop browser for multi-megabyte payloads.</p>
+
+      <h2>Conclusion</h2>
+      <p>Bookmark the utilities you use weekly and pair them with our <a href="/tools/url-encoder">URL Encoder</a> and <a href="/tools/css-minifier">CSS Minifier</a> when shipping front-end changes.</p>
+    `,
+  },
 ];

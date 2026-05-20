@@ -209,6 +209,54 @@
     "color-palette-generator": {
       "title": "Gratuit Générateur de palettes En ligne | SmartDigitalTips",
       "description": "Gratuit Générateur de palettes En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "speech-to-text": {
+      "title": "Gratuit Speech to Text En ligne | SmartDigitalTips",
+      "description": "Gratuit Speech to Text En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "random-sentence-generator": {
+      "title": "Gratuit Random Sentence Generator En ligne | SmartDigitalTips",
+      "description": "Gratuit Random Sentence Generator En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "html-live-editor": {
+      "title": "Gratuit HTML Live Editor En ligne | SmartDigitalTips",
+      "description": "Gratuit HTML Live Editor En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "url-encoder": {
+      "title": "Gratuit URL Encoder / Decoder En ligne | SmartDigitalTips",
+      "description": "Gratuit URL Encoder / Decoder En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "regex-tester": {
+      "title": "Gratuit Regex Tester En ligne | SmartDigitalTips",
+      "description": "Gratuit Regex Tester En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "password-strength-checker": {
+      "title": "Gratuit Password Strength Checker En ligne | SmartDigitalTips",
+      "description": "Gratuit Password Strength Checker En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "gradient-generator": {
+      "title": "Gratuit Gradient Generator En ligne | SmartDigitalTips",
+      "description": "Gratuit Gradient Generator En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "box-shadow-generator": {
+      "title": "Gratuit Box Shadow Generator En ligne | SmartDigitalTips",
+      "description": "Gratuit Box Shadow Generator En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "speed-test-simulator": {
+      "title": "Gratuit Internet Speed Test (Simulation) En ligne | SmartDigitalTips",
+      "description": "Gratuit Internet Speed Test (Simulation) En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "ip-checker": {
+      "title": "Gratuit IP Checker En ligne | SmartDigitalTips",
+      "description": "Gratuit IP Checker En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "countdown-timer": {
+      "title": "Gratuit Countdown Timer En ligne | SmartDigitalTips",
+      "description": "Gratuit Countdown Timer En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "stopwatch": {
+      "title": "Gratuit Stopwatch En ligne | SmartDigitalTips",
+      "description": "Gratuit Stopwatch En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
     }
   },
   "categories": {
@@ -239,6 +287,22 @@
     "developer": {
       "title": "Outils développeur — Gratuit En ligne | SmartDigitalTips",
       "description": "Format, minify, and encode code and data. Sans inscription."
+    },
+    "security": {
+      "title": "Security Tools — Gratuit En ligne | SmartDigitalTips",
+      "description": "Password generators and strength checkers — all in your browser. Sans inscription."
+    },
+    "productivity": {
+      "title": "Productivity Tools — Gratuit En ligne | SmartDigitalTips",
+      "description": "Timers, stopwatches, and focus helpers for daily work. Sans inscription."
+    },
+    "design": {
+      "title": "Design Tools — Gratuit En ligne | SmartDigitalTips",
+      "description": "Colors, gradients, and CSS shadows for UI work. Sans inscription."
+    },
+    "system": {
+      "title": "System Tools — Gratuit En ligne | SmartDigitalTips",
+      "description": "Network utilities and diagnostics (browser-safe). Sans inscription."
     }
   },
   "blog": {
@@ -261,6 +325,14 @@
     "freelancers-guide-to-invoicing": {
       "title": "The Freelancer's Guide to Invoicing and Getting Paid Faster | SmartDigitalTips",
       "description": "Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process."
+    },
+    "create-strong-passwords-without-paid-tools": {
+      "title": "How to Create Strong Passwords Without Paid Security Tools | SmartDigitalTips",
+      "description": "Learn practical password rules, why browser-based generators help, and how to pair free strength checkers with a password manager."
+    },
+    "free-developer-tools-in-the-browser": {
+      "title": "Free Developer Tools That Run Entirely in Your Browser | SmartDigitalTips",
+      "description": "JSON formatting, regex testing, Base64 encoding, and HTML previews without sending sensitive payloads to upload servers."
     }
   },
   "ui": {
@@ -387,6 +459,22 @@
       "developer": {
         "label": "Outils développeur",
         "description": "Formatez, minifiez et encodez code et données."
+      },
+      "security": {
+        "label": "Security Tools",
+        "description": "Password generators and strength checkers — all in your browser."
+      },
+      "productivity": {
+        "label": "Productivity Tools",
+        "description": "Timers, stopwatches, and focus helpers for daily work."
+      },
+      "design": {
+        "label": "Design Tools",
+        "description": "Colors, gradients, and CSS shadows for UI work."
+      },
+      "system": {
+        "label": "System Tools",
+        "description": "Network utilities and diagnostics (browser-safe)."
       }
     },
     "tools": {
@@ -565,6 +653,54 @@
       "color-palette-generator": {
         "name": "Générateur de palettes",
         "description": "Gratuit Générateur de palettes En ligne."
+      },
+      "speech-to-text": {
+        "name": "Speech to Text",
+        "description": "Gratuit Speech to Text En ligne."
+      },
+      "random-sentence-generator": {
+        "name": "Random Sentence Generator",
+        "description": "Gratuit Random Sentence Generator En ligne."
+      },
+      "html-live-editor": {
+        "name": "HTML Live Editor",
+        "description": "Gratuit HTML Live Editor En ligne."
+      },
+      "url-encoder": {
+        "name": "URL Encoder / Decoder",
+        "description": "Gratuit URL Encoder / Decoder En ligne."
+      },
+      "regex-tester": {
+        "name": "Regex Tester",
+        "description": "Gratuit Regex Tester En ligne."
+      },
+      "password-strength-checker": {
+        "name": "Password Strength Checker",
+        "description": "Gratuit Password Strength Checker En ligne."
+      },
+      "gradient-generator": {
+        "name": "Gradient Generator",
+        "description": "Gratuit Gradient Generator En ligne."
+      },
+      "box-shadow-generator": {
+        "name": "Box Shadow Generator",
+        "description": "Gratuit Box Shadow Generator En ligne."
+      },
+      "speed-test-simulator": {
+        "name": "Internet Speed Test (Simulation)",
+        "description": "Gratuit Internet Speed Test (Simulation) En ligne."
+      },
+      "ip-checker": {
+        "name": "IP Checker",
+        "description": "Gratuit IP Checker En ligne."
+      },
+      "countdown-timer": {
+        "name": "Countdown Timer",
+        "description": "Gratuit Countdown Timer En ligne."
+      },
+      "stopwatch": {
+        "name": "Stopwatch",
+        "description": "Gratuit Stopwatch En ligne."
       }
     }
   },

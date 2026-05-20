@@ -1,6 +1,7 @@
 // Enterprise SEO Engine - Programmatic SEO System
 import type { Tool } from '@/data/tools';
 import { CONTACT_EMAIL } from '@/lib/locale-config';
+import type { JsonLd } from '@/lib/json-ld-types';
 
 export interface SEOMetadata {
   title: string;
@@ -13,7 +14,7 @@ export interface SEOMetadata {
   twitterTitle: string;
   twitterDescription: string;
   twitterImage: string;
-  structuredData: any[];
+  structuredData: JsonLd[];
   hreflang: Record<string, string>;
   breadcrumbs: Array<{ name: string; url: string }>;
 }
@@ -28,21 +29,21 @@ export class SEOEngine {
   }
 
   // Generate high-CTR SEO title
-  generateTitle(tool: Tool, _locale = 'en'): string {
+  generateTitle(tool: Tool): string {
     if (tool.seoTitle) return tool.seoTitle
     const currentYear = new Date().getFullYear()
     return `Free ${tool.name} Online | No Signup ${currentYear} | ${this.siteName}`
   }
 
   // Generate compelling meta description
-  generateDescription(tool: Tool, _locale = 'en'): string {
+  generateDescription(tool: Tool): string {
     if (tool.seoDescription) return tool.seoDescription
     const benefit = tool.benefits[0] || tool.description
     return `${benefit}. Free, fast, and private — runs in your browser. No signup required.`
   }
 
   // Generate keyword clusters
-  generateKeywords(tool: Tool, _locale = 'en'): string[] {
+  generateKeywords(tool: Tool): string[] {
     const currentYear = new Date().getFullYear()
     const baseKeywords = [
       tool.name.toLowerCase(),
@@ -85,7 +86,7 @@ export class SEOEngine {
   }
 
   // Generate FAQ Schema
-  generateFAQSchema(tool: Tool): any {
+  generateFAQSchema(tool: Tool): JsonLd | null {
     if (!tool.faq || tool.faq.length === 0) return null;
 
     return {
@@ -103,7 +104,7 @@ export class SEOEngine {
   }
 
   // Generate HowTo Schema
-  generateHowToSchema(tool: Tool): any {
+  generateHowToSchema(tool: Tool): JsonLd | null {
     if (!tool.howToUse || tool.howToUse.length === 0) return null;
 
     return {
@@ -121,7 +122,7 @@ export class SEOEngine {
   }
 
   // Generate SoftwareApplication Schema
-  generateSoftwareSchema(tool: Tool): any {
+  generateSoftwareSchema(tool: Tool): JsonLd {
     const currentYear = new Date().getFullYear()
     return {
       '@context': 'https://schema.org',
@@ -144,7 +145,7 @@ export class SEOEngine {
   }
 
   // Generate Breadcrumb Schema
-  generateBreadcrumbSchema(breadcrumbs: Array<{ name: string; url: string }>): any {
+  generateBreadcrumbSchema(breadcrumbs: Array<{ name: string; url: string }>): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -158,7 +159,7 @@ export class SEOEngine {
   }
 
   // Generate WebSite Schema with SearchAction
-  generateWebsiteSchema(): any {
+  generateWebsiteSchema(): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
@@ -176,7 +177,7 @@ export class SEOEngine {
   }
 
   // Generate Organization Schema
-  generateOrganizationSchema(): any {
+  generateOrganizationSchema(): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'Organization',
@@ -197,7 +198,7 @@ export class SEOEngine {
   }
 
   // Generate complete SEO metadata for a tool
-  generateToolMetadata(tool: Tool, locale = 'en', _path: string): SEOMetadata {
+  generateToolMetadata(tool: Tool, locale = 'en'): SEOMetadata {
     const locales = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh'];
     const hreflang: Record<string, string> = {};
     
@@ -217,18 +218,18 @@ export class SEOEngine {
       this.generateFAQSchema(tool),
       this.generateHowToSchema(tool),
       this.generateBreadcrumbSchema(breadcrumbs)
-    ].filter(Boolean);
+    ].filter((item): item is JsonLd => item != null);
 
     return {
-      title: this.generateTitle(tool, locale),
-      description: this.generateDescription(tool, locale),
-      keywords: this.generateKeywords(tool, locale),
+      title: this.generateTitle(tool),
+      description: this.generateDescription(tool),
+      keywords: this.generateKeywords(tool),
       canonical: `${this.baseUrl}/${locale}${tool.path}`,
-      ogTitle: this.generateTitle(tool, locale),
-      ogDescription: this.generateDescription(tool, locale),
+      ogTitle: this.generateTitle(tool),
+      ogDescription: this.generateDescription(tool),
       ogImage: `${this.baseUrl}/og-images/${tool.id}.png`,
-      twitterTitle: this.generateTitle(tool, locale),
-      twitterDescription: this.generateDescription(tool, locale),
+      twitterTitle: this.generateTitle(tool),
+      twitterDescription: this.generateDescription(tool),
       twitterImage: `${this.baseUrl}/og-images/${tool.id}.png`,
       structuredData,
       hreflang,
@@ -237,7 +238,14 @@ export class SEOEngine {
   }
 
   // Generate Article Schema for blog posts
-  generateArticleSchema(post: any): any {
+  generateArticleSchema(post: {
+    title: string
+    excerpt: string
+    image?: string
+    date: string
+    updatedAt?: string
+    author?: string
+  }): JsonLd {
     return {
       '@context': 'https://schema.org',
       '@type': 'Article',
