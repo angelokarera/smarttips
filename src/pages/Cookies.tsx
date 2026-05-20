@@ -30,7 +30,7 @@ export default function Cookies() {
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mb-12">
           <h1 className="mb-4 text-4xl font-bold tracking-tight">Cookie Policy</h1>
-          <p className="text-muted-foreground">Last updated: May 9, 2026</p>
+          <p className="text-muted-foreground">Last updated: January 15, 2024</p>
         </div>
 
         <div className="prose max-w-none space-y-8">

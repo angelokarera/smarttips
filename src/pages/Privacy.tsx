@@ -31,7 +31,7 @@ export default function Privacy() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold tracking-tight mb-4">Privacy Policy</h1>
           <p className="text-muted-foreground">
-            Last updated: May 9, 2026
+            Last updated: January 15, 2024
           </p>
         </div>
 
