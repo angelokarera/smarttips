@@ -5,6 +5,14 @@ import { DEFAULT_LOCALE, LOCALES, LOCALE_META, SITE_URL } from './locale-config.
 
 const MAX_URLS_PER_SITEMAP = 50000
 
+const STATIC_PAGE_COUNT = 8
+
+function normalizePath(path: string): string {
+  if (!path || path === '/') return '/'
+  const cleaned = path.startsWith('/') ? path : `/${path}`
+  return cleaned.replace(/\/+/g, '/')
+}
+
 function escapeXml(value: string): string {
   return value
     .replace(/&/g, '&amp;')
@@ -19,15 +27,17 @@ function formatLastmod(date: Date): string {
 }
 
 function hreflangLinks(path: string): string {
+  const normalized = normalizePath(path)
   return LOCALES.map((locale) => {
-    const href = `${SITE_URL}/${locale}${path === '/' ? '' : path}`
+    const href = `${SITE_URL}/${locale}${normalized === '/' ? '' : normalized}`
     const code = LOCALE_META[locale].hreflang
     return `    <xhtml:link rel="alternate" hreflang="${code}" href="${escapeXml(href)}" />`
   }).join('\n')
 }
 
 function xDefaultLink(path: string): string {
-  const href = `${SITE_URL}/${DEFAULT_LOCALE}${path === '/' ? '' : path}`
+  const normalized = normalizePath(path)
+  const href = `${SITE_URL}/${DEFAULT_LOCALE}${normalized === '/' ? '' : normalized}`
   return `    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(href)}" />`
 }
 
@@ -38,10 +48,34 @@ interface SitemapUrl {
   priority: number
 }
 
+export interface SitemapStats {
+  staticPages: number
+  categories: number
+  tools: number
+  blogPosts: number
+  logicalPages: number
+  locales: number
+  totalUrls: number
+}
+
 export class SitemapGenerator {
+  static getStats(tools: Tool[], categories: ToolCategory[], blogPosts: BlogPost[]): SitemapStats {
+    const logicalPages = this.collectUrls(tools, categories, blogPosts).length
+    return {
+      staticPages: STATIC_PAGE_COUNT,
+      categories: categories.length,
+      tools: tools.length,
+      blogPosts: blogPosts.length,
+      logicalPages,
+      locales: LOCALES.length,
+      totalUrls: logicalPages * LOCALES.length,
+    }
+  }
+
   static collectUrls(tools: Tool[], categories: ToolCategory[], blogPosts: BlogPost[]): SitemapUrl[] {
     const now = new Date()
     const urls: SitemapUrl[] = []
+    const seenPaths = new Set<string>()
 
     const staticPages: Array<{ path: string; priority: number; changefreq: SitemapUrl['changefreq'] }> = [
       { path: '', priority: 1.0, changefreq: 'daily' },
@@ -54,8 +88,18 @@ export class SitemapGenerator {
       { path: '/disclaimer', priority: 0.3, changefreq: 'yearly' },
     ]
 
+    const addUrl = (entry: SitemapUrl) => {
+      const path = normalizePath(entry.path)
+      if (seenPaths.has(path)) {
+        console.warn(`[sitemap] Skipping duplicate path: ${path}`)
+        return
+      }
+      seenPaths.add(path)
+      urls.push({ ...entry, path })
+    }
+
     for (const page of staticPages) {
-      urls.push({
+      addUrl({
         path: page.path || '/',
         lastmod: now,
         changefreq: page.changefreq,
@@ -64,7 +108,7 @@ export class SitemapGenerator {
     }
 
     for (const category of categories) {
-      urls.push({
+      addUrl({
         path: `/category/${category.id}`,
         lastmod: now,
         changefreq: 'weekly',
@@ -73,7 +117,7 @@ export class SitemapGenerator {
     }
 
     for (const tool of tools) {
-      urls.push({
+      addUrl({
         path: tool.path,
         lastmod: now,
         changefreq: 'weekly',
@@ -82,7 +126,7 @@ export class SitemapGenerator {
     }
 
     for (const post of blogPosts) {
-      urls.push({
+      addUrl({
         path: `/blog/${post.slug}`,
         lastmod: new Date(post.date),
         changefreq: 'monthly',
@@ -105,13 +149,16 @@ export class SitemapGenerator {
       console.warn(`Sitemap has ${totalUrls} URLs; consider splitting into multiple sitemaps.`)
     }
 
+    const generated = formatLastmod(new Date())
     let xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml += `<!-- SmartDigitalTips sitemap | ${totalUrls} URLs | generated ${generated} -->\n`
     xml +=
       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
 
     for (const locale of LOCALES) {
       for (const entry of entries) {
-        const pathSuffix = entry.path === '/' ? '' : entry.path
+        const normalized = normalizePath(entry.path)
+        const pathSuffix = normalized === '/' ? '' : normalized
         const loc = `${SITE_URL}/${locale}${pathSuffix}`
 
         xml += '  <url>\n'
@@ -130,19 +177,19 @@ export class SitemapGenerator {
   }
 
   static generateRobotsTxt(): string {
-    return `# SmartDigitalTips — production robots.txt
-# Updated: ${formatLastmod(new Date())}
+    const updated = formatLastmod(new Date())
+    return `# SmartDigitalTips — https://smartdigitaltips.com
+# Updated: ${updated}
+# Submit sitemap in Google Search Console: ${SITE_URL}/sitemap.xml
 
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
+Sitemap: ${SITE_URL}/sitemap.xml
 
+# Google
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /private/
 
 User-agent: Googlebot-Image
 Allow: /
@@ -150,73 +197,100 @@ Allow: /
 User-agent: Googlebot-Mobile
 Allow: /
 
+# All crawlers
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Bing
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-
-User-agent: BingPreview
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: Yandex
-Allow: /
-Disallow: /api/
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-User-agent: TelegramBot
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-Sitemap: ${SITE_URL}/sitemap.xml
 `
   }
 
+  /** Validate generated sitemap XML against live registry data. Returns error messages. */
+  static validateSitemapXml(
+    xml: string,
+    tools: Tool[],
+    categories: ToolCategory[],
+    blogPosts: BlogPost[]
+  ): string[] {
+    const errors: string[] = []
+    const stats = this.getStats(tools, categories, blogPosts)
+
+    if (!xml.startsWith('<?xml version="1.0" encoding="UTF-8"?>')) {
+      errors.push('Missing UTF-8 XML declaration')
+    }
+    if (!xml.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"')) {
+      errors.push('Missing sitemap 0.9 urlset namespace')
+    }
+    if (!xml.trimEnd().endsWith('</urlset>')) {
+      errors.push('Invalid or unclosed </urlset>')
+    }
+
+    const openUrls = (xml.match(/<url>/g) || []).length
+    const closeUrls = (xml.match(/<\/url>/g) || []).length
+    if (openUrls !== closeUrls) {
+      errors.push(`Mismatched <url> tags: ${openUrls} open, ${closeUrls} close`)
+    }
+
+    const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])
+    if (locs.length !== stats.totalUrls) {
+      errors.push(`Expected ${stats.totalUrls} <loc> entries, found ${locs.length}`)
+    }
+
+    const uniqueLocs = new Set(locs)
+    if (uniqueLocs.size !== locs.length) {
+      errors.push(`Duplicate <loc> URLs: ${locs.length - uniqueLocs.size}`)
+    }
+
+    for (const loc of locs) {
+      if (!loc.startsWith(`${SITE_URL}/`)) {
+        errors.push(`Invalid URL (must use ${SITE_URL}): ${loc}`)
+      }
+      if (loc.includes(' ')) {
+        errors.push(`URL contains spaces: ${loc}`)
+      }
+      const locale = loc.slice(SITE_URL.length + 1).split('/')[0]
+      if (!LOCALES.includes(locale as (typeof LOCALES)[number])) {
+        errors.push(`Unknown locale in URL: ${loc}`)
+      }
+    }
+
+    const lastmods = [...xml.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((m) => m[1])
+    if (!lastmods.every((d) => /^\d{4}-\d{2}-\d{2}$/.test(d))) {
+      errors.push('Invalid lastmod format (expected YYYY-MM-DD)')
+    }
+
+    const priorities = [...xml.matchAll(/<priority>([^<]+)<\/priority>/g)].map((m) => parseFloat(m[1]))
+    if (priorities.some((p) => Number.isNaN(p) || p < 0 || p > 1)) {
+      errors.push('Invalid priority value (must be 0.0–1.0)')
+    }
+
+    const hreflangs = [...xml.matchAll(/hreflang="([^"]+)"/g)].map((m) => m[1])
+    const expectedPerUrl = LOCALES.length + 1
+    if (openUrls > 0 && Math.round(hreflangs.length / openUrls) !== expectedPerUrl) {
+      errors.push(`Expected ${expectedPerUrl} hreflang links per URL`)
+    }
+
+    if (xml.includes('/search')) {
+      errors.push('Broken /search URL found in sitemap')
+    }
+
+    for (const tool of tools) {
+      const sample = `${SITE_URL}/en${normalizePath(tool.path)}`
+      if (!locs.includes(sample)) {
+        errors.push(`Missing tool URL in sitemap: ${sample}`)
+      }
+    }
+
+    return errors
+  }
 }
+
 
 export default SitemapGenerator

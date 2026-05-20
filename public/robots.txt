@@ -1,16 +1,15 @@
-# SmartDigitalTips — production robots.txt
+# SmartDigitalTips — https://smartdigitaltips.com
 # Updated: 2026-05-20
+# Submit sitemap in Google Search Console: https://smartdigitaltips.com/sitemap.xml
 
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
+Sitemap: https://smartdigitaltips.com/sitemap.xml
 
+# Google
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /private/
 
 User-agent: Googlebot-Image
 Allow: /
@@ -18,67 +17,15 @@ Allow: /
 User-agent: Googlebot-Mobile
 Allow: /
 
+# All crawlers
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Bing
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-
-User-agent: BingPreview
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: Yandex
-Allow: /
-Disallow: /api/
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-User-agent: TelegramBot
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-Sitemap: https://smartdigitaltips.com/sitemap.xml

@@ -26,8 +26,24 @@ try {
     rmSync(sitemapsDir, { recursive: true, force: true });
   }
 
-  const urlCount = (sitemapXml.match(/<loc>/g) || []).length;
-  console.log(`✅ sitemap.xml (${urlCount} URLs, all locales) and robots.txt → ${outputDir}`);
+  const stats = SitemapGenerator.getStats(tools, categories, blogPosts);
+  const validationErrors = SitemapGenerator.validateSitemapXml(
+    sitemapXml,
+    tools,
+    categories,
+    blogPosts
+  );
+
+  if (validationErrors.length > 0) {
+    console.error('\n❌ Sitemap validation failed:');
+    validationErrors.forEach((err) => console.error(`   - ${err}`));
+    process.exit(1);
+  }
+
+  console.log(
+    `✅ sitemap.xml (${stats.totalUrls} URLs: ${stats.logicalPages} pages × ${stats.locales} locales)`
+  );
+  console.log(`✅ robots.txt → ${outputDir}`);
   console.log('\n✅ Sitemap generation complete!');
 } catch (error) {
   console.error('\n❌ Error:', error);

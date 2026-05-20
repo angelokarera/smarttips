@@ -1,10 +1,18 @@
 #!/usr/bin/env node
+/**
+ * Validates public/sitemap.xml and public/robots.txt.
+ * Run via: npm run validate:sitemap  (uses tsx for registry imports)
+ */
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
+import { tools, categories } from '../src/data/tools.ts'
+import { blogPosts } from '../src/data/blog.ts'
+import { SitemapGenerator } from '../src/lib/sitemap-generator.ts'
+import { SITE_URL } from '../src/lib/locale-config.ts'
 
-const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh']
-const SITE = 'https://smartdigitaltips.com'
-const sitemapPath = join(process.cwd(), 'public', 'sitemap.xml')
+const publicDir = join(process.cwd(), 'public')
+const sitemapPath = join(publicDir, 'sitemap.xml')
+const robotsPath = join(publicDir, 'robots.txt')
 
 let failed = 0
 function fail(msg) {
@@ -16,63 +24,46 @@ function ok(msg) {
 }
 
 if (!existsSync(sitemapPath)) {
-  console.error('Missing public/sitemap.xml — run: npm run build:seo')
+  console.error('Missing public/sitemap.xml — run: npm run generate:sitemaps')
+  process.exit(1)
+}
+
+if (!existsSync(robotsPath)) {
+  console.error('Missing public/robots.txt — run: npm run generate:sitemaps')
   process.exit(1)
 }
 
 const xml = readFileSync(sitemapPath, 'utf8')
+const robots = readFileSync(robotsPath, 'utf8')
+const stats = SitemapGenerator.getStats(tools, categories, blogPosts)
 
-// Basic XML structure
-if (!xml.startsWith('<?xml')) fail('Missing XML declaration')
-if (!xml.includes('<urlset') || !xml.trimEnd().endsWith('</urlset>')) fail('Invalid urlset wrapper')
-if (xml.includes('/rw/') || xml.includes('hreflang="rw"')) fail('Removed locale rw still present')
-if (xml.includes('/search')) fail('Broken /search URL in sitemap')
-if (xml.includes('sitemap-index')) fail('Unexpected sitemap-index reference')
+console.log(
+  `📊 Registry: ${stats.staticPages} static + ${stats.categories} categories + ${stats.tools} tools + ${stats.blogPosts} blog = ${stats.logicalPages} pages × ${stats.locales} locales = ${stats.totalUrls} URLs\n`
+)
 
-const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])
-const hreflangs = [...xml.matchAll(/hreflang="([^"]+)"/g)].map((m) => m[1])
-
-if (locs.length === 0) fail('No <loc> entries found')
-
-const uniqueLocs = new Set(locs)
-if (uniqueLocs.size !== locs.length) fail(`Duplicate <loc> entries: ${locs.length - uniqueLocs.size}`)
-
-for (const loc of locs) {
-  if (!loc.startsWith(`${SITE}/`)) fail(`Invalid base URL: ${loc}`)
-  const locale = loc.slice(SITE.length + 1).split('/')[0]
-  if (!LOCALES.includes(locale)) fail(`Unknown locale in URL: ${loc}`)
+const xmlErrors = SitemapGenerator.validateSitemapXml(xml, tools, categories, blogPosts)
+if (xmlErrors.length === 0) {
+  ok(`sitemap.xml structure valid (${stats.totalUrls} URLs)`)
+} else {
+  xmlErrors.forEach(fail)
 }
 
-// Expected: 8 static + 11 categories + 56 tools + 7 blog = 82 pages × 7 locales = 574
-const expectedPages = 82
-const expectedUrls = expectedPages * LOCALES.length
-if (locs.length !== expectedUrls) {
-  fail(`Expected ${expectedUrls} URLs, got ${locs.length}`)
+if (!robots.includes(`Sitemap: ${SITE_URL}/sitemap.xml`)) {
+  fail('robots.txt missing absolute Sitemap directive')
 } else {
-  ok(`${locs.length} URLs (${expectedPages} pages × ${LOCALES.length} locales)`)
+  ok(`robots.txt points to ${SITE_URL}/sitemap.xml`)
 }
 
-// Each URL should have 7 hreflang + x-default = 8 per url block
-const urlBlocks = xml.split('<url>').length - 1
-const expectedHreflangPerBlock = LOCALES.length + 1
-const hreflangPerBlock = hreflangs.length / urlBlocks
-if (Math.round(hreflangPerBlock) !== expectedHreflangPerBlock) {
-  fail(`Expected ${expectedHreflangPerBlock} hreflang links per URL, avg ${hreflangPerBlock}`)
+if (!robots.includes('User-agent: Googlebot')) {
+  fail('robots.txt missing Googlebot rules')
 } else {
-  ok(`${expectedHreflangPerBlock} hreflang alternates per URL (incl. x-default)`)
+  ok('robots.txt includes Googlebot')
 }
 
-if (existsSync(join(process.cwd(), 'public', 'sitemap-index.xml'))) {
-  fail('sitemap-index.xml should not exist (single sitemap only)')
+if (existsSync(join(publicDir, 'sitemap-index.xml'))) {
+  fail('sitemap-index.xml should not exist (single sitemap strategy)')
 } else {
-  ok('No sitemap-index.xml (single sitemap strategy)')
-}
-
-const robots = readFileSync(join(process.cwd(), 'public', 'robots.txt'), 'utf8')
-if (!robots.includes('Sitemap: https://smartdigitaltips.com/sitemap.xml')) {
-  fail('robots.txt missing correct Sitemap directive')
-} else {
-  ok('robots.txt points to sitemap.xml')
+  ok('No conflicting sitemap-index.xml')
 }
 
 if (failed > 0) {
@@ -80,4 +71,4 @@ if (failed > 0) {
   process.exit(1)
 }
 
-console.log('\n🎉 Sitemap validation passed')
+console.log('\n🎉 Sitemap and robots.txt validation passed')

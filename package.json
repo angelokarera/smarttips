@@ -9,8 +9,8 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run build:seo && tsc -b && vite build",
-    "build:seo": "node scripts/generate-seo-assets.mjs && tsx scripts/generate-seo-messages.mjs && tsx scripts/generate-sitemaps.mjs && node scripts/validate-sitemap.mjs",
-    "validate:sitemap": "node scripts/validate-sitemap.mjs",
+    "build:seo": "node scripts/generate-seo-assets.mjs && tsx scripts/generate-seo-messages.mjs && tsx scripts/generate-sitemaps.mjs && tsx scripts/validate-sitemap.mjs",
+    "validate:sitemap": "tsx scripts/validate-sitemap.mjs",
     "generate:seo-messages": "tsx scripts/generate-seo-messages.mjs",
     "build:test": "node scripts/test-build.mjs",
     "generate:sitemaps": "tsx scripts/generate-sitemaps.mjs",
