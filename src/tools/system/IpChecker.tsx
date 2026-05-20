@@ -15,14 +15,11 @@ export default function IpChecker() {
     setLoading(true)
     setError(null)
     try {
-      const res = await fetch('https://api.ipify.org?format=json', {
-        method: 'GET',
-        headers: { Accept: 'application/json' },
-      })
+      const res = await fetch('https://ipapi.co/json/')
       if (!res.ok) throw new Error('Request failed')
-      const data = (await res.json()) as IpInfo
-      if (typeof data.ip !== 'string') throw new Error('Invalid response')
-      setInfo(data)
+      const data = (await res.json()) as { ip: string }
+      if (!data.ip) throw new Error('Invalid response')
+      setInfo({ ip: data.ip })
     } catch {
       setError('Could not fetch IP. Check your connection or try again later.')
       setInfo(null)
@@ -36,7 +33,7 @@ export default function IpChecker() {
       <div className="flex items-start gap-3 rounded-xl border border-border bg-muted/30 p-4 text-sm">
         <Info className="h-5 w-5 shrink-0 text-primary" />
         <p>
-          Fetches your public IP from ipify.org (free API) only when you click the button. We do not
+          Fetches your public IP from ipapi.co (free API) only when you click the button. We do not
           store your IP. No personal accounts or tracking.
         </p>
       </div>
