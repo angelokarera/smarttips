@@ -1,4 +1,4 @@
-﻿import { Shield } from 'lucide-react'
+import { Shield } from 'lucide-react'
 import type { Tool } from '@/data/tools'
 import { getToolEditorial } from '@/lib/tool-editorial'
 
@@ -65,17 +65,6 @@ export function ToolEditorialContent({ tool }: ToolEditorialContentProps) {
           your input locally in the browser instead of uploading files to our servers. Do not submit
           passwords, medical records, or classified material through any online tool. For legal, financial,
           or academic decisions, verify results with a qualified professional.
-        </p>
-      </section>
-
-      <section aria-labelledby="tool-keywords-heading">
-        <h2 id="tool-keywords-heading" className="text-xl font-bold tracking-tight mb-4">
-          When people search for this tool
-        </h2>
-        <p className="text-sm text-muted-foreground leading-relaxed">
-          Visitors often arrive from queries like “free {tool.name.toLowerCase()},” “{tool.name.toLowerCase()} online,”
-          and “{tool.categoryLabel.toLowerCase()} without sign up.” This page is written to answer those intents with
-          clear steps, honest limitations, and links to related utilities—not keyword stuffing.
         </p>
       </section>
 

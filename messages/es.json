@@ -345,6 +345,26 @@
     "why-local-first-tools-are-replacing-servers": {
       "title": "Why Local-First Web Tools are Replacing Server-Side Applications | SmartDigitalTips",
       "description": "Understand the shift toward client-side browser processing. Learn how local-first image, PDF, and text utilities improve speed, privacy, and offline support."
+    },
+    "how-to-reduce-pdf-file-size-email": {
+      "title": "How to Reduce PDF File Size for Email Attachments | SmartDigitalTips",
+      "description": "A practical guide to compressing PDF documents. Learn standard compression levels, format settings, and how to use secure browser-based tools."
+    },
+    "top-student-productivity-tools-online": {
+      "title": "Top 10 Free Online Tools for Student Productivity | SmartDigitalTips",
+      "description": "Boost your study efficiency. Discover the best free web tools for GPA calculations, time management, citation writing, and math prep."
+    },
+    "understanding-gpa-scales-calculation": {
+      "title": "Understanding GPA Scales: 4.0 vs 5.0 and How to Calculate Yours | SmartDigitalTips",
+      "description": "A comprehensive guide to Grade Point Averages. Learn how weighted and unweighted scales work, and how to calculate your GPA manually or online."
+    },
+    "guide-css-box-shadows-gradients": {
+      "title": "A Complete Guide to CSS Box Shadows and Gradients | SmartDigitalTips",
+      "description": "Improve your web design skills. Learn the syntax, performance tips, and best practices for creating smooth shadows and vibrant CSS gradients."
+    },
+    "freelancers-guide-to-invoicing-getting-paid": {
+      "title": "The Freelancer's Guide to Invoicing and Getting Paid on Time | SmartDigitalTips",
+      "description": "Master the invoicing lifecycle. Learn what details to include, how to set payment terms, and how to use free invoice builders to prevent payment delays."
     }
   },
   "ui": {

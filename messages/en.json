@@ -345,6 +345,26 @@
     "why-local-first-tools-are-replacing-servers": {
       "title": "Why Local-First Web Tools Beat Server Apps | SmartDigitalTips",
       "description": "Explore the shift toward client-side browser processing. Learn how Web Assembly, Web Workers, and Canvas API power instant, private, offline-first web utilities."
+    },
+    "how-to-reduce-pdf-file-size-email": {
+      "title": "How to Reduce PDF File Size for Email Attachments | SmartDigitalTips",
+      "description": "Struggling with large PDF email attachments? Discover how PDF compression works and learn how to reduce file sizes safely in your web browser."
+    },
+    "top-student-productivity-tools-online": {
+      "title": "Top 10 Free Online Tools for Student Productivity | SmartDigitalTips",
+      "description": "Struggling to manage school tasks? Review our top 10 free browser-based tools for calculating GPAs, timing study sessions, and writing citations easily."
+    },
+    "understanding-gpa-scales-calculation": {
+      "title": "GPA Scales Guide: 4.0 vs 5.0 Calculation | SmartDigitalTips",
+      "description": "Confused by weighted vs unweighted GPA? Learn how different GPA scales work, how letter grades map to points, and how to calculate your score."
+    },
+    "guide-css-box-shadows-gradients": {
+      "title": "Guide to CSS Box Shadows and Gradients | SmartDigitalTips",
+      "description": "Master modern CSS styling. Learn how to write code for smooth box shadows and linear/radial gradients, and how to use visual CSS generators."
+    },
+    "freelancers-guide-to-invoicing-getting-paid": {
+      "title": "Freelancer Invoicing & Billing Guide | SmartDigitalTips",
+      "description": "Need to send professional invoices? Read our guide on invoicing requirements, payment terms, and how to use free browser-based invoice generators."
     }
   },
   "ui": {
