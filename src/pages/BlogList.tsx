@@ -55,7 +55,7 @@ export default function BlogList() {
             <Link 
               key={post.id} 
               to={`/blog/${post.slug}`}
-              className="group flex flex-col p-6 sm:p-8 rounded-2xl border border-border bg-card hover:border-primary/30 hover:shadow-warm transition-all duration-300"
+              className="group flex flex-col p-6 sm:p-8 rounded-2xl border border-border/80 bg-card/75 glass-card hover-lift transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-2.5 py-1 rounded-md bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">

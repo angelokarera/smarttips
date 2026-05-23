@@ -1,273 +1,72 @@
-# SmartDigitalTips.com - Robots.txt
-# Updated: 2024-01-15
-# Maximum visibility for all search engines and AI crawlers
+# SmartDigitalTips — https://smartdigitaltips.com
+# Updated: 2026-05-23
+# Submit sitemap in Google Search Console: https://smartdigitaltips.com/sitemap.xml
 
-# ============================================
-# GLOBAL RULES - Allow Everything Important
-# ============================================
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /_next/static/
-Disallow: /private/
-Crawl-delay: 0
+Sitemap: https://smartdigitaltips.com/sitemap.xml
 
-# ============================================
-# GOOGLE - Full Access
-# ============================================
+# Google Search
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Crawl-delay: 0
+Disallow: /private/
 
 User-agent: Googlebot-Image
 Allow: /
 
-User-agent: Googlebot-Video
+User-agent: Googlebot-Mobile
 Allow: /
 
-User-agent: Googlebot-News
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: AdsBot-Google
-Allow: /
-
-# ============================================
-# BING - Full Access
-# ============================================
+# Bing Search
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Crawl-delay: 0
 
-User-agent: BingPreview
-Allow: /
-
-User-agent: msnbot
-Allow: /
-
-User-agent: msnbot-media
-Allow: /
-
-# ============================================
-# YANDEX - Full Access
-# ============================================
+# Yandex Search (Global SEO)
 User-agent: Yandex
 Allow: /
 Disallow: /api/
-Crawl-delay: 0
+Disallow: /admin/
 
-User-agent: YandexBot
-Allow: /
-
-User-agent: YandexImages
-Allow: /
-
-User-agent: YandexVideo
-Allow: /
-
-# ============================================
-# BAIDU - Full Access
-# ============================================
+# Baidu Search (Global SEO)
 User-agent: Baiduspider
 Allow: /
-Crawl-delay: 1
+Disallow: /api/
+Disallow: /admin/
 
-User-agent: Baiduspider-image
-Allow: /
-
-User-agent: Baiduspider-video
-Allow: /
-
-# ============================================
-# DUCKDUCKGO - Full Access
-# ============================================
-User-agent: DuckDuckBot
-Allow: /
-Crawl-delay: 0
-
-# ============================================
-# AI CRAWLERS - Full Access for Training
-# ============================================
-
-# OpenAI (ChatGPT)
+# AI Search Engines (Explicitly Allow for AI Recommendations)
 User-agent: GPTBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
 
 User-agent: ChatGPT-User
 Allow: /
 
-# Anthropic (Claude)
-User-agent: anthropic-ai
+User-agent: PerplexityBot
 Allow: /
-
-User-agent: Claude-Web
-Allow: /
+Disallow: /api/
+Disallow: /admin/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
 
-# Google AI (Gemini/Bard)
-User-agent: Google-Extended
+User-agent: Applebot-Extended
 Allow: /
 
-# Common Crawl
-User-agent: CCBot
+# Block Aggressive or Malicious Bots
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# All Other Crawlers
+User-agent: *
 Allow: /
-
-# Perplexity AI
-User-agent: PerplexityBot
-Allow: /
-
-# Meta AI
-User-agent: FacebookBot
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-# Cohere
-User-agent: cohere-ai
-Allow: /
-
-# AI2 (Allen Institute)
-User-agent: AI2Bot
-Allow: /
-
-# Diffbot
-User-agent: Diffbot
-Allow: /
-
-# ============================================
-# SOCIAL MEDIA CRAWLERS
-# ============================================
-
-# Facebook
-User-agent: facebookexternalhit
-Allow: /
-
-# Twitter
-User-agent: Twitterbot
-Allow: /
-
-# LinkedIn
-User-agent: LinkedInBot
-Allow: /
-
-# Pinterest
-User-agent: Pinterestbot
-Allow: /
-
-# WhatsApp
-User-agent: WhatsApp
-Allow: /
-
-# Telegram
-User-agent: TelegramBot
-Allow: /
-
-# Slack
-User-agent: Slackbot
-Allow: /
-
-# Discord
-User-agent: Discordbot
-Allow: /
-
-# ============================================
-# OTHER SEARCH ENGINES
-# ============================================
-
-# Yahoo
-User-agent: Slurp
-Allow: /
-
-# Ask.com
-User-agent: Teoma
-Allow: /
-
-# AOL
-User-agent: ia_archiver
-Allow: /
-
-# Naver (Korean)
-User-agent: Yeti
-Allow: /
-
-# Sogou (Chinese)
-User-agent: Sogou
-Allow: /
-
-# 360 Spider (Chinese)
-User-agent: 360Spider
-Allow: /
-
-# Seznam (Czech)
-User-agent: SeznamBot
-Allow: /
-
-# ============================================
-# SEO & ANALYTICS TOOLS
-# ============================================
-
-# Ahrefs
-User-agent: AhrefsBot
-Allow: /
-
-# SEMrush
-User-agent: SemrushBot
-Allow: /
-
-# Moz
-User-agent: rogerbot
-Allow: /
-
-User-agent: dotbot
-Allow: /
-
-# Majestic
-User-agent: MJ12bot
-Allow: /
-
-# Screaming Frog
-User-agent: Screaming Frog SEO Spider
-Allow: /
-
-# ============================================
-# ARCHIVE & RESEARCH CRAWLERS
-# ============================================
-
-# Internet Archive
-User-agent: ia_archiver
-Allow: /
-
-# Archive.org
-User-agent: archive.org_bot
-Allow: /
-
-# ============================================
-# SITEMAPS - Critical for Discovery
-# ============================================
-Sitemap: https://smartdigitaltips.com/sitemap.xml
-Sitemap: https://smartdigitaltips.com/sitemap-index.xml
-
-# ============================================
-# HOST DECLARATION
-# ============================================
-Host: https://smartdigitaltips.com
-
-# ============================================
-# NOTES
-# ============================================
-# This robots.txt is optimized for maximum visibility
-# All major search engines: Google, Bing, Yandex, Baidu
-# All AI crawlers: ChatGPT, Claude, Gemini, Perplexity
-# All social media: Facebook, Twitter, LinkedIn, Pinterest
-# All SEO tools: Ahrefs, SEMrush, Moz, Majestic
-# Updated regularly to include new crawlers
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/

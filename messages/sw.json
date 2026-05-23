@@ -333,6 +333,18 @@
     "free-developer-tools-in-the-browser": {
       "title": "Free Developer Tools That Run Entirely in Your Browser | SmartDigitalTips",
       "description": "JSON formatting, regex testing, Base64 encoding, and HTML previews without sending sensitive payloads to upload servers."
+    },
+    "optimize-prompts-claude-gpt4o": {
+      "title": "How to Optimize Prompts for Claude 3.5 Sonnet and GPT-4o | SmartDigitalTips",
+      "description": "Master prompt engineering for leading AI models. Learn structured prompts, system instructions, and variables to get predictable, high-quality code and text."
+    },
+    "free-web-utilities-developers-guide": {
+      "title": "A Complete Guide to Free Web Utilities for Developers in 2026 | SmartDigitalTips",
+      "description": "Discover how local-first browser tools for formatting JSON, testing regex, minifying CSS, and encoding Base64 speed up your development workflow securely."
+    },
+    "why-local-first-tools-are-replacing-servers": {
+      "title": "Why Local-First Web Tools are Replacing Server-Side Applications | SmartDigitalTips",
+      "description": "Understand the shift toward client-side browser processing. Learn how local-first image, PDF, and text utilities improve speed, privacy, and offline support."
     }
   },
   "ui": {

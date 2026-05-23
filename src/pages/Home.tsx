@@ -126,44 +126,80 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right — asymmetric feature cards (break the grid) */}
+            {/* Right — Premium Dashboard Mockup Card */}
             <div className="lg:col-span-5 relative hidden lg:block">
-              <div className="space-y-3">
-                {/* Card 1 */}
-                <div className="p-5 rounded-2xl border border-border bg-card shadow-xs" style={{ animationDelay: '100ms' }}>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10">
+              <div className="p-6 rounded-2xl border border-border bg-card/65 glass-card shadow-lg relative overflow-hidden">
+                {/* Decorative glow inside card */}
+                <div className="absolute -top-12 -right-12 h-32 w-32 rounded-full bg-primary/15 blur-2xl pointer-events-none" />
+                <div className="absolute -bottom-12 -left-12 h-32 w-32 rounded-full bg-primary/5 blur-2xl pointer-events-none" />
+                
+                <div className="flex items-center justify-between border-b border-border/40 pb-4 mb-5">
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-3 w-3 rounded-full bg-red-500/80" />
+                    <div className="flex h-3 w-3 rounded-full bg-yellow-500/80" />
+                    <div className="flex h-3 w-3 rounded-full bg-green-500/80" />
+                  </div>
+                  <span className="text-[10px] font-mono tracking-widest text-muted-foreground uppercase bg-secondary/50 px-2 py-0.5 rounded">
+                    Status: Online
+                  </span>
+                </div>
+
+                <h3 className="text-lg font-bold tracking-tight mb-4 flex items-center gap-2">
+                  <Shield className="h-5 w-5 text-primary shrink-0" />
+                  Private Browser Engine
+                </h3>
+
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 shrink-0 mt-0.5">
                       <Lock className="h-4 w-4 text-primary" />
                     </div>
-                    <span className="text-sm font-semibold">{t('home.cardPrivateTitle')}</span>
+                    <div>
+                      <p className="text-sm font-semibold">{t('home.cardPrivateTitle')}</p>
+                      <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">
+                        {t('home.cardPrivateText')}
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed pl-12">
-                    {t('home.cardPrivateText')}
-                  </p>
-                </div>
-                {/* Card 2 — offset left for asymmetry */}
-                <div className="p-5 rounded-2xl border border-border bg-card shadow-xs -ml-6" style={{ animationDelay: '200ms' }}>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10">
+
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 shrink-0 mt-0.5">
                       <Zap className="h-4 w-4 text-primary" />
                     </div>
-                    <span className="text-sm font-semibold">{t('home.cardInstantTitle')}</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed pl-12">
-                    {t('home.cardInstantText')}
-                  </p>
-                </div>
-                {/* Card 3 — offset right */}
-                <div className="p-5 rounded-2xl border border-border bg-card shadow-xs ml-6" style={{ animationDelay: '300ms' }}>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10">
-                      <Shield className="h-4 w-4 text-primary" />
+                    <div>
+                      <p className="text-sm font-semibold">{t('home.cardInstantTitle')}</p>
+                      <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">
+                        {t('home.cardInstantText')}
+                      </p>
                     </div>
-                    <span className="text-sm font-semibold">{t('home.cardFreeTitle')}</span>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed pl-12">
-                    {t('home.cardFreeText')}
-                  </p>
+
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 shrink-0 mt-0.5">
+                      <Sparkles className="h-4 w-4 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold">{t('home.cardFreeTitle')}</p>
+                      <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">
+                        {t('home.cardFreeText')}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-3 gap-3 border-t border-border/40 pt-4 text-center">
+                  <div className="bg-secondary/40 p-2.5 rounded-xl border border-border/30">
+                    <p className="text-sm font-bold text-primary">50+</p>
+                    <p className="text-[10px] text-muted-foreground mt-0.5">Utilities</p>
+                  </div>
+                  <div className="bg-secondary/40 p-2.5 rounded-xl border border-border/30">
+                    <p className="text-sm font-bold">100%</p>
+                    <p className="text-[10px] text-muted-foreground mt-0.5">Local-First</p>
+                  </div>
+                  <div className="bg-secondary/40 p-2.5 rounded-xl border border-border/30">
+                    <p className="text-sm font-bold">0.0s</p>
+                    <p className="text-[10px] text-muted-foreground mt-0.5">Queue Time</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -184,7 +220,7 @@ export default function Home() {
                 <Link
                   key={tool.id}
                   to={lp(tool.path)}
-                  className="group p-5 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-warm transition-all"
+                  className="group p-5 rounded-xl border border-border/80 bg-card/75 glass-card hover-lift transition-all"
                 >
                   <h3 className="font-semibold text-sm group-hover:text-primary">{tool.name}</h3>
                   <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{tool.description}</p>
@@ -251,7 +287,7 @@ export default function Home() {
               <Link
                 key={tool.id}
                 to={lp(tool.path)}
-                className="group relative p-5 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-warm transition-all duration-300"
+                className="group relative p-5 rounded-xl border border-border/85 bg-card/75 glass-card hover-lift transition-all duration-300"
                 style={{ animationDelay: `${index * 60}ms` }}
               >
                 <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors">
@@ -291,12 +327,12 @@ export default function Home() {
               <Link
                 key={cat.id}
                 to={lp(`/category/${cat.id}`)}
-                className={`group relative p-6 rounded-2xl border border-border bg-card hover:border-primary/30 hover:shadow-warm transition-all duration-300 ${
+                className={`group relative p-6 rounded-2xl border border-border/85 bg-card/75 glass-card hover-lift transition-all duration-300 ${
                   index === 0 ? 'sm:col-span-2 lg:col-span-1' : ''
                 }`}
               >
                 <div className="flex min-w-0 items-center gap-3 mb-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:shadow-[0_0_15px_rgba(232,93,52,0.25)] transition-all duration-300">
                     {iconMap[cat.icon]}
                   </div>
                   <h3 className="min-w-0 font-bold text-base">
@@ -332,7 +368,7 @@ export default function Home() {
                   <Link
                     key={tool.id}
                     to={lp(tool.path)}
-                    className="group flex min-w-0 items-center gap-3 rounded-xl border border-border p-4 transition-all hover:border-primary/30 hover:shadow-warm sm:gap-4"
+                    className="group flex min-w-0 items-center gap-3 rounded-xl border border-border/85 bg-card/75 glass-card p-4 hover-lift sm:gap-4"
                   >
                     <span className="w-7 shrink-0 text-center font-mono text-xl font-bold tabular-nums text-primary/30 sm:w-8 sm:text-2xl">
                       {String(index + 1).padStart(2, '0')}
@@ -360,7 +396,7 @@ export default function Home() {
                   <Link
                     key={tool.id}
                     to={lp(tool.path)}
-                    className="block p-4 rounded-xl border border-border hover:border-primary/30 hover:shadow-warm transition-all group"
+                    className="block p-4 rounded-xl border border-border/85 bg-card/75 glass-card hover-lift group"
                   >
                     <div className="flex flex-wrap items-center gap-2 mb-1.5">
                       <span className="px-1.5 py-0.5 rounded bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider">

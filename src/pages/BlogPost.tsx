@@ -98,7 +98,7 @@ export default function BlogPost() {
         />
 
         <div className="mt-16 pt-8 border-t border-border">
-          <div className="bg-secondary/50 rounded-2xl p-8 text-center">
+          <div className="bg-card/75 glass-card border border-border/80 rounded-2xl p-8 text-center shadow-xs">
             <h3 className="text-xl font-bold mb-3">Looking for free digital tools?</h3>
             <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
               SmartDigitalTips offers 50+ completely free tools for images, PDFs, text, and developers that run 100% locally in your browser.

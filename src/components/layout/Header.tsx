@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useMemo } from 'react'
-import { Link, useNavigate } from 'react-router'
+import { Link, useNavigate, useLocation } from 'react-router'
 import { 
   Search, 
   Menu, 
@@ -25,6 +25,7 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const navigate = useNavigate()
+  const location = useLocation()
   const lp = useLocalizedPath()
   const { t, categoryLabel, localizeTool } = useTranslations()
   const searchRef = useRef<HTMLDivElement>(null)
@@ -75,12 +76,22 @@ export function Header() {
     setSearchQuery('')
   }
 
+  const isLinkActive = (path: string) => {
+    const target = lp(path)
+    if (path === '/') {
+      return location.pathname === target
+    }
+    return location.pathname === target || location.pathname.startsWith(target + '/')
+  }
+
+  const isToolsActive = location.pathname.includes('/category/') || location.pathname.includes('/tools/')
+
   return (
     <header 
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled 
-          ? 'border-b border-border/60 bg-background/90 backdrop-blur-xl shadow-xs' 
-          : 'bg-background/50 backdrop-blur-sm'
+          ? 'glass-header border-b border-border/60 shadow-md' 
+          : 'bg-background/40 backdrop-blur-md'
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -97,7 +108,11 @@ export function Header() {
           <nav className="hidden lg:flex items-center gap-0.5">
             <Link 
               to={lp('/')} 
-              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
+              className={`px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                isLinkActive('/') 
+                  ? 'active-nav-pill text-foreground font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
             >
               {t('nav.home', 'Home')}
             </Link>
@@ -106,7 +121,11 @@ export function Header() {
             <div className="relative" ref={categoryRef}>
               <button
                 onClick={() => setCategoryDropdownOpen(!categoryDropdownOpen)}
-                className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
+                className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                  isToolsActive 
+                    ? 'active-nav-pill text-foreground font-semibold' 
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
               >
                 {t('nav.tools', 'Tools')}
                 <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${categoryDropdownOpen ? 'rotate-180' : ''}`} />
@@ -131,23 +150,36 @@ export function Header() {
 
             <Link 
               to={lp('/blog')} 
-              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
+              className={`px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                isLinkActive('/blog') 
+                  ? 'active-nav-pill text-foreground font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
             >
               {t('nav.blog', 'Blog')}
             </Link>
             <Link 
               to={lp('/about')} 
-              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
+              className={`px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                isLinkActive('/about') 
+                  ? 'active-nav-pill text-foreground font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
             >
               {t('nav.about', 'About')}
             </Link>
             <Link 
               to={lp('/contact')} 
-              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
+              className={`px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                isLinkActive('/contact') 
+                  ? 'active-nav-pill text-foreground font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
             >
               {t('nav.contact', 'Contact')}
             </Link>
           </nav>
+
 
           {/* Right side */}
           <div className="flex shrink-0 items-center gap-1 sm:gap-1.5">

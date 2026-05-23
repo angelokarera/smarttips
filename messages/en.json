@@ -333,6 +333,18 @@
     "free-developer-tools-in-the-browser": {
       "title": "Free Browser Developer Tools | JSON, Regex, HTML - SmartDigitalTips",
       "description": "Discover free in-browser developer utilities for JSON, regex, Base64, URL encoding, and sandboxed HTML preview—private and instant."
+    },
+    "optimize-prompts-claude-gpt4o": {
+      "title": "How to Optimize Prompts for Claude 3.5 Sonnet & GPT-4o | SmartDigitalTips",
+      "description": "Learn structured prompt engineering techniques. Use XML tags, output formatting, and local-first text sanitization tools to optimize Claude and GPT-4o outputs."
+    },
+    "free-web-utilities-developers-guide": {
+      "title": "Complete Guide to Free Developer Web Utilities | SmartDigitalTips",
+      "description": "Discover why local-first developer tools are critical. Formatter, encoder, regex tester, and sandboxed HTML live editor run completely in your browser."
+    },
+    "why-local-first-tools-are-replacing-servers": {
+      "title": "Why Local-First Web Tools Beat Server Apps | SmartDigitalTips",
+      "description": "Explore the shift toward client-side browser processing. Learn how Web Assembly, Web Workers, and Canvas API power instant, private, offline-first web utilities."
     }
   },
   "ui": {

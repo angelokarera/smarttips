@@ -3,7 +3,9 @@ import { useParams, Link } from 'react-router'
 import { recordToolUsage } from '@/lib/favorites'
 import { FavoriteButton } from '@/components/tools/FavoriteButton'
 import { CheckCircle2 } from 'lucide-react'
-import { getToolById, getRelatedTools } from '@/data/tools'
+import { getToolById, getRelatedTools, getToolsByCategory } from '@/data/tools'
+import { SidebarAd } from '@/components/ads/AdBanner'
+
 import { Layout } from '@/components/layout/Layout'
 import {
   generateBreadcrumbSchema,
@@ -299,22 +301,57 @@ export default function ToolPage() {
             </div>
           </div>
 
-          {/* Right column — FAQ (sticky) */}
-          <div className="lg:col-span-2">
-            <div className="lg:sticky lg:top-24">
-              <h2 className="text-xl font-bold tracking-tight mb-6">{t('tool.faq')}</h2>
-              <Accordion type="single" collapsible className="w-full">
-                {editorial.faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="border-border">
-                    <AccordionTrigger className="text-left text-sm font-semibold hover:text-primary transition-colors py-4">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+          {/* Right column — Sidebar (sticky) */}
+          <div className="lg:col-span-2 space-y-6">
+            <div className="lg:sticky lg:top-24 space-y-6">
+              
+              {/* Clearly Labeled Advertisement Slot */}
+              <SidebarAd />
+
+              {/* Sidebar FAQ Accordion */}
+              <div className="p-5 rounded-xl border border-border/85 bg-card/75 glass-card shadow-xs">
+                <h2 className="text-base font-bold tracking-tight mb-3">{t('tool.faq')}</h2>
+                <Accordion type="single" collapsible className="w-full">
+                  {editorial.faqs.map((faq, index) => (
+                    <AccordionItem key={index} value={`item-${index}`} className="border-border">
+                      <AccordionTrigger className="text-left text-xs font-semibold hover:text-primary transition-colors py-3">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-xs text-muted-foreground leading-relaxed pb-3">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+
+              {/* Other tools in Category */}
+              <div className="p-5 rounded-xl border border-border/85 bg-card/75 glass-card shadow-xs">
+                <h2 className="text-base font-bold tracking-tight mb-4">
+                  More in {tool.categoryLabel}
+                </h2>
+                <div className="space-y-3">
+                  {getToolsByCategory(tool.category)
+                    .filter((t) => t.id !== tool.id)
+                    .slice(0, 4)
+                    .map(localizeTool)
+                    .map((catTool) => (
+                      <Link
+                        key={catTool.id}
+                        to={lp(catTool.path)}
+                        className="block group/side text-xs hover:bg-secondary/40 p-2.5 rounded-lg border border-border/40 hover:border-primary/20 transition-all"
+                      >
+                        <p className="font-semibold group-hover/side:text-primary transition-colors truncate">
+                          {catTool.name}
+                        </p>
+                        <p className="text-[10px] text-muted-foreground mt-0.5 truncate">
+                          {catTool.description}
+                        </p>
+                      </Link>
+                    ))}
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -328,7 +365,7 @@ export default function ToolPage() {
                 <Link
                   key={relatedTool.id}
                   to={lp(relatedTool.path)}
-                  className="group flex min-w-0 items-center gap-3 rounded-xl border border-border p-4 transition-all hover:border-primary/30 hover:shadow-warm sm:gap-4"
+                  className="group flex min-w-0 items-center gap-3 rounded-xl border border-border/80 bg-card/75 glass-card p-4 hover-lift sm:gap-4"
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300 shrink-0">
                     <span className="text-xs font-bold font-mono">→</span>

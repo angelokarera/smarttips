@@ -184,7 +184,7 @@ export class SitemapGenerator {
 
 Sitemap: ${SITE_URL}/sitemap.xml
 
-# Google
+# Google Search
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
@@ -197,18 +197,59 @@ Allow: /
 User-agent: Googlebot-Mobile
 Allow: /
 
-# All crawlers
+# Bing Search
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Yandex Search (Global SEO)
+User-agent: Yandex
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Baidu Search (Global SEO)
+User-agent: Baiduspider
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# AI Search Engines (Explicitly Allow for AI Recommendations)
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Block Aggressive or Malicious Bots
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# All Other Crawlers
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 Disallow: /private/
-
-# Bing
-User-agent: Bingbot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
 `
   }
 
