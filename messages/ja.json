@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "tools": "ツール",
+    "about": "私たちについて",
+    "contact": "お問い合わせ",
+    "blog": "ブログ"
+  },
+  "home": {
+    "title": "無料オンラインツール",
+    "subtitle": "50以上の無料ブラウザツール。サインアップ不要。",
+    "searchPlaceholder": "ツールを検索..."
+  },
+  "footer": {
+    "description": "生産性、開発、日常業務のための無料オンラインツール。",
+    "legal": "法的情報",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "cookies": "クッキーポリシー",
+    "disclaimer": "免責事項"
+  }
+}

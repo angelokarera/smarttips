@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router'
 import { ArrowRight } from 'lucide-react'
 import { categories, getToolsByCategory } from '@/data/tools'
 import { Layout } from '@/components/layout/Layout'
-import { generateBreadcrumbSchema, generateCollectionSchema } from '@/components/seo/StructuredData'
+import { generateBreadcrumbSchema, generateCollectionSchema, generateServiceSchema, generateFAQSchema } from '@/components/seo/StructuredData'
 import { Button } from '@/components/ui/button'
 import { getCategoryKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
@@ -74,6 +74,13 @@ export default function CategoryPage() {
           url: `${SITE_URL}${lp(tool.path)}`,
         }))
       ),
+      generateServiceSchema({
+        name: cat.label,
+        description: cat.description,
+        url: `${SITE_URL}${lp(`/category/${category.id}`)}`,
+        toolCount: tools.length,
+      }),
+      ...(categoryEditorial?.faqs && categoryEditorial.faqs.length > 0 ? [generateFAQSchema(categoryEditorial.faqs)] : []),
     ],
   }
 

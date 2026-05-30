@@ -1,5 +1,5 @@
 import { Layout } from '@/components/layout/Layout'
-import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { generateBreadcrumbSchema, generateWebPageSchema } from '@/components/seo/StructuredData'
 import { usePageSeo } from '@/hooks/usePageSeo'
 import { useLocalizedPath } from '@/hooks/useLocale'
 import { CONTACT_EMAIL, SITE_URL } from '@/lib/locale-config'
@@ -22,6 +22,11 @@ export default function Disclaimer() {
         { name: 'Home', url: `${SITE_URL}${lp('/')}` },
         { name: 'Disclaimer', url: `${SITE_URL}${lp('/disclaimer')}` },
       ]),
+      generateWebPageSchema({
+        name: 'Disclaimer',
+        description: seo.description,
+        url: `${SITE_URL}${lp('/disclaimer')}`,
+      }),
     ],
   }
 

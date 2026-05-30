@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router'
 import { Clock, CheckCircle2, Send } from 'lucide-react'
 import { Layout } from '@/components/layout/Layout'
-import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { generateBreadcrumbSchema, generateWebPageSchema } from '@/components/seo/StructuredData'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -31,6 +31,12 @@ export default function Contact() {
         { name: 'Home', url: `${SITE_URL}${lp('/')}` },
         { name: 'Contact', url: `${SITE_URL}${lp('/contact')}` },
       ]),
+      generateWebPageSchema({
+        name: 'Contact SmartDigitalTips',
+        description: seo.description,
+        url: `${SITE_URL}${lp('/contact')}`,
+        type: 'ContactPage',
+      }),
     ],
   }
 

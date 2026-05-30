@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "홈",
+    "tools": "도구",
+    "about": "회사 소개",
+    "contact": "연락처",
+    "blog": "블로그"
+  },
+  "home": {
+    "title": "무료 온라인 도구",
+    "subtitle": "50개 이상의 무료 브라우저 도구. 가입 불필요.",
+    "searchPlaceholder": "도구 검색..."
+  },
+  "footer": {
+    "description": "생산성, 개발 및 일상 업무를 위한 무료 온라인 도구.",
+    "legal": "법적 고지",
+    "privacy": "개인정보 보호정책",
+    "terms": "이용약관",
+    "cookies": "쿠키 정책",
+    "disclaimer": "면책 조항"
+  }
+}

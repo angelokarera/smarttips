@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs'
-import { join, dirname } from 'path'
+import { join } from 'path'
 import { tools, categories } from '../src/data/tools'
 import { blogPosts } from '../src/data/blog'
 import { getToolEditorial } from '../src/lib/tool-editorial'
@@ -7,7 +7,21 @@ import { getCategoryEditorial } from '../src/lib/category-editorial'
 
 // Load translations from pre-generated files
 const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh']
-const messages: Record<string, any> = {}
+type SeoEntry = { title?: string; description?: string }
+type LabelEntry = { label?: string; name?: string; description?: string }
+type TranslationCatalog = {
+  ui?: Record<string, Record<string, string>>
+  labels?: {
+    categories?: Record<string, LabelEntry>
+    tools?: Record<string, LabelEntry>
+  }
+  tools?: Record<string, SeoEntry>
+  categories?: Record<string, SeoEntry>
+  blog?: Record<string, SeoEntry>
+  pages?: Record<string, SeoEntry>
+}
+
+const messages: Record<string, TranslationCatalog> = {}
 for (const locale of LOCALES) {
   const filePath = join(process.cwd(), 'messages', `${locale}.json`)
   if (existsSync(filePath)) {

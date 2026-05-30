@@ -1,5 +1,5 @@
 import { Layout } from '@/components/layout/Layout'
-import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { generateBreadcrumbSchema, generateWebPageSchema } from '@/components/seo/StructuredData'
 import { usePageSeo } from '@/hooks/usePageSeo'
 import { useLocalizedPath } from '@/hooks/useLocale'
 import { CONTACT_EMAIL, SITE_URL } from '@/lib/locale-config'
@@ -22,6 +22,11 @@ export default function Cookies() {
         { name: 'Home', url: `${SITE_URL}${lp('/')}` },
         { name: 'Cookie Policy', url: `${SITE_URL}${lp('/cookies')}` },
       ]),
+      generateWebPageSchema({
+        name: 'Cookie Policy',
+        description: seo.description,
+        url: `${SITE_URL}${lp('/cookies')}`,
+      }),
     ],
   }
 

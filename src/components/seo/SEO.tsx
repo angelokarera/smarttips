@@ -132,10 +132,6 @@ export function SEO({
       <meta name="theme-color" content="#3b82f6" />
       <meta name="msapplication-TileColor" content="#3b82f6" />
       
-      {/* Geo Targeting */}
-      <meta name="geo.region" content="US" />
-      <meta name="geo.placename" content="United States" />
-      
       {/* Structured Data */}
       {schemas.map((schema, index) => (
         <script key={index} type="application/ld+json">

@@ -50,13 +50,6 @@ export class SchemaGenerator {
       logo: `${this.baseUrl}/logo.png`,
       description: 'Leading provider of free online tools for professionals, students, and businesses worldwide.',
       foundingDate: '2024',
-      sameAs: [
-        'https://twitter.com/smartdigitaltips',
-        'https://facebook.com/smartdigitaltips',
-        'https://linkedin.com/company/smartdigitaltips',
-        'https://instagram.com/smartdigitaltips',
-        'https://youtube.com/@smartdigitaltips'
-      ],
       contactPoint: [
         {
           '@type': 'ContactPoint',
@@ -65,10 +58,7 @@ export class SchemaGenerator {
           availableLanguage: ['English', 'French', 'Spanish', 'Arabic', 'Portuguese', 'German', 'Hindi', 'Swahili', 'Chinese']
         }
       ],
-      address: {
-        '@type': 'PostalAddress',
-        addressCountry: 'US'
-      }
+      areaServed: 'Worldwide'
     };
   }
 

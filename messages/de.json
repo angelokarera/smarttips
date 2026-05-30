@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "tools": "Werkzeuge",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "blog": "Blog"
+  },
+  "home": {
+    "title": "Kostenlose Online-Tools",
+    "subtitle": "Über 50 kostenlose Browser-Tools. Keine Anmeldung erforderlich.",
+    "searchPlaceholder": "Werkzeuge durchsuchen..."
+  },
+  "footer": {
+    "description": "Kostenlose Online-Tools für Produktivität, Entwicklung und alltägliche Aufgaben.",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookie-Richtlinie",
+    "disclaimer": "Haftungsausschluss"
+  }
+}

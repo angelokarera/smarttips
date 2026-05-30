@@ -23,3 +23,8 @@
 
 /.well-known/security.txt
   Content-Type: text/plain; charset=utf-8
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept-Encoding
+

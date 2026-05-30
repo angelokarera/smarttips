@@ -182,7 +182,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: '5',
     slug: 'freelancers-guide-to-invoicing',
-    title: 'The Freelancer\'s Guide to Invoicing and Getting Paid Faster',
+    title: "The Freelancer's Guide to Invoicing and Getting Paid Faster",
     excerpt: 'Master the art of professional invoicing. Learn what details to include, how to set terms, and the tools you need to streamline your billing process.',
     date: '2026-04-05',
     author: 'SmartDigitalTips Team',
@@ -440,7 +440,7 @@ Refactor the following component to use React Context. Keep all styling intact.
     seoDescription: 'Struggling to manage school tasks? Review our top 10 free browser-based tools for calculating GPAs, timing study sessions, and writing citations easily.',
     content: `
       <h2>Navigating Academic Pressures</h2>
-      <p>Students face high demands: juggling homework, exam prep, writing essays, and tracking grades. Having the right tools makes a huge difference. Fortunately, you don\'t need a credit card or subscription to stay organized. Many high-quality utilities run entirely in your web browser.</p>
+      <p>Students face high demands: juggling homework, exam prep, writing essays, and tracking grades. Having the right tools makes a huge difference. Fortunately, you don't need a credit card or subscription to stay organized. Many high-quality utilities run entirely in your web browser.</p>
 
       <h2>1. GPA and Grade Calculators</h2>
       <p>Keeping track of your current GPA helps you set academic goals. Our <a href="/tools/gpa-calculator">GPA Calculator</a> supports 4.0, 5.0, and percentage scales. Use it alongside the <a href="/tools/grade-calculator">Grade Calculator</a> to estimate what scores you need on finals to keep your grades up.</p>
@@ -452,7 +452,7 @@ Refactor the following component to use React Context. Keep all styling intact.
       <p>Citing research is a major bottleneck in writing. Using a <a href="/tools/citation-generator">Citation Generator</a> helps you format bibliography entries in APA, MLA, or Chicago style in seconds. Pair it with a <a href="/tools/word-counter">Word Counter</a> to make sure you meet essay length requirements.</p>
 
       <h2>4. Math and Calculation Solvers</h2>
-      <p>Whether checking calculus homework or running statistical models, a reliable <a href="/tools/scientific-calculator">Scientific Calculator</a> is essential. Having one in a browser tab means you don\'t need to carry a physical calculator.</p>
+      <p>Whether checking calculus homework or running statistical models, a reliable <a href="/tools/scientific-calculator">Scientific Calculator</a> is essential. Having one in a browser tab means you don't need to carry a physical calculator.</p>
 
       <h2>5. PDF and Note Organization</h2>
       <p>When reading academic papers, you often get massive PDFs. Tools like <a href="/tools/split-pdf">Split PDF</a> let you extract just the pages you need. You can then use <a href="/tools/pdf-to-word">PDF to Word</a> to convert study guides into editable documents.</p>
@@ -478,8 +478,8 @@ Refactor the following component to use React Context. Keep all styling intact.
       <h2>Weighted vs. Unweighted GPA</h2>
       <p>The most important distinction is between weighted and unweighted scales:</p>
       <ul>
-        <li><strong>Unweighted GPA:</strong> Measured on a scale from 0.0 to 4.0. It treats all classes equally, regardless of difficulty. An \'A\' in an honors class is worth the same 4.0 points as an \'A\' in a regular class.</li>
-        <li><strong>Weighted GPA:</strong> Ranges up to 5.0 (or higher). It awards extra points for challenging courses like AP, IB, or honors. An \'A\' in an AP class might be worth 5.0 points, while in a regular class it is worth 4.0 points. This reflects academic rigor.</li>
+        <li><strong>Unweighted GPA:</strong> Measured on a scale from 0.0 to 4.0. It treats all classes equally, regardless of difficulty. An 'A' in an honors class is worth the same 4.0 points as an 'A' in a regular class.</li>
+        <li><strong>Weighted GPA:</strong> Ranges up to 5.0 (or higher). It awards extra points for challenging courses like AP, IB, or honors. An 'A' in an AP class might be worth 5.0 points, while in a regular class it is worth 4.0 points. This reflects academic rigor.</li>
       </ul>
 
       <h2>How to Calculate Your GPA</h2>
@@ -487,7 +487,7 @@ Refactor the following component to use React Context. Keep all styling intact.
       <ol>
         <li>Convert each letter grade to its corresponding point value (e.g., A = 4.0, B = 3.0, C = 2.0).</li>
         <li>For weighted GPA, add the difficulty bonus (typically +1.0 for AP/IB courses, +0.5 for honors).</li>
-        <li>Multiply each point value by the course\'s credit hours to get quality points.</li>
+        <li>Multiply each point value by the course's credit hours to get quality points.</li>
         <li>Sum all quality points and divide by the total credit hours attempted.</li>
       </ol>
 
@@ -495,7 +495,7 @@ Refactor the following component to use React Context. Keep all styling intact.
       <p>Manual calculation is tedious and prone to errors. You can use our interactive <a href="/tools/gpa-calculator">GPA Calculator</a> to select your scale, enter your grades and credit hours, and get an instant result. You can also run projections with the <a href="/tools/grade-calculator">Grade Calculator</a>.</p>
 
       <h2>Conclusion</h2>
-      <p>GPA scales vary, so check your institution\'s handbook to verify their grading policy. Knowing how these points accumulate helps you plan your academic path. Check out our resources in the <a href="/category/student">Student Tools hub</a>.</p>
+      <p>GPA scales vary, so check your institution's handbook to verify their grading policy. Knowing how these points accumulate helps you plan your academic path. Check out our resources in the <a href="/category/student">Student Tools hub</a>.</p>
     `,
   },
   {
@@ -525,7 +525,7 @@ Refactor the following component to use React Context. Keep all styling intact.
       <p>For realistic shadows:</p>
       <ul>
         <li>Avoid pure black shadows. Use semi-transparent dark colors with low opacity (e.g., <code>rgba(0, 0, 0, 0.08)</code>).</li>
-        <li>Layer multiple shadows for a softer, organic appearance (also known as a \'smooth shadow\').</li>
+        <li>Layer multiple shadows for a softer, organic appearance (also known as a 'smooth shadow').</li>
         <li>Keep offsets small unless you want to simulate extreme height.</li>
       </ul>
 
@@ -539,7 +539,7 @@ Refactor the following component to use React Context. Keep all styling intact.
   {
     id: '15',
     slug: 'freelancers-guide-to-invoicing-getting-paid',
-    title: 'The Freelancer\'s Guide to Invoicing and Getting Paid on Time',
+    title: "The Freelancer's Guide to Invoicing and Getting Paid on Time",
     excerpt: 'Master the invoicing lifecycle. Learn what details to include, how to set payment terms, and how to use free invoice builders to prevent payment delays.',
     date: '2026-05-24',
     author: 'SmartDigitalTips Team',
@@ -554,7 +554,7 @@ Refactor the following component to use React Context. Keep all styling intact.
       <p>A professional invoice must include the following details:</p>
       <ul>
         <li><strong>Unique Invoice Number:</strong> Essential for tracking payments and tax reporting.</li>
-        <li><strong>Contact Details:</strong> Both your legal business name/address and the client\'s information.</li>
+        <li><strong>Contact Details:</strong> Both your legal business name/address and the client's information.</li>
         <li><strong>Itemized Billing:</strong> Break down the work by hourly rates or milestone fees so the client knows exactly what they are paying for.</li>
         <li><strong>Tax IDs:</strong> If applicable, include your VAT or EIN.</li>
         <li><strong>Payment Terms:</strong> Clear due dates (e.g., Net 15 or Due Upon Receipt) and accepted payment methods.</li>
@@ -571,4 +571,3 @@ Refactor the following component to use React Context. Keep all styling intact.
     `,
   },
 ];
-

@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import { Layout } from '@/components/layout/Layout'
-import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { generateBreadcrumbSchema, generateWebPageSchema } from '@/components/seo/StructuredData'
 import { usePageSeo } from '@/hooks/usePageSeo'
 import { useLocalizedPath } from '@/hooks/useLocale'
 import { SITE_URL } from '@/lib/locale-config'
@@ -23,6 +23,12 @@ export default function About() {
         { name: 'Home', url: `${SITE_URL}${lp('/')}` },
         { name: 'About', url: `${SITE_URL}${lp('/about')}` },
       ]),
+      generateWebPageSchema({
+        name: 'About SmartDigitalTips',
+        description: seo.description,
+        url: `${SITE_URL}${lp('/about')}`,
+        type: 'AboutPage',
+      }),
     ],
   }
 
@@ -134,6 +140,35 @@ export default function About() {
             three time zones, united by the belief that software can be useful without 
             being predatory.
           </p>
+        </div>
+
+        {/* E-E-A-T and author transparency */}
+        <div className="grid lg:grid-cols-12 gap-6 mb-20">
+          <div className="lg:col-span-5">
+            <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-4">Editorial standards</h2>
+            <p className="text-muted-foreground leading-[1.8]">
+              Tool guides are written and reviewed by people who build and test the utilities on this site.
+              We update pages when browser APIs, file formats, privacy requirements, or accessibility
+              practices change. Every recommendation is meant to help users complete a task, not to chase
+              keyword volume.
+            </p>
+          </div>
+          <div className="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+            <article className="rounded-2xl border border-border bg-card p-5">
+              <h3 className="font-bold text-base mb-2">SmartDigitalTips Editorial Team</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Authors practical explainers for image, PDF, text, developer, student, and business tools.
+                Reviews instructions for clarity, safety, and mobile usability before publication.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-border bg-card p-5">
+              <h3 className="font-bold text-base mb-2">Technical Review</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Verifies that tool pages describe real browser behavior, clearly label simulations, and avoid
+                unsupported claims about privacy, security, performance, or search results.
+              </p>
+            </article>
+          </div>
         </div>
 
         {/* Contact CTA */}

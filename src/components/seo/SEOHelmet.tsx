@@ -1,7 +1,14 @@
 import { Helmet } from 'react-helmet-async'
 import { useLocation } from 'react-router'
 import type { SEOMeta } from '@/types'
-import { defaultLocale, getLocaleFromPath, localizePath, stripLocaleFromPath, supportedLocales, type SupportedLocale } from '@/lib/i18n'
+import {
+  defaultLocale,
+  getLocaleFromPath,
+  localizePath,
+  stripLocaleFromPath,
+  supportedLocales,
+  type SupportedLocale,
+} from '@/lib/i18n'
 import { ADSENSE_CLIENT_ID, LOCALE_META, SITE_URL } from '@/lib/locale-config'
 
 interface SEOHelmetProps {
@@ -10,6 +17,16 @@ interface SEOHelmetProps {
 
 const DEFAULT_OG_IMAGE = '/logo.png'
 
+/**
+ * SEOHelmet — renders all per-page <head> tags via react-helmet-async.
+ *
+ * Key rules followed:
+ * - canonical   → locale-prefixed URL  (e.g. /en/tools/word-counter)
+ * - x-default   → BARE canonical path  (no locale prefix, per Google spec)
+ * - og:url      → same as canonical
+ * - hreflang    → one per supported locale
+ * - All robots signals are explicit so Googlebot and Bingbot behave identically
+ */
 export function SEOHelmet({ meta }: SEOHelmetProps) {
   const {
     title,
@@ -20,37 +37,80 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
     ogImage,
     ogType = 'website',
     twitterCard = 'summary_large_image',
-    robots = 'index, follow',
+    robots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
     keywords,
+    locale: metaLocale,
   } = meta
 
-  const fullTitle = title.includes('SmartDigitalTips') ? title : `${title} | SmartDigitalTips`
+  // ── Locale detection ──────────────────────────────────────────────────────
   const location = useLocation()
-  const detectedLocale = meta.locale || getLocaleFromPath(location.pathname)
+  const detectedLocale = metaLocale || getLocaleFromPath(location.pathname)
   const locale: SupportedLocale = supportedLocales.includes(detectedLocale as SupportedLocale)
     ? (detectedLocale as SupportedLocale)
     : defaultLocale
-  const cleanPath = stripLocaleFromPath(canonical || location.pathname)
-  const path = localizePath(cleanPath, locale)
-  const fullCanonical = `${SITE_URL}${path}`
-  const fullOgImage = ogImage ? (ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`) : `${SITE_URL}${DEFAULT_OG_IMAGE}`
 
+  // ── URL construction ──────────────────────────────────────────────────────
+  const cleanPath = stripLocaleFromPath(canonical || location.pathname)
+
+  // locale-prefixed canonical  →  used in <link rel="canonical"> and og:url
+  const localizedCanonicalPath = localizePath(cleanPath, locale)
+  const fullCanonical = `${SITE_URL}${localizedCanonicalPath}`
+
+  // bare canonical (no locale)  →  used for x-default per Google recommendation
+  // e.g.  https://smartdigitaltips.com/tools/word-counter
+  //       https://smartdigitaltips.com  (for root)
+  const bareCanonical =
+    !cleanPath || cleanPath === '/' ? SITE_URL : `${SITE_URL}${cleanPath}`
+
+  // OG image
+  const fullOgImage = ogImage
+    ? ogImage.startsWith('http')
+      ? ogImage
+      : `${SITE_URL}${ogImage}`
+    : `${SITE_URL}${DEFAULT_OG_IMAGE}`
+
+  // html lang/dir
   const htmlLang = LOCALE_META[locale].hreflang
-  const htmlDir = LOCALE_META[locale].dir
+  const htmlDir  = LOCALE_META[locale].dir
+
+  const fullTitle = title.includes('SmartDigitalTips')
+    ? title
+    : `${title} | SmartDigitalTips`
 
   return (
     <Helmet>
+      {/* ── Document language ───────────────────────────────────────── */}
       <html lang={htmlLang} dir={htmlDir} />
+
+      {/* ── Title & core meta ───────────────────────────────────────── */}
       <title>{fullTitle}</title>
-      <meta name="description" content={description} />
-      <meta name="language" content={locale} />
-      <meta name="author" content="SmartDigitalTips" />
-      <meta name="application-name" content="SmartDigitalTips" />
-      <meta name="theme-color" content="#0f172a" />
-      {keywords && keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
-      <meta name="robots" content={robots} />
+      <meta name="description"        content={description} />
+      <meta name="author"             content="SmartDigitalTips Editorial Team" />
+      <meta name="publisher"          content="SmartDigitalTips" />
+      <meta name="copyright"          content="SmartDigitalTips" />
+      <meta name="language"           content={locale} />
+      <meta name="application-name"   content="SmartDigitalTips" />
+      <meta name="theme-color"        content="#0f172a" />
+      <meta name="msapplication-TileColor" content="#0f172a" />
+      <meta name="rating"             content="general" />
+      <meta name="distribution"       content="global" />
+      <meta name="coverage"           content="Worldwide" />
       <meta name="google-adsense-account" content={ADSENSE_CLIENT_ID} />
+
+      {/* ── Keywords (optional — kept for Bing) ────────────────────── */}
+      {keywords && keywords.length > 0 && (
+        <meta name="keywords" content={keywords.join(', ')} />
+      )}
+
+      {/* ── Robots ──────────────────────────────────────────────────── */}
+      <meta name="robots"    content={robots} />
+      <meta name="googlebot" content={robots} />
+      <meta name="bingbot"   content="index, follow" />
+
+      {/* ── Canonical ───────────────────────────────────────────────── */}
       {fullCanonical && <link rel="canonical" href={fullCanonical} />}
+
+      {/* ── hreflang alternates (one per locale) ────────────────────── */}
       {supportedLocales.map((alternateLocale) => (
         <link
           key={alternateLocale}
@@ -59,31 +119,44 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
           href={`${SITE_URL}${localizePath(cleanPath, alternateLocale)}`}
         />
       ))}
-      <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${localizePath(cleanPath, 'en')}`} />
-      
-      {/* Open Graph */}
-      <meta property="og:title" content={ogTitle || fullTitle} />
+      {/* x-default → BARE canonical (no locale prefix) */}
+      <link rel="alternate" hrefLang="x-default" href={bareCanonical} />
+
+      {/* ── Open Graph ──────────────────────────────────────────────── */}
+      <meta property="og:type"        content={ogType} />
+      <meta property="og:url"         content={fullCanonical || SITE_URL} />
+      <meta property="og:site_name"   content="SmartDigitalTips" />
+      <meta property="og:locale"      content={LOCALE_META[locale].ogLocale} />
+      {supportedLocales
+        .filter((l) => l !== locale)
+        .map((l) => (
+          <meta key={l} property="og:locale:alternate" content={LOCALE_META[l].ogLocale} />
+        ))}
+      <meta property="og:title"       content={ogTitle || fullTitle} />
       <meta property="og:description" content={ogDescription || description} />
-      <meta property="og:image" content={fullOgImage} />
-      <meta property="og:image:alt" content={ogTitle || fullTitle} />
+      <meta property="og:image"       content={fullOgImage} />
+      <meta property="og:image:secure_url" content={fullOgImage} />
+      <meta property="og:image:alt"   content={ogTitle || fullTitle} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={fullCanonical || SITE_URL} />
-      <meta property="og:site_name" content="SmartDigitalTips" />
-      <meta property="og:locale" content={LOCALE_META[locale].ogLocale} />
-      {supportedLocales
-        .filter((alternateLocale) => alternateLocale !== locale)
-        .map((alternateLocale) => (
-          <meta key={alternateLocale} property="og:locale:alternate" content={LOCALE_META[alternateLocale].ogLocale} />
-        ))}
-      
-      {/* Twitter */}
-      <meta name="twitter:card" content={twitterCard} />
-      <meta name="twitter:title" content={ogTitle || fullTitle} />
+
+      {/* ── Twitter / X Card ────────────────────────────────────────── */}
+      <meta name="twitter:card"        content={twitterCard} />
+      <meta name="twitter:site"        content="@smartdigitaltips" />
+      <meta name="twitter:creator"     content="@smartdigitaltips" />
+      <meta name="twitter:title"       content={ogTitle || fullTitle} />
       <meta name="twitter:description" content={ogDescription || description} />
-      <meta name="twitter:image" content={fullOgImage} />
-      <meta name="twitter:image:alt" content={ogTitle || fullTitle} />
+      <meta name="twitter:image"       content={fullOgImage} />
+      <meta name="twitter:image:alt"   content={ogTitle || fullTitle} />
+
+      {/* ── PWA / Mobile ────────────────────────────────────────────── */}
+      <meta name="mobile-web-app-capable"             content="yes" />
+      <meta name="apple-mobile-web-app-capable"       content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <meta name="apple-mobile-web-app-title"         content="SmartDigitalTips" />
+
+      {/* ── Manifest ────────────────────────────────────────────────── */}
+      <link rel="manifest" href="/manifest.json" />
     </Helmet>
   )
 }

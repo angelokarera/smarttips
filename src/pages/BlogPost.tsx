@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from 'react-router'
 import { Layout } from '@/components/layout/Layout'
 import { blogPosts } from '@/data/blog'
 import { Calendar, User, ArrowLeft } from 'lucide-react'
-import { generateArticleSchema, generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { generateArticleSchema, generateBreadcrumbSchema, generateSpeakableSchema } from '@/components/seo/StructuredData'
 import { getBlogKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
 import { getBlogSeo } from '@/lib/seo-messages'
@@ -24,12 +24,15 @@ export default function BlogPost() {
     description: post.seoDescription,
   })
 
+  const postKeywords = uniqueKeywords(getBlogKeywords(post))
+  const calculatedWordCount = post.content.replace(/<[^>]*>/g, ' ').split(/\s+/).filter(Boolean).length
+
   const meta = {
     title: blogSeo.title,
     description: blogSeo.description,
     canonical: `/blog/${post.slug}`,
     locale,
-    keywords: uniqueKeywords(getBlogKeywords(post)),
+    keywords: postKeywords,
     ogTitle: blogSeo.title,
     ogDescription: blogSeo.description,
     ogType: 'article',
@@ -39,7 +42,12 @@ export default function BlogPost() {
         { name: 'Blog', url: `${SITE_URL}${lp('/blog')}` },
         { name: post.title, url: `${SITE_URL}${lp(`/blog/${post.slug}`)}` },
       ]),
-      generateArticleSchema(post),
+      generateArticleSchema({
+        ...post,
+        keywords: postKeywords,
+        wordCount: calculatedWordCount,
+      }),
+      generateSpeakableSchema(`${SITE_URL}${lp(`/blog/${post.slug}`)}`),
     ],
   }
 

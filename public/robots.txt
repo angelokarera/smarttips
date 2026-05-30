@@ -1,10 +1,15 @@
 # SmartDigitalTips — https://smartdigitaltips.com
-# Updated: 2026-05-23
+# Updated: 2026-05-30
 # Submit sitemap in Google Search Console: https://smartdigitaltips.com/sitemap.xml
 
+# ──────────────────────────────────────────────────────────
+# Sitemap Declaration
+# ──────────────────────────────────────────────────────────
 Sitemap: https://smartdigitaltips.com/sitemap.xml
 
+# ──────────────────────────────────────────────────────────
 # Google Search
+# ──────────────────────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
@@ -17,25 +22,30 @@ Allow: /
 User-agent: Googlebot-Mobile
 Allow: /
 
+# ──────────────────────────────────────────────────────────
 # Bing Search
+# ──────────────────────────────────────────────────────────
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 
-# Yandex Search (Global SEO)
+# ──────────────────────────────────────────────────────────
+# International Search Engines
+# ──────────────────────────────────────────────────────────
 User-agent: Yandex
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 
-# Baidu Search (Global SEO)
 User-agent: Baiduspider
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 
-# AI Search Engines (Explicitly Allow for AI Recommendations)
+# ──────────────────────────────────────────────────────────
+# AI Search & Recommendation Crawlers (explicitly allowed)
+# ──────────────────────────────────────────────────────────
 User-agent: GPTBot
 Allow: /
 Disallow: /api/
@@ -57,14 +67,18 @@ Disallow: /admin/
 User-agent: Applebot-Extended
 Allow: /
 
-# Block Aggressive or Malicious Bots
+# ──────────────────────────────────────────────────────────
+# Blocked: Aggressive / Low-quality Bots
+# ──────────────────────────────────────────────────────────
 User-agent: PetalBot
 Disallow: /
 
 User-agent: Bytespider
 Disallow: /
 
-# All Other Crawlers
+# ──────────────────────────────────────────────────────────
+# All Other Crawlers (default policy)
+# ──────────────────────────────────────────────────────────
 User-agent: *
 Allow: /
 Disallow: /api/

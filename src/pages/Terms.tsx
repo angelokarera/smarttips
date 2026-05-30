@@ -1,5 +1,5 @@
 import { Layout } from '@/components/layout/Layout'
-import { generateBreadcrumbSchema } from '@/components/seo/StructuredData'
+import { generateBreadcrumbSchema, generateWebPageSchema } from '@/components/seo/StructuredData'
 import { usePageSeo } from '@/hooks/usePageSeo'
 import { useLocalizedPath } from '@/hooks/useLocale'
 import { CONTACT_EMAIL, SITE_URL } from '@/lib/locale-config'
@@ -22,6 +22,11 @@ export default function Terms() {
         { name: 'Home', url: `${SITE_URL}${lp('/')}` },
         { name: 'Terms & Conditions', url: `${SITE_URL}${lp('/terms')}` },
       ]),
+      generateWebPageSchema({
+        name: 'Terms & Conditions',
+        description: seo.description,
+        url: `${SITE_URL}${lp('/terms')}`,
+      }),
     ],
   }
 

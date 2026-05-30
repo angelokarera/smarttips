@@ -18,36 +18,29 @@ export const GLOBAL_SEO_CONFIG = {
     { code: 'zh', name: 'Chinese', region: 'CN' },
   ],
 
-  // Global Keywords for Maximum Reach
+  // Global Keywords for Maximum Reach (Grouped by User Search Intent)
   globalKeywords: [
-    // Primary
-    'free online tools',
-    'web tools',
-    'browser tools',
-    'online utilities',
+    // ── Informational Intent (User seeking guides & knowledge) ────────────────
+    'how to compress images offline',
+    'how to merge pdfs safely',
+    'how to format json in browser',
+    'why use local browser tools',
+    'guide to secure passwords free',
     
-    // Year-specific
-    'online tools 2025',
-    'best free tools 2025',
-    'top web tools 2025',
+    // ── Navigational Intent (User seeking the brand & hubs) ────────────────────
+    'smartdigitaltips online tools',
+    'smart digital tips free utilities',
+    'smartdigitaltips developer tools',
     
-    // Feature-based
-    'no signup tools',
-    'no registration required',
-    'instant online tools',
-    'secure online tools',
-    'privacy-focused tools',
-    
-    // Device-based
-    'mobile online tools',
-    'desktop web tools',
-    'cross-platform tools',
-    
-    // Global reach
-    'worldwide online tools',
-    'international web tools',
-    'multilingual tools',
-    'global free tools',
+    // ── Transactional / Utility Intent (User seeking action) ─────────────────
+    'free online tools no signup',
+    'secure browser utilities no registration',
+    'instant client-side web tools',
+    'privacy-first image tools',
+    'free pdf tools in browser',
+    'local text converter tools',
+    'cross-platform browser utilities',
+    'global web tools',
   ],
 
   // High-Value Tool Categories for SEO

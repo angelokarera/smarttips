@@ -101,6 +101,9 @@
   "related_applications": [],
   "prefer_related_applications": false,
   "iarc_rating_id": "",
+  "edge_side_panel": {
+    "preferred_width": 480
+  },
   "share_target": {
     "action": "/share",
     "method": "POST",
