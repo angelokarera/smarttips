@@ -202,6 +202,10 @@
       "title": "Grátis Formatador HTML Online | SmartDigitalTips",
       "description": "Grátis Formatador HTML Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
     },
+    "html-to-text": {
+      "title": "Grátis HTML to Text Converter Online | SmartDigitalTips",
+      "description": "Grátis HTML to Text Converter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
     "color-picker": {
       "title": "Grátis Seletor de cores Online | SmartDigitalTips",
       "description": "Grátis Seletor de cores Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
@@ -677,6 +681,10 @@
       "html-beautifier": {
         "name": "Formatador HTML",
         "description": "Grátis Formatador HTML Online."
+      },
+      "html-to-text": {
+        "name": "HTML to Text Converter",
+        "description": "Grátis HTML to Text Converter Online."
       },
       "color-picker": {
         "name": "Seletor de cores",

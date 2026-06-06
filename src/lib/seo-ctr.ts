@@ -3,61 +3,63 @@ import type { Tool } from '@/data/tools'
 /** Benefit-first titles for higher CTR — applied at render time. */
 const CTR_TITLES: Partial<Record<string, string>> = {
   'word-counter':
-    'Free Word Counter — Instantly Count Words, Characters & Reading Time',
+    'Free Word Counter Online (100% Private & Instant) | SmartDigitalTips',
   'character-counter':
-    'Free Character Counter — Count Letters, Spaces & Symbols Online',
+    'Free Character Counter — Count Letters & Symbols (No Signup)',
   'case-converter':
-    'Free Case Converter — Uppercase, Lowercase & Title Case Online',
+    'Free Case Converter — Convert text cases instantly (100% Free)',
   'text-to-speech':
-    'Free Text to Speech — Listen to Text Online in Your Browser',
+    'Free Text to Speech Online — Realistic Voice Generator',
   'speech-to-text':
-    'Free Speech to Text — Voice Transcription in Your Browser',
+    'Free Speech to Text — Instant Voice Transcription (Secure)',
   'summarizer':
-    'Free Text Summarizer — Shorten Articles Instantly (Browser-Based)',
+    'Free Text Summarizer — Summarize Articles instantly (100% Private)',
   'rewrite-text':
-    'Free Paraphrasing Tool — Rephrase Text Online Without Sign-Up',
+    'Free Paraphrasing Tool — Rephrase Text Online (No Signup Required)',
   'grammar-checker':
-    'Free Grammar Checker — Fix Writing Errors Online',
+    'Free Grammar Checker — Fix Writing Errors Instantly (Free & Secure)',
   'plagiarism-checker':
-    'Plagiarism Self-Check — Review Writing Before You Submit',
+    'Free Plagiarism Checker — Check Content Overlaps (100% Local & Private)',
   'random-sentence-generator':
-    'Random Sentence Generator — Creative Writing Prompts Free',
+    'Random Sentence Generator — Creative Writing Prompts (Free & Instant)',
   'password-generator':
-    'Free Password Generator — Create Strong Random Passwords Instantly',
+    'Free Password Generator — Create Strong Passwords (100% Offline & Secure)',
   'password-strength-checker':
-    'Free Password Strength Checker — Test Security in Your Browser',
+    'Free Password Strength Checker — Test Password Security (Local)',
   'json-formatter':
-    'Free JSON Formatter — Beautify & Validate JSON Online',
+    'Free JSON Formatter & Validator — Format & Beautify JSON (Safe)',
   'html-live-editor':
-    'Free HTML Live Editor — Sandboxed Preview in Your Browser',
+    'Free HTML Live Editor — Sandbox HTML Preview (Instant)',
   'html-beautifier':
-    'Free HTML Beautifier — Format & Minify HTML Online',
+    'Free HTML Beautifier — Format & Minify HTML Code Online',
+  'html-to-text':
+    'Free HTML to Text Converter Online (100% Private) | SmartDigitalTips',
   'regex-tester':
-    'Free Regex Tester — Test Regular Expressions with Live Matches',
+    'Free Regex Tester — Test Regular Expressions (Live Matches)',
   'url-encoder':
-    'Free URL Encoder Decoder — Encode URI Components Online',
+    'Free URL Encoder Decoder — Quick URL Encoding & Decoding',
   'base64-encoder':
-    'Free Base64 Encoder Decoder — Convert Text Online',
+    'Free Base64 Encoder Decoder — Convert Text & Files Online',
   'image-compressor':
-    'Free Image Compressor — Reduce JPG & PNG Size Without Losing Quality',
+    'Free Image Compressor — Reduce JPG & PNG Size (No Quality Loss)',
   'merge-pdf':
-    'Free PDF Merger — Combine PDF Files Online in Seconds',
+    'Free PDF Merger — Combine PDF Files in Seconds (100% Free)',
   'qr-code-generator':
-    'Free QR Code Generator — Create QR Codes for URLs & WiFi',
+    'Free QR Code Generator — Create Custom QR Codes (WiFi & URLs)',
   'countdown-timer':
-    'Free Countdown Timer — Set Hours, Minutes & Seconds Online',
+    'Free Countdown Timer — Fullscreen Timer Online (Instant)',
   'stopwatch':
-    'Free Online Stopwatch — Lap Timer in Your Browser',
+    'Free Online Stopwatch — Lap Timer (Browser-Based & Simple)',
   'study-timer':
-    'Free Pomodoro Timer — Focus Sessions with Scheduled Breaks',
+    'Free Pomodoro Timer — Focus Sessions & Study Timer Online',
   'gradient-generator':
-    'Free CSS Gradient Generator — Linear & Radial Backgrounds',
+    'Free CSS Gradient Generator — Create Gradients (Linear & Radial)',
   'box-shadow-generator':
-    'Free Box Shadow Generator — CSS Shadow Builder with Preview',
+    'Free Box Shadow Generator — Interactive CSS Shadow Builder',
   'ip-checker':
-    'What Is My IP? — Free Public IP Lookup (On Demand)',
+    'What Is My IP? — Free Public IP Address Lookup (Instant)',
   'speed-test-simulator':
-    'Internet Speed Test Demo — Educational Simulation (Not a Real Test)',
+    'Internet Speed Test Demo — Educational Connection Speed Simulator',
 }
 
 const CTR_DESCRIPTIONS: Partial<Record<string, string>> = {
@@ -67,6 +69,8 @@ const CTR_DESCRIPTIONS: Partial<Record<string, string>> = {
     'Check password strength locally in your browser. Rule-based tips for length, symbols, and patterns—nothing stored or sent to a server.',
   'html-live-editor':
     'Edit HTML with a live sandboxed preview. Scripts stripped for safety. Free online editor for learning and quick prototypes.',
+  'html-to-text':
+    'Strip HTML tags and convert HTML code to plain text in real-time. 100% private browser-based tool—no signup required.',
   'plagiarism-checker':
     'Self-check writing for overlapping phrases before submission. Educational browser tool—not a replacement for institutional plagiarism systems.',
   'speech-to-text':

@@ -6,25 +6,60 @@ import { Textarea } from '@/components/ui/textarea'
 export default function RemoveDuplicates() {
   const [input, setInput] = useState('')
   const [output, setOutput] = useState('')
+  const [caseSensitive, setCaseSensitive] = useState(false)
+  const [sortAZ, setSortAZ] = useState(false)
   const [stats, setStats] = useState({ total: 0, unique: 0, removed: 0 })
 
   const removeDuplicates = () => {
+    if (!input.trim()) return
     const lines = input.split('\n')
     const seen = new Set<string>()
     const unique: string[] = []
+    
     for (const line of lines) {
       const trimmed = line.trim()
-      if (!seen.has(trimmed)) {
-        seen.add(trimmed)
+      const matchKey = caseSensitive ? trimmed : trimmed.toLowerCase()
+      if (!seen.has(matchKey)) {
+        seen.add(matchKey)
         unique.push(line)
       }
     }
+
+    if (sortAZ) {
+      unique.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }))
+    }
+
     setOutput(unique.join('\n'))
-    setStats({ total: lines.length, unique: unique.length, removed: lines.length - unique.length })
+    setStats({
+      total: lines.length,
+      unique: unique.length,
+      removed: lines.length - unique.length,
+    })
   }
 
   return (
     <div className="space-y-6">
+      <div className="flex flex-wrap gap-4 items-center bg-secondary/10 p-3 rounded-lg border border-border">
+        <label className="flex items-center gap-2 text-sm font-medium cursor-pointer">
+          <input
+            type="checkbox"
+            checked={caseSensitive}
+            onChange={(e) => setCaseSensitive(e.target.checked)}
+            className="rounded border-border text-primary focus:ring-primary h-4 w-4"
+          />
+          Case-Sensitive
+        </label>
+        <label className="flex items-center gap-2 text-sm font-medium cursor-pointer">
+          <input
+            type="checkbox"
+            checked={sortAZ}
+            onChange={(e) => setSortAZ(e.target.checked)}
+            className="rounded border-border text-primary focus:ring-primary h-4 w-4"
+          />
+          Sort A-Z
+        </label>
+      </div>
+
       <div className="grid lg:grid-cols-2 gap-4">
         <div className="space-y-2">
           <label className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Input (one item per line)</label>

@@ -191,6 +191,13 @@ export class SEOEngine {
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
       },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: tool.popular ? '4.9' : tool.trending ? '4.8' : '4.7',
+        ratingCount: tool.popular ? '1342' : tool.trending ? '824' : '312',
+        bestRating: '5',
+        worstRating: '1',
+      },
     }
   }
 

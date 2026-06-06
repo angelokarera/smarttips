@@ -20,10 +20,13 @@ import {
   Globe,
   Palette,
   Star,
+  Clock,
+  ThumbsUp,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { categories, getTrendingTools, getNewTools } from '@/data/tools'
 import { getMostUsedTools, getFavoriteTools } from '@/lib/favorites'
+import { getRecentlyUsedTools, getRecommendedTools } from '@/lib/analyticsStore'
 import { ToolSearchBar } from '@/components/tools/ToolSearchBar'
 import { Layout } from '@/components/layout/Layout'
 import { generateWebsiteSchema, generateOrganizationSchema, generateCollectionSchema } from '@/components/seo/StructuredData'
@@ -41,6 +44,8 @@ export default function Home() {
   const favoriteTools = getFavoriteTools().slice(0, 6).map(localizeTool)
   const trendingTools = getTrendingTools().slice(0, 5).map(localizeTool)
   const newTools = getNewTools().slice(0, 6).map(localizeTool)
+  const recentTools = getRecentlyUsedTools(4).map(localizeTool)
+  const recommendedTools = getRecommendedTools(4).map(localizeTool)
 
   const homeSeo = getPageSeo('home', locale, {
     title: 'Free Online Tools — Word Counter, PDF, Image & Developer Utilities | SmartDigitalTips',
@@ -224,6 +229,85 @@ export default function Home() {
                 >
                   <h3 className="font-semibold text-sm group-hover:text-primary">{tool.name}</h3>
                   <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{tool.description}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ─── RECENTLY USED ─── */}
+      {recentTools.length > 0 && (
+        <section className="py-12 lg:py-14 border-t border-border bg-secondary/20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-6 flex items-center justify-between gap-4">
+              <div className="flex items-center gap-2.5">
+                <Clock className="h-5 w-5 text-primary" />
+                <h2 className="text-xl sm:text-2xl font-bold tracking-tight">Continue where you left off</h2>
+              </div>
+              <span className="hidden sm:inline text-xs text-muted-foreground bg-secondary/80 border border-border/40 px-3 py-1 rounded-full">
+                Based on your history
+              </span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {recentTools.map((tool) => (
+                <Link
+                  key={tool.id}
+                  to={lp(tool.path)}
+                  className="group relative p-5 rounded-xl border border-primary/20 bg-card/75 glass-card hover-lift transition-all duration-300 hover:border-primary/50"
+                >
+                  <div className="absolute top-2 right-2">
+                    <span className="text-[9px] font-bold uppercase tracking-wider text-primary/60 bg-primary/10 px-1.5 py-0.5 rounded">Recent</span>
+                  </div>
+                  <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors pr-10">
+                    {tool.name}
+                  </h3>
+                  <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">
+                    {tool.description}
+                  </p>
+                  <div className="flex items-center gap-1 mt-3 text-xs font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    Open again <ArrowRight className="h-3 w-3" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ─── RECOMMENDED FOR YOU ─── */}
+      {recommendedTools.length > 0 && (
+        <section className="py-12 lg:py-14 border-t border-border">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-6 flex items-center justify-between gap-4">
+              <div className="flex items-center gap-2.5">
+                <ThumbsUp className="h-5 w-5 text-primary" />
+                <h2 className="text-xl sm:text-2xl font-bold tracking-tight">Recommended for you</h2>
+              </div>
+              <span className="hidden sm:inline text-xs text-muted-foreground bg-secondary/80 border border-border/40 px-3 py-1 rounded-full">
+                Tailored to your usage
+              </span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {recommendedTools.map((tool, index) => (
+                <Link
+                  key={tool.id}
+                  to={lp(tool.path)}
+                  className="group relative p-5 rounded-xl border border-border/85 bg-card/75 glass-card hover-lift transition-all duration-300"
+                  style={{ animationDelay: `${index * 60}ms` }}
+                >
+                  <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors">
+                    {tool.name}
+                  </h3>
+                  <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed mb-3">
+                    {tool.description}
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-semibold text-muted-foreground/60 uppercase tracking-wider">
+                      {tool.categoryLabel}
+                    </span>
+                    <ArrowRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
+                  </div>
                 </Link>
               ))}
             </div>

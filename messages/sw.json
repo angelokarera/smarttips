@@ -202,6 +202,10 @@
       "title": "Bure HTML Mtandaoni | SmartDigitalTips",
       "description": "Bure HTML Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
     },
+    "html-to-text": {
+      "title": "Bure HTML to Text Converter Mtandaoni | SmartDigitalTips",
+      "description": "Bure HTML to Text Converter Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
     "color-picker": {
       "title": "Bure Chagua rangi Mtandaoni | SmartDigitalTips",
       "description": "Bure Chagua rangi Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
@@ -677,6 +681,10 @@
       "html-beautifier": {
         "name": "HTML",
         "description": "Bure HTML Mtandaoni."
+      },
+      "html-to-text": {
+        "name": "HTML to Text Converter",
+        "description": "Bure HTML to Text Converter Mtandaoni."
       },
       "color-picker": {
         "name": "Chagua rangi",

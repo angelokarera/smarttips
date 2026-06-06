@@ -1165,6 +1165,37 @@ export const tools: Tool[] = [
     relatedTools: ['css-minifier'],
   },
   {
+    id: 'html-to-text',
+    name: 'HTML to Text Converter',
+    description: 'Strip HTML tags and convert HTML code to plain text in real-time.',
+    category: 'developer',
+    categoryLabel: 'Developer Tools',
+    icon: 'Terminal',
+    path: '/tools/html-to-text',
+    new: true,
+    seoTitle: 'Free HTML to Text Converter Online (100% Private) | SmartDigitalTips',
+    seoDescription: 'Instantly strip HTML tags and convert HTML code into clean plain text in real-time. 100% secure, browser-based, no sign-up.',
+    benefits: [
+      'Strips all HTML tags and leaves clean plain text',
+      'Live conversion in real-time as you type or paste',
+      'Runs completely inside your browser for maximum privacy',
+      'One-click copy to clipboard',
+    ],
+    howToUse: [
+      'Paste your HTML code into the input text area',
+      'See the converted plain text instantly on the right',
+      'Click Copy Output to copy the plain text result',
+      'Use the Clear button to start over',
+    ],
+    faq: [
+      {
+        question: 'Does this tool upload my HTML to any server?',
+        answer: 'No. The conversion is done entirely in your browser using local APIs. Your HTML code and output text never leave your device.',
+      },
+    ],
+    relatedTools: ['html-beautifier', 'html-live-editor'],
+  },
+  {
     id: 'color-picker',
     name: 'Color Picker',
     description: 'Select colors and generate shades and complements.',

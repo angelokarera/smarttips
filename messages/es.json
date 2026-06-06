@@ -202,6 +202,10 @@
       "title": "Gratis Formateador HTML En línea | SmartDigitalTips",
       "description": "Gratis Formateador HTML En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
     },
+    "html-to-text": {
+      "title": "Gratis HTML to Text Converter En línea | SmartDigitalTips",
+      "description": "Gratis HTML to Text Converter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
     "color-picker": {
       "title": "Gratis Selector de color En línea | SmartDigitalTips",
       "description": "Gratis Selector de color En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
@@ -677,6 +681,10 @@
       "html-beautifier": {
         "name": "Formateador HTML",
         "description": "Gratis Formateador HTML En línea."
+      },
+      "html-to-text": {
+        "name": "HTML to Text Converter",
+        "description": "Gratis HTML to Text Converter En línea."
       },
       "color-picker": {
         "name": "Selector de color",

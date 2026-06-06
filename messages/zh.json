@@ -202,6 +202,10 @@
       "title": "免费 HTML格式化 在线 | SmartDigitalTips",
       "description": "免费 HTML格式化 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
     },
+    "html-to-text": {
+      "title": "免费 HTML to Text Converter 在线 | SmartDigitalTips",
+      "description": "免费 HTML to Text Converter 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
     "color-picker": {
       "title": "免费 颜色选择器 在线 | SmartDigitalTips",
       "description": "免费 颜色选择器 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
@@ -677,6 +681,10 @@
       "html-beautifier": {
         "name": "HTML格式化",
         "description": "免费 HTML格式化 在线."
+      },
+      "html-to-text": {
+        "name": "HTML to Text Converter",
+        "description": "免费 HTML to Text Converter 在线."
       },
       "color-picker": {
         "name": "颜色选择器",

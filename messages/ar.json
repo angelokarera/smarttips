@@ -202,6 +202,10 @@
       "title": "مجاني منسق HTML عبر الإنترنت | SmartDigitalTips",
       "description": "مجاني منسق HTML عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
     },
+    "html-to-text": {
+      "title": "مجاني HTML to Text Converter عبر الإنترنت | SmartDigitalTips",
+      "description": "مجاني HTML to Text Converter عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
+    },
     "color-picker": {
       "title": "مجاني منتقي الألوان عبر الإنترنت | SmartDigitalTips",
       "description": "مجاني منتقي الألوان عبر الإنترنت. بدون تسجيل. يعمل في متصفحك — ملفاتك تبقى خاصة."
@@ -677,6 +681,10 @@
       "html-beautifier": {
         "name": "منسق HTML",
         "description": "مجاني منسق HTML عبر الإنترنت."
+      },
+      "html-to-text": {
+        "name": "HTML to Text Converter",
+        "description": "مجاني HTML to Text Converter عبر الإنترنت."
       },
       "color-picker": {
         "name": "منتقي الألوان",

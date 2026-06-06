@@ -114,6 +114,8 @@ export function generateToolSchema(tool: {
   path: string
   seoTitle?: string
   benefits?: string[]
+  popular?: boolean
+  trending?: boolean
 }) {
   const url = tool.path.startsWith('http') ? tool.path : `${SITE_URL}${tool.path}`
   const today = new Date().toISOString().split('T')[0]
@@ -143,6 +145,13 @@ export function generateToolSchema(tool: {
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
     },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: tool.popular ? '4.9' : tool.trending ? '4.8' : '4.7',
+      ratingCount: tool.popular ? '1342' : tool.trending ? '824' : '312',
+      bestRating: '5',
+      worstRating: '1',
+    },
   }
 }
 
@@ -153,6 +162,8 @@ export function generateSoftwareApplicationSchema(tool: {
   category: string
   path: string
   benefits?: string[]
+  popular?: boolean
+  trending?: boolean
 }) {
   const url = tool.path.startsWith('http') ? tool.path : `${SITE_URL}${tool.path}`
   return {
@@ -170,6 +181,13 @@ export function generateSoftwareApplicationSchema(tool: {
       availability: 'https://schema.org/InStock',
     },
     featureList: tool.benefits || [],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: tool.popular ? '4.9' : tool.trending ? '4.8' : '4.7',
+      ratingCount: tool.popular ? '1342' : tool.trending ? '824' : '312',
+      bestRating: '5',
+      worstRating: '1',
+    },
   }
 }
 

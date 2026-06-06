@@ -202,6 +202,10 @@
       "title": "HTML Beautifier & Minifier | Free Dev Tool - SmartDigitalTips",
       "description": "Format, indent, and minify HTML tags securely in your browser."
     },
+    "html-to-text": {
+      "title": "Free HTML to Text Converter Online (100% Private) | SmartDigitalTips",
+      "description": "Instantly strip HTML tags and convert HTML code into clean plain text in real-time. 100% secure, browser-based, no sign-up."
+    },
     "color-picker": {
       "title": "Color Picker & Palette Generator | Free Dev Tool - SmartDigitalTips",
       "description": "Pick colors, convert formats (HEX, RGB, HSL), and get shades and complementary color palettes."
@@ -677,6 +681,10 @@
       "html-beautifier": {
         "name": "HTML Beautifier",
         "description": "Format and minify HTML code effortlessly."
+      },
+      "html-to-text": {
+        "name": "HTML to Text Converter",
+        "description": "Strip HTML tags and convert HTML code to plain text in real-time."
       },
       "color-picker": {
         "name": "Color Picker",

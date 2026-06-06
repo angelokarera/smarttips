@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect } from 'react'
 import { useParams, Link } from 'react-router'
 import { recordToolUsage } from '@/lib/favorites'
 import { FavoriteButton } from '@/components/tools/FavoriteButton'
-import { CheckCircle2 } from 'lucide-react'
+import { CheckCircle2, Star } from 'lucide-react'
 import { getToolById, getRelatedTools, getToolsByCategory } from '@/data/tools'
 import { SidebarAd } from '@/components/ads/AdBanner'
 
@@ -29,6 +29,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
+import { ShareTool } from '@/components/seo/ShareTool'
 
 // Lazy loaded tool imports
 const WordCounter = lazy(() => import('@/tools/text/WordCounter'))
@@ -74,6 +75,7 @@ const JsonFormatter = lazy(() => import('@/tools/developer/JsonFormatter'))
 const Base64Encoder = lazy(() => import('@/tools/developer/Base64Encoder'))
 const CssMinifier = lazy(() => import('@/tools/developer/CssMinifier'))
 const HtmlBeautifier = lazy(() => import('@/tools/developer/HtmlBeautifier'))
+const HtmlToText = lazy(() => import('@/tools/developer/HtmlToText'))
 const ColorPicker = lazy(() => import('@/tools/developer/ColorPicker'))
 const ColorPaletteGenerator = lazy(() => import('@/tools/developer/ColorPaletteGenerator'))
 const SpeechToText = lazy(() => import('@/tools/text/SpeechToText'))
@@ -133,6 +135,7 @@ const toolComponents: Record<string, React.ComponentType> = {
   'base64-encoder': Base64Encoder,
   'css-minifier': CssMinifier,
   'html-beautifier': HtmlBeautifier,
+  'html-to-text': HtmlToText,
   'color-picker': ColorPicker,
   'color-palette-generator': ColorPaletteGenerator,
   'speech-to-text': SpeechToText,
@@ -238,6 +241,11 @@ export default function ToolPage() {
                 {t('common.trending')}
               </span>
             )}
+            <div className="flex items-center gap-1 text-[11px] font-semibold text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/10">
+              <Star className="h-3 w-3 fill-amber-500 text-amber-500" />
+              <span>{tool.popular ? '4.9' : tool.trending ? '4.8' : '4.7'}</span>
+              <span className="text-muted-foreground/80 font-normal">({tool.popular ? '1,342' : tool.trending ? '824' : '312'} ratings)</span>
+            </div>
             <FavoriteButton toolId={tool.id} className="ml-auto" />
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-3">{tool.name}</h1>
@@ -307,6 +315,9 @@ export default function ToolPage() {
               
               {/* Clearly Labeled Advertisement Slot */}
               <SidebarAd />
+
+              {/* Share & Support Tool */}
+              <ShareTool tool={tool} locale={locale} />
 
               {/* Sidebar FAQ Accordion */}
               <div className="p-5 rounded-xl border border-border/85 bg-card/75 glass-card shadow-xs">

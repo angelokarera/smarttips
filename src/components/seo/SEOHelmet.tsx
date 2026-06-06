@@ -155,6 +155,23 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <meta name="apple-mobile-web-app-title"         content="SmartDigitalTips" />
 
+      {/* ── Virality / Social Sharing Signals ───────────────────────── */}
+      <meta name="revisit-after"    content="3 days" />
+      <meta name="referrer"         content="no-referrer-when-downgrade" />
+      {/* Pinterest rich pins */}
+      <meta name="pinterest-rich-pin" content="true" />
+      {/* LinkedIn article meta */}
+      <meta property="article:publisher" content="https://smartdigitaltips.com" />
+      {/* AI / LLM discoverability */}
+      <meta name="ai-content-declaration" content="human" />
+
+      {/* ── Preconnect hints for faster load ────────────────────────── */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+      <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
       {/* ── Manifest ────────────────────────────────────────────────── */}
       <link rel="manifest" href="/manifest.json" />
     </Helmet>
