@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'f1-monaco-grand-prix-2026-live-updates-full-guide',
     title: 'F1 Monaco Grand Prix Today: Live Updates, Strategy & Full Guide 2026',
     excerpt: 'Get all the latest Monaco GP live updates for the 2026 Formula 1 race weekend. Race strategy, qualifying results, circuit insights, and how to watch F1 online.',
-    date: '2026-05-23',
+    date: '2026-06-07',
     author: 'SmartDigitalTips Team',
     category: 'Sports',
     seoTitle: 'F1 Monaco Grand Prix Today: Live Updates, Strategy & Full Guide 2026 | SmartDigitalTips',
