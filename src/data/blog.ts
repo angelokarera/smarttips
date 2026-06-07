@@ -123,7 +123,7 @@ export const blogPosts: BlogPost[] = [
       <p>With tire wear less severe than other circuits, strategy often hinges on reacting to safety cars and rival team decisions.</p>
 
       <h3>3. Tire Choices & Management</h3>
-      <p>Pirelli brings the C3 (medium), C4 (soft), and C5 (hyper-soft) compounds to Monaco. The hyper-soft offers blistering pace but degrades quickly—ideal for qualifying and the opening laps. Teams that master tire conservation can gain significant advantages during the middle stint.</p>
+      <p>Pirelli supplies different tire compounds to Monaco, typically including softer options that offer high grip on the tight street circuit. The softest compounds provide blistering pace but degrade quickly—ideal for qualifying and the opening laps. Teams that master tire conservation can gain significant advantages during the middle stint.</p>
 
       <h3>4. Weather Impact</h3>
       <p>Monaco's Mediterranean climate is usually sunny and warm, but rain transforms the circuit entirely. Water combines with decades of rubber buildup to create near-icy conditions in the tunnel section. If rain falls, expect dramatic changes in strategy and potential safety car interventions.</p>
