@@ -113,6 +113,33 @@
     </noscript>
 
     <!-- ═══════════════════════════════════════════════════════════════
+         ⚠️ Google Analytics Data Collection Status Warning
+         ═══════════════════════════════════════════════════════════════ -->
+    <script>
+      // Data collection status - display warning if tags installed > 48hrs ago
+      (function() {
+        const streamName = 'Smart Digital Tips';
+        const streamUrl = 'https://www.smartdigitaltips.com';
+        const streamId = '13360765691';
+        const measurementId = 'G-4P8GW43EWX';
+        
+        console.warn('%c⚠️ DATA COLLECTION NOT ACTIVE', 'background: #ff6b6b; color: white; font-size: 12px; font-weight: bold; padding: 8px 12px; border-radius: 4px;');
+        console.warn('%cStream: ' + streamName, 'background: #333; color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 3px;');
+        console.warn('%cStream URL: ' + streamUrl, 'background: #333; color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 3px;');
+        console.warn('%cStream ID: ' + streamId, 'background: #333; color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 3px;');
+        console.warn('%cMeasurement ID: ' + measurementId, 'background: #333; color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 3px;');
+        
+        if (window.dataLayer && window.gtag) {
+          console.log('%c✓ Google Analytics tags detected', 'background: #51cf66; color: white; font-size: 12px; font-weight: bold; padding: 4px 8px; border-radius: 3px;');
+          console.log('%cReady to collect data', 'background: #51cf66; color: white; font-size: 12px; padding: 4px 8px; border-radius: 3px;');
+        } else {
+          console.warn('%c❌ Google Analytics gtag.js not found', 'background: #ff6b6b; color: white; font-size: 12px; font-weight: bold; padding: 4px 8px; border-radius: 3px;');
+          console.warn('%cMake sure the script is loaded before this warning', 'background: #ff6b6b; color: white; font-size: 12px; padding: 4px 8px; border-radius: 3px;');
+        }
+      })();
+    </script>
+    
+    <!-- ═══════════════════════════════════════════════════════════════
          Google Analytics (with Consent Mode v2 — GDPR compliant)
          ═══════════════════════════════════════════════════════════════ -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P8GW43EWX"></script>
