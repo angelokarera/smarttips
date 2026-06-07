@@ -171,7 +171,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>TikTok:</strong> @formula1 for short-form highlights and behind-the-scenes content</li>
       </ul>
 
-      <p>Important: Always use official and licensed broadcasters. Illegal streaming sites often contain malware, invasive ads, and violate copyright laws. The official sources provide high-definition streams, expert commentary, and comprehensive coverage.</p>
+      <p>Note: For the best viewing experience, use official and licensed broadcasters. Official sources provide high-definition streams, expert commentary, and comprehensive coverage.</p>
 
       <h2>Why Monaco Grand Prix 2026 Is Trending Globally Today</h2>
       <p>The <strong>Formula 1 2026 season</strong> has already delivered excitement, but Monaco adds another level of intrigue:</p>
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Headings Structure:</strong> H1 (title), H2 (main sections), H3 (subsections)</li>
         <li><strong>Keyword Density:</strong> Primary keywords naturally integrated (2-3% density)</li>
         <li><strong>Internal Linking:</strong> Links to related tools and categories</li>
-        <li><strong>External Links:</strong> Official formula1.com link with nofollow</li>
+        <li><strong>External Links:</strong> Official formula1.com link</li>
         <li><strong>Image Alt Text:</strong> "Formula 1 cars racing at Monaco Grand Prix 2026 - Monaco GP live coverage"</li>
         <li><strong>Schema Markup:</strong> Article, Breadcrumb, Speakable JSON-LD</li>
         <li><strong>Readability:</strong> Flesch-Kincaid Grade Level 8-9 (highly readable)</li>
