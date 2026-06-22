@@ -9,6 +9,7 @@ import type { SEOMeta } from '@/types'
 import { useLocation } from 'react-router'
 import { CookieConsent } from '@/components/privacy/CookieConsent'
 import { LanguageSuggestion } from '@/components/layout/LanguageSuggestion'
+import { StickyToolsBar } from '@/components/layout/StickyToolsBar'
 
 interface LayoutProps {
   children: ReactNode
@@ -51,6 +52,7 @@ export function Layout({
         {showAds && <AdBanner />}
       </main>
       <Footer />
+      <StickyToolsBar />
       <CookieConsent />
     </div>
   )

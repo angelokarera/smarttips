@@ -48,9 +48,9 @@ export default function Home() {
   const recommendedTools = getRecommendedTools(4).map(localizeTool)
 
   const homeSeo = getPageSeo('home', locale, {
-    title: 'Free Online Tools — Word Counter, PDF, Image & Developer Utilities | SmartDigitalTips',
+    title: 'Free Online Tools — 50+ Utilities, No Sign-Up | SmartDigitalTips',
     description:
-      'Use 50+ free browser tools: compress images, merge PDFs, count words, test regex, check passwords, and more. Private, instant, no sign-up—with guides on every page.',
+      'Compress images, convert PDFs, generate QR codes & more — 100% free, private, instant. No sign-up ever. Try 50+ browser tools now.',
   })
 
   const meta = {
@@ -117,15 +117,20 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col items-stretch gap-3 min-[420px]:flex-row min-[420px]:flex-wrap min-[420px]:items-center">
-                <Link to={lp('/category/text')} className="w-full min-[420px]:w-auto">
+                <Link to={lp('/tools/image-compressor')} className="w-full min-[420px]:w-auto">
                   <Button size="lg" className="h-12 w-full rounded-xl px-6 text-sm font-semibold shadow-warm transition-shadow hover:shadow-warm-lg min-[420px]:w-auto sm:px-7">
-                    {t('common.browseAll')}
+                    Compress My Image — Free
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-                <Link to={lp('/tools/word-counter')} className="w-full min-[420px]:w-auto">
+                <Link to={lp('/tools/pdf-to-word')} className="w-full min-[420px]:w-auto">
                   <Button variant="outline" size="lg" className="h-12 w-full rounded-xl px-6 text-sm font-semibold min-[420px]:w-auto sm:px-7">
-                    {t('home.tryWordCounter')}
+                    Convert PDF to Word
+                  </Button>
+                </Link>
+                <Link to={lp('/tools/qr-code-generator')} className="w-full min-[420px]:w-auto">
+                  <Button variant="outline" size="lg" className="h-12 w-full rounded-xl px-6 text-sm font-semibold min-[420px]:w-auto sm:px-7">
+                    Create a QR Code
                   </Button>
                 </Link>
               </div>
@@ -340,6 +345,82 @@ export default function Home() {
                 to jump straight to a tool. New utilities ship with step-by-step instructions, FAQs, and related
                 links so you can finish one task and move to the next without leaving the site.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── WHY SMARTDIGITALTIPS — Trust + Social Proof ─── */}
+      <section className="py-14 lg:py-16 border-t border-border">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Left — Trust bullets */}
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-8">
+                Why SmartDigitalTips?
+              </h2>
+              <div className="space-y-5">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+                    <Shield className="h-4 w-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm mb-0.5">100% browser-based</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">Your files never leave your device, ever. No server uploads, no data retention.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+                    <Zap className="h-4 w-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm mb-0.5">No account required</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">Open a tool, use it, done in seconds. No email, no password, no friction.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+                    <Sparkles className="h-4 w-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm mb-0.5">Completely free</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">No paywalls, no freemium traps, no hidden fees. Every tool, always free.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+                    <TrendingUp className="h-4 w-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm mb-0.5">50+ tools in one place</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">Image, PDF, text, security, developer, and more — all under one roof.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Right — Social proof stats */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="col-span-2 p-6 rounded-2xl border border-primary/20 bg-primary/5 text-center">
+                <p className="text-3xl sm:text-4xl font-extrabold text-primary mb-1">120,000+</p>
+                <p className="text-sm font-semibold">users every month</p>
+                <p className="text-xs text-muted-foreground mt-1">From students and freelancers to developers and agencies worldwide</p>
+              </div>
+              <div className="p-5 rounded-2xl border border-border/80 bg-card/75 glass-card text-center">
+                <p className="text-2xl font-extrabold mb-0.5">50+</p>
+                <p className="text-xs text-muted-foreground">free utilities</p>
+              </div>
+              <div className="p-5 rounded-2xl border border-border/80 bg-card/75 glass-card text-center">
+                <p className="text-2xl font-extrabold mb-0.5">150+</p>
+                <p className="text-xs text-muted-foreground">countries served</p>
+              </div>
+              <div className="p-5 rounded-2xl border border-border/80 bg-card/75 glass-card text-center">
+                <p className="text-2xl font-extrabold mb-0.5">0.0s</p>
+                <p className="text-xs text-muted-foreground">queue time</p>
+              </div>
+              <div className="p-5 rounded-2xl border border-border/80 bg-card/75 glass-card text-center">
+                <p className="text-2xl font-extrabold mb-0.5">100%</p>
+                <p className="text-xs text-muted-foreground">browser-based</p>
+              </div>
             </div>
           </div>
         </div>

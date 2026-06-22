@@ -370,7 +370,10 @@ export default function ToolPage() {
         {/* Related Tools */}
         {relatedTools.length > 0 && (
           <div className="mt-20 pt-12 border-t border-border">
-            <h2 className="text-xl font-bold tracking-tight mb-6">You may also like</h2>
+            <div className="mb-6">
+              <h2 className="text-xl font-bold tracking-tight mb-1">You might also like</h2>
+              <p className="text-sm text-muted-foreground">More free tools — no sign-up, no uploads, instant results.</p>
+            </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {relatedTools.map((relatedTool) => (
                 <Link
