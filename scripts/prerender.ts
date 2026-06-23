@@ -4,6 +4,7 @@ import { tools, categories } from '../src/data/tools'
 import { blogPosts } from '../src/data/blog'
 import { getToolEditorial } from '../src/lib/tool-editorial'
 import { getCategoryEditorial } from '../src/lib/category-editorial'
+import { getToolKeywords, getCategoryKeywords, getBlogKeywords, uniqueKeywords, platformKeywords } from '../src/lib/seoKeywords'
 
 // Load translations from pre-generated files
 const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh']
@@ -151,7 +152,7 @@ function generatePageWrapper(locale: string, title: string, contentHtml: string)
   `
 }
 
-function processHtmlTemplate(templateHtml: string, routePath: string, locale: string, title: string, description: string, contentHtml: string): string {
+function processHtmlTemplate(templateHtml: string, routePath: string, locale: string, title: string, description: string, contentHtml: string, keywords?: string[]): string {
   let html = templateHtml
 
   // Clean title & description templates
@@ -161,6 +162,12 @@ function processHtmlTemplate(templateHtml: string, routePath: string, locale: st
   html = html.replace(/<meta name="twitter:description" content="[^"]*"/i, `<meta name="twitter:description" content="${escapeHtml(description)}"`)
   html = html.replace(/<meta property="og:title" content="[^"]*"/i, `<meta property="og:title" content="${escapeHtml(title)}"`)
   html = html.replace(/<meta name="twitter:title" content="[^"]*"/i, `<meta name="twitter:title" content="${escapeHtml(title)}"`)
+
+  // Keywords template replacement
+  if (keywords && keywords.length > 0) {
+    const kwString = uniqueKeywords(keywords).join(', ')
+    html = html.replace(/<meta name="keywords" content="[^"]*"/i, `<meta name="keywords" content="${escapeHtml(kwString)}"`)
+  }
 
   // Canonical URLs
   const fullUrl = `https://smartdigitaltips.com${routePath}`
@@ -177,6 +184,7 @@ function processHtmlTemplate(templateHtml: string, routePath: string, locale: st
 
   return html
 }
+
 
 // Content generation helpers for each page type
 function getHomeHtml(locale: string): string {
@@ -657,7 +665,7 @@ function runPrerender() {
       description: 'Use 50+ free browser tools. Private, instant, no signup required.',
     })
     const homeHtml = getHomeHtml(locale)
-    const homeFileHtml = processHtmlTemplate(templateHtml, homePath, locale, homeSeo.title, homeSeo.description, homeHtml)
+    const homeFileHtml = processHtmlTemplate(templateHtml, homePath, locale, homeSeo.title, homeSeo.description, homeHtml, platformKeywords)
     const homeDir = join(process.cwd(), 'dist', locale)
     mkdirSync(homeDir, { recursive: true })
     writeFileSync(join(homeDir, 'index.html'), homeFileHtml, 'utf8')
@@ -672,7 +680,7 @@ function runPrerender() {
         description: `Read our ${pageId} information page.`,
       })
       const pageHtml = getStaticPageHtml(pageId)
-      const pageFileHtml = processHtmlTemplate(templateHtml, pagePath, locale, pageSeo.title, pageSeo.description, pageHtml)
+      const pageFileHtml = processHtmlTemplate(templateHtml, pagePath, locale, pageSeo.title, pageSeo.description, pageHtml, platformKeywords)
       const pageDir = join(process.cwd(), 'dist', locale, pageId)
       mkdirSync(pageDir, { recursive: true })
       writeFileSync(join(pageDir, 'index.html'), pageFileHtml, 'utf8')
@@ -688,7 +696,8 @@ function runPrerender() {
         description: catLabel.description,
       })
       const catHtml = getCategoryHtml(locale, cat.id)
-      const catFileHtml = processHtmlTemplate(templateHtml, catPath, locale, catSeo.title, catSeo.description, catHtml)
+      const catKeywords = getCategoryKeywords(cat)
+      const catFileHtml = processHtmlTemplate(templateHtml, catPath, locale, catSeo.title, catSeo.description, catHtml, catKeywords)
       const catDir = join(process.cwd(), 'dist', locale, 'category', cat.id)
       mkdirSync(catDir, { recursive: true })
       writeFileSync(join(catDir, 'index.html'), catFileHtml, 'utf8')
@@ -704,7 +713,8 @@ function runPrerender() {
         description: l.description,
       })
       const toolHtml = getToolHtml(locale, tool.id)
-      const toolFileHtml = processHtmlTemplate(templateHtml, toolRoutePath, locale, toolSeo.title, toolSeo.description, toolHtml)
+      const toolKeywords = getToolKeywords(tool)
+      const toolFileHtml = processHtmlTemplate(templateHtml, toolRoutePath, locale, toolSeo.title, toolSeo.description, toolHtml, toolKeywords)
       
       // tool.path is /tools/tool-name, so we join locale and tool.path (skipping leading slash of tool.path)
       const cleanToolPath = tool.path.replace(/^\//, '')
@@ -721,7 +731,7 @@ function runPrerender() {
       description: 'Useful guides and articles on image optimization, PDF editing, and productivity.',
     })
     const blogListHtml = getBlogListHtml(locale)
-    const blogListFileHtml = processHtmlTemplate(templateHtml, blogListPath, locale, blogListSeo.title, blogListSeo.description, blogListHtml)
+    const blogListFileHtml = processHtmlTemplate(templateHtml, blogListPath, locale, blogListSeo.title, blogListSeo.description, blogListHtml, platformKeywords)
     const blogListDir = join(process.cwd(), 'dist', locale, 'blog')
     mkdirSync(blogListDir, { recursive: true })
     writeFileSync(join(blogListDir, 'index.html'), blogListFileHtml, 'utf8')
@@ -735,12 +745,14 @@ function runPrerender() {
         description: post.excerpt,
       })
       const postHtml = getBlogPostHtml(locale, post.slug)
-      const postFileHtml = processHtmlTemplate(templateHtml, postPath, locale, postSeo.title, postSeo.description, postHtml)
+      const postKeywords = getBlogKeywords(post)
+      const postFileHtml = processHtmlTemplate(templateHtml, postPath, locale, postSeo.title, postSeo.description, postHtml, postKeywords)
       const postDir = join(process.cwd(), 'dist', locale, 'blog', post.slug)
       mkdirSync(postDir, { recursive: true })
       writeFileSync(join(postDir, 'index.html'), postFileHtml, 'utf8')
       generatedCount++
     }
+
   }
 
   console.log(`\n🎉 Success! Pre-rendered ${generatedCount} static pages across all locales.`)

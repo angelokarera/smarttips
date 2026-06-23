@@ -35,8 +35,8 @@
   },
   "tools": {
     "image-compressor": {
-      "title": "Free Image Compressor | Reduce JPG, PNG, WebP Size Online - SmartDigitalTips",
-      "description": "Compress images online for free. Reduce JPG, PNG, and WebP file sizes without losing quality. Fast, secure, and private image compression tool."
+      "title": "Compress Images Free — Reduce JPG, PNG & WebP Size | SmartDigitalTips",
+      "description": "Reduce image file size by up to 80% instantly. Free browser-based JPG, PNG & WebP compressor. No upload to server, no sign-up needed."
     },
     "image-to-pdf": {
       "title": "Image to PDF Converter | Free JPG to PDF Online - SmartDigitalTips",
@@ -59,16 +59,16 @@
       "description": "Split PDF files online for free. Extract specific pages or divide PDFs into multiple documents. Easy and secure PDF splitting tool."
     },
     "pdf-to-word": {
-      "title": "PDF to Word Converter | Free Online Conversion - SmartDigitalTips",
-      "description": "Convert PDF to Word online for free. Transform PDF documents into editable DOCX files while preserving formatting."
+      "title": "PDF to Word Converter — Free & Instant | SmartDigitalTips",
+      "description": "Convert PDF to editable Word (DOCX) in seconds. Preserves fonts, images & layout. 100% free, private, no registration required."
     },
     "pdf-to-image": {
       "title": "PDF to Image Converter | Convert PDF to JPG/PNG Free - SmartDigitalTips",
       "description": "Convert PDF pages to high-quality JPG or PNG images. Free online PDF to image converter with customizable resolution."
     },
     "word-counter": {
-      "title": "Word Counter Online | Character, Sentence & Paragraph Count - SmartDigitalTips",
-      "description": "Free online word counter tool. Count words, characters, sentences, and paragraphs in real-time. Perfect for writers, students, and SEO."
+      "title": "Free Word Counter — Characters, Sentences & Reading Time | SmartDigitalTips",
+      "description": "Count words, characters, paragraphs & reading time in real-time. Free online word counter for writers, students & SEO professionals."
     },
     "case-converter": {
       "title": "Case Converter | Uppercase, Lowercase, Title Case Online - SmartDigitalTips",
@@ -99,16 +99,16 @@
       "description": "Free compound interest calculator. Calculate investment growth, savings goals, and see how your money grows over time with compound interest."
     },
     "qr-code-generator": {
-      "title": "Free QR Code Generator | Create QR Codes Online - SmartDigitalTips",
-      "description": "Generate QR codes for free. Create QR codes for URLs, text, contact cards, WiFi, and more. Customize size and download in PNG or SVG."
+      "title": "Free QR Code Generator — URLs, WiFi & vCard | SmartDigitalTips",
+      "description": "Create QR codes for URLs, WiFi, contacts & text instantly — free. Customize, download PNG or SVG. No account, no watermark required."
     },
     "invoice-generator": {
       "title": "Free Invoice Generator | Create Professional Invoices Online - SmartDigitalTips",
       "description": "Generate professional invoices for free. Add your logo, items, taxes, and download as PDF. Perfect for freelancers and small businesses."
     },
     "password-generator": {
-      "title": "Secure Password Generator | Strong Random Passwords Free - SmartDigitalTips",
-      "description": "Generate strong, secure passwords for free. Customize length, symbols, numbers, and uppercase. Create unbreakable passwords instantly."
+      "title": "Secure Password Generator — Strong & Random | SmartDigitalTips",
+      "description": "Generate uncrackable random passwords instantly. Set length, symbols & complexity. 100% browser-based — your password never leaves your device."
     },
     "age-calculator": {
       "title": "Age Calculator | Calculate Exact Age in Years, Months, Days - SmartDigitalTips",
@@ -313,62 +313,6 @@
     "ultimate-guide-optimizing-images-web": {
       "title": "Ultimate Guide to Optimizing Images for the Web | SmartDigitalTips",
       "description": "Learn how to compress, resize, and convert images to WebP to dramatically improve your website speed and SEO rankings."
-    },
-    "why-pdf-is-standard-for-documents": {
-      "title": "Why PDF is the Standard for Documents | SmartDigitalTips",
-      "description": "Learn why PDF remains the undisputed king of document sharing and discover easy ways to merge, split, and edit your PDF files securely."
-    },
-    "importance-of-writing-original-content-avoiding-plagiarism": {
-      "title": "Original Content & Avoiding Plagiarism in 2026 | SmartDigitalTips",
-      "description": "Discover why original content is vital for SEO and how to use plagiarism checkers and word counters to improve your writing quality."
-    },
-    "how-to-create-use-qr-codes-effectively": {
-      "title": "How to Create and Use QR Codes Effectively | SmartDigitalTips",
-      "description": "Learn everything about QR codes. Discover how to generate them for free, best practices for marketing, and creative use cases for your business."
-    },
-    "freelancers-guide-to-invoicing": {
-      "title": "Freelancer Invoicing Guide: Get Paid Faster | SmartDigitalTips",
-      "description": "Learn how to create professional invoices, set clear payment terms, and use free invoice generators to ensure you get paid on time."
-    },
-    "create-strong-passwords-without-paid-tools": {
-      "title": "Create Strong Passwords Free | Security Guide - SmartDigitalTips",
-      "description": "Step-by-step guide to building memorable, strong passwords using free browser tools and a password manager—no paid breach databases required."
-    },
-    "free-developer-tools-in-the-browser": {
-      "title": "Free Browser Developer Tools | JSON, Regex, HTML - SmartDigitalTips",
-      "description": "Discover free in-browser developer utilities for JSON, regex, Base64, URL encoding, and sandboxed HTML preview—private and instant."
-    },
-    "optimize-prompts-claude-gpt4o": {
-      "title": "How to Optimize Prompts for Claude 3.5 Sonnet & GPT-4o | SmartDigitalTips",
-      "description": "Learn structured prompt engineering techniques. Use XML tags, output formatting, and local-first text sanitization tools to optimize Claude and GPT-4o outputs."
-    },
-    "free-web-utilities-developers-guide": {
-      "title": "Complete Guide to Free Developer Web Utilities | SmartDigitalTips",
-      "description": "Discover why local-first developer tools are critical. Formatter, encoder, regex tester, and sandboxed HTML live editor run completely in your browser."
-    },
-    "why-local-first-tools-are-replacing-servers": {
-      "title": "Why Local-First Web Tools Beat Server Apps | SmartDigitalTips",
-      "description": "Explore the shift toward client-side browser processing. Learn how Web Assembly, Web Workers, and Canvas API power instant, private, offline-first web utilities."
-    },
-    "how-to-reduce-pdf-file-size-email": {
-      "title": "How to Reduce PDF File Size for Email Attachments | SmartDigitalTips",
-      "description": "Struggling with large PDF email attachments? Discover how PDF compression works and learn how to reduce file sizes safely in your web browser."
-    },
-    "top-student-productivity-tools-online": {
-      "title": "Top 10 Free Online Tools for Student Productivity | SmartDigitalTips",
-      "description": "Struggling to manage school tasks? Review our top 10 free browser-based tools for calculating GPAs, timing study sessions, and writing citations easily."
-    },
-    "understanding-gpa-scales-calculation": {
-      "title": "GPA Scales Guide: 4.0 vs 5.0 Calculation | SmartDigitalTips",
-      "description": "Confused by weighted vs unweighted GPA? Learn how different GPA scales work, how letter grades map to points, and how to calculate your score."
-    },
-    "guide-css-box-shadows-gradients": {
-      "title": "Guide to CSS Box Shadows and Gradients | SmartDigitalTips",
-      "description": "Master modern CSS styling. Learn how to write code for smooth box shadows and linear/radial gradients, and how to use visual CSS generators."
-    },
-    "freelancers-guide-to-invoicing-getting-paid": {
-      "title": "Freelancer Invoicing & Billing Guide | SmartDigitalTips",
-      "description": "Need to send professional invoices? Read our guide on invoicing requirements, payment terms, and how to use free browser-based invoice generators."
     },
     "f1-monaco-grand-prix-2026-live-updates-full-guide": {
       "title": "F1 Monaco Grand Prix Today: Live Updates, Strategy & Full Guide 2026 | SmartDigitalTips",
