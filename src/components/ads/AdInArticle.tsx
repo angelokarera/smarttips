@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 
 declare global {
   interface Window {
-    adsbygoogle?: any[]
+    adsbygoogle?: unknown[]
   }
 }
 
@@ -16,7 +16,7 @@ export default function AdInArticle() {
     try {
       ;(window.adsbygoogle = window.adsbygoogle || []).push({})
       pushed.current = true
-    } catch (err) {
+    } catch {
       // Fail silently if AdSense is blocked or not loaded.
     }
   }, [])

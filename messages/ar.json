@@ -314,9 +314,61 @@
       "title": "The Ultimate Guide to Optimizing Images for the Web | SmartDigitalTips",
       "description": "Learn how to significantly speed up your website by properly compressing and resizing images without sacrificing visual quality."
     },
-    "f1-monaco-grand-prix-2026-live-updates-full-guide": {
-      "title": "F1 Monaco Grand Prix Today: Live Updates, Strategy & Full Guide 2026 | SmartDigitalTips",
-      "description": "Get all the latest Monaco GP live updates for the 2026 Formula 1 race weekend. Race strategy, qualifying results, circuit insights, and how to watch F1 online."
+    "how-to-compress-images-without-losing-quality": {
+      "title": "How to Compress Images Without Losing Quality: A Real-World Test | SmartDigitalTips",
+      "description": "We tested JPEG, WebP, and PNG compression at different quality levels with real measurements. Here are the exact results and what they mean for your website."
+    },
+    "7-pdf-mistakes-everyone-makes": {
+      "title": "7 PDF Mistakes Everyone Makes (And How to Fix Them) | SmartDigitalTips",
+      "description": "From massive file sizes to broken fonts and missing accessibility tags — these are the PDF mistakes that frustrate your recipients and how to avoid every one of them."
+    },
+    "complete-guide-qr-codes-2026": {
+      "title": "The Complete Guide to QR Codes in 2026: What They Are and How to Use Them for Business | SmartDigitalTips",
+      "description": "QR codes are everywhere in 2026 — but most businesses use them wrong. This guide covers best practices, dynamic vs static codes, design tips, and real use cases that actually work."
+    },
+    "how-to-reduce-pdf-file-size-5-methods": {
+      "title": "How to Reduce PDF File Size Without Losing Quality: 5 Methods Tested | SmartDigitalTips",
+      "description": "We tested 5 different methods to reduce PDF file size — from export settings to compression tools. Here are the results ranked by effectiveness and ease."
+    },
+    "word-count-vs-character-count-why-both-matter": {
+      "title": "Word Count vs Character Count: Why Both Matter for SEO and Social Media | SmartDigitalTips",
+      "description": "Word count and character count serve completely different purposes. Knowing which metric to use — and when — helps you write better content for search engines, social media, and print."
+    },
+    "password-security-2026": {
+      "title": "Password Security in 2026: How to Create Passwords That Are Actually Safe | SmartDigitalTips",
+      "description": "Most password advice is outdated. Here's what security research in 2026 actually says about creating and managing passwords that protect your accounts."
+    },
+    "json-formatting-guide-for-developers": {
+      "title": "JSON Formatting Guide: Why Pretty-Print Matters for Developers | SmartDigitalTips",
+      "description": "JSON is everywhere in modern development. Learn when to format it, when to minify it, and how proper JSON structure can save you hours of debugging."
+    },
+    "best-image-formats-websites-2026": {
+      "title": "The Best Free Image Formats for Websites in 2026: WebP vs AVIF vs JPEG | SmartDigitalTips",
+      "description": "With new image formats emerging and browser support changing fast, which format should you actually use in 2026? We compared file sizes, quality, and compatibility so you don't have to."
+    },
+    "unit-conversion-for-students": {
+      "title": "Unit Conversion for Students: The 10 Most Confusing Conversions Explained | SmartDigitalTips",
+      "description": "Metric to imperial, Celsius to Fahrenheit, bytes to megabytes — these 10 conversions trip up students worldwide. We explain the logic behind each one clearly."
+    },
+    "css-minification-explained": {
+      "title": "CSS Minification Explained: How It Speeds Up Your Website | SmartDigitalTips",
+      "description": "CSS minification removes whitespace, comments, and redundant code to make stylesheets load faster. Here's exactly how it works, how much it helps, and when to use it."
+    },
+    "regex-for-beginners-plain-english-guide": {
+      "title": "Regex for Beginners: A Plain-English Guide to Regular Expressions | SmartDigitalTips",
+      "description": "Regular expressions look like gibberish, but they follow simple rules. This guide teaches you regex from scratch with real examples you can test right now."
+    },
+    "image-aspect-ratios-social-media-2026": {
+      "title": "The Definitive Guide to Image Aspect Ratios for Social Media in 2026 | SmartDigitalTips",
+      "description": "Wrong image dimensions mean cropped thumbnails, broken layouts, and less reach. Here are the exact pixel dimensions for every major platform in 2026."
+    },
+    "how-to-convert-pdf-to-word-without-losing-formatting": {
+      "title": "How to Convert PDF to Word Without Losing Formatting | SmartDigitalTips",
+      "description": "Converting PDFs to editable Word documents is tricky — fonts shift, layouts break, tables go wrong. Here's how to get the best results every time."
+    },
+    "color-contrast-accessibility-wcag-guide": {
+      "title": "How to Test Your Website's Color Contrast for Accessibility (WCAG 2.2) | SmartDigitalTips",
+      "description": "Color contrast failures are the most common web accessibility issue. Here's how to check contrast ratios, what the WCAG standards actually require, and how to fix failures."
     }
   },
   "ui": {

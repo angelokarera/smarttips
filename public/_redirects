@@ -1,3 +1,14 @@
+# Dead /articles/* URLs indexed by Google → redirect to blog (301)
+/articles/adsense-approval-guide              /en/blog    301
+/articles/free-canva-alternatives-2026.html   /en/blog    301
+/articles/free-canva-alternatives-2026        /en/blog    301
+/articles/google-search-pro                   /en/blog    301
+/articles/*                                   /en/blog    301
+
+# German blog URL fix (was serving homepage)
+/de/blog/why-pdf-is-standard-for-documents    /en/blog/ultimate-guide-optimizing-images-web  301
+/de/*                                        /en/:splat                                     301
+
 # Canonical locale redirects (301)
 /rw                   /fr                   301
 /rw/*                 /fr/:splat            301
@@ -5,13 +16,13 @@
 /about                /en/about             301
 /contact              /en/contact           301
 /privacy              /en/privacy           301
-/terms                /en/terms               301
-/cookies              /en/cookies             301
-/disclaimer           /en/disclaimer          301
-/tools/*              /en/tools/:splat        301
-/category/*           /en/category/:splat     301
-/blog                 /en/blog                301
-/blog/*               /en/blog/:splat         301
+/terms                /en/terms             301
+/cookies              /en/cookies           301
+/disclaimer           /en/disclaimer        301
+/tools/*              /en/tools/:splat      301
+/category/*           /en/category/:splat   301
+/blog                 /en/blog              301
+/blog/*               /en/blog/:splat       301
 
 # SPA fallback — must be last
 /*                    /index.html           200

@@ -10,7 +10,7 @@ export default function AdSidebar() {
     try {
       ;(window.adsbygoogle = window.adsbygoogle || []).push({})
       pushed.current = true
-    } catch (err) {
+    } catch {
       // Fail silently if AdSense is blocked or not loaded.
     }
   }, [])

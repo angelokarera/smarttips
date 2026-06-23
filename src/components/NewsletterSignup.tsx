@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 declare global {
   interface Window {
-    mailchimpCallback?: (data: any) => void
+    mailchimpCallback?: (data: { result: string; msg?: string }) => void
   }
 }
 

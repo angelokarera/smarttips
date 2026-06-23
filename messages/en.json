@@ -314,9 +314,61 @@
       "title": "Ultimate Guide to Optimizing Images for the Web | SmartDigitalTips",
       "description": "Learn how to compress, resize, and convert images to WebP to dramatically improve your website speed and SEO rankings."
     },
-    "f1-monaco-grand-prix-2026-live-updates-full-guide": {
-      "title": "F1 Monaco Grand Prix Today: Live Updates, Strategy & Full Guide 2026 | SmartDigitalTips",
-      "description": "Watch F1 Monaco GP live today. Get real-time updates, race strategy, qualifying results, pit stop breakdowns, and how to stream Formula 1 online legally."
+    "how-to-compress-images-without-losing-quality": {
+      "title": "How to Compress Images Without Losing Quality (Tested) | SmartDigitalTips",
+      "description": "Real compression test: JPEG vs WebP vs PNG at different quality settings. See exact file sizes and which format saves the most bytes without visible quality loss."
+    },
+    "7-pdf-mistakes-everyone-makes": {
+      "title": "7 Common PDF Mistakes and How to Fix Them | SmartDigitalTips",
+      "description": "Avoid these 7 PDF mistakes: oversized files, wrong export settings, no accessibility, broken fonts. Fix them instantly with free browser tools."
+    },
+    "complete-guide-qr-codes-2026": {
+      "title": "Complete Guide to QR Codes for Business in 2026 | SmartDigitalTips",
+      "description": "Learn how to use QR codes effectively in 2026. Static vs dynamic QR codes, design best practices, business use cases, and how to generate them free."
+    },
+    "how-to-reduce-pdf-file-size-5-methods": {
+      "title": "How to Reduce PDF File Size: 5 Methods Tested | SmartDigitalTips",
+      "description": "We tested 5 PDF compression methods and ranked them. Find out which approach cuts file size the most without losing document quality."
+    },
+    "word-count-vs-character-count-why-both-matter": {
+      "title": "Word Count vs Character Count: What Each Means for SEO | SmartDigitalTips",
+      "description": "Understand the difference between word count and character count, why each matters for SEO, social media character limits, and writing better content."
+    },
+    "password-security-2026": {
+      "title": "Password Security in 2026: Create Passwords That Are Safe | SmartDigitalTips",
+      "description": "Updated password security guidance for 2026: length vs complexity, what to avoid, password managers, and how to generate truly random secure passwords for free."
+    },
+    "json-formatting-guide-for-developers": {
+      "title": "JSON Formatting Guide: Pretty-Print vs Minified | SmartDigitalTips",
+      "description": "Learn when to use formatted vs minified JSON, how to read complex structures, debug API responses, and format JSON instantly for free in your browser."
+    },
+    "best-image-formats-websites-2026": {
+      "title": "Best Image Formats for Websites in 2026: WebP vs AVIF vs JPEG | SmartDigitalTips",
+      "description": "Compare WebP, AVIF, JPEG, and PNG for web use in 2026. Real file size data, browser support, and which format to use for photos, logos, and graphics."
+    },
+    "unit-conversion-for-students": {
+      "title": "Unit Conversion for Students: 10 Confusing Conversions Explained | SmartDigitalTips",
+      "description": "Clear explanations of the 10 most confusing unit conversions for students: metric vs imperial, temperature, area, data storage, and more with a free converter."
+    },
+    "css-minification-explained": {
+      "title": "CSS Minification Explained: Speed Up Your Website | SmartDigitalTips",
+      "description": "Learn exactly how CSS minification works, how much it reduces file size, when to minify vs not, and how to minify CSS instantly for free."
+    },
+    "regex-for-beginners-plain-english-guide": {
+      "title": "Regex for Beginners: Plain-English Guide to Regular Expressions | SmartDigitalTips",
+      "description": "Learn regular expressions from scratch with simple examples. Understand regex syntax, common patterns, and practice with a free regex tester in your browser."
+    },
+    "image-aspect-ratios-social-media-2026": {
+      "title": "Social Media Image Sizes and Aspect Ratios in 2026 | SmartDigitalTips",
+      "description": "Exact image dimensions for Instagram, YouTube, X/Twitter, LinkedIn, TikTok, and Facebook in 2026. Stop guessing — use the right sizes every time."
+    },
+    "how-to-convert-pdf-to-word-without-losing-formatting": {
+      "title": "How to Convert PDF to Word Without Losing Formatting | SmartDigitalTips",
+      "description": "Convert PDF to editable Word documents without formatting issues. Understand why layouts break and how to fix them with free browser-based PDF tools."
+    },
+    "color-contrast-accessibility-wcag-guide": {
+      "title": "Color Contrast Accessibility Guide: WCAG 2.2 Requirements | SmartDigitalTips",
+      "description": "Learn WCAG 2.2 color contrast requirements, how to test contrast ratios, common failure patterns, and how to fix contrast issues on your website for free."
     }
   },
   "ui": {

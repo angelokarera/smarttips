@@ -157,23 +157,23 @@ function processHtmlTemplate(templateHtml: string, routePath: string, locale: st
 
   // Clean title & description templates
   html = html.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(title)}</title>`)
-  html = html.replace(/<meta name="description" content="[^"]*"/i, `<meta name="description" content="${escapeHtml(description)}"`)
-  html = html.replace(/<meta property="og:description" content="[^"]*"/i, `<meta property="og:description" content="${escapeHtml(description)}"`)
-  html = html.replace(/<meta name="twitter:description" content="[^"]*"/i, `<meta name="twitter:description" content="${escapeHtml(description)}"`)
-  html = html.replace(/<meta property="og:title" content="[^"]*"/i, `<meta property="og:title" content="${escapeHtml(title)}"`)
-  html = html.replace(/<meta name="twitter:title" content="[^"]*"/i, `<meta name="twitter:title" content="${escapeHtml(title)}"`)
+  html = html.replace(/<meta\s+name="description"\s+content="[^"]*"/i, `<meta name="description" content="${escapeHtml(description)}"`)
+  html = html.replace(/<meta\s+property="og:description"\s+content="[^"]*"/i, `<meta property="og:description" content="${escapeHtml(description)}"`)
+  html = html.replace(/<meta\s+name="twitter:description"\s+content="[^"]*"/i, `<meta name="twitter:description" content="${escapeHtml(description)}"`)
+  html = html.replace(/<meta\s+property="og:title"\s+content="[^"]*"/i, `<meta property="og:title" content="${escapeHtml(title)}"`)
+  html = html.replace(/<meta\s+name="twitter:title"\s+content="[^"]*"/i, `<meta name="twitter:title" content="${escapeHtml(title)}"`)
 
   // Keywords template replacement
   if (keywords && keywords.length > 0) {
     const kwString = uniqueKeywords(keywords).join(', ')
-    html = html.replace(/<meta name="keywords" content="[^"]*"/i, `<meta name="keywords" content="${escapeHtml(kwString)}"`)
+    html = html.replace(/<meta\s+name="keywords"\s+content="[^"]*"/i, `<meta name="keywords" content="${escapeHtml(kwString)}"`)
   }
 
   // Canonical URLs
   const fullUrl = `https://smartdigitaltips.com${routePath}`
-  html = html.replace(/<link rel="canonical" href="[^"]*"/i, `<link rel="canonical" href="${fullUrl}"`)
-  html = html.replace(/<meta property="og:url" content="[^"]*"/i, `<meta property="og:url" content="${fullUrl}"`)
-  html = html.replace(/<meta name="twitter:url" content="[^"]*"/i, `<meta name="twitter:url" content="${fullUrl}"`)
+  html = html.replace(/<link\s+rel="canonical"\s+href="[^"]*"/i, `<link rel="canonical" href="${fullUrl}"`)
+  html = html.replace(/<meta\s+property="og:url"\s+content="[^"]*"/i, `<meta property="og:url" content="${fullUrl}"`)
+  html = html.replace(/<meta\s+name="twitter:url"\s+content="[^"]*"/i, `<meta name="twitter:url" content="${fullUrl}"`)
 
   // Language attribute
   html = html.replace(/<html lang="[^"]*"/i, `<html lang="${locale}"`)

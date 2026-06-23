@@ -13,12 +13,14 @@ export default function PdfToWord() {
 
   // Load PDF.js from CDN dynamically
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if ((window as any).pdfjsLib) return
 
     const script = document.createElement('script')
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js'
     script.async = true
     script.onload = () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const pdfjs = (window as any).pdfjsLib
       if (pdfjs) {
         pdfjs.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js'
@@ -38,6 +40,7 @@ export default function PdfToWord() {
   const handleConvert = async () => {
     if (!file) return
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const pdfjs = (window as any).pdfjsLib
     if (!pdfjs) {
       toast.error('PDF library is loading, please try again in a second.')
@@ -57,6 +60,7 @@ export default function PdfToWord() {
           for (let i = 1; i <= pdf.numPages; i++) {
             const page = await pdf.getPage(i)
             const textContent = await page.getTextContent()
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const pageText = textContent.items.map((item: any) => item.str).join(' ')
             fullText += `[Page ${i}]\n${pageText}\n\n`
           }

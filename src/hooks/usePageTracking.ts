@@ -3,7 +3,7 @@ import { useLocation } from 'react-router'
 
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void
+    gtag?: (...args: unknown[]) => void
   }
 }
 
