@@ -530,8 +530,8 @@
       "privacyNote": "Everything runs in your browser. We never see your files."
     },
     "cookie": {
-      "title": "Cookies, ads, and analytics",
-      "body": "We use essential storage for preferences and may use Google Analytics cookies for measurement and site improvements. You can accept or reject optional cookies.",
+      "title": "Cookie Preferences",
+      "body": "We use cookies to improve your experience. You can accept or reject optional cookies.",
       "accept": "Accept all",
       "reject": "Reject optional",
       "privacy": "Privacy Policy",
