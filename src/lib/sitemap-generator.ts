@@ -83,8 +83,6 @@ function hreflangBlock(path: string): string {
 interface SitemapUrl {
   path: string
   lastmod: Date
-  changefreq: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'
-  priority: number
   /** Optional comment label shown above this block in the XML */
   groupLabel?: string
 }
@@ -137,27 +135,22 @@ export class SitemapGenerator {
     // ── 1. Static / Core Pages ─────────────────────────────────────────────
     const staticPages: Array<{
       path: string
-      priority: number
-      changefreq: SitemapUrl['changefreq']
       groupLabel?: string
     }> = [
-      { path: '/',           priority: 1.0, changefreq: 'daily',   groupLabel: 'Core Pages' },
-      { path: '/about',      priority: 0.7, changefreq: 'monthly' },
-      { path: '/contact',    priority: 0.6, changefreq: 'monthly' },
-      { path: '/blog',       priority: 0.8, changefreq: 'weekly' },
-      // Legal pages — low crawl priority, rarely change
-      { path: '/privacy',    priority: 0.3, changefreq: 'yearly',  groupLabel: 'Legal Pages' },
-      { path: '/cookies',    priority: 0.3, changefreq: 'yearly' },
-      { path: '/terms',      priority: 0.3, changefreq: 'yearly' },
-      { path: '/disclaimer', priority: 0.3, changefreq: 'yearly' },
+      { path: '/',           groupLabel: 'Core Pages' },
+      { path: '/about' },
+      { path: '/contact' },
+      { path: '/blog' },
+      { path: '/privacy',    groupLabel: 'Legal Pages' },
+      { path: '/cookies' },
+      { path: '/terms' },
+      { path: '/disclaimer' },
     ]
 
     for (const page of staticPages) {
       addUrl({
         path: page.path || '/',
         lastmod: now,
-        changefreq: page.changefreq,
-        priority: page.priority,
         groupLabel: page.groupLabel,
       })
     }
@@ -168,22 +161,17 @@ export class SitemapGenerator {
       addUrl({
         path: `/category/${category.id}`,
         lastmod: now,
-        changefreq: 'weekly',
-        priority: 0.75,
         groupLabel: firstCategory ? 'Category Pages' : undefined,
       })
       firstCategory = false
     }
 
     // ── 3. Individual Tool Pages ───────────────────────────────────────────
-    // Popular tools get slightly higher priority to signal importance to Google
     let firstTool = true
     for (const tool of tools) {
       addUrl({
         path: tool.path,
         lastmod: now,
-        changefreq: 'weekly',
-        priority: tool.popular ? 0.9 : tool.trending ? 0.85 : 0.8,
         groupLabel: firstTool ? 'Tool Pages' : undefined,
       })
       firstTool = false
@@ -195,8 +183,6 @@ export class SitemapGenerator {
       addUrl({
         path: `/blog/${post.slug}`,
         lastmod: new Date(post.date),
-        changefreq: 'monthly',
-        priority: 0.65,
         groupLabel: firstPost ? 'Blog Posts' : undefined,
       })
       firstPost = false
@@ -238,14 +224,16 @@ export class SitemapGenerator {
     // ── XML declaration & root element ────────────────────────────────────
     lines.push('<?xml version="1.0" encoding="UTF-8"?>')
     lines.push(`<!-- ============================================================`)
-    lines.push(`     SmartDigitalTips — sitemap.xml`)
+    lines.push(`     SmartDigitalTips — sitemap.xml (Optimized for Google 2025)`)
     lines.push(`     Generated: ${generated}`)
     lines.push(`     Total URLs: ${totalUrls} (${entries.length} pages × ${LOCALES.length} locales)`)
-    lines.push(`     Namespace: http://www.sitemaps.org/schemas/sitemap/0.9`)
-    lines.push(`     hreflang:  http://www.w3.org/1999/xhtml`)
-    lines.push(``)
-    lines.push(`     Submit to Google Search Console:`)
-    lines.push(`     https://search.google.com/search-console`)
+    lines.push(`     `)
+    lines.push(`     IMPORTANT: priority and changefreq tags removed per Google guidelines.`)
+    lines.push(`     Google largely ignores these tags as of 2024.`)
+    lines.push(`     `)
+    lines.push(`     Submit to:`)
+    lines.push(`     - Google Search Console: https://search.google.com/search-console`)
+    lines.push(`     - Bing Webmaster: https://www.bing.com/webmasters`)
     lines.push(`     Sitemap URL: ${SITE_URL}/sitemap.xml`)
     lines.push(`     ============================================================ -->`)
     lines.push(
@@ -264,25 +252,19 @@ export class SitemapGenerator {
       // Emit section header comment when group changes
       if (entry.groupLabel && entry.groupLabel !== currentGroup) {
         currentGroup = entry.groupLabel
-        lines.push(`  <!-- ═══════════════════════════════════ ${currentGroup} ═══════════════════════════════════ -->`)
+        lines.push(`  <!-- ${currentGroup} -->`)
         lines.push('')
       }
 
       for (const locale of LOCALES) {
         const loc = localizedUrl(normalized, locale)
-        const localeName = LOCALE_META[locale].name
 
-        lines.push(`  <!-- ${localeName}: ${normalized === '/' ? '(home)' : normalized} -->`)
         lines.push(`  <url>`)
         lines.push(`    <loc>${escapeXml(loc)}</loc>`)
         lines.push(`    <lastmod>${formatLastmod(entry.lastmod)}</lastmod>`)
-        lines.push(`    <changefreq>${entry.changefreq}</changefreq>`)
-        lines.push(`    <priority>${entry.priority.toFixed(1)}</priority>`)
         lines.push(hreflangBlock(pathSuffix))
         lines.push(`  </url>`)
       }
-
-      lines.push('')
     }
 
     lines.push('</urlset>')
@@ -451,10 +433,12 @@ Disallow: /private/
       errors.push('Invalid lastmod format (expected YYYY-MM-DD)')
     }
 
-    // ── Priority range ─────────────────────────────────────────────────────
-    const priorities = [...xml.matchAll(/<priority>([^<]+)<\/priority>/g)].map((m) => parseFloat(m[1]))
-    if (priorities.some((p) => Number.isNaN(p) || p < 0 || p > 1)) {
-      errors.push('Invalid priority value (must be 0.0–1.0)')
+    // ── Priority and changefreq should not exist (deprecated by Google) ───
+    if (xml.includes('<priority>')) {
+      errors.push('Deprecated: <priority> tags found. Google ignores priority since 2024.')
+    }
+    if (xml.includes('<changefreq>')) {
+      errors.push('Deprecated: <changefreq> tags found. Google ignores changefreq since 2024.')
     }
 
     // ── hreflang count ─────────────────────────────────────────────────────
