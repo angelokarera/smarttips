@@ -8,6 +8,10 @@ import ar from '../../messages/ar.json'
 import es from '../../messages/es.json'
 import pt from '../../messages/pt.json'
 import zh from '../../messages/zh.json'
+import de from '../../messages/de.json'
+import hi from '../../messages/hi.json'
+import ja from '../../messages/ja.json'
+import ko from '../../messages/ko.json'
 
 export interface LabelCopy {
   label?: string
@@ -23,7 +27,7 @@ export interface LocaleMessages {
   }
 }
 
-const messagesByLocale: Record<SupportedLocale, LocaleMessages> = {
+const messagesByLocale: Partial<Record<SupportedLocale, LocaleMessages>> = {
   en: en as LocaleMessages,
   fr: fr as LocaleMessages,
   sw: sw as LocaleMessages,
@@ -31,6 +35,10 @@ const messagesByLocale: Record<SupportedLocale, LocaleMessages> = {
   es: es as LocaleMessages,
   pt: pt as LocaleMessages,
   zh: zh as LocaleMessages,
+  de: de as LocaleMessages,
+  hi: hi as LocaleMessages,
+  ja: ja as LocaleMessages,
+  ko: ko as LocaleMessages,
 }
 
 function bundle(locale: SupportedLocale) {
@@ -44,9 +52,11 @@ function enBundle() {
 /** Dot path, e.g. "nav.home" */
 export function translate(locale: SupportedLocale, key: string, fallback = ''): string {
   const [section, field] = key.split('.')
+  const currentBundle = bundle(locale)
+  const fallbackBundle = enBundle()
   const value =
-    bundle(locale).ui?.[section]?.[field] ??
-    enBundle().ui?.[section]?.[field]
+    currentBundle?.ui?.[section]?.[field] ??
+    fallbackBundle?.ui?.[section]?.[field]
   return value ?? fallback
 }
 
@@ -55,8 +65,10 @@ export function getCategoryLabel(
   locale: SupportedLocale,
   fallback: { label: string; description: string }
 ) {
-  const labels = bundle(locale).labels?.categories?.[categoryId]
-  const fb = enBundle().labels?.categories?.[categoryId]
+  const currentBundle = bundle(locale)
+  const fallbackBundle = enBundle()
+  const labels = currentBundle?.labels?.categories?.[categoryId]
+  const fb = fallbackBundle?.labels?.categories?.[categoryId]
   return {
     label: labels?.label ?? fb?.label ?? fallback.label,
     description: labels?.description ?? fb?.description ?? fallback.description,
@@ -68,8 +80,10 @@ export function getToolLabel(
   locale: SupportedLocale,
   fallback: { name: string; description: string }
 ) {
-  const labels = bundle(locale).labels?.tools?.[toolId]
-  const fb = enBundle().labels?.tools?.[toolId]
+  const currentBundle = bundle(locale)
+  const fallbackBundle = enBundle()
+  const labels = currentBundle?.labels?.tools?.[toolId]
+  const fb = fallbackBundle?.labels?.tools?.[toolId]
   return {
     name: labels?.name ?? fb?.name ?? fallback.name,
     description: labels?.description ?? fb?.description ?? fallback.description,

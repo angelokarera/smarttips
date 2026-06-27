@@ -72,14 +72,8 @@ export const LOCALE_SUGGESTION_COPY: Record<
   },
   ko: {
     title: '언어',
-    message: (name) => `SmartDigitalTips는 ${name}로 이용 가능합니다. 해당 언어로 보시겠습니까?`,
-    switch: (name) => `${name}(으)로 전환`,
-    stay: (name) => `${name} 유지`,
-  },
-  rw: {
-    title: 'Ururimi',
-    message: (name) => `SmartDigitalTips iboneka mu ${name}. Wifuza kubona urubuga mu rurimi rwawe?`,
-    switch: (name) => `Hindura ku ${name}`,
-    stay: (name) => `Guma ku ${name}`,
+    message: (name: string) => `SmartDigitalTips는 ${name}로 이용 가능합니다. 해당 언어로 보시겠습니까?`,
+    switch: (name: string) => `${name}(으)로 전환`,
+    stay: (name: string) => `${name} 유지`,
   },
 }

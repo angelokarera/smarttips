@@ -32,7 +32,6 @@ export const COUNTRY_TARGETING: Record<AppLocale, string[]> = {
   hi: ['IN'],
   ja: ['JP'],
   ko: ['KR'],
-  rw: ['RW'],
 }
 
 export const SEO_TRANSLATIONS: Record<
@@ -51,7 +50,6 @@ export const SEO_TRANSLATIONS: Record<
     hi: 'मुफ़्त',
     ja: '無料',
     ko: '무료',
-    rw: 'Kubuntu',
   },
   online: {
     en: 'Online',
@@ -65,7 +63,6 @@ export const SEO_TRANSLATIONS: Record<
     hi: 'ऑनलाइन',
     ja: 'オンライン',
     ko: '온라인',
-    rw: 'Kwenye Murandasi',
   },
   tool: {
     en: 'Tool',
@@ -79,7 +76,6 @@ export const SEO_TRANSLATIONS: Record<
     hi: 'टूल',
     ja: 'ツール',
     ko: '도구',
-    rw: 'Igikoresho',
   },
 }
 

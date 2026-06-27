@@ -9,7 +9,7 @@ export const ADSENSE_CLIENT_ID = 'ca-pub-3519891152775398'
 /** ads.txt publisher ID (no ca- prefix) */
 export const ADSENSE_PUBLISHER_ID = 'pub-3519891152775398'
 
-export const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh', 'de', 'hi', 'ja', 'ko', 'rw'] as const
+export const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh', 'de', 'hi', 'ja', 'ko'] as const
 export type AppLocale = (typeof LOCALES)[number]
 export const DEFAULT_LOCALE: AppLocale = 'en'
 
@@ -28,7 +28,6 @@ export const LOCALE_META: Record<
   hi: { name: 'Hindi', hreflang: 'hi', ogLocale: 'hi_IN', dir: 'ltr' },
   ja: { name: 'Japanese', hreflang: 'ja', ogLocale: 'ja_JP', dir: 'ltr' },
   ko: { name: 'Korean', hreflang: 'ko', ogLocale: 'ko_KR', dir: 'ltr' },
-  rw: { name: 'Kinyarwanda', hreflang: 'rw', ogLocale: 'rw_RW', dir: 'ltr' },
 }
 
 export function isAppLocale(value: string): value is AppLocale {
