@@ -531,7 +531,7 @@
     },
     "cookie": {
       "title": "Cookies, ads, and analytics",
-      "body": "We use essential storage for preferences and may use Google Analytics and Google AdSense cookies for measurement, ad delivery, fraud prevention, and personalized ads where allowed. You can accept or reject optional cookies.",
+      "body": "We use essential storage for preferences and may use Google Analytics cookies for measurement and site improvements. You can accept or reject optional cookies.",
       "accept": "Accept all",
       "reject": "Reject optional",
       "privacy": "Privacy Policy",
