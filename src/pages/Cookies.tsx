@@ -83,12 +83,7 @@ export default function Cookies() {
                     <td className="px-4 py-2">24 hours</td>
                     <td className="px-4 py-2">Distinguishes users for tracking daily trends.</td>
                   </tr>
-                  <tr>
-                    <td className="px-4 py-2 font-mono">__gads, __gpi</td>
-                    <td className="px-4 py-2">Advertising (AdSense)</td>
-                    <td className="px-4 py-2">13 months</td>
-                    <td className="px-4 py-2">Measures ad views, clicks, and prevents click fraud.</td>
-                  </tr>
+
                 </tbody>
               </table>
             </div>
@@ -104,24 +99,14 @@ export default function Cookies() {
           <section>
             <h2 className="mb-3 text-xl font-bold">4. Analytics Cookies</h2>
             <p className="leading-relaxed text-muted-foreground">
-              If you consent to cookies, we load Google Analytics (Property ID: 521386075 | Measurement ID: G-4P8GW43EWX) to gather anonymous, aggregate metrics (such as page views, user location country, and average time on site). This helps us improve our browser-based tools.
+              If you consent to cookies, we use Google Analytics to gather anonymous, aggregate metrics (such as page views, user location country, and average time on site). This helps us improve our browser-based tools.
             </p>
           </section>
 
-          <section>
-            <h2 className="mb-3 text-xl font-bold">5. Advertising Cookies (Google AdSense)</h2>
-            <p className="leading-relaxed text-muted-foreground">
-              We display ads served by Google AdSense (Publisher: ca-pub-3519891152775398). Google uses advertising cookies like DoubleClick to personalize the ads shown to you based on your browsing history across the web.
-            </p>
-            <ul className="mt-2 list-inside list-disc space-y-2 text-muted-foreground">
-              <li>Google may use cookies to serve relevant ads.</li>
-              <li>You can view and edit your personalization settings at <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-foreground underline">Google Ads Settings</a>.</li>
-              <li>You can also opt out of third-party vendors' cookies for personalized advertising at <a href="https://optout.aboutads.info/" target="_blank" rel="noopener noreferrer" className="text-foreground underline">aboutads.info</a>.</li>
-            </ul>
-          </section>
+
 
           <section>
-            <h2 className="mb-3 text-xl font-bold">6. How to Disable or Remove Cookies</h2>
+            <h2 className="mb-3 text-xl font-bold">5. How to Disable or Remove Cookies</h2>
             <p className="leading-relaxed text-muted-foreground">
               You can configure your browser to decline cookies, notify you before receiving a cookie, or delete existing cookies. To do this, check your browser's documentation or settings:
             </p>
@@ -134,16 +119,16 @@ export default function Cookies() {
           </section>
 
           <section>
-            <h2 className="mb-3 text-xl font-bold">7. Changing Your Consent</h2>
+            <h2 className="mb-3 text-xl font-bold">6. Changing Your Consent</h2>
             <p className="leading-relaxed text-muted-foreground">
               You can withdraw or change your consent at any time by clearing your browser cookies and site data for smartdigitaltips.com. This will re-trigger the cookie consent banner when you next refresh or visit.
             </p>
           </section>
 
           <section>
-            <h2 className="mb-3 text-xl font-bold">8. Contact</h2>
+            <h2 className="mb-3 text-xl font-bold">7. Contact</h2>
             <p className="leading-relaxed text-muted-foreground">
-              If you have questions about cookies or advertising technologies on SmartDigitalTips, contact us at{' '}
+              If you have questions about cookies on SmartDigitalTips, contact us at{' '}
               <a href={`mailto:${CONTACT_EMAIL}`} className="text-foreground underline">
                 {CONTACT_EMAIL}
               </a>.
