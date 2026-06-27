@@ -261,6 +261,78 @@
     "stopwatch": {
       "title": "免费 Stopwatch 在线 | SmartDigitalTips",
       "description": "免费 Stopwatch 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "css-flexbox-generator": {
+      "title": "免费 CSS Flexbox Generator 在线 | SmartDigitalTips",
+      "description": "免费 CSS Flexbox Generator 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "css-grid-generator": {
+      "title": "免费 CSS Grid Generator 在线 | SmartDigitalTips",
+      "description": "免费 CSS Grid Generator 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "border-radius-generator": {
+      "title": "免费 CSS Border Radius Generator 在线 | SmartDigitalTips",
+      "description": "免费 CSS Border Radius Generator 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "css-animation-generator": {
+      "title": "免费 CSS Animation Generator 在线 | SmartDigitalTips",
+      "description": "免费 CSS Animation Generator 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "meta-tag-generator": {
+      "title": "免费 Meta Tag Generator 在线 | SmartDigitalTips",
+      "description": "免费 Meta Tag Generator 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "html-entity-encoder": {
+      "title": "免费 HTML Entity Encoder 在线 | SmartDigitalTips",
+      "description": "免费 HTML Entity Encoder 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "js-minifier": {
+      "title": "免费 JavaScript Minifier 在线 | SmartDigitalTips",
+      "description": "免费 JavaScript Minifier 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "markdown-to-html": {
+      "title": "免费 Markdown to HTML Converter 在线 | SmartDigitalTips",
+      "description": "免费 Markdown to HTML Converter 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "json-to-csv": {
+      "title": "免费 JSON to CSV Converter 在线 | SmartDigitalTips",
+      "description": "免费 JSON to CSV Converter 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "youtube-thumbnail-downloader": {
+      "title": "免费 YouTube Thumbnail Downloader 在线 | SmartDigitalTips",
+      "description": "免费 YouTube Thumbnail Downloader 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "lorem-ipsum-generator": {
+      "title": "免费 Lorem Ipsum Generator 在线 | SmartDigitalTips",
+      "description": "免费 Lorem Ipsum Generator 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "aspect-ratio-calculator": {
+      "title": "免费 Aspect Ratio Calculator 在线 | SmartDigitalTips",
+      "description": "免费 Aspect Ratio Calculator 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "unix-timestamp": {
+      "title": "免费 Unix Timestamp Converter 在线 | SmartDigitalTips",
+      "description": "免费 Unix Timestamp Converter 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "diff-checker": {
+      "title": "免费 Text Diff Checker 在线 | SmartDigitalTips",
+      "description": "免费 Text Diff Checker 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "image-to-base64": {
+      "title": "免费 Image to Base64 Converter 在线 | SmartDigitalTips",
+      "description": "免费 Image to Base64 Converter 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "pomodoro-timer": {
+      "title": "免费 Pomodoro Timer 在线 | SmartDigitalTips",
+      "description": "免费 Pomodoro Timer 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "og-preview": {
+      "title": "免费 Open Graph Social Preview 在线 | SmartDigitalTips",
+      "description": "免费 Open Graph Social Preview 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
+    },
+    "ai-text-detector": {
+      "title": "免费 AI Text Detector 在线 | SmartDigitalTips",
+      "description": "免费 AI Text Detector 在线. 无需注册. 在浏览器中运行 — 文件保持私密."
     }
   },
   "categories": {
@@ -741,6 +813,78 @@
       "stopwatch": {
         "name": "Stopwatch",
         "description": "免费 Stopwatch 在线."
+      },
+      "css-flexbox-generator": {
+        "name": "CSS Flexbox Generator",
+        "description": "免费 CSS Flexbox Generator 在线."
+      },
+      "css-grid-generator": {
+        "name": "CSS Grid Generator",
+        "description": "免费 CSS Grid Generator 在线."
+      },
+      "border-radius-generator": {
+        "name": "CSS Border Radius Generator",
+        "description": "免费 CSS Border Radius Generator 在线."
+      },
+      "css-animation-generator": {
+        "name": "CSS Animation Generator",
+        "description": "免费 CSS Animation Generator 在线."
+      },
+      "meta-tag-generator": {
+        "name": "Meta Tag Generator",
+        "description": "免费 Meta Tag Generator 在线."
+      },
+      "html-entity-encoder": {
+        "name": "HTML Entity Encoder",
+        "description": "免费 HTML Entity Encoder 在线."
+      },
+      "js-minifier": {
+        "name": "JavaScript Minifier",
+        "description": "免费 JavaScript Minifier 在线."
+      },
+      "markdown-to-html": {
+        "name": "Markdown to HTML Converter",
+        "description": "免费 Markdown to HTML Converter 在线."
+      },
+      "json-to-csv": {
+        "name": "JSON to CSV Converter",
+        "description": "免费 JSON to CSV Converter 在线."
+      },
+      "youtube-thumbnail-downloader": {
+        "name": "YouTube Thumbnail Downloader",
+        "description": "免费 YouTube Thumbnail Downloader 在线."
+      },
+      "lorem-ipsum-generator": {
+        "name": "Lorem Ipsum Generator",
+        "description": "免费 Lorem Ipsum Generator 在线."
+      },
+      "aspect-ratio-calculator": {
+        "name": "Aspect Ratio Calculator",
+        "description": "免费 Aspect Ratio Calculator 在线."
+      },
+      "unix-timestamp": {
+        "name": "Unix Timestamp Converter",
+        "description": "免费 Unix Timestamp Converter 在线."
+      },
+      "diff-checker": {
+        "name": "Text Diff Checker",
+        "description": "免费 Text Diff Checker 在线."
+      },
+      "image-to-base64": {
+        "name": "Image to Base64 Converter",
+        "description": "免费 Image to Base64 Converter 在线."
+      },
+      "pomodoro-timer": {
+        "name": "Pomodoro Timer",
+        "description": "免费 Pomodoro Timer 在线."
+      },
+      "og-preview": {
+        "name": "Open Graph Social Preview",
+        "description": "免费 Open Graph Social Preview 在线."
+      },
+      "ai-text-detector": {
+        "name": "AI Text Detector",
+        "description": "免费 AI Text Detector 在线."
       }
     }
   },

@@ -261,6 +261,78 @@
     "stopwatch": {
       "title": "Bure Stopwatch Mtandaoni | SmartDigitalTips",
       "description": "Bure Stopwatch Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "css-flexbox-generator": {
+      "title": "Bure CSS Flexbox Generator Mtandaoni | SmartDigitalTips",
+      "description": "Bure CSS Flexbox Generator Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "css-grid-generator": {
+      "title": "Bure CSS Grid Generator Mtandaoni | SmartDigitalTips",
+      "description": "Bure CSS Grid Generator Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "border-radius-generator": {
+      "title": "Bure CSS Border Radius Generator Mtandaoni | SmartDigitalTips",
+      "description": "Bure CSS Border Radius Generator Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "css-animation-generator": {
+      "title": "Bure CSS Animation Generator Mtandaoni | SmartDigitalTips",
+      "description": "Bure CSS Animation Generator Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "meta-tag-generator": {
+      "title": "Bure Meta Tag Generator Mtandaoni | SmartDigitalTips",
+      "description": "Bure Meta Tag Generator Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "html-entity-encoder": {
+      "title": "Bure HTML Entity Encoder Mtandaoni | SmartDigitalTips",
+      "description": "Bure HTML Entity Encoder Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "js-minifier": {
+      "title": "Bure JavaScript Minifier Mtandaoni | SmartDigitalTips",
+      "description": "Bure JavaScript Minifier Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "markdown-to-html": {
+      "title": "Bure Markdown to HTML Converter Mtandaoni | SmartDigitalTips",
+      "description": "Bure Markdown to HTML Converter Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "json-to-csv": {
+      "title": "Bure JSON to CSV Converter Mtandaoni | SmartDigitalTips",
+      "description": "Bure JSON to CSV Converter Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "youtube-thumbnail-downloader": {
+      "title": "Bure YouTube Thumbnail Downloader Mtandaoni | SmartDigitalTips",
+      "description": "Bure YouTube Thumbnail Downloader Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "lorem-ipsum-generator": {
+      "title": "Bure Lorem Ipsum Generator Mtandaoni | SmartDigitalTips",
+      "description": "Bure Lorem Ipsum Generator Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "aspect-ratio-calculator": {
+      "title": "Bure Aspect Ratio Calculator Mtandaoni | SmartDigitalTips",
+      "description": "Bure Aspect Ratio Calculator Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "unix-timestamp": {
+      "title": "Bure Unix Timestamp Converter Mtandaoni | SmartDigitalTips",
+      "description": "Bure Unix Timestamp Converter Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "diff-checker": {
+      "title": "Bure Text Diff Checker Mtandaoni | SmartDigitalTips",
+      "description": "Bure Text Diff Checker Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "image-to-base64": {
+      "title": "Bure Image to Base64 Converter Mtandaoni | SmartDigitalTips",
+      "description": "Bure Image to Base64 Converter Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "pomodoro-timer": {
+      "title": "Bure Pomodoro Timer Mtandaoni | SmartDigitalTips",
+      "description": "Bure Pomodoro Timer Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "og-preview": {
+      "title": "Bure Open Graph Social Preview Mtandaoni | SmartDigitalTips",
+      "description": "Bure Open Graph Social Preview Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
+    },
+    "ai-text-detector": {
+      "title": "Bure AI Text Detector Mtandaoni | SmartDigitalTips",
+      "description": "Bure AI Text Detector Mtandaoni. Hakuna usajili. Inafanya kazi kwenye kivinjari — faili zako zinabaki salama."
     }
   },
   "categories": {
@@ -741,6 +813,78 @@
       "stopwatch": {
         "name": "Stopwatch",
         "description": "Bure Stopwatch Mtandaoni."
+      },
+      "css-flexbox-generator": {
+        "name": "CSS Flexbox Generator",
+        "description": "Bure CSS Flexbox Generator Mtandaoni."
+      },
+      "css-grid-generator": {
+        "name": "CSS Grid Generator",
+        "description": "Bure CSS Grid Generator Mtandaoni."
+      },
+      "border-radius-generator": {
+        "name": "CSS Border Radius Generator",
+        "description": "Bure CSS Border Radius Generator Mtandaoni."
+      },
+      "css-animation-generator": {
+        "name": "CSS Animation Generator",
+        "description": "Bure CSS Animation Generator Mtandaoni."
+      },
+      "meta-tag-generator": {
+        "name": "Meta Tag Generator",
+        "description": "Bure Meta Tag Generator Mtandaoni."
+      },
+      "html-entity-encoder": {
+        "name": "HTML Entity Encoder",
+        "description": "Bure HTML Entity Encoder Mtandaoni."
+      },
+      "js-minifier": {
+        "name": "JavaScript Minifier",
+        "description": "Bure JavaScript Minifier Mtandaoni."
+      },
+      "markdown-to-html": {
+        "name": "Markdown to HTML Converter",
+        "description": "Bure Markdown to HTML Converter Mtandaoni."
+      },
+      "json-to-csv": {
+        "name": "JSON to CSV Converter",
+        "description": "Bure JSON to CSV Converter Mtandaoni."
+      },
+      "youtube-thumbnail-downloader": {
+        "name": "YouTube Thumbnail Downloader",
+        "description": "Bure YouTube Thumbnail Downloader Mtandaoni."
+      },
+      "lorem-ipsum-generator": {
+        "name": "Lorem Ipsum Generator",
+        "description": "Bure Lorem Ipsum Generator Mtandaoni."
+      },
+      "aspect-ratio-calculator": {
+        "name": "Aspect Ratio Calculator",
+        "description": "Bure Aspect Ratio Calculator Mtandaoni."
+      },
+      "unix-timestamp": {
+        "name": "Unix Timestamp Converter",
+        "description": "Bure Unix Timestamp Converter Mtandaoni."
+      },
+      "diff-checker": {
+        "name": "Text Diff Checker",
+        "description": "Bure Text Diff Checker Mtandaoni."
+      },
+      "image-to-base64": {
+        "name": "Image to Base64 Converter",
+        "description": "Bure Image to Base64 Converter Mtandaoni."
+      },
+      "pomodoro-timer": {
+        "name": "Pomodoro Timer",
+        "description": "Bure Pomodoro Timer Mtandaoni."
+      },
+      "og-preview": {
+        "name": "Open Graph Social Preview",
+        "description": "Bure Open Graph Social Preview Mtandaoni."
+      },
+      "ai-text-detector": {
+        "name": "AI Text Detector",
+        "description": "Bure AI Text Detector Mtandaoni."
       }
     }
   },

@@ -52,4 +52,34 @@ export const LOCALE_SUGGESTION_COPY: Record<
     switch: (name) => `切换到${name}`,
     stay: (name) => `继续使用${name}`,
   },
+  de: {
+    title: 'Sprache',
+    message: (name) => `SmartDigitalTips ist auf ${name} verfügbar. Möchten Sie die Website auf Deutsch anzeigen?`,
+    switch: (name) => `Zu ${name} wechseln`,
+    stay: (name) => `Bei ${name} bleiben`,
+  },
+  hi: {
+    title: 'भाषा',
+    message: (name) => `SmartDigitalTips ${name} में उपलब्ध है। क्या आप अपनी भाषा में देखना चाहते हैं?`,
+    switch: (name) => `${name} पर स्विच करें`,
+    stay: (name) => `${name} में रहें`,
+  },
+  ja: {
+    title: '言語',
+    message: (name) => `SmartDigitalTipsは${name}で利用可能です。お使いの言語で表示しますか？`,
+    switch: (name) => `${name}に切り替える`,
+    stay: (name) => `${name}のままにする`,
+  },
+  ko: {
+    title: '언어',
+    message: (name) => `SmartDigitalTips는 ${name}로 이용 가능합니다. 해당 언어로 보시겠습니까?`,
+    switch: (name) => `${name}(으)로 전환`,
+    stay: (name) => `${name} 유지`,
+  },
+  rw: {
+    title: 'Ururimi',
+    message: (name) => `SmartDigitalTips iboneka mu ${name}. Wifuza kubona urubuga mu rurimi rwawe?`,
+    switch: (name) => `Hindura ku ${name}`,
+    stay: (name) => `Guma ku ${name}`,
+  },
 }

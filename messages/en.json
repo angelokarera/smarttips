@@ -261,6 +261,78 @@
     "stopwatch": {
       "title": "Online Stopwatch | Lap Timer Free - SmartDigitalTips",
       "description": "Free stopwatch with lap recording. Runs locally in your browser."
+    },
+    "css-flexbox-generator": {
+      "title": "CSS Flexbox Generator | Visual Layout Builder Free - SmartDigitalTips",
+      "description": "Free online CSS flexbox generator. Visually customize flex container and items properties, preview live, and copy CSS code."
+    },
+    "css-grid-generator": {
+      "title": "CSS Grid Generator | Visual Grid Builder Free - SmartDigitalTips",
+      "description": "Create custom CSS grid layouts visually. Adjust rows, columns, and gaps with live preview and instant CSS code export."
+    },
+    "border-radius-generator": {
+      "title": "CSS Border Radius Generator | Visual Corner Tool - SmartDigitalTips",
+      "description": "Easily design rounded corners for buttons and cards. Adjust each corner individually or together and copy the CSS code."
+    },
+    "css-animation-generator": {
+      "title": "CSS Animation Generator | Keyframes Builder Free - SmartDigitalTips",
+      "description": "Generate custom CSS animations with @keyframes. Live preview with fade, slide, scale, rotate, bounce, and pulse presets."
+    },
+    "meta-tag-generator": {
+      "title": "Meta Tag Generator | SEO & Open Graph Tags - SmartDigitalTips",
+      "description": "Free meta tag generator for SEO and social media. Create title, description, OG image, and Twitter card tags instantly."
+    },
+    "html-entity-encoder": {
+      "title": "HTML Entity Encoder & Decoder Free - SmartDigitalTips",
+      "description": "Convert special characters into HTML entities (e.g. &lt;, &gt;, &amp;) or decode them back to readable text online."
+    },
+    "js-minifier": {
+      "title": "JavaScript Minifier | Compress JS Code Online - SmartDigitalTips",
+      "description": "Free JavaScript minifier tool. Strip comments and extra whitespace from JS scripts to reduce file size and speed up page load."
+    },
+    "markdown-to-html": {
+      "title": "Markdown to HTML Converter with Live Preview - SmartDigitalTips",
+      "description": "Free online Markdown to HTML converter. Type or paste Markdown text to view formatted live preview and copy raw HTML."
+    },
+    "json-to-csv": {
+      "title": "JSON to CSV Converter Free Online - SmartDigitalTips",
+      "description": "Convert JSON arrays to CSV spreadsheets online. Export JSON data to Excel-compatible CSV format instantly in your browser."
+    },
+    "youtube-thumbnail-downloader": {
+      "title": "YouTube Thumbnail Downloader HD 1080p Free - SmartDigitalTips",
+      "description": "Free YouTube thumbnail downloader. Extract and save high-res video cover images (1280x720, 640x480) from any YouTube video link."
+    },
+    "lorem-ipsum-generator": {
+      "title": "Lorem Ipsum Generator | Free Dummy Text - SmartDigitalTips",
+      "description": "Free online Lorem Ipsum generator. Custom paragraphs, sentences, or word counts. Features classic latin and hipster dummy text."
+    },
+    "aspect-ratio-calculator": {
+      "title": "Aspect Ratio Calculator | Image & Video Dimensions - SmartDigitalTips",
+      "description": "Calculate aspect ratios and resize dimensions for video, photos, and web design. Quick presets for 16:9, 4:3, 1:1, and 9:16."
+    },
+    "unix-timestamp": {
+      "title": "Unix Timestamp Converter & Real-Time Clock - SmartDigitalTips",
+      "description": "Free Unix timestamp converter. Convert epoch timestamps to human-readable date strings and vice versa. Features live UTC clock."
+    },
+    "diff-checker": {
+      "title": "Text Diff Checker | Compare Text Online Free - SmartDigitalTips",
+      "description": "Compare two text files or code snippets online. Highlight added, modified, and deleted lines with LCS diff algorithm."
+    },
+    "image-to-base64": {
+      "title": "Image to Base64 Converter Online Free - SmartDigitalTips",
+      "description": "Convert images to Base64 strings online. Drag and drop PNG or JPG files to generate Data URI code for HTML img src and CSS."
+    },
+    "pomodoro-timer": {
+      "title": "Pomodoro Timer Online | 25 Min Focus Clock - SmartDigitalTips",
+      "description": "Free online Pomodoro timer. Boost focus and productivity with 25-minute work intervals, break alerts, and session tracking."
+    },
+    "og-preview": {
+      "title": "Open Graph Preview Tool | Social Media Cards - SmartDigitalTips",
+      "description": "Preview Open Graph social media cards for Facebook, Twitter, and LinkedIn. Test title, description, and OG image rendering."
+    },
+    "ai-text-detector": {
+      "title": "AI Text Detector Free | Check ChatGPT & AI Content - SmartDigitalTips",
+      "description": "Free online AI content detector. Analyze text for AI-writing signals like sentence uniformity, transition words, and passive voice."
     }
   },
   "categories": {
@@ -741,6 +813,78 @@
       "stopwatch": {
         "name": "Stopwatch",
         "description": "Precise stopwatch with lap times in your browser."
+      },
+      "css-flexbox-generator": {
+        "name": "CSS Flexbox Generator",
+        "description": "Visual CSS Flexbox layout generator. Adjust flex-direction, justify-content, align-items, gap, and copy clean CSS code."
+      },
+      "css-grid-generator": {
+        "name": "CSS Grid Generator",
+        "description": "Visual CSS Grid builder. Set rows, columns, column gaps, row gaps, and copy copy-pasteable grid CSS code."
+      },
+      "border-radius-generator": {
+        "name": "CSS Border Radius Generator",
+        "description": "Custom CSS border-radius generator with individual corner controls, linked mode, and live interactive preview."
+      },
+      "css-animation-generator": {
+        "name": "CSS Animation Generator",
+        "description": "Visual CSS @keyframes animation creator. Select presets, adjust duration, easing, delay, and copy keyframes CSS."
+      },
+      "meta-tag-generator": {
+        "name": "Meta Tag Generator",
+        "description": "Generate SEO meta tags, Open Graph (Facebook/LinkedIn) and Twitter cards with character length validation."
+      },
+      "html-entity-encoder": {
+        "name": "HTML Entity Encoder",
+        "description": "Encode special characters to HTML entities or decode entities back to plain text. Includes quick reference buttons."
+      },
+      "js-minifier": {
+        "name": "JavaScript Minifier",
+        "description": "Minify JavaScript code online by removing comments and whitespace. View exact byte savings stats."
+      },
+      "markdown-to-html": {
+        "name": "Markdown to HTML Converter",
+        "description": "Convert Markdown to clean HTML with real-time preview, split-pane view, and syntax support for lists, tables, and code blocks."
+      },
+      "json-to-csv": {
+        "name": "JSON to CSV Converter",
+        "description": "Convert JSON array data into downloadable CSV files. Supports automatic header extraction and quote escaping."
+      },
+      "youtube-thumbnail-downloader": {
+        "name": "YouTube Thumbnail Downloader",
+        "description": "Download YouTube video thumbnails in HD (1080p/720p), Standard, and Medium resolutions from any video URL or ID."
+      },
+      "lorem-ipsum-generator": {
+        "name": "Lorem Ipsum Generator",
+        "description": "Generate dummy placeholder text by paragraphs, sentences, or words. Choose between Classic and Hipster variants."
+      },
+      "aspect-ratio-calculator": {
+        "name": "Aspect Ratio Calculator",
+        "description": "Calculate image and video aspect ratios (16:9, 4:3, 1:1) and find proportional scaled dimensions."
+      },
+      "unix-timestamp": {
+        "name": "Unix Timestamp Converter",
+        "description": "Live current Unix epoch timestamp clock and bidirectional converter for Unix timestamps and human-readable UTC/Local dates."
+      },
+      "diff-checker": {
+        "name": "Text Diff Checker",
+        "description": "Compare two text blocks line by line and highlight differences with color-coded additions and deletions."
+      },
+      "image-to-base64": {
+        "name": "Image to Base64 Converter",
+        "description": "Convert PNG, JPG, WebP, SVG, and GIF images into Base64 data URIs for embedding in HTML, CSS, or JSON."
+      },
+      "pomodoro-timer": {
+        "name": "Pomodoro Timer",
+        "description": "Productivity timer based on the Pomodoro Technique: 25-min focus sessions, 5-min short breaks, and long breaks with session tracking."
+      },
+      "og-preview": {
+        "name": "Open Graph Social Preview",
+        "description": "Preview how your website URL will look when shared on Facebook, Twitter/X, and LinkedIn. Generates meta tags."
+      },
+      "ai-text-detector": {
+        "name": "AI Text Detector",
+        "description": "Check text for patterns associated with AI generation (ChatGPT, Claude, Gemini) using sentence variance and vocabulary heuristics."
       }
     }
   },

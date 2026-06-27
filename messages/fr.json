@@ -261,6 +261,78 @@
     "stopwatch": {
       "title": "Gratuit Stopwatch En ligne | SmartDigitalTips",
       "description": "Gratuit Stopwatch En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "css-flexbox-generator": {
+      "title": "Gratuit CSS Flexbox Generator En ligne | SmartDigitalTips",
+      "description": "Gratuit CSS Flexbox Generator En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "css-grid-generator": {
+      "title": "Gratuit CSS Grid Generator En ligne | SmartDigitalTips",
+      "description": "Gratuit CSS Grid Generator En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "border-radius-generator": {
+      "title": "Gratuit CSS Border Radius Generator En ligne | SmartDigitalTips",
+      "description": "Gratuit CSS Border Radius Generator En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "css-animation-generator": {
+      "title": "Gratuit CSS Animation Generator En ligne | SmartDigitalTips",
+      "description": "Gratuit CSS Animation Generator En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "meta-tag-generator": {
+      "title": "Gratuit Meta Tag Generator En ligne | SmartDigitalTips",
+      "description": "Gratuit Meta Tag Generator En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "html-entity-encoder": {
+      "title": "Gratuit HTML Entity Encoder En ligne | SmartDigitalTips",
+      "description": "Gratuit HTML Entity Encoder En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "js-minifier": {
+      "title": "Gratuit JavaScript Minifier En ligne | SmartDigitalTips",
+      "description": "Gratuit JavaScript Minifier En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "markdown-to-html": {
+      "title": "Gratuit Markdown to HTML Converter En ligne | SmartDigitalTips",
+      "description": "Gratuit Markdown to HTML Converter En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "json-to-csv": {
+      "title": "Gratuit JSON to CSV Converter En ligne | SmartDigitalTips",
+      "description": "Gratuit JSON to CSV Converter En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "youtube-thumbnail-downloader": {
+      "title": "Gratuit YouTube Thumbnail Downloader En ligne | SmartDigitalTips",
+      "description": "Gratuit YouTube Thumbnail Downloader En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "lorem-ipsum-generator": {
+      "title": "Gratuit Lorem Ipsum Generator En ligne | SmartDigitalTips",
+      "description": "Gratuit Lorem Ipsum Generator En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "aspect-ratio-calculator": {
+      "title": "Gratuit Aspect Ratio Calculator En ligne | SmartDigitalTips",
+      "description": "Gratuit Aspect Ratio Calculator En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "unix-timestamp": {
+      "title": "Gratuit Unix Timestamp Converter En ligne | SmartDigitalTips",
+      "description": "Gratuit Unix Timestamp Converter En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "diff-checker": {
+      "title": "Gratuit Text Diff Checker En ligne | SmartDigitalTips",
+      "description": "Gratuit Text Diff Checker En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "image-to-base64": {
+      "title": "Gratuit Image to Base64 Converter En ligne | SmartDigitalTips",
+      "description": "Gratuit Image to Base64 Converter En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "pomodoro-timer": {
+      "title": "Gratuit Pomodoro Timer En ligne | SmartDigitalTips",
+      "description": "Gratuit Pomodoro Timer En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "og-preview": {
+      "title": "Gratuit Open Graph Social Preview En ligne | SmartDigitalTips",
+      "description": "Gratuit Open Graph Social Preview En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
+    },
+    "ai-text-detector": {
+      "title": "Gratuit AI Text Detector En ligne | SmartDigitalTips",
+      "description": "Gratuit AI Text Detector En ligne. Sans inscription. Dans votre navigateur — vos fichiers restent privés."
     }
   },
   "categories": {
@@ -741,6 +813,78 @@
       "stopwatch": {
         "name": "Stopwatch",
         "description": "Gratuit Stopwatch En ligne."
+      },
+      "css-flexbox-generator": {
+        "name": "CSS Flexbox Generator",
+        "description": "Gratuit CSS Flexbox Generator En ligne."
+      },
+      "css-grid-generator": {
+        "name": "CSS Grid Generator",
+        "description": "Gratuit CSS Grid Generator En ligne."
+      },
+      "border-radius-generator": {
+        "name": "CSS Border Radius Generator",
+        "description": "Gratuit CSS Border Radius Generator En ligne."
+      },
+      "css-animation-generator": {
+        "name": "CSS Animation Generator",
+        "description": "Gratuit CSS Animation Generator En ligne."
+      },
+      "meta-tag-generator": {
+        "name": "Meta Tag Generator",
+        "description": "Gratuit Meta Tag Generator En ligne."
+      },
+      "html-entity-encoder": {
+        "name": "HTML Entity Encoder",
+        "description": "Gratuit HTML Entity Encoder En ligne."
+      },
+      "js-minifier": {
+        "name": "JavaScript Minifier",
+        "description": "Gratuit JavaScript Minifier En ligne."
+      },
+      "markdown-to-html": {
+        "name": "Markdown to HTML Converter",
+        "description": "Gratuit Markdown to HTML Converter En ligne."
+      },
+      "json-to-csv": {
+        "name": "JSON to CSV Converter",
+        "description": "Gratuit JSON to CSV Converter En ligne."
+      },
+      "youtube-thumbnail-downloader": {
+        "name": "YouTube Thumbnail Downloader",
+        "description": "Gratuit YouTube Thumbnail Downloader En ligne."
+      },
+      "lorem-ipsum-generator": {
+        "name": "Lorem Ipsum Generator",
+        "description": "Gratuit Lorem Ipsum Generator En ligne."
+      },
+      "aspect-ratio-calculator": {
+        "name": "Aspect Ratio Calculator",
+        "description": "Gratuit Aspect Ratio Calculator En ligne."
+      },
+      "unix-timestamp": {
+        "name": "Unix Timestamp Converter",
+        "description": "Gratuit Unix Timestamp Converter En ligne."
+      },
+      "diff-checker": {
+        "name": "Text Diff Checker",
+        "description": "Gratuit Text Diff Checker En ligne."
+      },
+      "image-to-base64": {
+        "name": "Image to Base64 Converter",
+        "description": "Gratuit Image to Base64 Converter En ligne."
+      },
+      "pomodoro-timer": {
+        "name": "Pomodoro Timer",
+        "description": "Gratuit Pomodoro Timer En ligne."
+      },
+      "og-preview": {
+        "name": "Open Graph Social Preview",
+        "description": "Gratuit Open Graph Social Preview En ligne."
+      },
+      "ai-text-detector": {
+        "name": "AI Text Detector",
+        "description": "Gratuit AI Text Detector En ligne."
       }
     }
   },

@@ -30,6 +30,12 @@ export default function AdConsentBanner() {
     }
   }
 
+  function handleDecline() {
+    localStorage.setItem(CONSENT_KEY, 'declined')
+    setVisible(false)
+    // Keep consent denied (already denied by default in index.html)
+  }
+
   if (!visible) return null
 
   return (
@@ -76,18 +82,51 @@ export default function AdConsentBanner() {
             flex: '1 1 300px',
           }}
         >
-          We use cookies for analytics and personalised ads. By continuing, you
-          agree to our{' '}
-          <Link
-            to="/privacy"
-            style={{ color: '#e85d34', textDecoration: 'underline' }}
-          >
+          We use cookies for analytics and personalised ads (Google AdSense, Publisher:{' '}
+          <strong style={{ color: 'rgba(255,255,255,0.9)' }}>ca-pub-3519891152775398</strong>).
+          By clicking "Accept", you agree to our{' '}
+          <Link to="/privacy" style={{ color: '#e85d34', textDecoration: 'underline' }}>
             Privacy Policy
+          </Link>{' '}
+          and{' '}
+          <Link to="/cookies" style={{ color: '#e85d34', textDecoration: 'underline' }}>
+            Cookie Policy
           </Link>
           .
         </p>
 
-        <div style={{ display: 'flex', gap: '10px', flexShrink: 0 }}>
+        <div style={{ display: 'flex', gap: '10px', flexShrink: 0, flexWrap: 'wrap' }}>
+          {/* Decline button */}
+          <button
+            id="consent-decline"
+            onClick={handleDecline}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              padding: '8px 18px',
+              borderRadius: '8px',
+              fontSize: '13px',
+              fontWeight: 600,
+              color: 'rgba(255,255,255,0.55)',
+              border: '1px solid rgba(255,255,255,0.12)',
+              textDecoration: 'none',
+              background: 'transparent',
+              cursor: 'pointer',
+              transition: 'border-color 0.2s, color 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = 'rgba(255,255,255,0.8)'
+              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = 'rgba(255,255,255,0.55)'
+              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'
+            }}
+          >
+            Decline
+          </button>
+
+          {/* Learn More link */}
           <Link
             to="/privacy"
             id="consent-learn-more"
@@ -109,6 +148,7 @@ export default function AdConsentBanner() {
             Learn More
           </Link>
 
+          {/* Accept button */}
           <button
             id="consent-accept"
             onClick={handleAccept}
@@ -128,7 +168,7 @@ export default function AdConsentBanner() {
             onMouseEnter={(e) => (e.currentTarget.style.background = '#c94d27')}
             onMouseLeave={(e) => (e.currentTarget.style.background = '#e85d34')}
           >
-            Accept
+            Accept All
           </button>
         </div>
       </div>

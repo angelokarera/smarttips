@@ -28,9 +28,17 @@ export const COUNTRY_TARGETING: Record<AppLocale, string[]> = {
   pt: ['BR', 'PT', 'AO', 'MZ'],
   sw: ['KE', 'TZ', 'UG', 'RW'],
   zh: ['CN', 'TW', 'HK', 'SG'],
+  de: ['DE', 'AT', 'CH'],
+  hi: ['IN'],
+  ja: ['JP'],
+  ko: ['KR'],
+  rw: ['RW'],
 }
 
-export const SEO_TRANSLATIONS = {
+export const SEO_TRANSLATIONS: Record<
+  'free' | 'online' | 'tool',
+  Record<AppLocale, string>
+> = {
   free: {
     en: 'Free',
     fr: 'Gratuit',
@@ -39,6 +47,11 @@ export const SEO_TRANSLATIONS = {
     pt: 'Grátis',
     sw: 'Bure',
     zh: '免费',
+    de: 'Kostenlos',
+    hi: 'मुफ़्त',
+    ja: '無料',
+    ko: '무료',
+    rw: 'Kubuntu',
   },
   online: {
     en: 'Online',
@@ -48,6 +61,11 @@ export const SEO_TRANSLATIONS = {
     pt: 'Online',
     sw: 'Mtandaoni',
     zh: '在线',
+    de: 'Online',
+    hi: 'ऑनलाइन',
+    ja: 'オンライン',
+    ko: '온라인',
+    rw: 'Kwenye Murandasi',
   },
   tool: {
     en: 'Tool',
@@ -57,8 +75,13 @@ export const SEO_TRANSLATIONS = {
     pt: 'Ferramenta',
     sw: 'Zana',
     zh: '工具',
+    de: 'Werkzeug',
+    hi: 'टूल',
+    ja: 'ツール',
+    ko: '도구',
+    rw: 'Igikoresho',
   },
-} as const
+}
 
 export function generateHreflangTags(basePath: string, baseUrl = SITE_URL): string {
   const tags = LOCALES.map(

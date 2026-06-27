@@ -36,7 +36,7 @@ export default function Privacy() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold tracking-tight mb-4">Privacy Policy</h1>
           <p className="text-muted-foreground">
-            Last updated: January 15, 2024
+            Last updated: June 27, 2025
           </p>
         </div>
 
@@ -87,22 +87,72 @@ export default function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold mb-3">5. Third-Party Advertising & Cookies (Google AdSense)</h2>
+            <h2 className="text-xl font-bold mb-3">5. Third-Party Advertising &amp; Cookies (Google AdSense)</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We use third-party advertising companies to serve ads when you visit our website. These companies may use information about your visits to this and other websites in order to provide advertisements about goods and services of interest to you.
+              We display advertisements through <strong>Google AdSense</strong> (Publisher ID:{' '}
+              <strong>ca-pub-3519891152775398</strong>, Customer ID: <strong>9066894802</strong>).
+              Google AdSense uses cookies and web beacons to serve ads based on a user’s prior visits
+              to this and other websites. These advertising cookies allow Google and its partners to
+              serve ads to you based on your browsing history.
             </p>
-            <ul className="list-disc list-inside mt-2 space-y-2 text-muted-foreground">
-              <li>Third party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.</li>
-              <li>Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.</li>
-              <li>Users may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-foreground underline">Google Ads Settings</a>.</li>
-              <li>Users may also opt out of some third-party vendors' use of cookies for personalized advertising by visiting <a href="https://optout.aboutads.info/" target="_blank" rel="noopener noreferrer" className="text-foreground underline">aboutads.info</a>.</li>
-              <li>Third parties may place or read cookies on your browser, or use web beacons, IP addresses, device identifiers, and similar technologies as a result of ad serving on this website.</li>
+            <ul className="list-disc list-inside mt-3 space-y-2 text-muted-foreground">
+              <li>
+                <strong>Google AdSense</strong> may use the DoubleClick cookie and similar technologies to
+                serve interest-based ads across websites.
+              </li>
+              <li>
+                Google’s use of advertising cookies enables it and its partners to serve ads based
+                on your visit to this and/or other sites on the Internet.
+              </li>
+              <li>
+                You may opt out of personalised advertising by visiting{' '}
+                <a
+                  href="https://www.google.com/settings/ads"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground underline"
+                >
+                  Google Ads Settings
+                </a>.
+              </li>
+              <li>
+                You may also opt out of third-party vendor cookies for personalised advertising via{' '}
+                <a
+                  href="https://optout.aboutads.info/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground underline"
+                >
+                  aboutads.info
+                </a>.
+              </li>
+              <li>
+                For full details on how Google handles your data, see:{' '}
+                <a
+                  href="https://policies.google.com/technologies/partner-sites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground underline"
+                >
+                  How Google uses information from sites that use our services
+                </a>.
+              </li>
+              <li>
+                Google’s main Privacy Policy:{' '}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground underline"
+                >
+                  policies.google.com/privacy
+                </a>
+              </li>
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-2">
-              For more information about how Google handles your data, please review <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" className="text-foreground underline">How Google uses information from sites or apps that use our services</a>.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mt-2">
-              Where legally required, including in the European Economic Area, the United Kingdom, and Switzerland, optional analytics and advertising storage should only be used with appropriate consent. We provide site-side consent controls and may use Google AdSense privacy and messaging tools or another Google-certified consent management platform where required.
+            <p className="text-muted-foreground leading-relaxed mt-3">
+              Where legally required (EEA, UK, Switzerland), optional analytics and advertising
+              cookies are only loaded after you click “Accept All” in our cookie consent banner.
+              You can withdraw consent at any time by clearing your browser cookies.
             </p>
           </section>
 

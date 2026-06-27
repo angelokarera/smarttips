@@ -90,6 +90,24 @@ const SpeedTestSimulator = lazy(() => import('@/tools/system/SpeedTestSimulator'
 const IpChecker = lazy(() => import('@/tools/system/IpChecker'))
 const CountdownTimer = lazy(() => import('@/tools/productivity/CountdownTimer'))
 const Stopwatch = lazy(() => import('@/tools/productivity/Stopwatch'))
+const CssFlexboxGenerator = lazy(() => import('@/tools/developer/CssFlexboxGenerator'))
+const CssGridGenerator = lazy(() => import('@/tools/developer/CssGridGenerator'))
+const BorderRadiusGenerator = lazy(() => import('@/tools/design/BorderRadiusGenerator'))
+const CssAnimationGenerator = lazy(() => import('@/tools/design/CssAnimationGenerator'))
+const MetaTagGenerator = lazy(() => import('@/tools/developer/MetaTagGenerator'))
+const HtmlEntityEncoder = lazy(() => import('@/tools/developer/HtmlEntityEncoder'))
+const JsMinifier = lazy(() => import('@/tools/developer/JsMinifier'))
+const MarkdownToHtml = lazy(() => import('@/tools/developer/MarkdownToHtml'))
+const JsonToCsv = lazy(() => import('@/tools/developer/JsonToCsv'))
+const YouTubeThumbnailDownloader = lazy(() => import('@/tools/image/YouTubeThumbnailDownloader'))
+const LoremIpsumGenerator = lazy(() => import('@/tools/text/LoremIpsumGenerator'))
+const AspectRatioCalculator = lazy(() => import('@/tools/image/AspectRatioCalculator'))
+const UnixTimestamp = lazy(() => import('@/tools/developer/UnixTimestamp'))
+const DiffChecker = lazy(() => import('@/tools/developer/DiffChecker'))
+const ImageToBase64 = lazy(() => import('@/tools/developer/ImageToBase64'))
+const PomodoroTimer = lazy(() => import('@/tools/productivity/PomodoroTimer'))
+const OgPreview = lazy(() => import('@/tools/developer/OgPreview'))
+const AiTextDetector = lazy(() => import('@/tools/text/AiTextDetector'))
 
 const toolComponents: Record<string, React.ComponentType> = {
   'word-counter': WordCounter,
@@ -150,6 +168,24 @@ const toolComponents: Record<string, React.ComponentType> = {
   'ip-checker': IpChecker,
   'countdown-timer': CountdownTimer,
   'stopwatch': Stopwatch,
+  'css-flexbox-generator': CssFlexboxGenerator,
+  'css-grid-generator': CssGridGenerator,
+  'border-radius-generator': BorderRadiusGenerator,
+  'css-animation-generator': CssAnimationGenerator,
+  'meta-tag-generator': MetaTagGenerator,
+  'html-entity-encoder': HtmlEntityEncoder,
+  'js-minifier': JsMinifier,
+  'markdown-to-html': MarkdownToHtml,
+  'json-to-csv': JsonToCsv,
+  'youtube-thumbnail-downloader': YouTubeThumbnailDownloader,
+  'lorem-ipsum-generator': LoremIpsumGenerator,
+  'aspect-ratio-calculator': AspectRatioCalculator,
+  'unix-timestamp': UnixTimestamp,
+  'diff-checker': DiffChecker,
+  'image-to-base64': ImageToBase64,
+  'pomodoro-timer': PomodoroTimer,
+  'og-preview': OgPreview,
+  'ai-text-detector': AiTextDetector,
 }
 
 export default function ToolPage() {

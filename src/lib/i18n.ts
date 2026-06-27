@@ -1,18 +1,13 @@
-export const supportedLocales = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh'] as const
+import { LOCALES, LOCALE_META, type AppLocale } from '@/lib/locale-config'
 
-export type SupportedLocale = (typeof supportedLocales)[number]
+export const supportedLocales = LOCALES
+export type SupportedLocale = AppLocale
 
 export const defaultLocale: SupportedLocale = 'en'
 
-export const localeNames: Record<SupportedLocale, string> = {
-  en: 'English',
-  fr: 'French',
-  sw: 'Swahili',
-  ar: 'Arabic',
-  es: 'Spanish',
-  pt: 'Portuguese',
-  zh: 'Chinese',
-}
+export const localeNames: Record<SupportedLocale, string> = Object.fromEntries(
+  LOCALES.map(loc => [loc, LOCALE_META[loc].name])
+) as Record<SupportedLocale, string>
 
 export function getLocaleFromPath(pathname: string): SupportedLocale {
   const segment = pathname.split('/').filter(Boolean)[0]
