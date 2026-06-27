@@ -2,14 +2,17 @@ import type { BlogPost } from '@/data/blog'
 import type { Tool, ToolCategory } from '@/data/tools'
 
 export const platformKeywords = [
-  // Core platform keywords
+  // Core platform keywords (HIGH VOLUME)
   'free online tools',
-  'online tools 2026',
+  'online tools 2025',
   'web tools',
   'browser tools',
   'free web utilities',
   'no signup tools',
   'instant online tools',
+  'best free online tools',
+  'top online tools',
+  'free tools online no download',
   
   // Category keywords
   'frontend tools',
@@ -19,6 +22,8 @@ export const platformKeywords = [
   'business tools',
   'productivity tools',
   'startup tools',
+  'freelancer tools',
+  'remote work tools',
   
   // Tool type keywords
   'PDF tools',
@@ -27,6 +32,8 @@ export const platformKeywords = [
   'converter tools',
   'calculator tools',
   'generator tools',
+  'editor tools',
+  'optimizer tools',
   
   // Feature keywords
   'browser based tools',
@@ -34,17 +41,50 @@ export const platformKeywords = [
   'secure online tools',
   'fast online tools',
   'free tools no registration',
+  'privacy focused tools',
+  'client side tools',
+  'offline capable tools',
+  'no upload required',
+  'instant results',
   
   // Design keywords
   'color palette generator',
   'CSS generators',
   'design tools',
+  'UI tools',
+  'graphics tools',
   
   // Global reach keywords
   'multilingual tools',
   'international tools',
   'global online tools',
   'worldwide free tools',
+  'tools for everyone',
+  'universal web tools',
+  
+  // Long-tail keywords (HIGH CONVERSION)
+  'free online tools no sign up required',
+  'best free online tools 2025',
+  'free browser tools no download',
+  'secure free online utilities',
+  'privacy first online tools',
+  'fastest online tools',
+  'professional free tools',
+  'reliable online tools',
+  
+  // Intent-based keywords
+  'how to use online tools',
+  'online tool alternatives',
+  'free vs paid online tools',
+  'online tools comparison',
+  'best practices online tools',
+  
+  // Regional keywords
+  'free online tools usa',
+  'free online tools uk',
+  'free online tools india',
+  'free online tools worldwide',
+  'international web utilities',
 ]
 
 export function getToolKeywords(tool: Tool): string[] {

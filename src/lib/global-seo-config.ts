@@ -7,15 +7,19 @@ export const GLOBAL_SEO_CONFIG = {
   siteUrl: 'https://smartdigitaltips.com',
   defaultLocale: 'en',
   
-  // Supported Languages for Global Reach
+  // Supported Languages for Global Reach (EXPANDED)
   supportedLocales: [
-    { code: 'en', name: 'English', region: 'US' },
-    { code: 'fr', name: 'French', region: 'FR' },
-    { code: 'sw', name: 'Swahili', region: 'KE' },
-    { code: 'ar', name: 'Arabic', region: 'AR' },
-    { code: 'es', name: 'Spanish', region: 'ES' },
-    { code: 'pt', name: 'Portuguese', region: 'BR' },
-    { code: 'zh', name: 'Chinese', region: 'CN' },
+    { code: 'en', name: 'English', region: 'US', markets: ['USA', 'UK', 'Canada', 'Australia', 'India'] },
+    { code: 'fr', name: 'French', region: 'FR', markets: ['France', 'Belgium', 'Switzerland', 'Canada'] },
+    { code: 'sw', name: 'Swahili', region: 'KE', markets: ['Kenya', 'Tanzania', 'Uganda', 'Rwanda'] },
+    { code: 'ar', name: 'Arabic', region: 'SA', markets: ['Saudi Arabia', 'UAE', 'Egypt', 'Morocco'] },
+    { code: 'es', name: 'Spanish', region: 'ES', markets: ['Spain', 'Mexico', 'Argentina', 'Colombia'] },
+    { code: 'pt', name: 'Portuguese', region: 'BR', markets: ['Brazil', 'Portugal', 'Angola', 'Mozambique'] },
+    { code: 'zh', name: 'Chinese', region: 'CN', markets: ['China', 'Taiwan', 'Hong Kong', 'Singapore'] },
+    { code: 'de', name: 'German', region: 'DE', markets: ['Germany', 'Austria', 'Switzerland'] },
+    { code: 'hi', name: 'Hindi', region: 'IN', markets: ['India', 'Nepal'] },
+    { code: 'ja', name: 'Japanese', region: 'JP', markets: ['Japan'] },
+    { code: 'ko', name: 'Korean', region: 'KR', markets: ['South Korea'] },
   ],
 
   // Global Keywords for Maximum Reach (Grouped by User Search Intent)
@@ -26,11 +30,18 @@ export const GLOBAL_SEO_CONFIG = {
     'how to format json in browser',
     'why use local browser tools',
     'guide to secure passwords free',
+    'best way to convert pdf online',
+    'how to generate qr code free',
+    'what are browser based tools',
+    'secure online file conversion',
+    'privacy focused web tools',
     
     // ── Navigational Intent (User seeking the brand & hubs) ────────────────────
     'smartdigitaltips online tools',
     'smart digital tips free utilities',
     'smartdigitaltips developer tools',
+    'smartdigitaltips pdf converter',
+    'smartdigitaltips image compressor',
     
     // ── Transactional / Utility Intent (User seeking action) ─────────────────
     'free online tools no signup',
@@ -41,6 +52,36 @@ export const GLOBAL_SEO_CONFIG = {
     'local text converter tools',
     'cross-platform browser utilities',
     'global web tools',
+    'best free online tools 2025',
+    'top rated free tools',
+    'professional online utilities',
+    'business online tools free',
+    'student web tools free',
+    'developer browser tools',
+    
+    // ── Comparison Intent (User comparing options) ────────────────────────────
+    'free vs paid online tools',
+    'best alternative to smallpdf',
+    'best alternative to ilovepdf',
+    'free online tools comparison',
+    'which online tool is best',
+    
+    // ── Problem-Solving Intent ────────────────────────────────────────────────
+    'reduce pdf file size online free',
+    'compress image without quality loss',
+    'merge multiple pdf files free',
+    'convert pdf to word accurate',
+    'generate strong password online',
+    'create qr code with logo free',
+    'format json code online',
+    'validate json syntax free',
+    
+    // ── Global & Regional Keywords ─────────────────────────────────────────────
+    'worldwide free online tools',
+    'international web utilities',
+    'multilingual online tools',
+    'tools for global users',
+    'free online tools all countries',
   ],
 
   // High-Value Tool Categories for SEO
