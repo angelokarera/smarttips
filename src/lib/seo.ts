@@ -65,7 +65,12 @@ export function generateSEOMetadata({
         es: `${siteUrl}/es${path.replace(/^\/[a-z]{2}/, '')}`,
         pt: `${siteUrl}/pt${path.replace(/^\/[a-z]{2}/, '')}`,
         zh: `${siteUrl}/zh${path.replace(/^\/[a-z]{2}/, '')}`,
-        'x-default': `${siteUrl}/en${path.replace(/^\/[a-z]{2}/, '')}`,
+        de: `${siteUrl}/de${path.replace(/^\/[a-z]{2}/, '')}`,
+        hi: `${siteUrl}/hi${path.replace(/^\/[a-z]{2}/, '')}`,
+        ja: `${siteUrl}/ja${path.replace(/^\/[a-z]{2}/, '')}`,
+        ko: `${siteUrl}/ko${path.replace(/^\/[a-z]{2}/, '')}`,
+        ru: `${siteUrl}/ru${path.replace(/^\/[a-z]{2}/, '')}`,
+        'x-default': `${siteUrl}${path.replace(/^\/[a-z]{2}/, '')}`,
       },
     },
     openGraph: {
