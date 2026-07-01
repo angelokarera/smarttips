@@ -2,7 +2,7 @@ import type { BlogPost } from '@/data/blog'
 import type { Tool, ToolCategory } from '@/data/tools'
 
 export const platformKeywords = [
-  // Core platform keywords (HIGH VOLUME)
+  // ── Core platform (HIGH VOLUME GLOBAL) ──────────────────────────────────
   'free online tools',
   'online tools 2025',
   'web tools',
@@ -13,8 +13,10 @@ export const platformKeywords = [
   'best free online tools',
   'top online tools',
   'free tools online no download',
-  
-  // Category keywords
+  'online tools no registration',
+  'online utility tools free',
+
+  // ── Category keywords ────────────────────────────────────────────────────
   'frontend tools',
   'web development tools',
   'developer tools',
@@ -24,8 +26,11 @@ export const platformKeywords = [
   'startup tools',
   'freelancer tools',
   'remote work tools',
-  
-  // Tool type keywords
+  'tools for writers',
+  'tools for designers',
+  'tools for marketers',
+
+  // ── Tool type keywords ───────────────────────────────────────────────────
   'PDF tools',
   'image tools',
   'text tools',
@@ -34,8 +39,10 @@ export const platformKeywords = [
   'generator tools',
   'editor tools',
   'optimizer tools',
-  
-  // Feature keywords
+  'compressor tools',
+  'downloader tools',
+
+  // ── Privacy & security feature keywords ─────────────────────────────────
   'browser based tools',
   'no download required',
   'secure online tools',
@@ -46,23 +53,41 @@ export const platformKeywords = [
   'offline capable tools',
   'no upload required',
   'instant results',
-  
-  // Design keywords
+  'no cloud upload',
+  'process files locally',
+  'private file processing',
+  'no account needed tools',
+
+  // ── Design & creative tools ──────────────────────────────────────────────
   'color palette generator',
   'CSS generators',
   'design tools',
   'UI tools',
   'graphics tools',
-  
-  // Global reach keywords
+  'css animation generator',
+  'css flexbox generator',
+  'css grid generator',
+  'gradient generator',
+
+  // ── Global reach ─────────────────────────────────────────────────────────
   'multilingual tools',
   'international tools',
   'global online tools',
   'worldwide free tools',
   'tools for everyone',
   'universal web tools',
-  
-  // Long-tail keywords (HIGH CONVERSION)
+  'herramientas online gratis',         // Spanish
+  'outils en ligne gratuits',           // French
+  'ferramentas online gratuitas',       // Portuguese
+  'أدوات مجانية عبر الإنترنت',          // Arabic
+  'kostenlose Online-Tools',            // German
+  '免费在线工具',                          // Chinese
+  'मुफ्त ऑनलाइन उपकरण',                  // Hindi
+  'free online tools kenya',
+  'free online tools nigeria',
+  'free online tools india',
+
+  // ── Long-tail (HIGH CONVERSION) ──────────────────────────────────────────
   'free online tools no sign up required',
   'best free online tools 2025',
   'free browser tools no download',
@@ -71,17 +96,28 @@ export const platformKeywords = [
   'fastest online tools',
   'professional free tools',
   'reliable online tools',
-  
-  // Intent-based keywords
-  'how to use online tools',
-  'online tool alternatives',
-  'free vs paid online tools',
-  'online tools comparison',
-  'best practices online tools',
-  
-  // Regional keywords
+  'best alternative to smallpdf',
+  'best alternative to ilovepdf',
+  'best alternative to tinypng',
+  'free alternative to adobe tools',
+
+  // ── Problem-solving intent ───────────────────────────────────────────────
+  'reduce pdf file size online free',
+  'compress image without quality loss',
+  'merge multiple pdf files free',
+  'convert pdf to word accurate',
+  'generate strong password online',
+  'create qr code free',
+  'format json code online',
+  'word count online free',
+  'check grammar online free',
+  'convert image format online',
+
+  // ── Regional: English-speaking markets ──────────────────────────────────
   'free online tools usa',
   'free online tools uk',
+  'free online tools australia',
+  'free online tools canada',
   'free online tools india',
   'free online tools worldwide',
   'international web utilities',

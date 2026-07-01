@@ -95,6 +95,9 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
       <meta name="rating"             content="general" />
       <meta name="distribution"       content="global" />
       <meta name="coverage"           content="Worldwide" />
+      <meta name="geo.region"         content="GLOBAL" />
+      <meta name="geo.placename"      content="Worldwide" />
+      <meta name="ICBM"               content="0.0, 0.0" />
       <meta name="google-adsense-account" content={ADSENSE_CLIENT_ID} />
 
       {/* ── Keywords (optional — kept for Bing) ────────────────────── */}
@@ -105,7 +108,9 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
       {/* ── Robots ──────────────────────────────────────────────────── */}
       <meta name="robots"    content={robots} />
       <meta name="googlebot" content={robots} />
-      <meta name="bingbot"   content="index, follow" />
+      <meta name="bingbot"   content="index, follow, max-snippet:-1" />
+      <meta name="slurp"     content="index, follow" />
+      <meta name="yandex"    content="index, follow" />
 
       {/* ── Canonical ───────────────────────────────────────────────── */}
       {fullCanonical && <link rel="canonical" href={fullCanonical} />}
@@ -169,8 +174,12 @@ export function SEOHelmet({ meta }: SEOHelmetProps) {
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+      <link rel="preconnect" href="https://www.googletagmanager.com" />
+      <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
       <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
       <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+      <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
 
       {/* ── Manifest ────────────────────────────────────────────────── */}
       <link rel="manifest" href="/manifest.json" />

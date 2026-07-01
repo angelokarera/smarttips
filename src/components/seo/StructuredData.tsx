@@ -52,6 +52,7 @@ export function generateOrganizationSchema() {
     name: 'SmartDigitalTips',
     alternateName: 'Smart Digital Tips',
     url: SITE_URL,
+    slogan: 'Free browser-based tools for everyone, everywhere.',
     logo: {
       '@type': 'ImageObject',
       url: `${SITE_URL}/logo.png`,
@@ -59,10 +60,25 @@ export function generateOrganizationSchema() {
       height: 512,
     },
     description:
-      'Leading provider of free, browser-based online tools for professionals, students, developers, and businesses worldwide.',
+      'Leading provider of free, browser-based online tools for professionals, students, developers, and businesses worldwide. 50+ utilities including PDF converter, image compressor, QR code generator, password generator, and more.',
     foundingDate: '2024',
     areaServed: 'Worldwide',
-    knowsLanguage: ['English', 'French', 'Spanish', 'Arabic', 'Portuguese', 'Swahili', 'Chinese'],
+    knowsLanguage: ['English', 'French', 'Spanish', 'Arabic', 'Portuguese', 'Swahili', 'Chinese', 'German', 'Hindi', 'Japanese', 'Korean'],
+    knowsAbout: [
+      'PDF conversion and editing',
+      'Image compression and conversion',
+      'QR code generation',
+      'Password security',
+      'Text processing and analysis',
+      'Web development utilities',
+      'Privacy-first online tools',
+      'Browser-based file processing',
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Free Online Tool Suite',
+      numberOfItems: 75,
+    },
     sameAs: [
       'https://twitter.com/smartdigitaltips',
       'https://facebook.com/smartdigitaltips',

@@ -29,7 +29,7 @@ import { getMostUsedTools, getFavoriteTools } from '@/lib/favorites'
 import { getRecentlyUsedTools, getRecommendedTools } from '@/lib/analyticsStore'
 import { ToolSearchBar } from '@/components/tools/ToolSearchBar'
 import { Layout } from '@/components/layout/Layout'
-import { generateWebsiteSchema, generateOrganizationSchema, generateCollectionSchema } from '@/components/seo/StructuredData'
+import { generateWebsiteSchema, generateOrganizationSchema, generateCollectionSchema, generateFAQSchema } from '@/components/seo/StructuredData'
 import { platformKeywords, uniqueKeywords } from '@/lib/seoKeywords'
 import { useLocale, useLocalizedPath } from '@/hooks/useLocale'
 import { useTranslations } from '@/hooks/useTranslations'
@@ -48,9 +48,9 @@ export default function Home() {
   const recommendedTools = getRecommendedTools(4).map(localizeTool)
 
   const homeSeo = getPageSeo('home', locale, {
-    title: 'Free Online Tools — 50+ Utilities, No Sign-Up | SmartDigitalTips',
+    title: 'Free Online Tools — Image, PDF, Text & Developer Utilities | SmartDigitalTips',
     description:
-      'Compress images, convert PDFs, generate QR codes & more — 100% free, private, instant. No sign-up ever. Try 50+ browser tools now.',
+      '75+ free online tools: compress images, convert PDFs, generate QR codes, check grammar & more. No sign-up, no upload — 100% private & instant. Used in 150+ countries.',
   })
 
   const meta = {
@@ -58,7 +58,24 @@ export default function Home() {
     description: homeSeo.description,
     locale,
     canonical: '/',
-    keywords: uniqueKeywords(['free online tools', 'pdf converter', 'image compressor', 'reduce image size', 'convert files online', 'password generator', 'qr code generator', 'calculator tools', 'productivity tools', ...platformKeywords]),
+    keywords: uniqueKeywords([
+      'free online tools',
+      'pdf converter',
+      'image compressor',
+      'reduce image size',
+      'convert files online',
+      'password generator',
+      'qr code generator',
+      'calculator tools',
+      'productivity tools',
+      'compress image online',
+      'merge pdf online',
+      'word counter',
+      'grammar checker',
+      'online tools no signup',
+      'free browser tools',
+      ...platformKeywords,
+    ]),
     ogTitle: homeSeo.title,
     ogDescription: homeSeo.description,
     schema: [
@@ -73,6 +90,28 @@ export default function Home() {
           url: `${SITE_URL}${lp(tool.path)}`,
         }))
       ),
+      generateFAQSchema([
+        {
+          question: 'Are all SmartDigitalTips tools completely free?',
+          answer: 'Yes, every tool on SmartDigitalTips is 100% free with no hidden fees, no paywalls, and no account required. You can use all 75+ tools without signing up.',
+        },
+        {
+          question: 'Do I need to upload my files to use these tools?',
+          answer: 'No. SmartDigitalTips processes all files directly in your browser using client-side JavaScript. Your images, PDFs, and text never leave your device — they are never sent to any server.',
+        },
+        {
+          question: 'Which countries can access SmartDigitalTips?',
+          answer: 'SmartDigitalTips is accessible worldwide in 150+ countries. The site is available in 11 languages including English, French, Spanish, Arabic, Portuguese, Swahili, Chinese, German, Hindi, Japanese, and Korean.',
+        },
+        {
+          question: 'What types of tools are available?',
+          answer: 'SmartDigitalTips offers 75+ tools across 11 categories: Image tools (compressor, resizer, converter), PDF tools (merge, split, convert), Text tools (word counter, grammar checker), Developer tools (JSON formatter, regex tester), Security tools (password generator), Calculator tools, and more.',
+        },
+        {
+          question: 'Is SmartDigitalTips safe to use for sensitive files?',
+          answer: 'Yes. Because all processing happens locally in your browser, sensitive files are never transmitted over the internet. This makes SmartDigitalTips one of the safest options for processing confidential documents, photos, or code.',
+        },
+      ]),
     ],
   }
 
