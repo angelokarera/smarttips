@@ -8,6 +8,8 @@ export const CONTACT_EMAIL = 'nkusikarera@hotmail.com'
 export const ADSENSE_CLIENT_ID = 'ca-pub-3519891152775398'
 /** ads.txt publisher ID (no ca- prefix) */
 export const ADSENSE_PUBLISHER_ID = 'pub-3519891152775398'
+/** Google AdSense Customer ID */
+export const ADSENSE_CUSTOMER_ID = '9066894802'
 
 export const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh', 'de', 'hi', 'ja', 'ko'] as const
 export type AppLocale = (typeof LOCALES)[number]

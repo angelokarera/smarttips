@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { ADSENSE_CLIENT_ID } from '@/lib/locale-config'
 
 declare global {
   interface Window {
@@ -32,7 +33,7 @@ export default function AdInArticle() {
         style={{ display: 'block', textAlign: 'center' }}
         data-ad-layout="in-article"
         data-ad-format="fluid"
-        data-ad-client="ca-pub-3519891152775398"
+        data-ad-client={ADSENSE_CLIENT_ID}
         data-ad-slot="YOUR_IN_ARTICLE_SLOT_ID"
       />
     </div>

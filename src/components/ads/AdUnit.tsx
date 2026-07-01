@@ -6,9 +6,10 @@
  * Prevents duplicate push() calls using a ref guard.
  */
 import { useEffect, useRef } from 'react'
+import { ADSENSE_CLIENT_ID } from '@/lib/locale-config'
 
 const CONSENT_KEY = 'sdt_cookie_consent'
-const ADSENSE_CLIENT = 'ca-pub-3519891152775398'
+const ADSENSE_CLIENT = ADSENSE_CLIENT_ID
 
 declare global {
   interface Window {

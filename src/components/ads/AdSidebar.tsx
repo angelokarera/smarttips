@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { ADSENSE_CLIENT_ID } from '@/lib/locale-config'
 
 export default function AdSidebar() {
   const pushed = useRef(false)
@@ -36,7 +37,7 @@ export default function AdSidebar() {
       <ins
         className="adsbygoogle"
         style={{ display: 'block', width: '300px', height: '250px' }}
-        data-ad-client="ca-pub-3519891152775398"
+        data-ad-client={ADSENSE_CLIENT_ID}
         data-ad-slot="YOUR_SIDEBAR_SLOT_ID"
         data-ad-format="rectangle"
       />
