@@ -89,9 +89,8 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-bold mb-3">5. Third-Party Advertising &amp; Cookies (Google AdSense)</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We display advertisements through <strong>Google AdSense</strong> (Publisher ID:{' '}
-              <strong>ca-pub-3519891152775398</strong>, Customer ID: <strong>9066894802</strong>).
-              Google AdSense uses cookies and web beacons to serve ads based on a user’s prior visits
+              We display advertisements through <strong>Google AdSense</strong>.
+              Google AdSense uses cookies and web beacons to serve ads based on a user's prior visits
               to this and other websites. These advertising cookies allow Google and its partners to
               serve ads to you based on your browsing history.
             </p>

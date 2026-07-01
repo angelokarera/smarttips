@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { useLocalizedPath } from '@/hooks/useLocale'
 import { useTranslations } from '@/hooks/useTranslations'
 
-const CONSENT_KEY = 'smartdigitaltips-cookie-consent'
+const CONSENT_KEY = 'sdt_cookie_consent'
 
 type ConsentChoice = 'accepted' | 'rejected'
 

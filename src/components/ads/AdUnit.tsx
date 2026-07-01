@@ -1,6 +1,5 @@
 /**
  * AdUnit — Universal Google AdSense component
- * Publisher: ca-pub-3519891152775398 | Customer: 9066894802
  *
  * Only renders ads if the user has accepted cookie consent.
  * Prevents duplicate push() calls using a ref guard.

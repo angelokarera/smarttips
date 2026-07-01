@@ -11,7 +11,6 @@ import Cookies from './pages/Cookies'
 import BlogList from './pages/BlogList'
 import BlogPost from './pages/BlogPost'
 import { usePageTracking } from './hooks/usePageTracking'
-import AdConsentBanner from './components/AdConsentBanner'
 
 export default function App() {
   // Fire pageview event on every route change
@@ -43,7 +42,6 @@ export default function App() {
         <Route path="/:locale/blog" element={<BlogList />} />
         <Route path="/:locale/blog/:slug" element={<BlogPost />} />
       </Routes>
-      <AdConsentBanner />
     </>
   )
 }

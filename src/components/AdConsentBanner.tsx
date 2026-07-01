@@ -82,8 +82,7 @@ export default function AdConsentBanner() {
             flex: '1 1 300px',
           }}
         >
-          We use cookies for analytics and personalised ads (Google AdSense, Publisher:{' '}
-          <strong style={{ color: 'rgba(255,255,255,0.9)' }}>ca-pub-3519891152775398</strong>).
+          We use cookies for analytics and personalised ads (Google AdSense).
           By clicking "Accept", you agree to our{' '}
           <Link to="/privacy" style={{ color: '#e85d34', textDecoration: 'underline' }}>
             Privacy Policy

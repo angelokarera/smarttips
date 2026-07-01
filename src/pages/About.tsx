@@ -91,7 +91,7 @@ export default function About() {
             all completely free, available in 7 languages.
           </p>
           <p className="text-muted-foreground leading-[1.8]">
-            The site is ad-supported through Google AdSense (Publisher ID: pub-3519891152775398), which keeps
+            The site is ad-supported through Google AdSense, which keeps
             all tools free indefinitely. We believe software can be genuinely useful without being predatory
             — and SmartDigitalTips is our proof.
           </p>
@@ -216,10 +216,10 @@ export default function About() {
           <h2 className="font-bold text-lg mb-3">Transparency: How This Site Is Funded</h2>
           <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
             SmartDigitalTips is free to use and always will be. The site is monetized through
-            Google AdSense (Publisher ID: pub-3519891152775398), which displays contextual advertisements.
+            Google AdSense, which displays contextual advertisements.
             Ad revenue covers hosting, development time, and ongoing maintenance — allowing all 50+ tools
             to remain free with no paywalls, no accounts, and no data collection. Google AdSense and its
-            partners may use cookies for personalized ads in accordance with Google's Privacy & Terms
+            partners may use cookies for personalized ads in accordance with Google's Privacy &amp; Terms
             (policies.google.com/technologies/partner-sites). You can manage ad personalization preferences
             through our cookie settings.
           </p>

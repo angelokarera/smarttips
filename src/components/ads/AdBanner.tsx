@@ -2,9 +2,6 @@
  * AdBanner — Full-width banner ad (leaderboard / responsive)
  * SidebarAd — 300×250 rectangle for tool page sidebars
  *
- * Publisher: ca-pub-3519891152775398 | Customer ID: 9066894802
- * GA4 Property: 521386075 | Measurement: G-4P8GW43EWX
- *
  * Both components are consent-gated: they only render ad units
  * if the user has clicked "Accept All" in the cookie banner.
  */
@@ -55,7 +52,7 @@ export function AdBanner() {
           Advertisement
         </p>
         <div className="flex min-h-[90px] justify-center">
-          {/* AdSense: Publisher ca-pub-3519891152775398 | Customer 9066894802 */}
+          {/* AdSense banner ad unit */}
           <ins
             className="adsbygoogle"
             style={{ display: 'block', width: '100%' }}
@@ -86,7 +83,7 @@ export function SidebarAd() {
         Advertisement
       </p>
       <div className="min-h-[250px] flex items-center justify-center bg-secondary/35 rounded-lg overflow-hidden border border-dashed border-border/60">
-        {/* AdSense: Publisher ca-pub-3519891152775398 | Customer 9066894802 */}
+        {/* AdSense sidebar ad unit */}
         <ins
           className="adsbygoogle"
           style={{ display: 'block', width: '100%', height: '250px' }}
