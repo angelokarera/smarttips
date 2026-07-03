@@ -33,7 +33,7 @@ export function generateWebsiteSchema() {
     url: SITE_URL,
     inLanguage: ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh', 'de', 'hi', 'ja', 'ko', 'ru'],
     description:
-      '50+ free browser-based tools for images, PDFs, text, development, security, and productivity. Private, instant, no sign-up.'
+      '50+ free browser-based tools for images, PDFs, text, development, security, and productivity. Private, instant, no sign-up.',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
