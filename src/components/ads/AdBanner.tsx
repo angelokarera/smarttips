@@ -8,8 +8,6 @@
 import { useEffect, useRef } from 'react'
 import { ADSENSE_CLIENT_ID } from '@/lib/locale-config'
 
-const CONSENT_KEY = 'sdt_cookie_consent'
-
 type AdSenseWindow = Window & {
   adsbygoogle?: unknown[]
 }
@@ -34,13 +32,7 @@ function useAdPush(enabled: boolean) {
 
 /** Full-width responsive leaderboard banner */
 export function AdBanner() {
-  const hasConsent =
-    typeof window !== 'undefined' &&
-    localStorage.getItem(CONSENT_KEY) === 'accepted'
-
-  useAdPush(hasConsent)
-
-  if (!hasConsent) return null
+  useAdPush(true)
 
   return (
     <aside
@@ -52,7 +44,6 @@ export function AdBanner() {
           Advertisement
         </p>
         <div className="flex min-h-[90px] justify-center">
-          {/* AdSense banner ad unit */}
           <ins
             className="adsbygoogle"
             style={{ display: 'block', width: '100%' }}
@@ -69,13 +60,7 @@ export function AdBanner() {
 
 /** 300×250 sidebar rectangle ad for tool pages */
 export function SidebarAd() {
-  const hasConsent =
-    typeof window !== 'undefined' &&
-    localStorage.getItem(CONSENT_KEY) === 'accepted'
-
-  useAdPush(hasConsent)
-
-  if (!hasConsent) return null
+  useAdPush(true)
 
   return (
     <div className="p-4 rounded-xl border border-border/80 bg-card/65 glass-card shadow-xs text-center">
@@ -83,7 +68,6 @@ export function SidebarAd() {
         Advertisement
       </p>
       <div className="min-h-[250px] flex items-center justify-center bg-secondary/35 rounded-lg overflow-hidden border border-dashed border-border/60">
-        {/* AdSense sidebar ad unit */}
         <ins
           className="adsbygoogle"
           style={{ display: 'block', width: '100%', height: '250px' }}

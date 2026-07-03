@@ -60,7 +60,7 @@ export default function About() {
                   <p className="text-xs text-muted-foreground mt-1">Files uploaded to servers</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-extrabold">7</p>
+                  <p className="text-3xl font-extrabold">11</p>
                   <p className="text-xs text-muted-foreground mt-1">Languages supported</p>
                 </div>
                 <div>
@@ -88,7 +88,7 @@ export default function About() {
             using modern Web APIs (Canvas API, Web Workers, File API). No server-side processing. No accounts.
             No paywalls. What started as a single image compressor has grown into 50+ tools spanning image
             processing, PDF manipulation, text analysis, developer utilities, calculators, and converters —
-            all completely free, available in 7 languages.
+            all completely free, available in 11 languages.
           </p>
           <p className="text-muted-foreground leading-[1.8]">
             The site is ad-supported through Google AdSense, which keeps
@@ -130,11 +130,11 @@ export default function About() {
                 <div className="h-9 w-9 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
                   <Globe className="h-4 w-4" />
                 </div>
-                <h3 className="font-bold text-sm">Global reach, 7 languages</h3>
+                <h3 className="font-bold text-sm">Global reach, 11 languages</h3>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                SmartDigitalTips is available in English, French, Spanish, Arabic, Portuguese, Swahili, and
-                Chinese — reaching users across 6 continents.
+                SmartDigitalTips is available in English, French, Spanish, Arabic, Portuguese, Swahili,
+                Chinese, German, Hindi, Japanese, and Korean — reaching users across 6 continents.
               </p>
             </div>
             <div className="p-5 rounded-2xl border border-border bg-card">
