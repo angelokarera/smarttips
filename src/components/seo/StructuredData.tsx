@@ -31,9 +31,9 @@ export function generateWebsiteSchema() {
     name: 'SmartDigitalTips',
     alternateName: ['Smart Digital Tips', 'Free Online Tools'],
     url: SITE_URL,
-    inLanguage: ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh'],
+    inLanguage: ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh', 'de', 'hi', 'ja', 'ko', 'ru'],
     description:
-      '50+ free browser-based tools for images, PDFs, text, development, security, and productivity. Private, instant, no sign-up.',
+      '50+ free browser-based tools for images, PDFs, text, development, security, and productivity. Private, instant, no sign-up.'
     potentialAction: {
       '@type': 'SearchAction',
       target: {
@@ -89,7 +89,7 @@ export function generateOrganizationSchema() {
       '@type': 'ContactPoint',
       contactType: 'Customer Support',
       email: CONTACT_EMAIL,
-      availableLanguage: ['English', 'French', 'Swahili', 'Arabic', 'Spanish', 'Portuguese', 'Chinese'],
+      availableLanguage: ['English', 'French', 'Swahili', 'Arabic', 'Spanish', 'Portuguese', 'Chinese', 'German', 'Hindi', 'Japanese', 'Korean', 'Russian'],
     },
   }
 }
@@ -148,7 +148,7 @@ export function generateToolSchema(tool: {
     isAccessibleForFree: true,
     isFamilyFriendly: true,
     dateModified: today,
-    inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'sw', 'zh'],
+    inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'sw', 'zh', 'de', 'hi', 'ja', 'ko', 'ru'],
     featureList: tool.benefits || [],
     creator: {
       '@type': 'Organization',
@@ -317,7 +317,7 @@ export function generateWebPageSchema(page: {
       name: 'SmartDigitalTips',
       url: SITE_URL,
     },
-    inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'sw', 'zh'],
+    inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'sw', 'zh', 'de', 'hi', 'ja', 'ko', 'ru'],
   }
 }
 

@@ -5,6 +5,7 @@ export const platformKeywords = [
   // ── Core platform (HIGH VOLUME GLOBAL) ──────────────────────────────────
   'free online tools',
   'online tools 2025',
+  'online tools 2026',
   'web tools',
   'browser tools',
   'free web utilities',
@@ -90,6 +91,7 @@ export const platformKeywords = [
   // ── Long-tail (HIGH CONVERSION) ──────────────────────────────────────────
   'free online tools no sign up required',
   'best free online tools 2025',
+  'best free online tools 2026',
   'free browser tools no download',
   'secure free online utilities',
   'privacy first online tools',
@@ -100,6 +102,10 @@ export const platformKeywords = [
   'best alternative to ilovepdf',
   'best alternative to tinypng',
   'free alternative to adobe tools',
+  'free alternative to canva',
+  'free alternative to photoshop online',
+  'tools like smallpdf free',
+  'tools like ilovepdf free',
 
   // ── Problem-solving intent ───────────────────────────────────────────────
   'reduce pdf file size online free',
@@ -112,6 +118,47 @@ export const platformKeywords = [
   'word count online free',
   'check grammar online free',
   'convert image format online',
+  'resize image online free',
+  'convert jpg to png free',
+  'convert png to webp free',
+  'split pdf online free',
+  'remove background from image free',
+  'base64 encode decode online',
+  'url encode decode online',
+  'css minifier online free',
+  'html beautifier online free',
+  'regex tester online free',
+  'gpa calculator online free',
+  'unit converter online free',
+  'timestamp converter online',
+  'color picker online free',
+  'gradient generator css free',
+  'lorem ipsum generator free',
+  'markdown to html converter free',
+  'json to csv converter free',
+  'pomodoro timer online free',
+  'diff checker online free',
+
+  // ── Voice search & question-based (2026 trend) ───────────────────────────
+  'what is the best free pdf converter',
+  'how to compress an image for free',
+  'how to merge pdf files without adobe',
+  'how to generate a qr code for free',
+  'how to count words in a document',
+  'how to create a strong password',
+  'what is the best free image compressor',
+  'how to convert pdf to word for free',
+  'how to resize an image online',
+  'how to format json online',
+
+  // ── AI search optimization (ChatGPT, Perplexity, Gemini) ────────────────
+  'best free tools for students 2026',
+  'best free tools for developers 2026',
+  'best free tools for small business 2026',
+  'best free tools for freelancers 2026',
+  'best free tools for content creators 2026',
+  'free tools that work offline in browser',
+  'privacy safe online tools no data upload',
 
   // ── Regional: English-speaking markets ──────────────────────────────────
   'free online tools usa',
@@ -119,6 +166,9 @@ export const platformKeywords = [
   'free online tools australia',
   'free online tools canada',
   'free online tools india',
+  'free online tools south africa',
+  'free online tools ghana',
+  'free online tools rwanda',
   'free online tools worldwide',
   'international web utilities',
 ]
@@ -195,7 +245,7 @@ export function uniqueKeywords(keywords: string[]): string[] {
       keywords
         .map((keyword) => keyword.trim().toLowerCase())
         .filter(Boolean)
-        .filter((keyword) => keyword.length > 2) // Remove very short keywords
+        .filter((keyword) => keyword.length > 2)
     )
-  ).slice(0, 30) // Increased from 24 to 30 for better coverage
+  ).slice(0, 40) // 40 keywords for maximum Bing/Yahoo coverage
 }

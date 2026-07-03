@@ -8,6 +8,12 @@
 Sitemap: https://smartdigitaltips.com/sitemap.xml
 
 # ──────────────────────────────────────────────────────────
+# Google AdSense Crawler (required for ad serving)
+# ──────────────────────────────────────────────────────────
+User-agent: Mediapartners-Google
+Allow: /
+
+# ──────────────────────────────────────────────────────────
 # Google Search
 # ──────────────────────────────────────────────────────────
 User-agent: Googlebot

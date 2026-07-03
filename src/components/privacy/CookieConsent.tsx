@@ -28,6 +28,9 @@ export function CookieConsent() {
   const saveChoice = (nextChoice: ConsentChoice) => {
     localStorage.setItem(CONSENT_KEY, nextChoice)
     setChoice(nextChoice)
+    if (nextChoice === 'accepted') {
+      window.dispatchEvent(new Event('sdt_consent_accepted'))
+    }
   }
 
   if (choice) return null

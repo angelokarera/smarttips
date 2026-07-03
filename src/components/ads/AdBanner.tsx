@@ -1,28 +1,44 @@
 /**
- * AdBanner — Full-width banner ad (leaderboard / responsive)
+ * AdBanner — Full-width leaderboard banner
  * SidebarAd — 300×250 rectangle for tool page sidebars
  *
- * Both components are consent-gated: they only render ad units
- * if the user has clicked "Accept All" in the cookie banner.
+ * Both are consent-gated (GDPR / Google policy compliant).
+ * Ads only render after the user accepts the cookie banner.
  */
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ADSENSE_CLIENT_ID } from '@/lib/locale-config'
 
-type AdSenseWindow = Window & {
-  adsbygoogle?: unknown[]
+const CONSENT_KEY = 'sdt_cookie_consent'
+
+type AdSenseWindow = Window & { adsbygoogle?: unknown[] }
+
+function useConsent() {
+  const [hasConsent, setHasConsent] = useState(
+    () => typeof window !== 'undefined' && localStorage.getItem(CONSENT_KEY) === 'accepted'
+  )
+
+  useEffect(() => {
+    const handler = () =>
+      setHasConsent(localStorage.getItem(CONSENT_KEY) === 'accepted')
+    window.addEventListener('storage', handler)
+    // Also poll once in case the banner fires a custom event
+    window.addEventListener('sdt_consent_accepted', handler)
+    return () => {
+      window.removeEventListener('storage', handler)
+      window.removeEventListener('sdt_consent_accepted', handler)
+    }
+  }, [])
+
+  return hasConsent
 }
 
 function useAdPush(enabled: boolean) {
   const pushed = useRef(false)
-
   useEffect(() => {
-    if (!enabled) return
-    if (pushed.current) return
-    if (typeof window === 'undefined') return
-
+    if (!enabled || pushed.current || typeof window === 'undefined') return
     try {
-      const adWindow = window as AdSenseWindow
-      ;(adWindow.adsbygoogle = adWindow.adsbygoogle || []).push({})
+      const w = window as AdSenseWindow
+      ;(w.adsbygoogle = w.adsbygoogle || []).push({})
       pushed.current = true
     } catch (e) {
       console.error('[AdBanner] AdSense error:', e)
@@ -32,7 +48,10 @@ function useAdPush(enabled: boolean) {
 
 /** Full-width responsive leaderboard banner */
 export function AdBanner() {
-  useAdPush(true)
+  const hasConsent = useConsent()
+  useAdPush(hasConsent)
+
+  if (!hasConsent) return null
 
   return (
     <aside
@@ -60,7 +79,10 @@ export function AdBanner() {
 
 /** 300×250 sidebar rectangle ad for tool pages */
 export function SidebarAd() {
-  useAdPush(true)
+  const hasConsent = useConsent()
+  useAdPush(hasConsent)
+
+  if (!hasConsent) return null
 
   return (
     <div className="p-4 rounded-xl border border-border/80 bg-card/65 glass-card shadow-xs text-center">
@@ -70,7 +92,7 @@ export function SidebarAd() {
       <div className="min-h-[250px] flex items-center justify-center bg-secondary/35 rounded-lg overflow-hidden border border-dashed border-border/60">
         <ins
           className="adsbygoogle"
-          style={{ display: 'block', width: '100%', height: '250px' }}
+          style={{ display: 'block', width: '300px', height: '250px' }}
           data-ad-client={ADSENSE_CLIENT_ID}
           data-ad-slot="6092595232"
           data-ad-format="rectangle"

@@ -4,11 +4,15 @@ interface SEOProps {
   locale: string;
   path: string;
   image?: string;
+  keywords?: string;
+  author?: string;
 }
 
 export interface SEOMetadata {
   title: string;
   description: string;
+  keywords?: string;
+  authors?: { name: string }[];
   metadataBase: URL;
   alternates: {
     canonical: string;
@@ -28,6 +32,7 @@ export interface SEOMetadata {
     title: string;
     description: string;
     images: string[];
+    site: string;
   };
   robots: {
     index: boolean;
@@ -40,37 +45,47 @@ export interface SEOMetadata {
       'max-snippet': number;
     };
   };
+  other: Record<string, string>;
 }
 
 const siteUrl = 'https://smartdigitaltips.com';
+
+const DEFAULT_KEYWORDS =
+  'free online tools, image compressor, PDF to Word converter, QR code generator, word counter, JSON formatter, password generator, unit converter, CSS minifier, base64 encoder, regex tester, image resizer, merge PDF, split PDF, color picker, gradient generator, markdown to HTML, URL encoder, timestamp converter, lorem ipsum generator, no signup tools, browser tools, free web utilities, developer tools, student tools, business tools, productivity tools';
 
 export function generateSEOMetadata({
   title,
   description,
   locale,
   path,
-  image = '/logo.png',
+  image = '/og-image.png',
+  keywords = DEFAULT_KEYWORDS,
+  author = 'SmartDigitalTips Editorial Team',
 }: SEOProps): SEOMetadata {
+  const pathWithoutLocale = path.replace(/^\/[a-z]{2}(\/|$)/, '/');
+
   return {
     title,
     description,
+    keywords,
+    authors: [{ name: author }],
     metadataBase: new URL(siteUrl),
     alternates: {
       canonical: `${siteUrl}${path}`,
       languages: {
-        en: `${siteUrl}/en${path.replace(/^\/[a-z]{2}/, '')}`,
-        fr: `${siteUrl}/fr${path.replace(/^\/[a-z]{2}/, '')}`,
-        sw: `${siteUrl}/sw${path.replace(/^\/[a-z]{2}/, '')}`,
-        ar: `${siteUrl}/ar${path.replace(/^\/[a-z]{2}/, '')}`,
-        es: `${siteUrl}/es${path.replace(/^\/[a-z]{2}/, '')}`,
-        pt: `${siteUrl}/pt${path.replace(/^\/[a-z]{2}/, '')}`,
-        zh: `${siteUrl}/zh${path.replace(/^\/[a-z]{2}/, '')}`,
-        de: `${siteUrl}/de${path.replace(/^\/[a-z]{2}/, '')}`,
-        hi: `${siteUrl}/hi${path.replace(/^\/[a-z]{2}/, '')}`,
-        ja: `${siteUrl}/ja${path.replace(/^\/[a-z]{2}/, '')}`,
-        ko: `${siteUrl}/ko${path.replace(/^\/[a-z]{2}/, '')}`,
-        ru: `${siteUrl}/ru${path.replace(/^\/[a-z]{2}/, '')}`,
-        'x-default': `${siteUrl}${path.replace(/^\/[a-z]{2}/, '')}`,
+        en: `${siteUrl}/en${pathWithoutLocale}`,
+        fr: `${siteUrl}/fr${pathWithoutLocale}`,
+        sw: `${siteUrl}/sw${pathWithoutLocale}`,
+        ar: `${siteUrl}/ar${pathWithoutLocale}`,
+        es: `${siteUrl}/es${pathWithoutLocale}`,
+        pt: `${siteUrl}/pt${pathWithoutLocale}`,
+        zh: `${siteUrl}/zh${pathWithoutLocale}`,
+        de: `${siteUrl}/de${pathWithoutLocale}`,
+        hi: `${siteUrl}/hi${pathWithoutLocale}`,
+        ja: `${siteUrl}/ja${pathWithoutLocale}`,
+        ko: `${siteUrl}/ko${pathWithoutLocale}`,
+        ru: `${siteUrl}/ru${pathWithoutLocale}`,
+        'x-default': `${siteUrl}${pathWithoutLocale}`,
       },
     },
     openGraph: {
@@ -80,20 +95,21 @@ export function generateSEOMetadata({
       siteName: 'SmartDigitalTips',
       images: [
         {
-          url: image,
+          url: `${siteUrl}${image}`,
           width: 1200,
           height: 630,
           alt: title,
         },
       ],
-      locale: locale,
+      locale,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [image],
+      images: [`${siteUrl}${image}`],
+      site: '@smartdigitaltips',
     },
     robots: {
       index: true,
@@ -105,6 +121,14 @@ export function generateSEOMetadata({
         'max-image-preview': 'large',
         'max-snippet': -1,
       },
+    },
+    other: {
+      'google-adsense-account': 'ca-pub-3519891152775398',
+      'rating': 'general',
+      'revisit-after': '3 days',
+      'distribution': 'global',
+      'coverage': 'Worldwide',
+      'language': locale,
     },
   };
 }
