@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 
     <!-- ═══════════════════════════════════════════════════════════════
+         Ezoic Integration — Privacy scripts MUST load before header script
+         ═══════════════════════════════════════════════════════════════ -->
+    <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+    <script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+      window.ezstandalone = window.ezstandalone || {};
+      ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <script src="//ezoicanalytics.com/analytics.js"></script>
+
+    <!-- ═══════════════════════════════════════════════════════════════
          Google AdSense — Publisher ID: ca-pub-3519891152775398
          Verification meta tag (required for site ownership check)
          Script loads async — does NOT block rendering
