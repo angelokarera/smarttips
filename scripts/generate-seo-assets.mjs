@@ -15,7 +15,16 @@ if (!existsSync(publicDir)) {
 }
 
 console.log('📝 Generating ads.txt...');
-const adsTxt = `google.com, ${ADSENSE_PUBLISHER_ID}, DIRECT, ${ADSENSE_CERTIFICATION_ID}`;
+const adsTxt = `google.com, ${ADSENSE_PUBLISHER_ID}, DIRECT, ${ADSENSE_CERTIFICATION_ID}
+ezoic.ai, 95c62a2904a5d61874585c68cc7d64d6, DIRECT
+ezoic.co.uk, 95c62a2904a5d61874585c68cc7d64d6, DIRECT
+google.com, pub-6644558441501035, DIRECT, f08c47fec0942fa0
+google.com, pub-1175987143200523, RESELLER, f08c47fec0942fa0
+google.com, pub-9508156287817487, RESELLER, f08c47fec0942fa0
+sharethrough.com, PmzCMtAd, DIRECT, d53b998a7bd4ecd2
+improvedigital.com, 2483, RESELLER
+sonobi.com, c2988be809, RESELLER, d1a215d9eb5aee9e
+media.net, 8CUM5Z5B0, DIRECT`;
 writeFileSync(join(publicDir, 'ads.txt'), adsTxt);
 console.log('✅ ads.txt generated\n');
 
