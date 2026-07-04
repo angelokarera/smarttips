@@ -11,6 +11,12 @@ declare global {
     ezstandalone?: {
       cmd: Array<() => void>
       showAds: (...args: unknown[]) => void
+      destroyPlaceholders: (...ids: number[]) => void
+      destroyAll: () => void
+      setOutstreamAllowed: (allowed: boolean, opts?: { reason?: string; requestAdOnAllow?: boolean }) => void
+      setInterstitialAllowed: (allowed: boolean, opts?: { reason?: string; requestAdOnAllow?: boolean }) => void
+      isOutstreamAllowed: () => boolean
+      isInterstitialAllowed: () => boolean
     }
   }
 }

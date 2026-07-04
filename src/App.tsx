@@ -11,10 +11,12 @@ import Cookies from './pages/Cookies'
 import BlogList from './pages/BlogList'
 import BlogPost from './pages/BlogPost'
 import { usePageTracking } from './hooks/usePageTracking'
+import { useEzoicPageRefresh } from './hooks/useEzoicPageRefresh'
 
 export default function App() {
   // Fire pageview event on every route change
   usePageTracking()
+  useEzoicPageRefresh()
 
   return (
     <>
