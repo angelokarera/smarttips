@@ -87,9 +87,37 @@ export default function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold mb-3">5. Third-Party Advertising &amp; Cookies (Google AdSense)</h2>
+            <h2 className="text-xl font-bold mb-3">5. Third-Party Advertising &amp; Cookies</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We display advertisements through <strong>Google AdSense</strong>.
+              We display advertisements through <strong>Ezoic</strong> and <strong>Google AdSense</strong>.
+              These services use cookies and similar technologies to serve ads based on your prior visits
+              to this and other websites.
+            </p>
+
+            <h3 className="text-base font-semibold mt-4 mb-2">Ezoic</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              We use <strong>Ezoic</strong> to display and optimise advertisements on this site. Ezoic may
+              use cookies, web beacons, and similar tracking technologies to collect information about your
+              device and browsing activity in order to serve relevant ads and measure ad performance.
+              Ezoic acts as an independent controller of the data it collects through its platform.
+            </p>
+            <ul className="list-disc list-inside mt-2 space-y-1 text-muted-foreground">
+              <li>
+                Ezoic's Privacy Policy:{' '}
+                <a href="https://www.ezoic.com/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-foreground underline">
+                  ezoic.com/privacy-policy
+                </a>
+              </li>
+              <li>
+                Opt out of Ezoic personalised advertising:{' '}
+                <a href="https://g.ezoic.net/privacy/smartdigitaltips.com" target="_blank" rel="noopener noreferrer" className="text-foreground underline">
+                  Ezoic Privacy Settings for SmartDigitalTips
+                </a>
+              </li>
+            </ul>
+
+            <h3 className="text-base font-semibold mt-4 mb-2">Google AdSense</h3>
+            <p className="text-muted-foreground leading-relaxed">
               Google AdSense uses cookies and web beacons to serve ads based on a user's prior visits
               to this and other websites. These advertising cookies allow Google and its partners to
               serve ads to you based on your browsing history.
@@ -150,8 +178,9 @@ export default function Privacy() {
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-3">
               Where legally required (EEA, UK, Switzerland), optional analytics and advertising
-              cookies are only loaded after you click “Accept All” in our cookie consent banner.
-              You can withdraw consent at any time by clearing your browser cookies.
+              cookies are only loaded after you accept our cookie consent banner, which is managed
+              by Ezoic's consent management platform (CMP). You can withdraw consent at any time
+              through the cookie settings in our footer or by clearing your browser cookies.
             </p>
           </section>
 
