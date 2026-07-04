@@ -441,6 +441,26 @@
     "color-contrast-accessibility-wcag-guide": {
       "title": "How to Test Your Website's Color Contrast for Accessibility (WCAG 2.2) | SmartDigitalTips",
       "description": "Color contrast failures are the most common web accessibility issue. Here's how to check contrast ratios, what the WCAG standards actually require, and how to fix failures."
+    },
+    "windows-11-hidden-features-you-should-use": {
+      "title": "12 Windows 11 Hidden Features You Should Be Using Right Now | SmartDigitalTips",
+      "description": "Discover 12 powerful, hidden features in Windows 11 that will boost your productivity, from advanced clipboard management to native screen recording and built-in focus tools."
+    },
+    "how-to-speed-up-windows-11-ultimate-guide": {
+      "title": "How to Speed Up Windows 11: The Ultimate Performance Optimization Guide | SmartDigitalTips",
+      "description": "Is your PC running slow after upgrading? Follow our step-by-step optimization guide to speed up Windows 11, reduce startup times, and reclaim system memory."
+    },
+    "essential-windows-11-keyboard-shortcuts": {
+      "title": "The Ultimate Windows 11 Keyboard Shortcuts Cheat Sheet (2026) | SmartDigitalTips",
+      "description": "Master your PC navigation with these essential keyboard shortcuts for Windows 11. From window snapping to virtual desktops, work like a power user."
+    },
+    "windows-11-security-tips-protect-pc": {
+      "title": "Windows 11 Security Tips: 8 Vital Settings to Protect Your PC and Data | SmartDigitalTips",
+      "description": "Protect your personal information and keep malware away. Learn how to configure these 8 essential security settings in Windows 11 for maximum safety."
+    },
+    "best-windows-software-must-have-apps": {
+      "title": "15 Best Free Windows Software Apps You Must Install First | SmartDigitalTips",
+      "description": "Just set up a new Windows 11 PC? Here are the 15 absolute best free, open-source, and must-have utility software apps to install immediately."
     }
   },
   "ui": {

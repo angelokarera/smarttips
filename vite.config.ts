@@ -33,6 +33,8 @@ export default defineConfig(async ({ command }) => {
     build: {
       outDir: 'dist',
       sourcemap: false,
+      cssCodeSplit: true,
+      chunkSizeWarningLimit: 600,
       rollupOptions: {
         output: {
           manualChunks: {

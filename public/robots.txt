@@ -1,17 +1,11 @@
 # SmartDigitalTips — https://smartdigitaltips.com
-# Updated: 2026-07-01
+# Updated: 2026-07-04
 # Submit sitemap in Google Search Console: https://smartdigitaltips.com/sitemap.xml
 
 # ──────────────────────────────────────────────────────────
 # Sitemap Declaration
 # ──────────────────────────────────────────────────────────
 Sitemap: https://smartdigitaltips.com/sitemap.xml
-
-# ──────────────────────────────────────────────────────────
-# Google AdSense Crawler (required for ad serving)
-# ──────────────────────────────────────────────────────────
-User-agent: Mediapartners-Google
-Allow: /
 
 # ──────────────────────────────────────────────────────────
 # Google Search
