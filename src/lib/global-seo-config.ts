@@ -16,10 +16,6 @@ export const GLOBAL_SEO_CONFIG = {
     { code: 'es', name: 'Spanish', region: 'ES', markets: ['Spain', 'Mexico', 'Argentina', 'Colombia'] },
     { code: 'pt', name: 'Portuguese', region: 'BR', markets: ['Brazil', 'Portugal', 'Angola', 'Mozambique'] },
     { code: 'zh', name: 'Chinese', region: 'CN', markets: ['China', 'Taiwan', 'Hong Kong', 'Singapore'] },
-    { code: 'de', name: 'German', region: 'DE', markets: ['Germany', 'Austria', 'Switzerland'] },
-    { code: 'hi', name: 'Hindi', region: 'IN', markets: ['India', 'Nepal'] },
-    { code: 'ja', name: 'Japanese', region: 'JP', markets: ['Japan'] },
-    { code: 'ko', name: 'Korean', region: 'KR', markets: ['South Korea'] },
   ],
 
   // Global Keywords for Maximum Reach (Grouped by User Search Intent)

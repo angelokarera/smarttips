@@ -31,7 +31,7 @@ export function generateWebsiteSchema() {
     name: 'SmartDigitalTips',
     alternateName: ['Smart Digital Tips', 'Free Online Tools'],
     url: SITE_URL,
-    inLanguage: ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh', 'de', 'hi', 'ja', 'ko', 'ru'],
+    inLanguage: ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh'],
     description:
       '50+ free browser-based tools for images, PDFs, text, development, security, and productivity. Private, instant, no sign-up.',
     potentialAction: {
@@ -148,7 +148,7 @@ export function generateToolSchema(tool: {
     isAccessibleForFree: true,
     isFamilyFriendly: true,
     dateModified: today,
-    inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'sw', 'zh', 'de', 'hi', 'ja', 'ko', 'ru'],
+    inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'sw', 'zh'],
     featureList: tool.benefits || [],
     creator: {
       '@type': 'Organization',
@@ -317,7 +317,7 @@ export function generateWebPageSchema(page: {
       name: 'SmartDigitalTips',
       url: SITE_URL,
     },
-    inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'sw', 'zh', 'de', 'hi', 'ja', 'ko', 'ru'],
+    inLanguage: ['en', 'fr', 'es', 'ar', 'pt', 'sw', 'zh'],
   }
 }
 

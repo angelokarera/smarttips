@@ -8,10 +8,6 @@ import ar from '../../messages/ar.json'
 import es from '../../messages/es.json'
 import pt from '../../messages/pt.json'
 import zh from '../../messages/zh.json'
-import de from '../../messages/de.json'
-import hi from '../../messages/hi.json'
-import ja from '../../messages/ja.json'
-import ko from '../../messages/ko.json'
 
 export interface LabelCopy {
   label?: string
@@ -35,10 +31,6 @@ const messagesByLocale: Partial<Record<SupportedLocale, LocaleMessages>> = {
   es: es as LocaleMessages,
   pt: pt as LocaleMessages,
   zh: zh as LocaleMessages,
-  de: de as LocaleMessages,
-  hi: hi as LocaleMessages,
-  ja: ja as LocaleMessages,
-  ko: ko as LocaleMessages,
 }
 
 function bundle(locale: SupportedLocale) {

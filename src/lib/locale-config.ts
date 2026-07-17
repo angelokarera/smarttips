@@ -11,7 +11,11 @@ export const ADSENSE_PUBLISHER_ID = 'pub-3519891152775398'
 /** Google AdSense Customer ID */
 export const ADSENSE_CUSTOMER_ID = '9066894802'
 
-export const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh', 'de', 'hi', 'ja', 'ko'] as const
+// Single source of truth: only locales that are fully translated AND prerendered
+// belong here. Every entry produces real crawlable pages, sitemap URLs, and
+// hreflang alternates — adding a locale here without a translation + prerender
+// pass would advertise pages to Google that don't actually exist.
+export const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh'] as const
 export type AppLocale = (typeof LOCALES)[number]
 export const DEFAULT_LOCALE: AppLocale = 'en'
 
@@ -26,10 +30,6 @@ export const LOCALE_META: Record<
   es: { name: 'Spanish', hreflang: 'es', ogLocale: 'es_ES', dir: 'ltr' },
   pt: { name: 'Portuguese', hreflang: 'pt', ogLocale: 'pt_BR', dir: 'ltr' },
   zh: { name: 'Chinese', hreflang: 'zh', ogLocale: 'zh_CN', dir: 'ltr' },
-  de: { name: 'German', hreflang: 'de', ogLocale: 'de_DE', dir: 'ltr' },
-  hi: { name: 'Hindi', hreflang: 'hi', ogLocale: 'hi_IN', dir: 'ltr' },
-  ja: { name: 'Japanese', hreflang: 'ja', ogLocale: 'ja_JP', dir: 'ltr' },
-  ko: { name: 'Korean', hreflang: 'ko', ogLocale: 'ko_KR', dir: 'ltr' },
 }
 
 export function isAppLocale(value: string): value is AppLocale {

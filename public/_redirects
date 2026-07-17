@@ -7,7 +7,13 @@
 
 # German blog URL fix (was serving homepage)
 /de/blog/why-pdf-is-standard-for-documents    /en/blog/ultimate-guide-optimizing-images-web  301
-/de/*                                        /en/:splat                                     301
+
+# Deprecated locales (previously advertised, never fully translated) → consolidate to English
+/de/*                 /en/:splat            301
+/hi/*                 /en/:splat            301
+/ja/*                 /en/:splat            301
+/ko/*                 /en/:splat            301
+/ru/*                 /en/:splat            301
 
 # Canonical locale redirects (301)
 /rw                   /fr                   301

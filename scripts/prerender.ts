@@ -5,9 +5,12 @@ import { blogPosts } from '../src/data/blog'
 import { getToolEditorial } from '../src/lib/tool-editorial'
 import { getCategoryEditorial } from '../src/lib/category-editorial'
 import { getToolKeywords, getCategoryKeywords, getBlogKeywords, uniqueKeywords, platformKeywords } from '../src/lib/seoKeywords'
+import { LOCALES as SUPPORTED_LOCALES } from '../src/lib/locale-config'
 
-// Load translations from pre-generated files
-const LOCALES = ['en', 'fr', 'sw', 'ar', 'es', 'pt', 'zh']
+// Load translations from pre-generated files.
+// Locale list comes from locale-config (single source of truth) so the set of
+// prerendered pages always matches the sitemap and hreflang alternates.
+const LOCALES: string[] = [...SUPPORTED_LOCALES]
 type SeoEntry = { title?: string; description?: string }
 type LabelEntry = { label?: string; name?: string; description?: string }
 type TranslationCatalog = {
@@ -104,6 +107,145 @@ function escapeHtml(text: string): string {
     .replace(/'/g, '&#039;')
 }
 
+// ─── Per-page structured data (JSON-LD) ──────────────────────────────────────
+// The base template already carries site-wide WebSite/Organization schema.
+// These builders add page-specific schema (breadcrumbs, tool/app, FAQ, article)
+// so Google can surface rich results for every tool, category, and blog post.
+const SITE = 'https://smartdigitaltips.com'
+
+/** Serialize a schema object into a safe <script type="application/ld+json"> block. */
+function jsonLdScript(obj: Record<string, unknown>): string {
+  // Escape "<" so post content or titles can never break out of the script tag.
+  return `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`
+}
+
+function breadcrumbSchema(items: { name: string; url: string }[]): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((it, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: it.name,
+      item: it.url,
+    })),
+  }
+}
+
+function faqSchema(faqs: { question: string; answer: string }[]): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  }
+}
+
+function getToolStructuredData(locale: string, toolId: string): Record<string, unknown>[] {
+  const tool = tools.find((t) => t.id === toolId)
+  if (!tool) return []
+  const l = getToolLabel(toolId, locale, { name: tool.name, description: tool.description })
+  const catLabel = getCategoryLabel(tool.category, locale, { label: tool.categoryLabel, description: '' }).label
+  const editorial = getToolEditorial(tool)
+  const url = `${SITE}/${locale}${tool.path}`
+
+  const schemas: Record<string, unknown>[] = [
+    breadcrumbSchema([
+      { name: 'Home', url: `${SITE}/${locale}` },
+      { name: catLabel, url: `${SITE}/${locale}/category/${tool.category}` },
+      { name: l.name, url },
+    ]),
+    {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: l.name,
+      description: l.description,
+      url,
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Any',
+      browserRequirements: 'Requires a modern web browser with JavaScript enabled.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      isAccessibleForFree: true,
+      inLanguage: locale,
+      publisher: { '@type': 'Organization', name: 'SmartDigitalTips', url: SITE },
+    },
+  ]
+  if (editorial.faqs.length > 0) schemas.push(faqSchema(editorial.faqs))
+  return schemas
+}
+
+function getCategoryStructuredData(locale: string, categoryId: string): Record<string, unknown>[] {
+  const category = categories.find((c) => c.id === categoryId)
+  if (!category) return []
+  const labelData = getCategoryLabel(categoryId, locale, { label: category.label, description: category.description })
+  const editorial = getCategoryEditorial(categoryId)
+  const categoryTools = tools.filter((t) => t.category === categoryId)
+  const url = `${SITE}/${locale}/category/${categoryId}`
+
+  const schemas: Record<string, unknown>[] = [
+    breadcrumbSchema([
+      { name: 'Home', url: `${SITE}/${locale}` },
+      { name: labelData.label, url },
+    ]),
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: labelData.label,
+      description: labelData.description,
+      url,
+      numberOfItems: categoryTools.length,
+      itemListElement: categoryTools.map((tool, i) => {
+        const tl = getToolLabel(tool.id, locale, { name: tool.name, description: tool.description })
+        return {
+          '@type': 'ListItem',
+          position: i + 1,
+          name: tl.name,
+          url: `${SITE}/${locale}${tool.path}`,
+        }
+      }),
+    },
+  ]
+  if (editorial && editorial.faqs.length > 0) schemas.push(faqSchema(editorial.faqs))
+  return schemas
+}
+
+function getBlogStructuredData(locale: string, slug: string): Record<string, unknown>[] {
+  const post = blogPosts.find((p) => p.slug === slug)
+  if (!post) return []
+  const url = `${SITE}/${locale}/blog/${post.slug}`
+  const published = new Date(post.date).toISOString()
+
+  return [
+    breadcrumbSchema([
+      { name: 'Home', url: `${SITE}/${locale}` },
+      { name: 'Blog', url: `${SITE}/${locale}/blog` },
+      { name: post.title, url },
+    ]),
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.excerpt,
+      url,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      datePublished: published,
+      dateModified: published,
+      inLanguage: locale,
+      articleSection: post.category,
+      image: `${SITE}/og-image.png`,
+      author: { '@type': 'Person', name: post.author },
+      publisher: {
+        '@type': 'Organization',
+        name: 'SmartDigitalTips',
+        logo: { '@type': 'ImageObject', url: `${SITE}/logo.png` },
+      },
+    },
+  ]
+}
+
 // HTML layouts for prerendering
 function generatePageWrapper(locale: string, title: string, contentHtml: string): string {
   const homeLink = `/${locale}`
@@ -152,7 +294,49 @@ function generatePageWrapper(locale: string, title: string, contentHtml: string)
   `
 }
 
-function processHtmlTemplate(templateHtml: string, routePath: string, locale: string, title: string, description: string, contentHtml: string, keywords?: string[]): string {
+/** Force a noindex robots directive on an already-processed HTML string. */
+function forceNoindex(html: string): string {
+  return html.replace(
+    /<meta\s+name="robots"\s+content="[^"]*"\s*\/?>/i,
+    '<meta name="robots" content="noindex, follow" />',
+  )
+}
+
+/** Static content for the 404 page: helpful links so it is never a dead end. */
+function getNotFoundHtml(locale: string): string {
+  const popular = tools.filter(tool => tool.popular).slice(0, 8)
+  const toolCards = popular.map(tool => {
+    const l = getToolLabel(tool.id, locale, { name: tool.name, description: tool.description })
+    return `<a href="/${locale}${tool.path}" style="display:block; border:1px solid #e5e7eb; border-radius:12px; padding:16px; text-decoration:none; color:inherit;">
+        <div style="font-weight:600; font-size:14px; margin-bottom:4px;">${escapeHtml(l.name)}</div>
+        <div style="font-size:12px; color:#6b7280;">${escapeHtml(l.description)}</div>
+      </a>`
+  }).join('\n      ')
+
+  const categoryChips = categories.map(cat => {
+    const label = getCategoryLabel(cat.id, locale, { label: cat.label, description: '' }).label
+    return `<a href="/${locale}/category/${cat.id}" style="border:1px solid #e5e7eb; border-radius:999px; padding:8px 16px; font-size:14px; font-weight:500; text-decoration:none; color:#374151;">${escapeHtml(label)}</a>`
+  }).join('\n      ')
+
+  return `
+      <div style="text-align:center; max-width:640px; margin:0 auto 48px;">
+        <div style="font-size:72px; font-weight:800; color:#e5e7eb; line-height:1;">404</div>
+        <h1 style="font-size:32px; font-weight:800; margin:12px 0;">This page took a wrong turn</h1>
+        <p style="color:#6b7280; font-size:18px;">We couldn't find the page you were looking for. It may have been moved, renamed, or never existed.</p>
+        <p style="margin-top:24px;"><a href="/${locale}" style="display:inline-block; background:#e85d34; color:#fff; padding:12px 24px; border-radius:12px; text-decoration:none; font-weight:600;">Back to Home</a></p>
+      </div>
+      <h2 style="font-size:20px; font-weight:700; margin-bottom:16px;">Popular free tools</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:12px; margin-bottom:40px;">
+      ${toolCards}
+      </div>
+      <h2 style="font-size:20px; font-weight:700; margin-bottom:16px;">Browse by category</h2>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+      ${categoryChips}
+      </div>
+  `
+}
+
+function processHtmlTemplate(templateHtml: string, routePath: string, locale: string, title: string, description: string, contentHtml: string, keywords?: string[], structuredData?: Record<string, unknown>[]): string {
   let html = templateHtml
 
   // Clean title & description templates
@@ -177,6 +361,12 @@ function processHtmlTemplate(templateHtml: string, routePath: string, locale: st
 
   // Language attribute
   html = html.replace(/<html lang="[^"]*"/i, `<html lang="${locale}"`)
+
+  // Inject page-specific structured data (JSON-LD) before </head>
+  if (structuredData && structuredData.length > 0) {
+    const blocks = structuredData.map(jsonLdScript).join('\n    ')
+    html = html.replace('</head>', `    ${blocks}\n  </head>`)
+  }
 
   // Inject content inside <div id="root">
   const pageWrapper = generatePageWrapper(locale, title, contentHtml)
@@ -697,7 +887,8 @@ function runPrerender() {
       })
       const catHtml = getCategoryHtml(locale, cat.id)
       const catKeywords = getCategoryKeywords(cat)
-      const catFileHtml = processHtmlTemplate(templateHtml, catPath, locale, catSeo.title, catSeo.description, catHtml, catKeywords)
+      const catSchema = getCategoryStructuredData(locale, cat.id)
+      const catFileHtml = processHtmlTemplate(templateHtml, catPath, locale, catSeo.title, catSeo.description, catHtml, catKeywords, catSchema)
       const catDir = join(process.cwd(), 'dist', locale, 'category', cat.id)
       mkdirSync(catDir, { recursive: true })
       writeFileSync(join(catDir, 'index.html'), catFileHtml, 'utf8')
@@ -714,7 +905,8 @@ function runPrerender() {
       })
       const toolHtml = getToolHtml(locale, tool.id)
       const toolKeywords = getToolKeywords(tool)
-      const toolFileHtml = processHtmlTemplate(templateHtml, toolRoutePath, locale, toolSeo.title, toolSeo.description, toolHtml, toolKeywords)
+      const toolSchema = getToolStructuredData(locale, tool.id)
+      const toolFileHtml = processHtmlTemplate(templateHtml, toolRoutePath, locale, toolSeo.title, toolSeo.description, toolHtml, toolKeywords, toolSchema)
       
       // tool.path is /tools/tool-name, so we join locale and tool.path (skipping leading slash of tool.path)
       const cleanToolPath = tool.path.replace(/^\//, '')
@@ -737,6 +929,22 @@ function runPrerender() {
     writeFileSync(join(blogListDir, 'index.html'), blogListFileHtml, 'utf8')
     generatedCount++
 
+    // 6a. Locale 404 page — served at /<locale>/404 for the client router / crawlers
+    const nf404Html = getNotFoundHtml(locale)
+    let nf404FileHtml = processHtmlTemplate(
+      templateHtml,
+      `/${locale}/404`,
+      locale,
+      'Page Not Found (404) — SmartDigitalTips',
+      'The page you were looking for could not be found. Browse our free online tools, categories, and guides.',
+      nf404Html,
+    )
+    nf404FileHtml = forceNoindex(nf404FileHtml)
+    const nf404Dir = join(process.cwd(), 'dist', locale, '404')
+    mkdirSync(nf404Dir, { recursive: true })
+    writeFileSync(join(nf404Dir, 'index.html'), nf404FileHtml, 'utf8')
+    generatedCount++
+
     // 6. Blog Post Pages
     for (const post of blogPosts) {
       const postPath = `/${locale}/blog/${post.slug}`
@@ -746,7 +954,8 @@ function runPrerender() {
       })
       const postHtml = getBlogPostHtml(locale, post.slug)
       const postKeywords = getBlogKeywords(post)
-      const postFileHtml = processHtmlTemplate(templateHtml, postPath, locale, postSeo.title, postSeo.description, postHtml, postKeywords)
+      const postSchema = getBlogStructuredData(locale, post.slug)
+      const postFileHtml = processHtmlTemplate(templateHtml, postPath, locale, postSeo.title, postSeo.description, postHtml, postKeywords, postSchema)
       const postDir = join(process.cwd(), 'dist', locale, 'blog', post.slug)
       mkdirSync(postDir, { recursive: true })
       writeFileSync(join(postDir, 'index.html'), postFileHtml, 'utf8')
@@ -754,6 +963,23 @@ function runPrerender() {
     }
 
   }
+
+  // Root 404.html — Netlify serves this with an HTTP 404 status for any request
+  // that matches neither a static file nor a redirect rule. Built from the
+  // default locale and force-set to noindex.
+  const rootNfHtml = getNotFoundHtml('en')
+  let rootNfFileHtml = processHtmlTemplate(
+    templateHtml,
+    '/404',
+    'en',
+    'Page Not Found (404) — SmartDigitalTips',
+    'The page you were looking for could not be found. Browse our free online tools, categories, and guides.',
+    rootNfHtml,
+  )
+  rootNfFileHtml = forceNoindex(rootNfFileHtml)
+  writeFileSync(join(process.cwd(), 'dist', '404.html'), rootNfFileHtml, 'utf8')
+  generatedCount++
+  console.log('   ✓ 404.html (noindex)')
 
   console.log(`\n🎉 Success! Pre-rendered ${generatedCount} static pages across all locales.`)
 }

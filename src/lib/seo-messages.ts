@@ -8,10 +8,6 @@ import ar from '../../messages/ar.json'
 import es from '../../messages/es.json'
 import pt from '../../messages/pt.json'
 import zh from '../../messages/zh.json'
-import de from '../../messages/de.json'
-import hi from '../../messages/hi.json'
-import ja from '../../messages/ja.json'
-import ko from '../../messages/ko.json'
 
 export interface SeoCopy {
   title: string
@@ -34,10 +30,6 @@ const messagesByLocale: Partial<Record<SupportedLocale, LocaleMessages>> = {
   es: (es as Partial<LocaleMessages>),
   pt: (pt as Partial<LocaleMessages>),
   zh: (zh as Partial<LocaleMessages>),
-  de: (de as Partial<LocaleMessages>),
-  hi: (hi as Partial<LocaleMessages>),
-  ja: (ja as Partial<LocaleMessages>),
-  ko: (ko as Partial<LocaleMessages>),
 }
 
 function pick<T extends SeoCopy>(map: Record<string, T> | undefined, key: string, fallback: T): T {

@@ -28,10 +28,6 @@ export const COUNTRY_TARGETING: Record<AppLocale, string[]> = {
   pt: ['BR', 'PT', 'AO', 'MZ'],
   sw: ['KE', 'TZ', 'UG', 'RW'],
   zh: ['CN', 'TW', 'HK', 'SG'],
-  de: ['DE', 'AT', 'CH'],
-  hi: ['IN'],
-  ja: ['JP'],
-  ko: ['KR'],
 }
 
 export const SEO_TRANSLATIONS: Record<
@@ -46,10 +42,6 @@ export const SEO_TRANSLATIONS: Record<
     pt: 'Grátis',
     sw: 'Bure',
     zh: '免费',
-    de: 'Kostenlos',
-    hi: 'मुफ़्त',
-    ja: '無料',
-    ko: '무료',
   },
   online: {
     en: 'Online',
@@ -59,10 +51,6 @@ export const SEO_TRANSLATIONS: Record<
     pt: 'Online',
     sw: 'Mtandaoni',
     zh: '在线',
-    de: 'Online',
-    hi: 'ऑनलाइन',
-    ja: 'オンライン',
-    ko: '온라인',
   },
   tool: {
     en: 'Tool',
@@ -72,10 +60,6 @@ export const SEO_TRANSLATIONS: Record<
     pt: 'Ferramenta',
     sw: 'Zana',
     zh: '工具',
-    de: 'Werkzeug',
-    hi: 'टूल',
-    ja: 'ツール',
-    ko: '도구',
   },
 }
 

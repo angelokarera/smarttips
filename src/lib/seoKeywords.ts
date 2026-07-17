@@ -224,6 +224,25 @@ export function getCategoryKeywords(category: ToolCategory): string[] {
 }
 
 export function getBlogKeywords(post: BlogPost): string[] {
+  const isWindows = post.category.toLowerCase() === 'windows'
+  const windowsKeywords = isWindows ? [
+    'windows 11 hidden features',
+    'how to speed up windows 11',
+    'windows 11 keyboard shortcuts',
+    'windows 11 security tips',
+    'best free windows software',
+    'windows 11 optimization guide',
+    'windows 11 shortcut keys list',
+    'how to make windows 11 run faster',
+    'windows 11 performance tweaks',
+    'must-have apps for windows 11',
+    'open source windows software',
+    'windows 11 security settings',
+    'speed up windows 11 PC',
+    'best windows 11 utilities',
+    'hidden features in windows 11'
+  ] : []
+
   return [
     post.title,
     post.category,
@@ -234,6 +253,7 @@ export function getBlogKeywords(post: BlogPost): string[] {
     'how to guide',
     'tutorial',
     'best practices',
+    ...windowsKeywords,
     ...post.excerpt.split(/[,.]/).slice(0, 3),
     ...platformKeywords,
   ]

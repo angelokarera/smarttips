@@ -104,6 +104,28 @@
   to = "/en/:splat"
   status = 301
 
+# ── Deprecated locales (advertised in old sitemap, never fully translated) ───
+# Consolidate any previously-indexed URLs to English instead of soft-404.
+[[redirects]]
+  from = "/hi/*"
+  to = "/en/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/ja/*"
+  to = "/en/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/ko/*"
+  to = "/en/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/ru/*"
+  to = "/en/:splat"
+  status = 301
+
 # ── Legacy /rw locale redirects ──────────────────────────────────────────────
 [[redirects]]
   from = "/rw"
