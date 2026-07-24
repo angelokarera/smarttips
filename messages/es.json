@@ -333,6 +333,102 @@
     "ai-text-detector": {
       "title": "Gratis AI Text Detector En línea | SmartDigitalTips",
       "description": "Gratis AI Text Detector En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "sentence-counter": {
+      "title": "Gratis Sentence Counter En línea | SmartDigitalTips",
+      "description": "Gratis Sentence Counter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "paragraph-counter": {
+      "title": "Gratis Paragraph Counter En línea | SmartDigitalTips",
+      "description": "Gratis Paragraph Counter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "reading-time-calculator": {
+      "title": "Gratis Reading Time Calculator En línea | SmartDigitalTips",
+      "description": "Gratis Reading Time Calculator En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "speaking-time-calculator": {
+      "title": "Gratis Speaking Time Calculator En línea | SmartDigitalTips",
+      "description": "Gratis Speaking Time Calculator En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "keyword-density-checker": {
+      "title": "Gratis Keyword Density Checker En línea | SmartDigitalTips",
+      "description": "Gratis Keyword Density Checker En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "empty-line-remover": {
+      "title": "Gratis Empty Line Remover En línea | SmartDigitalTips",
+      "description": "Gratis Empty Line Remover En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "remove-extra-spaces": {
+      "title": "Gratis Remove Extra Spaces En línea | SmartDigitalTips",
+      "description": "Gratis Remove Extra Spaces En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "trim-lines": {
+      "title": "Gratis Trim Lines En línea | SmartDigitalTips",
+      "description": "Gratis Trim Lines En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "sort-lines": {
+      "title": "Gratis Sort Lines En línea | SmartDigitalTips",
+      "description": "Gratis Sort Lines En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "reverse-lines": {
+      "title": "Gratis Reverse Lines En línea | SmartDigitalTips",
+      "description": "Gratis Reverse Lines En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "shuffle-lines": {
+      "title": "Gratis Shuffle Lines En línea | SmartDigitalTips",
+      "description": "Gratis Shuffle Lines En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "reverse-text": {
+      "title": "Gratis Reverse Text En línea | SmartDigitalTips",
+      "description": "Gratis Reverse Text En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "flip-text": {
+      "title": "Gratis Flip Text En línea | SmartDigitalTips",
+      "description": "Gratis Flip Text En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "uppercase-converter": {
+      "title": "Gratis Uppercase Converter En línea | SmartDigitalTips",
+      "description": "Gratis Uppercase Converter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "lowercase-converter": {
+      "title": "Gratis Lowercase Converter En línea | SmartDigitalTips",
+      "description": "Gratis Lowercase Converter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "title-case-converter": {
+      "title": "Gratis Title Case Converter En línea | SmartDigitalTips",
+      "description": "Gratis Title Case Converter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "sentence-case-converter": {
+      "title": "Gratis Sentence Case Converter En línea | SmartDigitalTips",
+      "description": "Gratis Sentence Case Converter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "camel-case-converter": {
+      "title": "Gratis Camel Case Converter En línea | SmartDigitalTips",
+      "description": "Gratis Camel Case Converter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "pascal-case-converter": {
+      "title": "Gratis Pascal Case Converter En línea | SmartDigitalTips",
+      "description": "Gratis Pascal Case Converter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "snake-case-converter": {
+      "title": "Gratis Snake Case Converter En línea | SmartDigitalTips",
+      "description": "Gratis Snake Case Converter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "kebab-case-converter": {
+      "title": "Gratis Kebab Case Converter En línea | SmartDigitalTips",
+      "description": "Gratis Kebab Case Converter En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "slug-generator": {
+      "title": "Gratis Slug Generator En línea | SmartDigitalTips",
+      "description": "Gratis Slug Generator En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "find-replace": {
+      "title": "Gratis Find & Replace En línea | SmartDigitalTips",
+      "description": "Gratis Find & Replace En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
+    },
+    "random-text-generator": {
+      "title": "Gratis Random Text Generator En línea | SmartDigitalTips",
+      "description": "Gratis Random Text Generator En línea. Sin registro. En tu navegador — tus archivos permanecen privados."
     }
   },
   "categories": {
@@ -905,6 +1001,102 @@
       "ai-text-detector": {
         "name": "AI Text Detector",
         "description": "Gratis AI Text Detector En línea."
+      },
+      "sentence-counter": {
+        "name": "Sentence Counter",
+        "description": "Gratis Sentence Counter En línea."
+      },
+      "paragraph-counter": {
+        "name": "Paragraph Counter",
+        "description": "Gratis Paragraph Counter En línea."
+      },
+      "reading-time-calculator": {
+        "name": "Reading Time Calculator",
+        "description": "Gratis Reading Time Calculator En línea."
+      },
+      "speaking-time-calculator": {
+        "name": "Speaking Time Calculator",
+        "description": "Gratis Speaking Time Calculator En línea."
+      },
+      "keyword-density-checker": {
+        "name": "Keyword Density Checker",
+        "description": "Gratis Keyword Density Checker En línea."
+      },
+      "empty-line-remover": {
+        "name": "Empty Line Remover",
+        "description": "Gratis Empty Line Remover En línea."
+      },
+      "remove-extra-spaces": {
+        "name": "Remove Extra Spaces",
+        "description": "Gratis Remove Extra Spaces En línea."
+      },
+      "trim-lines": {
+        "name": "Trim Lines",
+        "description": "Gratis Trim Lines En línea."
+      },
+      "sort-lines": {
+        "name": "Sort Lines",
+        "description": "Gratis Sort Lines En línea."
+      },
+      "reverse-lines": {
+        "name": "Reverse Lines",
+        "description": "Gratis Reverse Lines En línea."
+      },
+      "shuffle-lines": {
+        "name": "Shuffle Lines",
+        "description": "Gratis Shuffle Lines En línea."
+      },
+      "reverse-text": {
+        "name": "Reverse Text",
+        "description": "Gratis Reverse Text En línea."
+      },
+      "flip-text": {
+        "name": "Flip Text",
+        "description": "Gratis Flip Text En línea."
+      },
+      "uppercase-converter": {
+        "name": "Uppercase Converter",
+        "description": "Gratis Uppercase Converter En línea."
+      },
+      "lowercase-converter": {
+        "name": "Lowercase Converter",
+        "description": "Gratis Lowercase Converter En línea."
+      },
+      "title-case-converter": {
+        "name": "Title Case Converter",
+        "description": "Gratis Title Case Converter En línea."
+      },
+      "sentence-case-converter": {
+        "name": "Sentence Case Converter",
+        "description": "Gratis Sentence Case Converter En línea."
+      },
+      "camel-case-converter": {
+        "name": "Camel Case Converter",
+        "description": "Gratis Camel Case Converter En línea."
+      },
+      "pascal-case-converter": {
+        "name": "Pascal Case Converter",
+        "description": "Gratis Pascal Case Converter En línea."
+      },
+      "snake-case-converter": {
+        "name": "Snake Case Converter",
+        "description": "Gratis Snake Case Converter En línea."
+      },
+      "kebab-case-converter": {
+        "name": "Kebab Case Converter",
+        "description": "Gratis Kebab Case Converter En línea."
+      },
+      "slug-generator": {
+        "name": "Slug Generator",
+        "description": "Gratis Slug Generator En línea."
+      },
+      "find-replace": {
+        "name": "Find & Replace",
+        "description": "Gratis Find & Replace En línea."
+      },
+      "random-text-generator": {
+        "name": "Random Text Generator",
+        "description": "Gratis Random Text Generator En línea."
       }
     }
   },

@@ -108,6 +108,30 @@ const ImageToBase64 = lazy(() => import('@/tools/developer/ImageToBase64'))
 const PomodoroTimer = lazy(() => import('@/tools/productivity/PomodoroTimer'))
 const OgPreview = lazy(() => import('@/tools/developer/OgPreview'))
 const AiTextDetector = lazy(() => import('@/tools/text/AiTextDetector'))
+const SentenceCounter = lazy(() => import('@/tools/text/SentenceCounter'))
+const ParagraphCounter = lazy(() => import('@/tools/text/ParagraphCounter'))
+const ReadingTimeCalculator = lazy(() => import('@/tools/text/ReadingTimeCalculator'))
+const SpeakingTimeCalculator = lazy(() => import('@/tools/text/SpeakingTimeCalculator'))
+const KeywordDensityChecker = lazy(() => import('@/tools/text/KeywordDensityChecker'))
+const EmptyLineRemover = lazy(() => import('@/tools/text/EmptyLineRemover'))
+const RemoveExtraSpaces = lazy(() => import('@/tools/text/RemoveExtraSpaces'))
+const TrimLines = lazy(() => import('@/tools/text/TrimLines'))
+const SortLines = lazy(() => import('@/tools/text/SortLines'))
+const ReverseLines = lazy(() => import('@/tools/text/ReverseLines'))
+const ShuffleLines = lazy(() => import('@/tools/text/ShuffleLines'))
+const ReverseText = lazy(() => import('@/tools/text/ReverseText'))
+const FlipText = lazy(() => import('@/tools/text/FlipText'))
+const UppercaseConverter = lazy(() => import('@/tools/text/UppercaseConverter'))
+const LowercaseConverter = lazy(() => import('@/tools/text/LowercaseConverter'))
+const TitleCaseConverter = lazy(() => import('@/tools/text/TitleCaseConverter'))
+const SentenceCaseConverter = lazy(() => import('@/tools/text/SentenceCaseConverter'))
+const CamelCaseConverter = lazy(() => import('@/tools/text/CamelCaseConverter'))
+const PascalCaseConverter = lazy(() => import('@/tools/text/PascalCaseConverter'))
+const SnakeCaseConverter = lazy(() => import('@/tools/text/SnakeCaseConverter'))
+const KebabCaseConverter = lazy(() => import('@/tools/text/KebabCaseConverter'))
+const SlugGenerator = lazy(() => import('@/tools/text/SlugGenerator'))
+const FindReplace = lazy(() => import('@/tools/text/FindReplace'))
+const RandomTextGenerator = lazy(() => import('@/tools/text/RandomTextGenerator'))
 
 const toolComponents: Record<string, React.ComponentType> = {
   'word-counter': WordCounter,
@@ -186,6 +210,30 @@ const toolComponents: Record<string, React.ComponentType> = {
   'pomodoro-timer': PomodoroTimer,
   'og-preview': OgPreview,
   'ai-text-detector': AiTextDetector,
+  'sentence-counter': SentenceCounter,
+  'paragraph-counter': ParagraphCounter,
+  'reading-time-calculator': ReadingTimeCalculator,
+  'speaking-time-calculator': SpeakingTimeCalculator,
+  'keyword-density-checker': KeywordDensityChecker,
+  'empty-line-remover': EmptyLineRemover,
+  'remove-extra-spaces': RemoveExtraSpaces,
+  'trim-lines': TrimLines,
+  'sort-lines': SortLines,
+  'reverse-lines': ReverseLines,
+  'shuffle-lines': ShuffleLines,
+  'reverse-text': ReverseText,
+  'flip-text': FlipText,
+  'uppercase-converter': UppercaseConverter,
+  'lowercase-converter': LowercaseConverter,
+  'title-case-converter': TitleCaseConverter,
+  'sentence-case-converter': SentenceCaseConverter,
+  'camel-case-converter': CamelCaseConverter,
+  'pascal-case-converter': PascalCaseConverter,
+  'snake-case-converter': SnakeCaseConverter,
+  'kebab-case-converter': KebabCaseConverter,
+  'slug-generator': SlugGenerator,
+  'find-replace': FindReplace,
+  'random-text-generator': RandomTextGenerator,
 }
 
 export default function ToolPage() {

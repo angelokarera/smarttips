@@ -333,6 +333,102 @@
     "ai-text-detector": {
       "title": "AI Text Detector Free | Check ChatGPT & AI Content - SmartDigitalTips",
       "description": "Free online AI content detector. Analyze text for AI-writing signals like sentence uniformity, transition words, and passive voice."
+    },
+    "sentence-counter": {
+      "title": "Sentence Counter | Count Sentences in Text Free - SmartDigitalTips",
+      "description": "Free online sentence counter. Instantly count sentences, words, and average sentence length in your text. Runs privately in your browser."
+    },
+    "paragraph-counter": {
+      "title": "Paragraph Counter | Count Paragraphs in Text Free - SmartDigitalTips",
+      "description": "Free online paragraph counter. Count paragraphs, lines, words, and average paragraph length instantly in your browser."
+    },
+    "reading-time-calculator": {
+      "title": "Reading Time Calculator | Estimate Read Time Free - SmartDigitalTips",
+      "description": "Free reading time calculator. Estimate how many minutes it takes to read an article or blog post based on word count and reading speed."
+    },
+    "speaking-time-calculator": {
+      "title": "Speaking Time Calculator | Speech Length Estimator - SmartDigitalTips",
+      "description": "Free speaking time calculator. Estimate how many minutes your speech or presentation script will take based on speaking pace."
+    },
+    "keyword-density-checker": {
+      "title": "Keyword Density Checker | Free SEO Content Analyzer - SmartDigitalTips",
+      "description": "Free keyword density checker. Analyze the most frequent words and their density percentage in your content to optimize for SEO."
+    },
+    "empty-line-remover": {
+      "title": "Empty Line Remover | Delete Blank Lines Online Free - SmartDigitalTips",
+      "description": "Free empty line remover. Instantly delete all blank and empty lines from text or lists directly in your browser."
+    },
+    "remove-extra-spaces": {
+      "title": "Remove Extra Spaces | Clean Up Whitespace Online - SmartDigitalTips",
+      "description": "Free tool to remove extra spaces and tabs from text. Collapse double spaces into single spaces and trim lines instantly."
+    },
+    "trim-lines": {
+      "title": "Trim Lines | Remove Leading & Trailing Spaces Online - SmartDigitalTips",
+      "description": "Free tool to trim whitespace from the start and end of each line in your text. Clean up lists and code instantly in your browser."
+    },
+    "sort-lines": {
+      "title": "Sort Lines Alphabetically | Free Text Sorter Online - SmartDigitalTips",
+      "description": "Free online line sorter. Sort lists alphabetically A–Z or Z–A with numeric and case-sensitive options. Private and instant."
+    },
+    "reverse-lines": {
+      "title": "Reverse Lines | Flip Line Order Online Free - SmartDigitalTips",
+      "description": "Free tool to reverse the order of lines in your text. Instantly flip a list so the last line becomes the first."
+    },
+    "shuffle-lines": {
+      "title": "Shuffle Lines | Randomize List Order Online Free - SmartDigitalTips",
+      "description": "Free tool to randomly shuffle lines in your text. Randomize the order of a list instantly with a fair Fisher–Yates shuffle."
+    },
+    "reverse-text": {
+      "title": "Reverse Text | Backwards Text Generator Online - SmartDigitalTips",
+      "description": "Free reverse text generator. Instantly flip the character order of your text to write backwards. Runs privately in your browser."
+    },
+    "flip-text": {
+      "title": "Flip Text | Upside Down Text Generator Online - SmartDigitalTips",
+      "description": "Free upside down text generator. Flip your text with unicode characters for fun social media posts and usernames."
+    },
+    "uppercase-converter": {
+      "title": "Uppercase Converter | Convert Text to UPPERCASE Online - SmartDigitalTips",
+      "description": "Free uppercase text converter. Instantly change any text to ALL CAPS in your browser. Private, fast, and no sign-up."
+    },
+    "lowercase-converter": {
+      "title": "Lowercase Converter | Convert Text to lowercase Online - SmartDigitalTips",
+      "description": "Free lowercase text converter. Instantly change any text to all lowercase in your browser. Private, fast, and no sign-up."
+    },
+    "title-case-converter": {
+      "title": "Title Case Converter | Capitalize Each Word Online - SmartDigitalTips",
+      "description": "Free title case converter. Capitalize the first letter of every word for titles and headings instantly in your browser."
+    },
+    "sentence-case-converter": {
+      "title": "Sentence Case Converter | Fix Capitalization Online - SmartDigitalTips",
+      "description": "Free sentence case converter. Capitalize the first letter of each sentence and lowercase the rest instantly in your browser."
+    },
+    "camel-case-converter": {
+      "title": "Camel Case Converter | Convert Text to camelCase Online - SmartDigitalTips",
+      "description": "Free camelCase converter. Turn any text or phrase into camelCase for JavaScript variables and object keys instantly."
+    },
+    "pascal-case-converter": {
+      "title": "Pascal Case Converter | Convert Text to PascalCase Online - SmartDigitalTips",
+      "description": "Free PascalCase converter. Turn any text into PascalCase for class names and React components instantly in your browser."
+    },
+    "snake-case-converter": {
+      "title": "Snake Case Converter | Convert Text to snake_case Online - SmartDigitalTips",
+      "description": "Free snake_case converter. Turn any text into snake_case for variable names, filenames, and database columns instantly."
+    },
+    "kebab-case-converter": {
+      "title": "Kebab Case Converter | Convert Text to kebab-case Online - SmartDigitalTips",
+      "description": "Free kebab-case converter. Turn any text into kebab-case for URLs, CSS class names, and filenames instantly in your browser."
+    },
+    "slug-generator": {
+      "title": "Slug Generator | SEO-Friendly URL Slug Maker Free - SmartDigitalTips",
+      "description": "Free URL slug generator. Convert titles and headings into clean, lowercase, SEO-friendly slugs with hyphens instantly."
+    },
+    "find-replace": {
+      "title": "Find and Replace Text Online | Free Bulk Text Replacer - SmartDigitalTips",
+      "description": "Free online find and replace tool. Replace text in bulk with case-sensitive matching and regular expression support. 100% private."
+    },
+    "random-text-generator": {
+      "title": "Random Text Generator | Random Words & Strings Free - SmartDigitalTips",
+      "description": "Free random text generator. Create random words, sentences, paragraphs, or character strings for testing and placeholders."
     }
   },
   "categories": {
@@ -905,6 +1001,102 @@
       "ai-text-detector": {
         "name": "AI Text Detector",
         "description": "Check text for patterns associated with AI generation (ChatGPT, Claude, Gemini) using sentence variance and vocabulary heuristics."
+      },
+      "sentence-counter": {
+        "name": "Sentence Counter",
+        "description": "Count the number of sentences in your text, plus words and average sentence length."
+      },
+      "paragraph-counter": {
+        "name": "Paragraph Counter",
+        "description": "Count paragraphs, lines, and words in your text separated by blank lines."
+      },
+      "reading-time-calculator": {
+        "name": "Reading Time Calculator",
+        "description": "Estimate how long it takes to read your text at slow, average, or fast reading speeds."
+      },
+      "speaking-time-calculator": {
+        "name": "Speaking Time Calculator",
+        "description": "Estimate how long your speech or script will take to present out loud."
+      },
+      "keyword-density-checker": {
+        "name": "Keyword Density Checker",
+        "description": "Analyze keyword frequency and density in your content for SEO optimization."
+      },
+      "empty-line-remover": {
+        "name": "Empty Line Remover",
+        "description": "Remove all blank and empty lines from your text or list instantly."
+      },
+      "remove-extra-spaces": {
+        "name": "Remove Extra Spaces",
+        "description": "Collapse multiple spaces and tabs into single spaces and trim each line."
+      },
+      "trim-lines": {
+        "name": "Trim Lines",
+        "description": "Remove leading and trailing whitespace from every line of your text."
+      },
+      "sort-lines": {
+        "name": "Sort Lines",
+        "description": "Sort lines of text alphabetically A–Z or Z–A, with optional case sensitivity."
+      },
+      "reverse-lines": {
+        "name": "Reverse Lines",
+        "description": "Reverse the order of lines in your text so the last line becomes first."
+      },
+      "shuffle-lines": {
+        "name": "Shuffle Lines",
+        "description": "Randomly shuffle the order of lines in your text or list."
+      },
+      "reverse-text": {
+        "name": "Reverse Text",
+        "description": "Reverse the character order of your text so it reads backwards."
+      },
+      "flip-text": {
+        "name": "Flip Text",
+        "description": "Turn your text upside down using special unicode characters."
+      },
+      "uppercase-converter": {
+        "name": "Uppercase Converter",
+        "description": "Convert your text to ALL UPPERCASE letters instantly."
+      },
+      "lowercase-converter": {
+        "name": "Lowercase Converter",
+        "description": "Convert your text to all lowercase letters instantly."
+      },
+      "title-case-converter": {
+        "name": "Title Case Converter",
+        "description": "Capitalize the first letter of each word for headings and titles."
+      },
+      "sentence-case-converter": {
+        "name": "Sentence Case Converter",
+        "description": "Capitalize the first letter of each sentence and lowercase the rest."
+      },
+      "camel-case-converter": {
+        "name": "Camel Case Converter",
+        "description": "Convert text to camelCase for variable and property names."
+      },
+      "pascal-case-converter": {
+        "name": "Pascal Case Converter",
+        "description": "Convert text to PascalCase for class and component names."
+      },
+      "snake-case-converter": {
+        "name": "Snake Case Converter",
+        "description": "Convert text to snake_case for variables, files, and database columns."
+      },
+      "kebab-case-converter": {
+        "name": "Kebab Case Converter",
+        "description": "Convert text to kebab-case for URLs, CSS classes, and filenames."
+      },
+      "slug-generator": {
+        "name": "Slug Generator",
+        "description": "Turn titles into clean, SEO-friendly URL slugs."
+      },
+      "find-replace": {
+        "name": "Find & Replace",
+        "description": "Find and replace text with case-sensitive and regex options."
+      },
+      "random-text-generator": {
+        "name": "Random Text Generator",
+        "description": "Generate random words, sentences, paragraphs, or character strings."
       }
     }
   },

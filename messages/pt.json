@@ -333,6 +333,102 @@
     "ai-text-detector": {
       "title": "Grátis AI Text Detector Online | SmartDigitalTips",
       "description": "Grátis AI Text Detector Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "sentence-counter": {
+      "title": "Grátis Sentence Counter Online | SmartDigitalTips",
+      "description": "Grátis Sentence Counter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "paragraph-counter": {
+      "title": "Grátis Paragraph Counter Online | SmartDigitalTips",
+      "description": "Grátis Paragraph Counter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "reading-time-calculator": {
+      "title": "Grátis Reading Time Calculator Online | SmartDigitalTips",
+      "description": "Grátis Reading Time Calculator Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "speaking-time-calculator": {
+      "title": "Grátis Speaking Time Calculator Online | SmartDigitalTips",
+      "description": "Grátis Speaking Time Calculator Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "keyword-density-checker": {
+      "title": "Grátis Keyword Density Checker Online | SmartDigitalTips",
+      "description": "Grátis Keyword Density Checker Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "empty-line-remover": {
+      "title": "Grátis Empty Line Remover Online | SmartDigitalTips",
+      "description": "Grátis Empty Line Remover Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "remove-extra-spaces": {
+      "title": "Grátis Remove Extra Spaces Online | SmartDigitalTips",
+      "description": "Grátis Remove Extra Spaces Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "trim-lines": {
+      "title": "Grátis Trim Lines Online | SmartDigitalTips",
+      "description": "Grátis Trim Lines Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "sort-lines": {
+      "title": "Grátis Sort Lines Online | SmartDigitalTips",
+      "description": "Grátis Sort Lines Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "reverse-lines": {
+      "title": "Grátis Reverse Lines Online | SmartDigitalTips",
+      "description": "Grátis Reverse Lines Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "shuffle-lines": {
+      "title": "Grátis Shuffle Lines Online | SmartDigitalTips",
+      "description": "Grátis Shuffle Lines Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "reverse-text": {
+      "title": "Grátis Reverse Text Online | SmartDigitalTips",
+      "description": "Grátis Reverse Text Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "flip-text": {
+      "title": "Grátis Flip Text Online | SmartDigitalTips",
+      "description": "Grátis Flip Text Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "uppercase-converter": {
+      "title": "Grátis Uppercase Converter Online | SmartDigitalTips",
+      "description": "Grátis Uppercase Converter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "lowercase-converter": {
+      "title": "Grátis Lowercase Converter Online | SmartDigitalTips",
+      "description": "Grátis Lowercase Converter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "title-case-converter": {
+      "title": "Grátis Title Case Converter Online | SmartDigitalTips",
+      "description": "Grátis Title Case Converter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "sentence-case-converter": {
+      "title": "Grátis Sentence Case Converter Online | SmartDigitalTips",
+      "description": "Grátis Sentence Case Converter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "camel-case-converter": {
+      "title": "Grátis Camel Case Converter Online | SmartDigitalTips",
+      "description": "Grátis Camel Case Converter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "pascal-case-converter": {
+      "title": "Grátis Pascal Case Converter Online | SmartDigitalTips",
+      "description": "Grátis Pascal Case Converter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "snake-case-converter": {
+      "title": "Grátis Snake Case Converter Online | SmartDigitalTips",
+      "description": "Grátis Snake Case Converter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "kebab-case-converter": {
+      "title": "Grátis Kebab Case Converter Online | SmartDigitalTips",
+      "description": "Grátis Kebab Case Converter Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "slug-generator": {
+      "title": "Grátis Slug Generator Online | SmartDigitalTips",
+      "description": "Grátis Slug Generator Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "find-replace": {
+      "title": "Grátis Find & Replace Online | SmartDigitalTips",
+      "description": "Grátis Find & Replace Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
+    },
+    "random-text-generator": {
+      "title": "Grátis Random Text Generator Online | SmartDigitalTips",
+      "description": "Grátis Random Text Generator Online. Sem cadastro. No seu navegador — seus arquivos ficam privados."
     }
   },
   "categories": {
@@ -905,6 +1001,102 @@
       "ai-text-detector": {
         "name": "AI Text Detector",
         "description": "Grátis AI Text Detector Online."
+      },
+      "sentence-counter": {
+        "name": "Sentence Counter",
+        "description": "Grátis Sentence Counter Online."
+      },
+      "paragraph-counter": {
+        "name": "Paragraph Counter",
+        "description": "Grátis Paragraph Counter Online."
+      },
+      "reading-time-calculator": {
+        "name": "Reading Time Calculator",
+        "description": "Grátis Reading Time Calculator Online."
+      },
+      "speaking-time-calculator": {
+        "name": "Speaking Time Calculator",
+        "description": "Grátis Speaking Time Calculator Online."
+      },
+      "keyword-density-checker": {
+        "name": "Keyword Density Checker",
+        "description": "Grátis Keyword Density Checker Online."
+      },
+      "empty-line-remover": {
+        "name": "Empty Line Remover",
+        "description": "Grátis Empty Line Remover Online."
+      },
+      "remove-extra-spaces": {
+        "name": "Remove Extra Spaces",
+        "description": "Grátis Remove Extra Spaces Online."
+      },
+      "trim-lines": {
+        "name": "Trim Lines",
+        "description": "Grátis Trim Lines Online."
+      },
+      "sort-lines": {
+        "name": "Sort Lines",
+        "description": "Grátis Sort Lines Online."
+      },
+      "reverse-lines": {
+        "name": "Reverse Lines",
+        "description": "Grátis Reverse Lines Online."
+      },
+      "shuffle-lines": {
+        "name": "Shuffle Lines",
+        "description": "Grátis Shuffle Lines Online."
+      },
+      "reverse-text": {
+        "name": "Reverse Text",
+        "description": "Grátis Reverse Text Online."
+      },
+      "flip-text": {
+        "name": "Flip Text",
+        "description": "Grátis Flip Text Online."
+      },
+      "uppercase-converter": {
+        "name": "Uppercase Converter",
+        "description": "Grátis Uppercase Converter Online."
+      },
+      "lowercase-converter": {
+        "name": "Lowercase Converter",
+        "description": "Grátis Lowercase Converter Online."
+      },
+      "title-case-converter": {
+        "name": "Title Case Converter",
+        "description": "Grátis Title Case Converter Online."
+      },
+      "sentence-case-converter": {
+        "name": "Sentence Case Converter",
+        "description": "Grátis Sentence Case Converter Online."
+      },
+      "camel-case-converter": {
+        "name": "Camel Case Converter",
+        "description": "Grátis Camel Case Converter Online."
+      },
+      "pascal-case-converter": {
+        "name": "Pascal Case Converter",
+        "description": "Grátis Pascal Case Converter Online."
+      },
+      "snake-case-converter": {
+        "name": "Snake Case Converter",
+        "description": "Grátis Snake Case Converter Online."
+      },
+      "kebab-case-converter": {
+        "name": "Kebab Case Converter",
+        "description": "Grátis Kebab Case Converter Online."
+      },
+      "slug-generator": {
+        "name": "Slug Generator",
+        "description": "Grátis Slug Generator Online."
+      },
+      "find-replace": {
+        "name": "Find & Replace",
+        "description": "Grátis Find & Replace Online."
+      },
+      "random-text-generator": {
+        "name": "Random Text Generator",
+        "description": "Grátis Random Text Generator Online."
       }
     }
   },
